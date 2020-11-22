@@ -308,7 +308,7 @@ xkb_symbols "sgs" {
     name[Group1]="Samogitian";
 
     key <TLDE>  {[ U0304,   asciitilde, grave,      acute ]};
-    key	<AD01>  {[ q,       Q, 	        U00EB, 	    U00CB ]};
+    key	<AD01>  {[ q,           Q,              ediaeresis, Ediaeresis ]};
     key	<AD02>  {[ w,    	W, 	        U016F, 	    U016E ]};
     key <AD04>	{[ r,     	R, 	        rcedilla,   Rcedilla]};
     key <AD05>  {[ t,     	T, 	        tcaron,     Tcaron ]};

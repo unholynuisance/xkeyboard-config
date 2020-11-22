@@ -285,15 +285,15 @@ xkb_symbols "fur" {
 
 	key <AC01>	{[         a,          A,   acircumflex,   Acircumflex ]};
 	key <AC03>	{[         d,          D,         U1D48                ]};
-	key <AC04>	{[         f,          F,         U1DA0,         U00AA ]};
+	key <AC04>	{[         f,          F,         U1DA0,   ordfeminine ]};
 	key <AC10>	{[    ograve,   ccedilla,            at,  dead_cedilla ]};
 	key <AC11>	{[    agrave,     degree,    numbersign,dead_abovering ]};
 	key <BKSL>	{[    ugrave,    section,    dead_grave,    dead_breve ]};
 
 	key <LSGT>	{[      less,    greater, guillemotleft,guillemotright ]};
-	key <AB03>	{[         c,          C,         U1D9C,         U00A9 ]};
+	key <AB03>	{[         c,          C,         U1D9C,     copyright ]};
 	key <AB06>	{[         n,          N,         U207F,        Ntilde ]};
-	key <AB07>	{[         m,          M,         U1D50,         U00B5 ]};
+	key <AB07>	{[         m,          M,         U1D50,            mu ]};
 	key <AB08>	{[     comma,  semicolon,    dead_acute,      multiply ]};
 	key <AB09>	{[    period,      colon,periodcentered,dead_diaeresis ]};
 	key <AB10>	{[     minus, underscore,   dead_macron,      division ]};

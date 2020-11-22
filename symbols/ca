@@ -433,23 +433,14 @@ xkb_symbols "kut" {
 
     name[Group1]= "Kutenai";
 
-    // Alveolar Click
-    key <AD05> {	[ t,	T,U01C2	,U01C2	]	};
+    key <AD05> {[          t,        T,  U01C2,  U01C2  ]}; // alveolar click
 
-    //Cent sign
-    key <AB03> {	[ c,	C,U00A2,U00A2	]	};
+    key <AB03> {[          c,        C,  cent,   cent   ]};
+    key <AB09> {[     period,  greater,  periodcentered ]};
+    key <AB10> {[      slash, question,  U0294          ]}; // glottal stop
 
-    //Mid dot
-    key <AB09> {	[ period,     greater,U00B7   	]	};
-
-    //Glottal stop
-    key <AB10> {	[ slash,	question, U0294	]	};
-
-    //COMBINING COMMA ABOVE RIGHT
-    key <AC11> {	[ apostrophe,	quotedbl, U0315,U0315	]	};
-
-    //MODIFIER LETTER RIGHT HALF RING
-    key <AC10> {	[ semicolon,	colon,U02BE,U02BE	]	};
+    key <AC10> {[  semicolon,    colon,  U02BE,  U02BE  ]}; // MODIFIER LETTER RIGHT HALF RING
+    key <AC11> {[ apostrophe, quotedbl,  U0315,  U0315  ]}; // COMBINING COMMA ABOVE RIGHT
 };
 
 // Secwepemctsin keyboard for X11

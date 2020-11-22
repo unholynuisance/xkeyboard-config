@@ -1039,7 +1039,7 @@ xkb_symbols "prxn" {
 
     key <LSGT> { [           U0495,             U0494,                       U0501,                  U0500,     U0503,    U0502,                                  U0509,    U0508 ] };                               // ҕ Ҕ ԁ Ԁ ԃ Ԃ ԉ Ԉ
     key <AB01> { [     Cyrillic_ya,       Cyrillic_YA,                       U0469,                  U0468,     U0467,    U0466,                                  UA657,    UA656 ] };                               // я Я ѩ Ѩ ѧ Ѧ ꙗ Ꙗ
-    key <AB02> { [    Cyrillic_che,      Cyrillic_CHE,                Serbian_tshe,           Serbian_TSHE,     Cyrillic_che_descender,  Cyrillic_CHE_descender,  U2016,    U00A6 ] };	                             // ч Ч ћ Ћ ҷ Ҷ ‖ ¦
+    key <AB02> { [    Cyrillic_che,      Cyrillic_CHE,                Serbian_tshe,           Serbian_TSHE,     Cyrillic_che_descender,  Cyrillic_CHE_descender,  U2016,brokenbar ] };	                             // ч Ч ћ Ћ ҷ Ҷ ‖ ¦
     key <AB03> { [      Cyrillic_es,      Cyrillic_ES,                       U046D,                  U046C,     U046B,    U046A,                                  U04F7,    U04F6 ] };                               // с С ѭ Ѭ ѫ Ѫ ӷ Ӷ
     key <AB04> { [       Cyrillic_em,     Cyrillic_EM,                    multiply,               division,     U22C5,    U2219,                                  U04CE,    U04CD ] };                               // м М × ÷ ⋅ ∙ ӎ Ӎ
     key <AB05> { [      Cyrillic_i,        Cyrillic_I,                       U0475,                  U0474,     U048B,    U048A,                         periodcentered,    U261B ] };    	                     // и И ѵ Ѵ ҋ Ҋ · ☛
