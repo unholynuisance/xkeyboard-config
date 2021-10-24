@@ -5591,6 +5591,12 @@
         </variant>
         <variant>
           <configItem>
+            <name>macOS</name>
+            <description>Ukrainian (macOS)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>legacy</name>
             <description>Ukrainian (legacy)</description>
           </configItem>
