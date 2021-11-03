@@ -22,6 +22,8 @@ xkb_symbols "basic" {
     key <TLDE>	{ [ masculine, ordfeminine,    backslash,   backslash ]	};
 
     key <BKSL>	{ [  ccedilla,   Ccedilla,   braceright,   dead_breve ]	};
+    key <AB01>	{ [         z,          Z, guillemotleft,        less ]	};
+    key <AB02>	{ [         x,          X, guillemotright,    greater ]	};
 
     include "level3(ralt_switch)"
 };
