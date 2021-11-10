@@ -216,12 +216,14 @@
       <configItem>
         <name>btc9116u</name>
         <description>BTC 9116U Mini Wireless Internet and Gaming</description>
+        <vendor>BTC</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>cherryblue</name>
         <description>Cherry Blue Line CyBo@rd</description>
+        <vendor>Cherry</vendor>
       </configItem>
     </model>
     <model>
@@ -403,6 +405,7 @@
       <configItem>
         <name>dtk2000</name>
         <description>DTK2000</description>
+        <vendor>DTK</vendor>
       </configItem>
     </model>
     <model>
