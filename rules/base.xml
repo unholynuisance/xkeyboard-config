@@ -2591,6 +2591,17 @@
             </languageList>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>rif</name>
+            <!-- Keyboard indicator for Tarifit layouts -->
+            <shortDescription>rif</shortDescription>
+            <description>Tarifit</description>
+            <languageList>
+              <iso639Id>rif</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
