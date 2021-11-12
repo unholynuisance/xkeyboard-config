@@ -10,15 +10,14 @@ xkb_symbols "basic" {
     key <AE01>	{ [         1,     exclam,          bar,   exclamdown ]	};
     key <AE03>	{ [         3, periodcentered, numbersign,   sterling ]	};
     key <AE04>	{ [         4,     dollar,   asciitilde,       dollar ]	};
-    key <AE06>	{ [         6,  ampersand,      notsign,  fiveeighths ]	};
     key <AE11>	{ [apostrophe,   question,    backslash, questiondown ]	};
-    key <AE12>	{ [exclamdown, questiondown, dead_tilde,   asciitilde ]	};
+    key <AE12>	{ [exclamdown, questiondown, dead_cedilla, dead_ogonek ]	};
 
     key <AD11>	{ [dead_grave, dead_circumflex, bracketleft, dead_abovering ] };
     key <AD12>	{ [      plus,   asterisk, bracketright,  dead_macron ]	};
 
-    key <AC10>	{ [    ntilde, Ntilde,   asciitilde, dead_doubleacute ]	};
-    key <AC11>	{ [dead_acute, dead_diaeresis, braceleft,   braceleft ]	};
+    key <AC10>	{ [    ntilde, Ntilde,   dead_tilde, dead_doubleacute ]	};
+    key <AC11>	{ [dead_acute, dead_diaeresis, braceleft,  dead_caron ]	};
     key <TLDE>	{ [ masculine, ordfeminine,    backslash,   backslash ]	};
 
     key <BKSL>	{ [  ccedilla,   Ccedilla,   braceright,   dead_breve ]	};
@@ -43,10 +42,11 @@ xkb_symbols "nodeadkeys" {
 
     name[Group1]="Spanish (no dead keys)";
 
+    key <AE12>	{ [exclamdown, questiondown,     cedilla,      ogonek ]	};
     key <AD11>	{ [     grave, asciicircum,  bracketleft,      degree ]	};
     key <AD12>	{ [      plus,   asterisk, bracketright,       macron ]	};
     key <AC10>	{ [    ntilde,     Ntilde,   asciitilde,  doubleacute ]	};
-    key <AC11>	{ [     acute,  diaeresis,    braceleft,    braceleft ]	};
+    key <AC11>	{ [     acute,  diaeresis,    braceleft,        caron ]	};
     key <BKSL>	{ [  ccedilla,   Ccedilla,   braceright,        breve ]	};
     key <AB10>	{ [     minus, underscore, dead_belowdot,    abovedot ]	};
 };
@@ -223,9 +223,10 @@ xkb_symbols "deadtilde" {
 
     include "es(basic)"
 
-    name[Group1]="Spanish (dead tilde)";
+    name[Group1]="Spanish (dead tilde on key 4)";
 
     key <AE04>	{ [         4,     dollar,   dead_tilde,       dollar ]	};
+    key <AC10>	{ [    ntilde, Ntilde,   asciitilde, dead_doubleacute ]	};
 };
 
 partial alphanumeric_keys
