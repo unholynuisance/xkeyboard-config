@@ -29,6 +29,8 @@ xkb_symbols "basic" {
     key <AC10>	{ [    ograve,   ccedilla,           at, dead_cedilla ] };
     key <AC11>	{ [    agrave,     degree,   numbersign, dead_abovering ] };
 
+    key <AB01>	{ [         z,          Z, guillemotleft,        less ]	};
+    key <AB02>	{ [         x,          X, guillemotright,    greater ]	};
     key <AB04>	{ [         v,          V, leftdoublequotemark, leftsinglequotemark ]	};
     key <AB05>	{ [         b,          B, rightdoublequotemark, rightsinglequotemark ] };
     key <AB06>	{ [         n,          N,       ntilde,       Ntilde ]	};
