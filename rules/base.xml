@@ -2728,6 +2728,55 @@
             <name>zawgyi</name>
             <shortDescription>zg</shortDescription>
             <description>Burmese Zawgyi</description>
+            <languageList>
+              <iso639Id>mya</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <!-- Keyboard Layout for Shan -->
+        <variant>
+          <configItem>
+            <name>shn</name>
+            <shortDescription>shn</shortDescription>
+            <description>Shan</description>
+            <languageList>
+              <iso639Id>shn</iso639Id>
+              <iso639Id>eng</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>zgt</name>
+            <shortDescription>zgt</shortDescription>
+            <description>Shan (Zawgyi Tai)</description>
+            <languageList>
+              <iso639Id>shn</iso639Id>
+              <iso639Id>eng</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <!-- Keyboard Layout for Mon -->
+        <variant>
+          <configItem>
+            <name>mnw</name>
+            <shortDescription>mon</shortDescription>
+            <description>Mon</description>
+            <languageList>
+              <iso639Id>mnw</iso639Id>
+              <iso639Id>eng</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>mnw-a1</name>
+            <shortDescription>mon-a1</shortDescription>
+            <description>Mon (A1)</description>
+            <languageList>
+              <iso639Id>mnw</iso639Id>
+              <iso639Id>eng</iso639Id>
+            </languageList>
           </configItem>
         </variant>
       </variantList>
