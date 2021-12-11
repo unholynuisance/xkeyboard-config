@@ -213,7 +213,7 @@ xkb_symbols "uz" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "olpc-ps" {
+xkb_symbols "ps-olpc" {
 
    name[Group1]= "Pashto (Afghanistan, OLPC)";
 
@@ -276,7 +276,7 @@ xkb_symbols "olpc-ps" {
 partial alphanumeric_keys
 xkb_symbols "fa-olpc" {
 
-   name[Group1]= "Persian (Afghanistan, Dari OLPC)";
+   name[Group1]= "Dari (Afghanistan, OLPC)";
 
    key <TLDE> { [ 0x100200D, division, asciitilde ] }; // zero width joiner
    key <AE01> { [ 0x10006F1, exclam, grave ] }; // Arabic one
