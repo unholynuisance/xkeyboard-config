@@ -1527,9 +1527,9 @@
     <layout>
       <configItem>
         <name>af</name>
-        <!-- Keyboard indicator for Afghani layouts -->
+        <!-- Keyboard indicator for Persian layouts -->
         <shortDescription>fa</shortDescription>
-        <description>Afghani</description>
+        <description>Dari</description>
       </configItem>
       <variantList>
         <variant>
