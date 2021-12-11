@@ -57,6 +57,23 @@ xkb_symbols "basic" {
 };
 
 
+// Turkish Q layout (swap i and ı)
+// Ali Riza KESKIN <parduscix@yandex.ru>, 2021
+// https://gitlab.com/sulincix
+partial
+xkb_symbols "us" {
+
+    include "tr(basic)"
+
+    name[Group1]="Turkish (Turkey, Latin Q, Swap i and ı)";
+    key <AC11>  { type[group1] = "FOUR_LEVEL_ALPHABETIC",
+                  [          i,         I,     paragraph,    VoidSymbol ] };
+    key <AD08>  { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC",
+                  [  idotless,  Iabovedot,    apostrophe,    dead_caron ] };
+    
+};
+
+
 // Turkish F layout
 partial
 xkb_symbols "f" {

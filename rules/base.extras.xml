@@ -1255,6 +1255,12 @@
             <description>Old Turkic</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem popularity="exotic">
+            <name>us</name>
+            <description>Turkish (swap i and ı)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
