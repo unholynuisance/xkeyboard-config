@@ -1527,9 +1527,9 @@
     <layout>
       <configItem>
         <name>af</name>
-        <!-- Keyboard indicator for Afghani layouts -->
+        <!-- Keyboard indicator for Persian layouts -->
         <shortDescription>fa</shortDescription>
-        <description>Afghani</description>
+        <description>Dari</description>
       </configItem>
       <variantList>
         <variant>
@@ -1556,7 +1556,7 @@
         </variant>
         <variant>
           <configItem>
-            <name>olpc-ps</name>
+            <name>ps-olpc</name>
             <!-- Keyboard indicator for Pashto layouts -->
             <shortDescription>ps</shortDescription>
             <description>Pashto (Afghanistan, OLPC)</description>
@@ -1570,7 +1570,7 @@
             <name>fa-olpc</name>
             <!-- Keyboard indicator for Persian layouts -->
             <shortDescription>fa</shortDescription>
-            <description>Persian (Afghanistan, Dari OLPC)</description>
+            <description>Dari (Afghanistan, OLPC)</description>
           </configItem>
         </variant>
         <variant>
