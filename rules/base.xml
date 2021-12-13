@@ -5518,39 +5518,6 @@
         </variant>
         <variant>
           <configItem>
-            <name>crh</name>
-            <!-- Keyboard indicator for Crimean Tatar layouts -->
-            <shortDescription>crh</shortDescription>
-            <description>Crimean Tatar (Turkish Q)</description>
-            <languageList>
-              <iso639Id>crh</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>crh_f</name>
-            <!-- Keyboard indicator for Crimean Tatar layouts -->
-            <shortDescription>crh</shortDescription>
-            <description>Crimean Tatar (Turkish F)</description>
-            <languageList>
-              <iso639Id>crh</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>crh_alt</name>
-            <!-- Keyboard indicator for Crimean Tatar layouts -->
-            <shortDescription>crh</shortDescription>
-            <description>Crimean Tatar (Turkish Alt-Q)</description>
-            <languageList>
-              <iso639Id>crh</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>ot</name>
             <description>Ottoman</description>
           </configItem>
@@ -5680,6 +5647,39 @@
           <configItem>
             <name>homophonic</name>
             <description>Ukrainian (homophonic)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>crh</name>
+            <!-- Keyboard indicator for Crimean Tatar layouts -->
+            <shortDescription>crh</shortDescription>
+            <description>Crimean Tatar (Turkish Q)</description>
+            <languageList>
+              <iso639Id>crh</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>crh_f</name>
+            <!-- Keyboard indicator for Crimean Tatar layouts -->
+            <shortDescription>crh</shortDescription>
+            <description>Crimean Tatar (Turkish F)</description>
+            <languageList>
+              <iso639Id>crh</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>crh_alt</name>
+            <!-- Keyboard indicator for Crimean Tatar layouts -->
+            <shortDescription>crh</shortDescription>
+            <description>Crimean Tatar (Turkish Alt-Q)</description>
+            <languageList>
+              <iso639Id>crh</iso639Id>
+            </languageList>
           </configItem>
         </variant>
       </variantList>
