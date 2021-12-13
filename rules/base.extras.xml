@@ -1258,7 +1258,7 @@
         <variant>
           <configItem popularity="exotic">
             <name>us</name>
-            <description>Turkish (swap i and ı)</description>
+            <description>Turkish (Turkey, Latin Q, Swap i and ı)</description>
           </configItem>
         </variant>
       </variantList>

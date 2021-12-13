@@ -429,9 +429,9 @@ xkb_symbols "otkf" {
 };
 
 // Ottoman turkish layout
-partial default alphanumeric_keys
+partial alphanumeric_keys
 xkb_symbols "ot" {
-    name[Group1]= "Ottoman Q";
+    name[Group1]= "Ottoman (Q)";
 
 
     key <AE01> { [ 0x10006f1,	exclam,		quoteleft		] };
@@ -493,9 +493,9 @@ xkb_symbols "ot" {
 };
 
 // Ottoman turkish F layout
-partial default alphanumeric_keys
+partial alphanumeric_keys
 xkb_symbols "otf" {
-    name[Group1]= "Ottoman F";
+    name[Group1]= "Ottoman (F)";
 
 
     key <AE01> { [ 0x10006f1,	exclam,		quoteleft		] };
