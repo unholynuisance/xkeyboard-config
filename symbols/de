@@ -631,7 +631,7 @@ xkb_symbols "dsb"
 partial alphanumeric_keys
 xkb_symbols "dsb_qwertz"
 {
-	include "latin(basic)"
+	include "de(basic)"
 	name[Group1] = "Lower Sorbian (QWERTZ)";
 	key <AB01> { [              y,              Y                                 ] };
 	key <AB02> { [              x,              X                                 ] };
