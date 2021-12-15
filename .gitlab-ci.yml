@@ -44,7 +44,7 @@ container-prep:
   variables:
     GIT_STRATEGY: none
     # minimal set of packages required to build xkeyboard-config.
-    BASE_PACKAGES: 'xorg-util-macros autoconf automake make gettext pkg-config gcc grep m4 python meson ninja git'
+    BASE_PACKAGES: 'xorg-util-macros autoconf automake make gettext pkg-config gcc grep m4 python meson ninja git libxslt'
     # extra packages we need for various tests
     EXTRA_PACKAGES: 'tree libxml2 bison xorg-xkbcomp python-pytest python-libevdev python-yaml yq libxkbcommon'
     FDO_DISTRIBUTION_PACKAGES: $BASE_PACKAGES $EXTRA_PACKAGES
