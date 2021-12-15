@@ -8,25 +8,26 @@
 
 cd $(dirname $0)
 ROOT=".."
-F1=reg2ll.lst
-F2=gn2ll.lst
-F1b=${F1}base
-F1e=${F1}extras
 
-xsltproc reg2ll.xsl $ROOT/rules/base.xml > $F1b
-xsltproc reg2ll.xsl $ROOT/rules/base.extras.xml | \
-  grep -v "sun_type" > $F1e
+# temporary files
+registry_names=reg_names.lst
+group_names=grp_names.lst
+registry_names_base=${registry_names}.base
+registry_names_extras=${registry_names}.extras
 
-cat $F1b $F1e | \
+xsltproc reg2ll.xsl $ROOT/rules/base.xml        > $registry_names_base
+xsltproc reg2ll.xsl $ROOT/rules/base.extras.xml | grep -v sun_type > $registry_names_extras
+
+cat $registry_names_base $registry_names_extras | \
   sort | \
   uniq | \
   grep -v -e '^$' \
-          -e '^custom:' > $F1
-rm -f $F1e $F1e
+          -e '^custom:' > $registry_names
+rm -f $registry_names_base $registry_names_extras
 
-for i in $ROOT/symbols/*; do
-  if [ -f $i ]; then
-    id="`basename $i`"
+for sym in $ROOT/symbols/*; do
+  if [ -f $sym ]; then
+    id="`basename $sym`"
     export id
     gawk 'BEGIN{
   FS = "\"";
@@ -66,12 +67,17 @@ for i in $ROOT/symbols/*; do
       printf "%s(%s):\"%s\"\n", id, variant, name;
     }
   }
-}' $i
+}' $sym
   fi
-done | sort | uniq > $F2
+done | sort | uniq > $group_names
 
-diff -u $F1 $F2
+diff -u $registry_names $group_names
 rc=$?
 
-echo "Legend: '-' is for rules/base.*xml.in, '+' is for symbols/*"
+if [ $rc != 0 ] ; then
+  echo "Legend: '-' is for rules/base.*xml.in, '+' is for symbols/*"
+fi
+
+rm -f $registry_names $group_names
+
 exit $rc
