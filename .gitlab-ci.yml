@@ -210,6 +210,15 @@ xmllint:
     - xmllint --dtdvalid "$INSTDIR/share/X11/xkb/rules/xkb.dtd" $INSTDIR/share/X11/xkb/rules/*.xml > /dev/null
 
 
+match group names to registry:
+  extends:
+    - .default_setup
+  needs: ['container-prep']
+  stage: test
+  script:
+    - "./tests/genLists4Comparizon.sh"
+
+
 # libxkbcommon's xkbcli list prints out YAML-like format, if yq cannot parse it, our
 # evdev.xml file is off
 xkbcli list check:
