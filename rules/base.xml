@@ -5836,20 +5836,6 @@
     </layout>
     <layout>
       <configItem>
-        <name>nec_vndr/jp</name>
-        <!-- Keyboard indicator for Japaneses -->
-        <shortDescription>ja</shortDescription>
-        <description>Japanese (PC-98)</description>
-        <countryList>
-          <iso3166Id>JP</iso3166Id>
-        </countryList>
-        <languageList>
-          <iso639Id>jpn</iso639Id>
-        </languageList>
-      </configItem>
-    </layout>
-    <layout>
-      <configItem>
         <name>ie</name>
         <!-- Keyboard indicator for Irish layouts -->
         <shortDescription>ie</shortDescription>

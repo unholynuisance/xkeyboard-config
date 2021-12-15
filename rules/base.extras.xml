@@ -839,7 +839,7 @@
 	<variant>
           <configItem popularity="exotic">
             <name>ergoarabic</name>
-            <description>Arabic (Ergoarabic)</description>
+            <description>Arabic (ErgoArabic)</description>
           </configItem>
 	</variant>
       </variantList>
