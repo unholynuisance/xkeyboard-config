@@ -6,7 +6,8 @@
 # extra escaping character) - but all the rest should be in sync.
 #
 
-ROOT="`dirname $0`/.."
+cd $(dirname $0)
+ROOT=".."
 F1=reg2ll.lst
 F2=gn2ll.lst
 F1b=${F1}base
