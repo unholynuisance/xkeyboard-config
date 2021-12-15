@@ -143,6 +143,8 @@ xkb_symbols "mac" {
 partial alphanumeric_keys
 xkb_symbols "olpc" {
 
+    // #HW-SPECIFIC
+
     // http://wiki.laptop.org/go/OLPC_Spanish_Keyboard
 
     include "us(basic)"
@@ -180,6 +182,8 @@ xkb_symbols "olpc" {
 
 partial alphanumeric_keys
 xkb_symbols "olpcm" {
+
+    // #HW-SPECIFIC
 
     // Mechanical (non-membrane) OLPC Spanish keyboard layout.
     // See: http://wiki.laptop.org/go/OLPC_Spanish_Non-membrane_Keyboard
@@ -231,12 +235,13 @@ xkb_symbols "deadtilde" {
 
 partial alphanumeric_keys
 xkb_symbols "olpc2" {
+    // #HW-SPECIFIC
 
     // Modified variant of US International layout, specifically for Peru
     // Contact: Sayamindu Dasgupta <sayamindu@laptop.org>
 
     include "us(olpc)"
-    name[Group1]="Spanish (OLPC2)";
+    name[Group1]="Spanish";
 
     key <AE03> { [  3, numbersign,   dead_grave,  dead_grave] }; // combining grave
     key <I236>  { [ XF86Start ] };

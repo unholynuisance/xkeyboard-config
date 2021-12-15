@@ -16,7 +16,11 @@ xsltproc reg2ll.xsl $ROOT/rules/base.xml > $F1b
 xsltproc reg2ll.xsl $ROOT/rules/base.extras.xml | \
   grep -v "sun_type" > $F1e
 
-cat $F1b $F1e | sort | uniq > $F1
+cat $F1b $F1e | \
+  sort | \
+  uniq | \
+  grep -v -e '^$' \
+          -e '^custom:' > $F1
 rm -f $F1e $F1e
 
 for i in $ROOT/symbols/*; do
@@ -27,6 +31,14 @@ for i in $ROOT/symbols/*; do
   FS = "\"";
   id = ENVIRON["id"];
   isDefault = 0;
+  isHwSpecificDefault = 0;
+  isUnregistered = 0;
+}
+/#HW-SPECIFIC/{
+  isHwSpecificDefault = 1;
+}
+/#UNREGISTERED/{
+  isUnregistered = 1;
 }
 /^[[:space:]]*\/\//{
   next 
@@ -37,22 +49,28 @@ for i in $ROOT/symbols/*; do
 /xkb_symbols/{
   variant = $2;
 }/^[[:space:]]*name\[Group1\][[:space:]]*=/{
-  if (isDefault == 1)
+  if (isUnregistered == 1) {
+    isUnregistered = 0;
+  } else if (isDefault == 1)
   {
     printf "%s:\"%s\"\n",id,$2;
     isDefault=0;
   } else
   {
     name=$2;
-    if (variant == "olpc" || variant == "olpcm" || variant == "classmate")
+    if (isHwSpecificDefault == 1) {
+      isHwSpecificDefault = 0;
       printf "%s:\"%s\"\n", id, name;
-    else
+    } else {
       printf "%s(%s):\"%s\"\n", id, variant, name;
+    }
   }
 }' $i
   fi
 done | sort | uniq > $F2
 
 diff -u $F1 $F2
+rc=$?
 
-echo "Legend: < is for rules/base.*xml.in, > is for symbols/*"
+echo "Legend: '-' is for rules/base.*xml.in, '+' is for symbols/*"
+exit $rc
