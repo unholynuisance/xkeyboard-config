@@ -26,7 +26,7 @@ variables:
 
   # Changing the tag will rebuild the container images. The value is just a
   # string, but we use the date for human benefits.
-  FDO_DISTRIBUTION_TAG: '2021-10-26.1'
+  FDO_DISTRIBUTION_TAG: '2021-12-15.0'
 
 
 stages:
