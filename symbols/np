@@ -14,8 +14,8 @@ xkb_symbols "basic" {
       key <AE06> { [      0x100096C, asciicircum	]	};
       key <AE07> { [      0x100096D, ampersand		]	};
       key <AE08> { [      0x100096e, asterisk		]	};
-      key <AE09> { [      0x100096F	 		]	};
-      key <AE10> { [      0x1000966,0x1000970		]	};
+      key <AE09> { [      0x100096F, parenleft		]	};
+      key <AE10> { [      0x1000966, parenright		]	};
       key <AE11> { [      minus, 0x1000952 		]	};
       key <AE12> { [      0x100200D, 0x100200C		]	};
 
@@ -43,7 +43,7 @@ xkb_symbols "basic" {
       key <AC06> { [      0x1000939,  0x1000905 	]	};
       key <AC07> { [      0x100091C,  0x100091D 	]	};
       key <AC08> { [      0x1000915,  0x1000916 	]	};
-      key <AC09> { [      0x1000932,  0x1000933 	]	};
+      key <AC09> { [      0x1000932,  0x1000965 	]	};
       key <AC10> { [      semicolon,  colon 		]	};
       key <AC11> { [      apostrophe, quotedbl		]	};
       key <BKSL> { [      0x1000950,  0x1000903 	]	};
@@ -58,7 +58,7 @@ xkb_symbols "basic" {
       key <AB06> { [      0x1000928,  0x1000923         ]       };
       key <AB07> { [      0x100092E,  0x1000902         ]       };
       key <AB08> { [      comma,      0x1000919         ]       };
-      key <AB09> { [      0x1000964,  0x1000965		]       };
+      key <AB09> { [      0x1000964,  period		]       };
       key <AB10> { [      0x100094D,  question		]       };
 };
 
