@@ -665,7 +665,7 @@ xkb_symbols "qwerty" {
     name[Group1] = "German (QWERTY)";
 
     key <AB01>	{ [         z,          Z,     leftarrow,         yen ]	};
-    key <AD06>	{ [         y,          Y, guillemotleft,       U2039 ]	};
+    key <AD06>	{ [         y,          Y, guillemotleft,        less ]	};
 };
 
 // layout for Russian letters on an german keyboard
@@ -904,7 +904,7 @@ xkb_symbols "hu" {
     include "de(basic)"
     name[Group1]="German (with Hungarian letters, no dead keys)";
 
-    key <AB01> { [         y,          Y,        guillemotleft,        U2039 ] };
+    key <AB01> { [         y,          Y,        guillemotleft,         less ] };
     key <AC10> { [odiaeresis, Odiaeresis,               eacute,       Eacute ] };
     key <AC11> { [adiaeresis, Adiaeresis,               aacute,        Aacute] };
     key <AD03> { [         e,          E,             EuroSign,     EuroSign ] };
