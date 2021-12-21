@@ -19,6 +19,7 @@ xkb_symbols "basic" {
     key <AE11>	{ [odiaeresis, Odiaeresis,    backslash, questiondown ]	};
     key <AE12>	{ [     minus, underscore, dead_cedilla,  dead_ogonek ]	};
 
+    key <AD10>	{ [        p,           P,          bar,     Greek_pi ] };
     key <AD11>	{ [       eth,        ETH, dead_diaeresis, dead_abovering ] };
     key <AD12>	{ [apostrophe,   question,   asciitilde,  dead_macron ]	};
 
