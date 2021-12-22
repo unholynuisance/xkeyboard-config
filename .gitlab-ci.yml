@@ -169,7 +169,7 @@ match group names to registry:
   needs: ['container-prep']
   stage: test
   script:
-    - "./tests/genLists4Comparizon.sh"
+    - "./tests/genLists4Comparison.sh"
 
 
 # libxkbcommon's xkbcli list prints out YAML-like format, if yq cannot parse it, our
