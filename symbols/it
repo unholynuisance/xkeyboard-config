@@ -293,6 +293,7 @@ partial alphanumeric_keys
     key <AD11>	{ [    egrave,     eacute,  bracketleft,    braceleft ]	};
     key <AD12>	{ [      plus,   asterisk, bracketright,   braceright ]	};
     key <AC01>  { [         a,          A,  acircumflex,  Acircumflex ] };
+    key <AC03> { [      d,           D,       U1D48    ] };
     key <AC04>  { [         f,          F,        U1DA0,        U00AA ] };
     key <AC10>	{ [    ograve,   ccedilla,           at, dead_cedilla ] };
     key <AC11>	{ [    agrave,     degree,   numbersign, dead_abovering ] };
