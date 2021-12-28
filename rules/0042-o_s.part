@@ -75,6 +75,7 @@
   caps:swapescape	=	+capslock(swapescape)
   caps:escape		=	+capslock(escape)
   caps:escape_shifted_capslock	=	+capslock(escape_shifted_capslock)
+  caps:escape_shifted_compose	=	+capslock(escape_shifted_compose)
   caps:backspace	=	+capslock(backspace)
   caps:super		=	+capslock(super)
   caps:hyper		=	+capslock(hyper)

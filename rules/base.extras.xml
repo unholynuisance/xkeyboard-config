@@ -1437,6 +1437,21 @@
         </configItem>
       </option>
     </group>
+    <group allowMultipleSelection="false">
+      <!-- Caps Lock tweaks.
+           "Internal" capitalization means capitalization using some internal tables.
+           Otherwise "as Shift" - means using next group. -->
+      <configItem popularity="exotic">
+        <name>caps</name>
+        <description>Caps Lock behavior</description>
+      </configItem>
+      <option>
+        <configItem popularity="exotic">
+          <name>caps:escape_shifted_compose</name>
+          <description>Make Caps Lock an additional Esc, and Shift + Caps Lock is the Compose</description>
+        </configItem>
+      </option>
+    </group>
     <group allowMultipleSelection="true">
       <!-- Tweaking the position of the "(" and ")" keys -->
       <configItem popularity="exotic">
