@@ -6964,6 +6964,12 @@
       </option>
       <option>
         <configItem>
+          <name>grp:ralt_rshift_toggle</name>
+          <description>Right Alt+Right Shift</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>grp:alt_space_toggle</name>
           <description>Alt+Space</description>
         </configItem>
