@@ -5747,6 +5747,12 @@
         </variant>
         <variant>
           <configItem>
+            <name>e</name>
+            <description>Turkish (E)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>alt</name>
             <description>Turkish (Alt-Q)</description>
           </configItem>
