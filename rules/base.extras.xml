@@ -402,10 +402,10 @@
             <description>Czech, Slovak, Polish, Spanish, Finnish, Swedish and German (US)</description>
             <languageList>
               <iso639Id>eng</iso639Id>
-              <iso639Id>cze</iso639Id>
-              <iso639Id>slo</iso639Id>
+              <iso639Id>ces</iso639Id>
+              <iso639Id>slk</iso639Id>
               <iso639Id>pol</iso639Id>
-              <iso639Id>ger</iso639Id>
+              <iso639Id>deu</iso639Id>
               <iso639Id>spa</iso639Id>
               <iso639Id>fin</iso639Id>
               <iso639Id>swe</iso639Id>
