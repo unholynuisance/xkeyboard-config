@@ -1536,6 +1536,9 @@
         <countryList>
           <iso3166Id>AF</iso3166Id>
         </countryList>
+        <languageList>
+          <iso639Id>drs</iso639Id>
+        </languageList>
       </configItem>
       <variantList>
         <variant>
@@ -1933,6 +1936,62 @@
         <countryList>
           <iso3166Id>IN</iso3166Id>
         </countryList>
+        <!-- from https://github.com/unicode-org/cldr/blob/main/common/supplemental/supplementalData.xml scripts="Deva" -->
+        <languageList>
+          <iso639Id>hin</iso639Id>
+          <iso639Id>anp</iso639Id>
+          <iso639Id>awa</iso639Id>
+          <iso639Id>bap</iso639Id>
+          <iso639Id>bfy</iso639Id>
+          <iso639Id>bgc</iso639Id>
+          <iso639Id>bhb</iso639Id>
+          <iso639Id>bhi</iso639Id>
+          <iso639Id>bho</iso639Id>
+          <iso639Id>bjj</iso639Id>
+          <iso639Id>bra</iso639Id>
+          <iso639Id>brx</iso639Id>
+          <iso639Id>btv</iso639Id>
+          <iso639Id>doi</iso639Id>
+          <iso639Id>dty</iso639Id>
+          <iso639Id>gbm</iso639Id>
+          <iso639Id>gom</iso639Id>
+          <iso639Id>gvr</iso639Id>
+          <iso639Id>hne</iso639Id>
+          <iso639Id>hoc</iso639Id>
+          <iso639Id>hoj</iso639Id>
+          <iso639Id>jml</iso639Id>
+          <iso639Id>kfr</iso639Id>
+          <iso639Id>kfy</iso639Id>
+          <iso639Id>khn</iso639Id>
+          <iso639Id>kok</iso639Id>
+          <iso639Id>kru</iso639Id>
+          <iso639Id>mag</iso639Id>
+          <iso639Id>mai</iso639Id>
+          <iso639Id>mar</iso639Id>
+          <iso639Id>mgp</iso639Id>
+          <iso639Id>mrd</iso639Id>
+          <iso639Id>mtr</iso639Id>
+          <iso639Id>mwr</iso639Id>
+          <iso639Id>nep</iso639Id>
+          <iso639Id>new</iso639Id>
+          <iso639Id>noe</iso639Id>
+          <iso639Id>raj</iso639Id>
+          <iso639Id>rjs</iso639Id>
+          <iso639Id>sck</iso639Id>
+          <iso639Id>srx</iso639Id>
+          <iso639Id>swv</iso639Id>
+          <iso639Id>taj</iso639Id>
+          <iso639Id>tdg</iso639Id>
+          <iso639Id>tdh</iso639Id>
+          <iso639Id>thl</iso639Id>
+          <iso639Id>thq</iso639Id>
+          <iso639Id>thr</iso639Id>
+          <iso639Id>tkt</iso639Id>
+          <iso639Id>wbr</iso639Id>
+          <iso639Id>wtm</iso639Id>
+          <iso639Id>xnr</iso639Id>
+          <iso639Id>xsr</iso639Id>
+        </languageList>
       </configItem>
       <variantList>
         <variant>
@@ -2497,6 +2556,10 @@
         <countryList>
           <iso3166Id>DZ</iso3166Id>
         </countryList>
+        <languageList>
+          <iso639Id>tzm</iso639Id>
+          <iso639Id>fra</iso639Id>
+        </languageList>
       </configItem>
       <variantList>
         <variant>
@@ -2560,6 +2623,9 @@
         <countryList>
           <iso3166Id>MA</iso3166Id>
         </countryList>
+        <languageList>
+          <iso639Id>ary</iso639Id>
+        </languageList>
       </configItem>
       <variantList>
         <variant>
@@ -3690,6 +3756,7 @@
     <layout>
       <configItem>
         <name>gn</name>
+        <shortDescription>nqo</shortDescription>
         <description>N'Ko (AZERTY)</description>
         <countryList>
           <iso3166Id>GN</iso3166Id>
