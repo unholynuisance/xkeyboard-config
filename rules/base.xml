@@ -7000,6 +7000,12 @@
       </option>
       <option>
         <configItem>
+          <name>grp:ctrl_space_toggle</name>
+          <description>Ctrl+Space</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>grp:rwin_toggle</name>
           <description>Right Win</description>
         </configItem>
