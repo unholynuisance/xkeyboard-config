@@ -269,7 +269,7 @@ xkb_symbols "ben_probhat" {
    key <AD01> { [   U09A6,  U09A7  ] };
    key <AD02> { [   U09C2,  U098A  ] };
    key <AD03> { [   U09C0,  U0988  ] };
-   key <AD04> { [   U09B0,  U09DC  ] };
+   key <AD04> { [   U09B0,  U09DC, U20B9 ] }; // Rupee
    key <AD05> { [   U099F,  U09A0  ] };
    key <AD06> { [   U098F,  U0990  ] };
    key <AD07> { [   U09C1,  U0989  ] };
@@ -316,7 +316,6 @@ xkb_symbols "ben_probhat" {
 //   modifier_map Control{ Control_L };
 
     include "level3(ralt_switch)"
-    include "rupeesign(4)"
 };
 
 // Bangla Baishakhi, Bangla Baishakhi InScript, Bangla Bornona, Uni Gitanjali Layouts are added by Promathesh Mandal <promathesh812004@gmail.com>
@@ -926,7 +925,7 @@ xkb_symbols "olck" {
     key <AE01> { [  U1C51, exclam		] };
     key <AE02> { [  U1C52, at			] };
     key <AE03> { [  U1C53, numbersign		] };
-    key <AE04> { [  U1C54, dollar, U20B9	] };
+    key <AE04> { [  U1C54, dollar, U20B9	] }; // Rupee
     key <AE05> { [  U1C55, percent		] };
     key <AE06> { [  U1C56, asciicircum		] };
     key <AE07> { [  U1C57, ampersand		] };
@@ -1855,7 +1854,7 @@ xkb_symbols "hin-wx" {
       key <AE01> {	 [      0x1000967, exclam 		]	};
       key <AE02> {	 [      0x1000968, at 		]	};
       key <AE03> {	 [      0x1000969 , numbersign	 		]	};
-      key <AE04> {	 [      0x100096A , dollar		]	};
+      key <AE04> {	 [      0x100096A , dollar, U20B9		]	}; // Rupee
       key <AE05> {	 [      0x100096B , percent 	 		]	};
       key <AE06> {	 [      0x100096C , asciicircum	 		]	};
       key <AE07> {	 [      0x100096D , ampersand                       ]	};
@@ -1908,7 +1907,6 @@ xkb_symbols "hin-wx" {
       key <AB10> {       [      slash,      question        ]       };
 
     include "level3(ralt_switch)"
-    include "rupeesign(4)"
 };
 
 partial alphanumeric_keys
