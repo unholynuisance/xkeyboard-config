@@ -165,11 +165,6 @@ xkb_symbols "bolnagri" {
     key <AB09>   { [   period,   U093C 	 ] };  // period: period, nukta
     key <AB10>	 { [   slash,   question ] };
 
-//    modifier_map Shift  { Shift_L };
-//    modifier_map Lock   { Caps_Lock };
-//    modifier_map Control{ Control_L };
-//    modifier_map Mod3   { Mode_switch };
-
     include "level3(ralt_switch)"
 };
 
@@ -246,8 +241,6 @@ xkb_symbols "ben_probhat" {
  name[Group1]= "Bangla (India, Probhat)";
    key.type[group1]="FOUR_LEVEL";
 
-   key <ESC>  { [ Escape ] };
-
 // numbers
    key <TLDE> { [ U200D, asciitilde   ] };
    key <AE01> { [ U09E7, exclam, U09F4 ] };
@@ -262,10 +255,8 @@ xkb_symbols "ben_probhat" {
    key <AE10> { [ U09E6, parenright, U09F8, U09F9 ] };
    key <AE11> { [ minus,     underscore   ] };
    key <AE12> { [ equal,     plus         ] };
-   key <BKSP> { [ BackSpace               ] };
 
 // tab, q to ] 
-   key <TAB>  { [   Tab,  ISO_Left_Tab     ] };
    key <AD01> { [   U09A6,  U09A7  ] };
    key <AD02> { [   U09C2,  U098A  ] };
    key <AD03> { [   U09C0,  U0988  ] };
@@ -278,10 +269,8 @@ xkb_symbols "ben_probhat" {
    key <AD10> { [   U09AA,  U09AB  ] };
    key <AD11> { [   U09C7,  U09C8  ] };
    key <AD12> { [   U09CB,  U09CC, U09D7 ] };
-   key <RTRN> { [   Return                 ] };
 
 // caps, a to ' 
-//   key <CAPS> { [   Caps_Lock              ] };
    key <AC01> { [   U09BE,  U0985, U098C, U09E0 ] };
    key <AC02> { [   U09B8,  U09B7, U09E1, U09E3 ] };
    key <AC03> { [   U09A1,  U09A2, U09C4, U09E2 ] };
@@ -295,7 +284,6 @@ xkb_symbols "ben_probhat" {
    key <AC11> { [   apostrophe, quotedbl   ] };
 
 // shift, z to /
-//   key <LFSH> { [   Shift_L                ] };
    key <AB01> { [   U09DF,  U09AF  ] };
    key <AB02> { [   U09B6,  U09DD  ] };
    key <AB03> { [   U099A,  U099B  ] };
@@ -308,13 +296,6 @@ xkb_symbols "ben_probhat" {
    key <AB10> { [   U09CD,  question   ] };
    key <BKSL> { [   U200C,  U0965  ] };
 
-//   key <LCTL> { [   Control_L              ] };
-//   key <SPCE> { [   space                  ] };
-
-//   modifier_map Shift  { Shift_L };
-//   modifier_map Lock   { Caps_Lock };
-//   modifier_map Control{ Control_L };
-
     include "level3(ralt_switch)"
 };
 
@@ -322,7 +303,6 @@ xkb_symbols "ben_probhat" {
 
 xkb_symbols "ben_baishakhi" {
  name[Group1]= "Bangla (India, Baishakhi)";
-   key <ESC>   { [ Escape 					] };
 
 // numbers
    key <TLDE> { [ 0x100200D, 0x100200C	] };
@@ -338,10 +318,8 @@ xkb_symbols "ben_baishakhi" {
    key <AE10> { [ 0x10009E6, parenright   	] };
    key <AE11> { [ minus, underscore   	] };
    key <AE12> { [ equal,     plus 	] };
-   key <BKSP> { [ BackSpace               		] };
 
 // tab, q to ] 
-   key <TAB>   { [   Tab,  ISO_Left_Tab		] };
    key <AD01> { [   0x10009A1,  0x10009A2  ] };
    key <AD02> { [  0x10009C0 ,  0x10009C2  ] };
    key <AD03> { [   0x10009C7,  0x100098F, 0x1000990 ] };
@@ -354,10 +332,8 @@ xkb_symbols "ben_baishakhi" {
    key <AD10> { [   0x10009AA,  0x10009AB	] };
    key <AD11> { [   bracketleft,  braceleft] };
    key <AD12> { [   bracketright,	braceright	] };
-   key <RTRN> { [   Return                 		] };
 
 // caps, a to ' 
-// key <CAPS> { [   Caps_Lock            		] };
    key <AC01> { [   0x10009BE,  0x1000985, 0x1000986  ] };
    key <AC02> { [   0x10009B8,  0x10009B6,  0x10009B7  ] };
    key <AC03> { [   0x10009A6,  0x10009A7  ] };
@@ -371,7 +347,6 @@ xkb_symbols "ben_baishakhi" {
    key <AC11> { [   apostrophe, quotedbl   	] };
 
 // shift, z to /
-// key <LFSH> { [   Shift_L              			] };
    key <AB01> { [   0x10009C8, 0x10009CC              		] };
    key <AB02> { [   0x10009DC, 0x10009DD              		] };
    key <AB03> { [   0x100099A,  0x100099B  ] };
@@ -384,15 +359,7 @@ xkb_symbols "ben_baishakhi" {
    key <AB10> { [   slash,  question, 0x1000982   	] };
    key <BKSL> { [   backslash,        bar	] };
 
-// third level with right-alt
     include "level3(ralt_switch)"
-
-//   key <LCTL> { [   Control_L              ] };
-//   key <SPCE> { [   space                  ] };
-
-//   modifier_map Shift  { Shift_L };
-//   modifier_map Lock   { Caps_Lock };
-//   modifier_map Control{ Control_L };
 };
 
 xkb_symbols "ben_inscript" {
@@ -463,7 +430,6 @@ xkb_symbols "ben_inscript" {
 
 xkb_symbols "ben_gitanjali" {
  name[Group1]= "Bangla (India, Gitanjali)";
-   key <ESC>   { [ Escape			] };
 
 // numbers
    key <TLDE> { [ colon, question	] };
@@ -479,10 +445,8 @@ xkb_symbols "ben_gitanjali" {
    key <AE10> { [ 0x10009E6, parenright	] };
    key <AE11> { [ minus, 0x1000983   	] };
    key <AE12> { [ 0x10009C3, 0x100098B 	] };
-   key <BKSP> { [ BackSpace		] };
 
 // tab, q to ] 
-   key <TAB>   { [   Tab,  ISO_Left_Tab	] };
    key <AD01> { [   0x10009D7,  0x1000994 ] };
    key <AD02> { [   0x10009C8,  0x1000990 ] };
    key <AD03> { [   0x10009BE,  0x1000985 ] };
@@ -495,7 +459,6 @@ xkb_symbols "ben_gitanjali" {
    key <AD10> { [   0x100099C,  0x100099D ] };
    key <AD11> { [   0x10009A1,  0x10009A2 ] };
    key <AD12> { [   0x100200C,  0x100099E ] };
-   key <RTRN> { [   Return		  ] };
 
 // caps, a to ' 
 // key <CAPS> { [   Caps_Lock            		] };
@@ -512,7 +475,6 @@ xkb_symbols "ben_gitanjali" {
    key <AC11> { [   0x100099F,  0x10009A0 ] };
 
 // shift, z to /
-// key <LFSH> { [   Shift_L              			] };
    key <AB01> { [   0x10009C7, 0x100098F ] };
    key <AB02> { [   0x1000982, 0x1000981 ] };
    key <AB03> { [   0x10009AE, 0x10009A3 ] };
@@ -524,22 +486,11 @@ xkb_symbols "ben_gitanjali" {
    key <AB09> { [   0x1000964, 0x10009FA ] };
    key <AB10> { [   0x10009AF, 0x10009DF ] };
    key <BKSL> { [   backslash, bar	 ] };
-
-// third level with right-win
-//    include "level3(lwin_switch)"
-
-//   key <LCTL> { [   Control_L              ] };
-//   key <SPCE> { [   space                  ] };
-
-//   modifier_map Shift  { Shift_L };
-//   modifier_map Lock   { Caps_Lock };
-//   modifier_map Control{ Control_L };
 };
 
 
 xkb_symbols "ben_bornona" {
  name[Group1]= "Bangla (India, Bornona)";
-   key <ESC>  { [ Escape 					] };
 
 // numbers
    key <TLDE> { [ 0x100200D, 0x100200C   	] };
@@ -555,10 +506,8 @@ xkb_symbols "ben_bornona" {
    key <AE10> { [ 0x10009E6, parenright	] };
    key <AE11> { [ minus,	   underscore	] };
    key <AE12> { [ equal,          plus			] };
-   key <BKSP> { [ BackSpace               		] };
 
 // tab, q to ] 
-   key <TAB>   { [   Tab,  	ISO_Left_Tab	] };
    key <AD01> { [   0x1000982,  0x1000999, 0x10009D7	] };
    key <AD02> { [   0x10009A2,  0x10009A0, 0x100098A ] };
    key <AD03> { [   0x10009C7,  0x10009C8, 0x1000988	] };
@@ -571,10 +520,8 @@ xkb_symbols "ben_bornona" {
    key <AD10> { [   0x10009AA, 0x1000990, 0x1000994		] };
    key <AD11> { [   0x100005B,  0x100007B, 0x10009DC  ] };
    key <AD12> { [   0x100005D,  0x100007D  ] };
-   key <RTRN> { [   Return					] };
 
 // caps, a to ' 
-// key <CAPS> { [   Caps_Lock            		] };
    key <AC01> { [   0x10009BE,  0x1000985, 0x10009F4  ] };
    key <AC02> { [   0x10009B8,  0x10009B6, 0x10009F5  ] };
    key <AC03> { [   0x10009A6,  0x10009A1, 0x10009F8  ] };
@@ -588,7 +535,6 @@ xkb_symbols "ben_bornona" {
    key <AC11> { [   apostrophe, quotedbl   	] };
 
 // shift, z to /
-// key <LFSH> { [   Shift_L              			] };
    key <AB01> { [   0x10009AF, 0x10009DC	] };
    key <AB02> { [   0x10009B7, 0x10009DD, 0x10009FA	] };
    key <AB03> { [   0x100099A,  0x100099B  ] };
@@ -601,13 +547,6 @@ xkb_symbols "ben_bornona" {
    key <AB10> { [   0x100002F,  question   	] };
    key <BKSL> { [   0x10009F1,  0x10009F0	] };
 
-//   key <LCTL> { [   Control_L              ] };
-//   key <SPCE> { [   space                  ] };
-
-//   modifier_map Shift  { Shift_L };
-//   modifier_map Lock   { Caps_Lock };
-//   modifier_map Control{ Control_L };
-// third level with right-alt
     include "level3(ralt_switch)"
 };
 
@@ -904,10 +843,6 @@ xkb_symbols "mal_lalitha" {
     key <AB09>   { [   period, 	 U003E ] };  // period: period
     key <AB10>	 { [   slash,   question ] };
 
-//    modifier_map Shift  { Shift_L };
-//    modifier_map Lock   { Caps_Lock };
-//    modifier_map Control{ Control_L };
-//    modifier_map Mod3   { Mode_switch };
     include "level3(ralt_switch)"
 };
 
@@ -981,12 +916,11 @@ xkb_symbols "olck" {
 };
 
 
+// Inscript layout for Oriya.
+// Author: G Karunakar <karunakar@freedomink.org>
+// Date: November 2002
 partial alphanumeric_keys
 xkb_symbols "ori" {
-    // InScript layout for Oriya  
-    // Author: G Karunakar <karunakar@freedomink.org>
-    // Date: Wed Nov 13 18:16:19 IST 2002
-
     name[Group1]= "Oriya";
 
     key <AE01> { [  U0b67			] };
@@ -1501,7 +1435,6 @@ xkb_symbols "tel" {
     key <AE10> { [  U0c66, parenright	] };
     key <AE11> { [  U0c03, underscore	] };
     key <AE12> { [  U0c43, U0c0b	] };
-    key <BKSP> { [  BackSpace			] };
 
     key <AD01> { [  U0c4c, U0c14	] };
     key <AD02> { [  U0c48, U0c10	] };
@@ -1772,10 +1705,6 @@ xkb_symbols "jhelum" {
      key <AB09>   { [   period,   U0A74 	 ] };  // period: period, nukta
      key <AB10>   { [   slash,   question ] };
 
-//    modifier_map Shift  { Shift_L };
-//    modifier_map Lock   { Caps_Lock };
-//    modifier_map Control{ Control_L };
-//    modifier_map Mod3   { Mode_switch };
     include "level3(ralt_switch)"
 };
 
@@ -2437,7 +2366,10 @@ xkb_symbols "marathi" {
 	key <AB09> { [ period, U0964, U0965, U093d ] };
 	key <AB10> { [ U092f, question, slash, question ] };
 };
+
+
 // EXTRAS:
+
 // Vedic and Miscellaneous symbols
 // This layout covers 'Extended Devanagari' and 'Vedic Extensions' Unicode blocks.
 // This is helpful for including all the required symbols when typing complex texts such as those from Samaveda and Yajurveda.
@@ -2507,6 +2439,7 @@ xkb_symbols "san-misc" {
     include "rupeesign(4)"
     include "level3(ralt_switch)"
 };
+
 //           Modi is an ancient Indian script that is used to write texts in Marathi, Hindi and Sanskrit. It is most commonly used to write Marathi language in Maharashtra.
 //           This keyboard layout is Based on Marathi KaGaPa phonetic layout. Just the characters which are not applicable in Modi, are ommited.
 //
