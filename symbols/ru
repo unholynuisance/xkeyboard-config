@@ -1110,7 +1110,8 @@ xkb_symbols "phonetic_mac" {
 // Russian engineering Cyrillic keyboard layout (Ручей)
 // Based on the Russian standard keyboard layout
 // Baryshkin Andrey <baryshkin_aa@codeblast.ru>
-// Last changes 2022/01/20
+// Last changes 2022/02/16
+// Version 1.2
 partial alphanumeric_keys
 xkb_symbols "ruchey_cyrillic" {
 
@@ -1118,12 +1119,12 @@ xkb_symbols "ruchey_cyrillic" {
 
     include "ru(common)"
 
-    key <TLDE> { [       Cyrillic_io,       Cyrillic_IO,          U20BD ] };
-    key <AE01> { [                 1,            exclam,     numerosign ] };
-    key <AE02> { [                 2,             grave,             at ] };
-    key <AE03> { [                 3,        apostrophe,     numbersign ] };
-    key <AE04> { [                 4,          quotedbl,         dollar ] };
-    key <AE05> { [                 5,         semicolon,        percent ] };
+    key <TLDE> { [       Cyrillic_io,       Cyrillic_IO,          U00A7 ] };
+    key <AE01> { [                 1,            exclam,          U20BD ] };
+    key <AE02> { [                 2,        apostrophe,             at ] };
+    key <AE03> { [                 3,        numerosign,     numbersign ] };
+    key <AE04> { [                 4,         semicolon,         dollar ] };
+    key <AE05> { [                 5,          quotedbl,        percent ] };
     key <AE06> { [                 6,             colon,    asciicircum ] };
     key <AE07> { [                 7,          question,      ampersand ] };
     key <AE08> { [                 8,          asterisk,     asciitilde ] };
@@ -1140,7 +1141,7 @@ xkb_symbols "ruchey_cyrillic" {
 
     key <AB08> { [       Cyrillic_be,       Cyrillic_BE,           less ] };
     key <AB09> { [       Cyrillic_yu,       Cyrillic_YU,        greater ] };
-    key <AB10> { [            period,             comma,     VoidSymbol ] };
+    key <AB10> { [            period,             comma,          grave ] };
 
     key <BKSL> { [             slash,         backslash,            bar ] };
     key <LSGT> { [             slash,         backslash,            bar ] };
@@ -1151,7 +1152,8 @@ xkb_symbols "ruchey_cyrillic" {
 // Russian engineering Latin keyboard layout (Ручей)
 // Based on the English standard keyboard layout
 // Baryshkin Andrey <baryshkin_aa@codeblast.ru>
-// Last changes 2022/01/20
+// Last changes 2022/02/16
+// Version 1.2
 partial alphanumeric_keys
 xkb_symbols "ruchey_latin" {
 
@@ -1159,12 +1161,12 @@ xkb_symbols "ruchey_latin" {
 
     include "us(basic)"
 
-    key <TLDE> { [ VoidSymbol,   VoidSymbol,          U20BD ] };
-    key <AE01> { [          1,       exclam,     numerosign ] };
-    key <AE02> { [          2,        grave,             at ] };
-    key <AE03> { [          3,   apostrophe,     numbersign ] };
-    key <AE04> { [          4,     quotedbl,         dollar ] };
-    key <AE05> { [          5,    semicolon,        percent ] };
+    key <TLDE> { [ VoidSymbol,   VoidSymbol,      	  U00A7 ] };
+    key <AE01> { [          1,       exclam,          U20BD ] };
+    key <AE02> { [          2,   apostrophe,             at ] };
+    key <AE03> { [          3,   numerosign,     numbersign ] };
+    key <AE04> { [          4,    semicolon,         dollar ] };
+    key <AE05> { [          5,     quotedbl,        percent ] };
     key <AE06> { [          6,        colon,    asciicircum ] };
     key <AE07> { [          7,     question,      ampersand ] };
     key <AE08> { [          8,     asterisk,     asciitilde ] };
@@ -1181,7 +1183,7 @@ xkb_symbols "ruchey_latin" {
 
     key <AB08> { [ VoidSymbol,   VoidSymbol,           less ] };
     key <AB09> { [ VoidSymbol,   VoidSymbol,        greater ] };
-    key <AB10> { [     period,        comma,     VoidSymbol ] };
+    key <AB10> { [     period,        comma,          grave ] };
 
     key <BKSL> { [      slash,    backslash,            bar ] };
     key <LSGT> { [      slash,    backslash,            bar ] };
