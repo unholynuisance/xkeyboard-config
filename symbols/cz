@@ -214,6 +214,33 @@ xkb_symbols "ucw" {
     key <AD10> { [odiaeresis,  Odiaeresis  ] };
 };
 
+partial alphanumeric_keys alternate_group
+xkb_symbols "colemak-ucw" {
+    
+    // US Colemak layout extended with UCW
+    // 2022 by Marek Maskarinec <marek@mrms.cz>
+
+    name[Group1]= "Czech (US, Colemak, UCW support)";
+
+    key <AB01> { [zcaron,      Zcaron      ] };
+    key <AB03> { [ccaron,      Ccaron      ] };
+    key <AB07> { [eacute,      Eacute      ] };
+
+    key <AC01> { [aacute,      Aacute      ] };
+    key <AC02> { [rcaron,      Rcaron      ] };
+    key <AC03> { [scaron,      Scaron      ] };
+    key <AC04> { [tcaron,      Tcaron      ] };
+    key <AC05> { [dcaron,      Dcaron      ] };
+    key <AC06> { [uacute,      Uacute      ] };
+    key <AC07> { [ncaron,      Ncaron      ] };
+    key <AC08> { [ecaron,      Ecaron      ] };
+    key <AC09> { [iacute,      Iacute      ] };
+    key <AC10> { [oacute,      Oacute      ] };
+
+    key <AD09> { [yacute,      Yacute      ] };
+    key <AD08> { [uring,       Uring       ] };
+};
+
 partial alphanumeric_keys
 xkb_symbols "dvorak-ucw" {
 

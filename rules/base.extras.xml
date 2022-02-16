@@ -1030,6 +1030,12 @@
             <description>Czech (programming, typographic)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem popularity="exotic">
+            <name>colemak-ucw</name>
+            <description>Czech (US, Colemak, UCW support)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
