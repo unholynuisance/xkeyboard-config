@@ -6109,12 +6109,18 @@
           <configItem>
             <name>us</name>
             <description>Vietnamese (US)</description>
+            <countryList>
+              <iso3166Id>US</iso3166Id>
+            </countryList>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>fr</name>
-            <description>Vietnamese (French)</description>
+            <description>Vietnamese (France)</description>
+            <countryList>
+              <iso3166Id>FR</iso3166Id>
+            </countryList>
           </configItem>
         </variant>
       </variantList>
