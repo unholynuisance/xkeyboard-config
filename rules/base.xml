@@ -1845,6 +1845,9 @@
           <configItem>
             <name>ru</name>
             <description>Russian (Belarus)</description>
+            <languageList>
+              <iso639Id>rus</iso639Id>
+            </languageList>
           </configItem>
         </variant>
         <variant>
@@ -3630,7 +3633,10 @@
         <variant>
           <configItem>
             <name>bre</name>
-            <description>French (Breton)</description>
+            <description>Breton (France)</description>
+            <languageList>
+              <iso639Id>bre</iso639Id>
+            </languageList>
           </configItem>
         </variant>
         <variant>
@@ -5927,6 +5933,9 @@
           <configItem>
             <name>rstu_ru</name>
             <description>Russian (Ukraine, standard RSTU)</description>
+            <languageList>
+              <iso639Id>rus</iso639Id>
+            </languageList>
           </configItem>
         </variant>
         <variant>

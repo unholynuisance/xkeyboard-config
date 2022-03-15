@@ -739,7 +739,7 @@ xkb_symbols "bre" {
 
     include "keypad(oss)"
 
-    name[Group1]= "French (Breton)";
+    name[Group1]= "Breton (France)";
 
     // First row
     key <TLDE> { [     twosuperior,     dead_tilde,   dead_abovedot,    Greek_GAMMA ] };
