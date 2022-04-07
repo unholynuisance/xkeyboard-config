@@ -149,7 +149,7 @@ default xkb_keycodes "evdev" {
 	//<HZTG> =  93;	// Hankaku/Zenkakau toggle - not actually used
 	alias <HZTG> = <TLDE>;
 	<HKTG> = 101;	// Hiragana/Katakana toggle
-	<AB11> = 97;	// backslash/underscore
+	<AB11> =  97;	// backslash/underscore
 	<HENK> = 100;	// Henkan
 	<MUHE> = 102;	// Muhenkan
 	<AE13> = 132;	// Yen
@@ -278,7 +278,7 @@ default xkb_keycodes "evdev" {
 	<I208> = 208;		// #define KEY_PLAYCD              200
 	<I209> = 209;		// #define KEY_PAUSECD             201
 	<I210> = 210;		// #define KEY_PROG3               202
-	<I211> = 211;		// #define KEY_PROG4               203 conflicts with AB11
+	<I211> = 211;		// #define KEY_PROG4               203
 	<I212> = 212;		// #define KEY_DASHBOARD           204
 	<I213> = 213;		// #define KEY_SUSPEND             205
 	<I214> = 214;		// #define KEY_CLOSE               206
