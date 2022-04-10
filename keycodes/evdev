@@ -89,10 +89,8 @@ default xkb_keycodes "evdev" {
 	<FK12> = 96;
 
 	<PRSC> = 107;
-	// <SYRQ> = 107;
 	<SCLK> = 78;
 	<PAUS> = 127;
-	// <BRK> = 419;
 
 	<INS> = 118;
 	<HOME> = 110;
@@ -144,8 +142,7 @@ default xkb_keycodes "evdev" {
 
 	// Keys that are generated on Japanese keyboards
 
-	//<HZTG> =  93;	// Hankaku/Zenkakau toggle - not actually used
-	alias <HZTG> = <TLDE>;
+	alias <HZTG> = <TLDE>;	// Hankaku/Zenkaku toggle
 	<HKTG> = 101;	// Hiragana/Katakana toggle
 	<AB11> =  97;	// backslash/underscore
 	<HENK> = 100;	// Henkan
