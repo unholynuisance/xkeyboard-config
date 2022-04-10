@@ -63,16 +63,16 @@ default xkb_keycodes "evdev" {
 	<AB10> = 61;
 	<RTSH> = 62;
 
-	<LALT> = 64;
 	<LCTL> = 37;
-	<SPCE> = 65;
-	<RCTL> = 105;
-	<RALT> = 108;
-	// Microsoft keyboard extra keys
 	<LWIN> = 133;
+	<LALT> = 64;
+	<SPCE> = 65;
+	<RALT> = 108;
+	alias <ALGR> = <RALT>;
 	<RWIN> = 134;
 	<COMP> = 135;
 	alias <MENU> = <COMP>;
+	<RCTL> = 105;
 
 	<ESC> = 9;
 	<FK01> = 67;
@@ -589,8 +589,6 @@ default xkb_keycodes "evdev" {
 	indicator 9  = "Misc";
 	indicator 10 = "Mail";
 	indicator 11 = "Charging";
-
-	alias <ALGR> = <RALT>;
 
 	// For Brazilian ABNT2
 	alias <KPPT> = <I129>;
