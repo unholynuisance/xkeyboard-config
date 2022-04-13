@@ -1,5 +1,5 @@
 ! $inetkbds = acer_c300 acer_ferrari4k acer_laptop \
-              airkey \
+              airkey apex300 \
               apple armada azonaRF2300 \
               benqx brother \
               btc5113rf btc9000 btc9000a btc9001ah btc5090 btc9019u \
@@ -10,38 +10,35 @@
               compaqeak8 compaqik7 compaqik13 compaqik18 \
               creativedw7000 \
               cymotionlinux \
-              dell dellm65 inspiron dellusbmm \
+              dell dellm65 dellusbmm \
               emachines ennyah_dkb1008 evdev \
               genius geniuscomfy2 \
               gyration honeywell_euroboard \
               hp250x hp5xx hp500fa hpdv5 \
               hpi6 hpxe3gc hpxe3gf hpxe4xxx hpxt1000 hpzt11xx \
-              ibm_spacesaver ipaq inspiron intel \
-              logiaccess logicda logicink \
-              logiex110 logiclx300 \
-              logiinkse logiinkseusb logiitc logiik \
-              logitech_base itouch logiultrax \
-              logitech_g15 \
-              logidinovo logidinovoedge \
-              microsoft4000 microsoft7000 microsoftinet microsoftprousb microsoftprooem microsoftprose \
-              microsoftoffice microsoftmult \
+              ibm_spacesaver inspiron intel ipaq itouch \
+              logiaccess logicda logicink logiclx300 \
+              logidinovo logidinovoedge logiex110 \
+              logiik logiinkse logiinkseusb logiitc \
+              logitech_base logitech_g15 logiultrax \
+              microsoft4000 microsoft7000 microsoftinet microsoftmult \
+              microsoftoffice microsoftprooem microsoftprose microsoftprousb \
               mx1998 mx2500 mx2750 \
               oretec \
               pc105 \
               presario propeller \
               qtronix \
-              rapidaccess rapidaccess2 thinkpad60 \
+              rapidaccess rapidaccess2 \
               samsung4500 samsung4510 \
               silvercrest \
               sk1300 sk2500 sk6200 sk7100 \
               sven sven303 symplon \
-              teck227 teck229 \
+              teck227 teck229 thinkpad60 \
               toshiba_s3000 trust trustda \
-              unitekkb1925 yahoo \
-              apex300
+              unitekkb1925 yahoo
 
 ! $inetmediakbds = acer_ferrari4k acer_laptop btc5090 btc9019u cherryblueb \
-		cherrybluea herrycyboard chicony042 compaqik13 compaqik18 \
+		cherrybluea cherrycyboard chicony042 compaqik13 compaqik18 \
 		armada presario dellm65 inspiron dellusbmm diamond \
 		ennyah_dkb1008 genius geniuscomfy2 hpi6 hpxe3gc hpxe3gf \
 		hpxt1000 hpzt11xx hpdv5 hpxe4xxx hp5xx thinkpad60 ogitech_base \

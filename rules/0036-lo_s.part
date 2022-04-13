@@ -1,7 +1,8 @@
-! layout	option	=	symbols
-  $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle)
-  *			lv3:ralt_alt	= +level3(ralt_alt)
-  *			misc:typo 	= +typo(base)
-  *			misc:apl	= +apl(level3)
+! layout		option			= symbols
+
+  $threelevellayouts	grp:alts_toggle		= +level3(ralt_switch_for_alts_toggle)
+  *			lv3:ralt_alt		= +level3(ralt_alt)
+  *			misc:typo		= +typo(base)
+  *			misc:apl		= +apl(level3)
   *			grp:win_space_toggle	= +group(win_space_toggle)
   *			grp:ctrl_space_toggle	= +group(ctrl_space_toggle)
