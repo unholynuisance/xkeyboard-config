@@ -1333,6 +1333,13 @@
        <vendor>Google</vendor>
      </configItem>
     </model>
+    <model>
+      <configItem>
+       <name>ppkb</name>
+       <description>PinePhone Keyboard</description>
+       <vendor>Pine64</vendor>
+     </configItem>
+    </model>
   </modelList>
   <layoutList>
     <layout>
