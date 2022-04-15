@@ -5211,6 +5211,15 @@
             <description>Russian (phonetic, French)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>ab</name>
+            <description>Abkhazian (Russia)</description>
+            <languageList>
+              <iso639Id>abk</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
