@@ -24,7 +24,7 @@ xkb_symbols "basic"  {
         key <AD02> { [              w,                 W,                aring,                Aring ] };
         key <AD03> { [              e,                 E,           ediaeresis,           Ediaeresis ] };
         key <AD04> { [              r,                 R,               yacute,               Yacute ] };
-        key <AD05> { [              t,                 T,                thorn,                Thorn ] };
+        key <AD05> { [              t,                 T,                thorn,                THORN ] };
         key <AD06> { [              y,                 Y,           ydiaeresis,           Ydiaeresis ] };
         key <AD07> { [              u,                 U,           udiaeresis,           Udiaeresis ] };
         key <AD08> { [              i,                 I,           idiaeresis,           Idiaeresis ] };
@@ -36,7 +36,7 @@ xkb_symbols "basic"  {
 
         key <AC01> { [              a,                 A,           adiaeresis,           Adiaeresis ] };
         key <AC02> { [              s,                 S,               ssharp,              section ] };
-        key <AC03> { [              d,                 D,                  eth,                  Eth ] };
+        key <AC03> { [              d,                 D,                  eth,                  ETH ] };
         key <AC04> { [              f,                 F,               egrave,               Egrave ] };
         key <AC05> { [              g,                 G,               eacute,               Eacute ] };
         key <AC06> { [              h,                 H,               ugrave,               Ugrave ] };

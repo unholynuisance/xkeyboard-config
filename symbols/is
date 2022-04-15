@@ -57,7 +57,7 @@ xkb_symbols "mac_legacy" {
     key <AD08> { [ i,          I,        U0131,           U00AA      ] };
     key <AD09> { [ o,          O,        dead_circumflex, U00BA      ] };
     key <AD10> { [ p,          P,        Greek_pi,        Greek_PI   ] };
-    key <AD11> { [ eth,        Eth,      U201e,           U201c      ] };
+    key <AD11> { [ eth,        ETH,      U201e,           U201c      ] };
     key <AD12> { [ apostrophe, question, questiondown,    U00B7      ] };
 
     key <AC01> { [ a,          A,                aring,     Aring      ] };
@@ -83,7 +83,7 @@ xkb_symbols "mac_legacy" {
     key <AB07> { [ m,      M,         U00B5,            VoidSymbol     ] };
     key <AB08> { [ comma,  semicolon, lessthanequal,    guillemotleft  ] };
     key <AB09> { [ period, colon,     greaterthanequal, guillemotright ] };
-    key <AB10> { [ thorn,  Thorn,     U2019,            U201d          ] };
+    key <AB10> { [ thorn,  THORN,     U2019,            U201d          ] };
 
     include "level3(ralt_switch)"
 };
@@ -118,7 +118,7 @@ xkb_symbols "mac" {
     key <AD08> { [ i,          I,          idotless,           ordfeminine         ] };
     key <AD09> { [ o,          O,          dead_circumflex,    U00BA               ] };
     key <AD10> { [ p,          P,          Greek_pi,           Greek_PI            ] };
-    key <AD11> { [ eth,        Eth,        doublelowquotemark, leftdoublequotemark ] };
+    key <AD11> { [ eth,        ETH,        doublelowquotemark, leftdoublequotemark ] };
     key <AD12> { [ apostrophe, question,   asciitilde,         periodcentered      ] };
 
     key <AC01> { [ a,          A,          aring,             Aring               ] };
@@ -144,7 +144,7 @@ xkb_symbols "mac" {
     key <AB07> { [ m,      M,              mu,                   VoidSymbol           ] };
     key <AB08> { [ comma,  semicolon,      lessthanequal,        guillemotleft        ] };
     key <AB09> { [ period, colon,          greaterthanequal,     guillemotright       ] };
-    key <AB10> { [ thorn,  Thorn,          rightsinglequotemark, rightdoublequotemark ] };
+    key <AB10> { [ thorn,  THORN,          rightsinglequotemark, rightdoublequotemark ] };
 
     include "level3(ralt_switch)"
 };
@@ -181,7 +181,7 @@ xkb_symbols "dvorak" {
     key <AC06> { [       d,     D,           eth,     ETH     ] };
     key <AC10> { [       s,     S,           ae,      AE      ] };
     key <AC11> { [   minus,     underscore,  endash,  emdash  ] };
-    key <AB10> { [       z,     Z,           thorn,   Thorn   ] };
+    key <AB10> { [       z,     Z,           thorn,   THORN   ] };
     key <AB06> { [       b,     B,           ssharp,  U1E9E   ] };
 
     include "level3(ralt_switch)"

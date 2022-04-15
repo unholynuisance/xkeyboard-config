@@ -501,7 +501,7 @@ xkb_symbols "ot" {
     name[Group1]= "Ottoman (Q)";
 
 
-    key <AE01> { [ 0x10006f1,	exclam,		quoteleft		] };
+    key <AE01> { [ 0x10006f1,	exclam,		grave			] };
     key <AE02> { [ 0x10006f2,	0x100066c,	at			] };
     key <AE03> { [ 0x10006f3,	0x100066b,	numbersign		] };
     key <AE04> { [ 0x10006f4,	0x100fdfc,	dollar			] };
@@ -565,7 +565,7 @@ xkb_symbols "otf" {
     name[Group1]= "Ottoman (F)";
 
 
-    key <AE01> { [ 0x10006f1,	exclam,		quoteleft		] };
+    key <AE01> { [ 0x10006f1,	exclam,		grave			] };
     key <AE02> { [ 0x10006f2,	0x100066c,	at			] };
     key <AE03> { [ 0x10006f3,	0x100066b,	numbersign		] };
     key <AE04> { [ 0x10006f4,	0x100fdfc,	dollar			] };

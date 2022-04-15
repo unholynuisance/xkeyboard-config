@@ -78,7 +78,7 @@ xkb_symbols "ibm238l" {
 
     key <AB08> {        [     comma,    comma      ]       };
     key <AB09> {        [    period,    period     ]       };
-    key <BKSL> {        [ quoteleft,    asciitilde ]       };
+    key <BKSL> {        [     grave,    asciitilde ]       };
     key <LSGT> {        [ backslash,    bar        ]       };
     key <TLDE> {        [ leftcaret,    rightcaret ]       };
 };
