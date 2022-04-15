@@ -48,7 +48,6 @@
   grp:ctrl_alt_toggle		=	+group(ctrl_alt_toggle)
   grp:ctrl_alt_toggle_bidir	=	+group(ctrl_alt_toggle_bidir)
   grp:lctrl_lshift_toggle	=	+group(lctrl_lshift_toggle)
-  grp:rctrl_rshift_toggle	=	+group(rctrl_rshift_toggle)
   grp:ctrl_shift_toggle		=	+group(ctrl_shift_toggle)
   grp:ctrl_shift_toggle_bidir	=	+group(ctrl_shift_toggle_bidir)
   grp:lalt_lshift_toggle	=	+group(lalt_lshift_toggle)
