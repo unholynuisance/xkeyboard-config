@@ -6769,6 +6769,7 @@
         </countryList>
         <languageList>
           <iso639Id>ind</iso639Id>
+          <iso639Id>jav</iso639Id>
           <iso639Id>msa</iso639Id>
           <iso639Id>min</iso639Id>
           <iso639Id>ace</iso639Id>
@@ -6778,6 +6779,12 @@
         </languageList>
       </configItem>
       <variantList>
+       <variant>
+         <configItem>
+          <name>javanese</name>
+            <description>Javanese</description>
+         </configItem>
+       </variant>
        <variant>
          <configItem>
           <name>phonetic</name>
@@ -6791,20 +6798,6 @@
          </configItem>
        </variant>
       </variantList>
-    </layout>
-    <layout>
-      <configItem>
-        <name>jv</name>
-        <shortDescription>jv</shortDescription>
-        <description>Indonesian (Javanese)</description>
-        <countryList>
-          <iso3166Id>ID</iso3166Id>
-        </countryList>
-        <languageList>
-          <iso639Id>jav</iso639Id>
-        </languageList>
-      </configItem>
-      <variantList/>
     </layout>
     <layout>
       <configItem>

@@ -55,6 +55,68 @@ xkb_symbols "basic" {
     key <AB10> {[     slash,	question	]};
 };
 
+// A layout for the Javanese script, usable for
+// Javanese, Sundanese, Madurese, and others.
+partial alphanumeric_keys
+xkb_symbols "javanese" {
+    name[Group1]= "Javanese";
+
+    key <TLDE> {[  UA9DE,  UA9DF      ]}; // pada tirta tumetes, PADA ISEN-ISEN
+
+    key <AE01> {[  UA9D1,  UA9C6      ]}; // PADA WINDU
+    key <AE02> {[  UA9D2,  UA9CF      ]}; // PANGRANGKEP
+    key <AE03> {[  UA9D3,  UA9C3      ]}; // ANDAP
+    key <AE04> {[  UA9D4,  UA9C4      ]}; // MADYA
+    key <AE05> {[  UA9D5,  UA9C5      ]}; // LUHUR
+    key <AE06> {[  UA9D6,  UA9BF      ]}; // CAKRA (ra)
+    key <AE07> {[  UA9D7,  UA9BD      ]}; // KERET (rae)
+    key <AE08> {[  UA9D8,  UA9B3      ]}; // CECAK TELU (nukta)
+    key <AE09> {[  UA9D9,  UA9C1      ]}; // Left RERENGAN
+    key <AE10> {[  UA9D0,  UA9C2      ]}; // Right RERENGAN
+    key <AE11> {[  UA98E,  underscore ]}; // o
+    key <AE12> {[  UA989,  UA98B      ]}; // cerek (rae), NGA LELET RASWADI (loe)
+
+    key <AD01> {[  UA990,  UA9B0      ]}; // ka sasak (qa), SA MAHAPRANA (ssa)
+    key <AD02> {[  UA9AE,  UA98D      ]}; // wa, AI
+    key <AD03> {[  UA9BC,  UA98C      ]}; // pepet (ae), E
+    key <AD04> {[  UA9AB,  UA9AC      ]}; // ra, RA AGUNG
+    key <AD05> {[  UA9A0,  UA9A1      ]}; // ta, TA MURDA (tha)
+    key <AD06> {[  UA9AA,  UA9BE      ]}; // ya, PENGKAL
+    key <AD07> {[  UA9B8,  UA9B9      ]}; // suku (u), SUKU MENDUT (uu)
+    key <AD08> {[  UA9B6,  UA9B7      ]}; // wulu (i), WULU MELIK (ii)
+    key <AD09> {[  UA9BA,  UA9B4      ]}; // taling (e), TARUNG (aa)
+    key <AD10> {[  UA9A5,  UA9A6      ]}; // pa, PA MURDA (pha)
+    key <AD11> {[  UA9CA,  UA9CB      ]}; // pada adeg, PADA ADEG ADEG
+    key <AD12> {[  UA9CC,  UA9CD      ]}; // pada piseleh, Turned PADA PISELEH
+
+    key <AC01> {[  UA9BB,  UA984      ]}; // ai, A
+    key <AC02> {[  UA9B1,  UA9AF      ]}; // sa, SA MURDA (sha)
+    key <AC03> {[  UA9A2,  UA9A3      ]}; // da, DA MAHAPRANA (dha)
+    key <AC04> {[  UA99D,  UA99E      ]}; // dda, DDA MAHAPRANA (ddha)
+    key <AC05> {[  UA992,  UA993      ]}; // ga, GA MURDA (gha)
+    key <AC06> {[  UA9B2,  UA983      ]}; // ha, WIGNYAN
+    key <AC07> {[  UA997,  UA999      ]}; // ja, JA MAHAPRANA (jha)
+    key <AC08> {[  UA98F,  UA991      ]}; // ka, KA MURDA (kha)
+    key <AC09> {[  UA9AD,  UA98A      ]}; // la, NGA LELET
+    key <AC10> {[  UA9C7,  UA988      ]}; // pada pangkat, U
+    key <AC11> {[  UA9B5,  quotedbl   ]}; // tolong (o)
+
+    key <BKSL> {[  UA9C0,  UA985      ]}; // pangkon, I KAWI
+
+    key <LSGT> {[    bar,  brokenbar  ]};
+
+    key <AB01> {[  UA994,  UA981      ]}; // nga, CECAK (ng)
+    key <AB02> {[  UA99A,  UA998      ]}; // nya, NYA MURDA (jnya)
+    key <AB03> {[  UA995,  UA996      ]}; // ca, CA MURDA (cha)
+    key <AB04> {[  UA99B,  UA99C      ]}; // tta, TTA MAHAPRANA (ttha)
+    key <AB05> {[  UA9A7,  UA9A8      ]}; // ba, BA MURDA (bha)
+    key <AB06> {[  UA9A4,  UA99F      ]}; // na, NA MURDA (nna)
+    key <AB07> {[  UA9A9,  UA980      ]}; // ma, CANDRABINDU
+    key <AB08> {[  UA9C8,  UA986      ]}; // lingsa, I
+    key <AB09> {[  UA9C9,  UA987      ]}; // lungsi, II
+    key <AB10> {[  UA982,  question   ]}; // layar (r)
+};
+
 //
 // Default phonetic layout for the Pegon script.
 //
