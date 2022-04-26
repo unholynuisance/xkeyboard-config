@@ -25,8 +25,7 @@
               microsoftoffice microsoftprooem microsoftprose microsoftprousb \
               mx1998 mx2500 mx2750 \
               oretec \
-              pc105 \
-              presario propeller \
+              pc105 ppkb presario propeller \
               qtronix \
               rapidaccess rapidaccess2 \
               samsung4500 samsung4510 \
@@ -35,13 +34,13 @@
               sven sven303 symplon \
               teck227 teck229 thinkpad60 \
               toshiba_s3000 trust trustda \
-              unitekkb1925 yahoo ppkb
+              unitekkb1925 yahoo
 
 ! $inetmediakbds = acer_ferrari4k acer_laptop btc5090 btc9019u cherryblueb \
 		cherrybluea cherrycyboard chicony042 compaqik13 compaqik18 \
 		armada presario dellm65 inspiron dellusbmm diamond \
 		ennyah_dkb1008 genius geniuscomfy2 hpi6 hpxe3gc hpxe3gf \
-		hpxt1000 hpzt11xx hpdv5 hpxe4xxx hp5xx thinkpad60 ogitech_base \
+		hpxt1000 hpzt11xx hpdv5 hpxe4xxx hp5xx thinkpad60 logitech_base \
 		logidinovo logidinovoedge logitech_g15 mx1998 mx2500 mx2750 \
 		microsoft4000 microsoft7000 microsoftprooem microsoftmult \
 		propeller samsung4500 samsung4510 sk1300 sk2500 sk7100 \
