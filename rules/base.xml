@@ -6769,13 +6769,23 @@
         </countryList>
         <languageList>
           <iso639Id>ind</iso639Id>
-          <iso639Id>jav</iso639Id>
-          <iso639Id>msa</iso639Id>
-          <iso639Id>min</iso639Id>
           <iso639Id>ace</iso639Id>
+          <iso639Id>ban</iso639Id>
+          <iso639Id>bbc</iso639Id>
+          <iso639Id>bew</iso639Id>
           <iso639Id>bjn</iso639Id>
-          <iso639Id>tsg</iso639Id>
-          <iso639Id>mfa</iso639Id>
+          <iso639Id>btm</iso639Id>
+          <iso639Id>bts</iso639Id>
+          <iso639Id>bug</iso639Id>
+          <iso639Id>gor</iso639Id>
+          <iso639Id>jav</iso639Id>
+          <iso639Id>jax</iso639Id>
+          <iso639Id>mad</iso639Id>
+          <iso639Id>mak</iso639Id>
+          <iso639Id>min</iso639Id>
+          <iso639Id>mui</iso639Id>
+          <iso639Id>sas</iso639Id>
+          <iso639Id>sun</iso639Id>
         </languageList>
       </configItem>
       <variantList>
