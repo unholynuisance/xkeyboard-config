@@ -697,9 +697,9 @@ xkb_symbols "ab" {
     include "ru(common)"
     name[Group1]= "Abkhazian (Russia)";
 
-    key <TLDE> { [     U0301,  asciitilde,        U201C,      U201D ] };
-    key <AE01> { [         1,      exclam,        U00AB,      U00BB ] };
-    key <AE02> { [         2,          at,     quotedbl,      U201E ] };
+    key <TLDE> { [     U0301,  asciitilde,        U201C,      U201D ] }; // double quotation marks
+    key <AE01> { [         1,      exclam,        U00AB,      U00BB ] }; // guillemets
+    key <AE02> { [         2,          at,     quotedbl,      U201E ] }; // low double quotation mark
     key <AE03> { [         3,  numbersign,   numerosign             ] };
     key <AE04> { [         4,      dollar,    semicolon             ] };
     key <AE05> { [         5,     percent                           ] };
@@ -708,9 +708,7 @@ xkb_symbols "ab" {
     key <AE08> { [         8,    asterisk                           ] };
     key <AE09> { [         9,   parenleft,  bracketleft,  braceleft ] };
     key <AE10> { [         0,  parenright, bracketright, braceright ] };
-    key <AE11> { [     minus,  underscore,        U2013             ] };
-    key <BKSL> { [ backslash,         bar,        slash             ] };
-    key <AB10> { [     slash,    question,        comma,     period ] };
+    key <AE11> { [     minus,  underscore,        U2013,      U2014 ] }; // endash, emdash
 
     key <AD01> { [        U049f,        U049e                       ] };
     key <AD02> { [ Cyrillic_tse, Cyrillic_TSE,      U04b5,    U04b4 ] };
@@ -720,14 +718,18 @@ xkb_symbols "ab" {
     key <AD10> { [  Cyrillic_ze,  Cyrillic_ZE,      U04e1,    U04e0 ] };
     key <AD11> { [  Cyrillic_ha,  Cyrillic_HA,      U04b3,    U04b2 ] };
     key <AD12> { [        U04bf,        U04be                       ] };
+
     key <AC05> { [  Cyrillic_pe,  Cyrillic_PE,      U0525,    U0524 ] };
     key <AC10> { [ Cyrillic_zhe, Cyrillic_ZHE,  semicolon,    colon ] };
     key <AC11> { [        U04bd,        U04bc, apostrophe, quotedbl ] };
+    key <BKSL> { [    backslash,          bar,      slash           ] };
+
     key <AB01> { [        U045f,        U040f                       ] };
     key <AB02> { [ Cyrillic_che, Cyrillic_CHE,      U04b7,    U04b6 ] };
     key <AB06> { [  Cyrillic_te,  Cyrillic_TE,      U04ad,    U04ac ] };
     key <AB08> { [  Cyrillic_be,  Cyrillic_BE,      comma,     less ] };
     key <AB09> { [        U04a9,        U04a8,     period,  greater ] };
+    key <AB10> { [        slash,     question,      comma,   period ] };
 
     include "level3(ralt_switch)"
 };
