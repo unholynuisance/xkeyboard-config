@@ -728,6 +728,8 @@ xkb_symbols "ab" {
     key <AB06> { [  Cyrillic_te,  Cyrillic_TE,      U04ad,    U04ac ] };
     key <AB08> { [  Cyrillic_be,  Cyrillic_BE,      comma,     less ] };
     key <AB09> { [        U04a9,        U04a8,     period,  greater ] };
+
+    include "level3(ralt_switch)"
 };
 
 // EXTRAS:
