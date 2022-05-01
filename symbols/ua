@@ -366,11 +366,11 @@ xkb_symbols "crh" {
 
     name[Group1]="Crimean Tatar (Turkish Q)";
 
+    key <TLDE>  { [  quotedbl,  backslash,            less,          degree ] };
     key <AE11>  { [         x,          X,        asterisk,        question ] };
 
     key <AC04>  { [         f,          F,          iacute,          Iacute ] };
     key <AC07>  { [         j,          J,          ibreve,          Ibreve ] };
-    key <TLDE>  { [  quotedbl,  backslash,            less,          degree ] };
 
     key <AB02>  { [    ntilde,     Ntilde,  guillemotright,           greater ] };
 };
@@ -383,13 +383,13 @@ xkb_symbols "crh_f" {
 
     name[Group1]="Crimean Tatar (Turkish F)";
 
+    key <TLDE>  { [      plus,   asterisk,       backslash,       plusminus ] };
     key <AE11>  { [         x,          X,           slash,        question ] };
 
     key <AD04>  { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC",
                   [  idotless,          I,          iacute,          Iacute ] };
 
     key <AC07>  { [         k,          K,          ibreve,          Ibreve ] };
-    key <TLDE>  { [      plus,   asterisk,       backslash,       plusminus ] };
 
     key <BKSL>  { [    ntilde,     Ntilde,           grave,      dead_grave ] };
 };

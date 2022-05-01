@@ -280,6 +280,7 @@ xkb_symbols "rus" {
     include "cz(qwerty)"
     name[Group1]= "Russian (Czech, phonetic)";
 
+    key <TLDE> { [       Cyrillic_io,       Cyrillic_IO                         ] };
     key <AE01> { [              plus,         ampersand,            1 ,       1 ] };
     key <AE02> { [ Cyrillic_hardsign,                 2,            2 ,       2 ] };
     key <AE03> { [      Cyrillic_sha,      Cyrillic_SHA,            3 ,       3 ] };
@@ -292,17 +293,6 @@ xkb_symbols "rus" {
     key <AE10> { [             equal,                 7,            0 ,       0 ] };
     key <AE11> { [           percent,                 8                         ] };
     key <AE12> { [        apostrophe,                 9                         ] };
-
-    key <AB08> { [             comma,          question                         ] };
-    key <AB09> { [            period,            exclam                         ] };
-    key <AB10> { [             minus,             slash                         ] };
-
-    key <AC11> { [         semicolon,             colon                         ] };
-
-    key <LSGT> { [               bar,         brokenbar                         ] };
-
-    key <TLDE> { [       Cyrillic_io,       Cyrillic_IO                         ] };
-
 
     key <AD01> { [        numerosign,                 1,            q,        Q ] };
     key <AD02> { [       Cyrillic_yu,       Cyrillic_YU,            w,        W ] };
@@ -327,7 +317,10 @@ xkb_symbols "rus" {
     key <AC08> { [       Cyrillic_ka,       Cyrillic_KA,            k,        K ] };
     key <AC09> { [       Cyrillic_el,       Cyrillic_EL,            l,        L ] };
     key <AC10> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN,         less,  greater ] };
+    key <AC11> { [         semicolon,             colon                         ] };
+    key <BKSL> { [         backslash,         brokenbar                         ] };
 
+    key <LSGT> { [               bar,         brokenbar                         ] };
     key <AB01> { [       Cyrillic_ze,       Cyrillic_ZE,            z,        Z ] };
     key <AB02> { [       Cyrillic_ya,       Cyrillic_YA,            x,        X ] };
     key <AB03> { [      Cyrillic_tse,      Cyrillic_TSE,            c,        C ] };
@@ -335,8 +328,9 @@ xkb_symbols "rus" {
     key <AB05> { [       Cyrillic_be,       Cyrillic_BE,            b,        B ] };
     key <AB06> { [       Cyrillic_en,       Cyrillic_EN,            n,        N ] };
     key <AB07> { [       Cyrillic_em,       Cyrillic_EM,            m,        M ] };
-
-    key <BKSL> { [         backslash,         brokenbar                         ] };
+    key <AB08> { [             comma,          question                         ] };
+    key <AB09> { [            period,            exclam                         ] };
+    key <AB10> { [             minus,             slash                         ] };
 
    include "level3(ralt_switch)"
 };

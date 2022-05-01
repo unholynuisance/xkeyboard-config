@@ -62,7 +62,6 @@ xkb_symbols "javanese" {
     name[Group1]= "Javanese";
 
     key <TLDE> {[  UA9DE,  UA9DF      ]}; // pada tirta tumetes, PADA ISEN-ISEN
-
     key <AE01> {[  UA9D1,  UA9C6      ]}; // PADA WINDU
     key <AE02> {[  UA9D2,  UA9CF      ]}; // PANGRANGKEP
     key <AE03> {[  UA9D3,  UA9C3      ]}; // ANDAP
