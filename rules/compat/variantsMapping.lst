@@ -43,7 +43,3 @@ tam	NUMERAL-KEYBOARD	in	tam_keyboard_with_numerals
 tam	TAB		in	tam_TAB
 tam	TSCII		in	tam_TSCII
 tel	basic		in	tel
-yu	basic		srp	latin
-yu	unicode		srp	latinunicode
-yu	yz		srp	latinyz
-yu	unicodeyz	srp	latinunicodeyz
