@@ -3159,7 +3159,7 @@
     <layout>
       <configItem>
         <name>cz</name>
-        <!-- Keyboard indicator for Chech layouts -->
+        <!-- Keyboard indicator for Czech layouts -->
         <shortDescription>cs</shortDescription>
         <description>Czech</description>
         <countryList>
@@ -5898,7 +5898,7 @@
     <layout>
       <configItem>
         <name>ua</name>
-        <!-- Keyboard indicator for Ukranian layouts -->
+        <!-- Keyboard indicator for Ukrainian layouts -->
         <shortDescription>uk</shortDescription>
         <description>Ukrainian</description>
         <countryList>
