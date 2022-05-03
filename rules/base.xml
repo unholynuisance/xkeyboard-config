@@ -7892,6 +7892,12 @@
       </configItem>
       <option>
         <configItem>
+          <name>lv5:caps_switch</name>
+          <description>Caps Lock chooses 5th level</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>lv5:lsgt_switch</name>
           <description>The "&lt; &gt;" key chooses 5th level</description>
         </configItem>
@@ -7906,6 +7912,12 @@
         <configItem>
           <name>lv5:menu_switch</name>
           <description>Menu chooses 5th level</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
+          <name>lv5:rctrl_switch</name>
+          <description>Right Ctrl chooses 5th level</description>
         </configItem>
       </option>
       <option>
