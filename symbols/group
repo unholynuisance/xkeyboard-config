@@ -24,8 +24,6 @@ xkb_symbols "win_switch" {
 };
 
 // The left Win key (while pressed) chooses the second keyboard group.
-// (Using this map, you should declare your keyboard as pc101 or pc102
-// instead of pc104 or pc105.)
 partial modifier_keys
 xkb_symbols "lwin_switch" {
     key <LWIN> {
@@ -35,8 +33,6 @@ xkb_symbols "lwin_switch" {
 };
 
 // The right Win key (while pressed) chooses the second keyboard group.
-// (Using this map, you should declare your keyboard as pc101 or pc102
-// instead of pc104 or pc105.)
 partial modifier_keys
 xkb_symbols "rwin_switch" {
     key <RWIN> {
@@ -312,8 +308,6 @@ xkb_symbols "menu_toggle" {
 };
 
 // Pressing the left Win key switches to the next group.
-// (Using this map, you should declare your keyboard as
-// pc101 or pc102 instead of pc104 or pc105.)
 partial modifier_keys
 xkb_symbols "lwin_toggle" {
     virtual_modifiers AltGr;
@@ -324,8 +318,6 @@ xkb_symbols "lwin_toggle" {
 };
 
 // Pressing the right Win key switches to the next group.
-// (Using this map, you should declare your keyboard as
-// pc101 or pc102 instead of pc104 or pc105.)
 partial modifier_keys
 xkb_symbols "rwin_toggle" {
     virtual_modifiers AltGr;
