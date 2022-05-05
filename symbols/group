@@ -89,7 +89,7 @@ xkb_symbols "shift_caps_toggle" {
 };
 
 // Pressing Caps_Lock selects the first group,
-// pressing Shift+Caps_Lock selects the last group.
+// pressing Shift+Caps_Lock selects the second group.
 partial modifier_keys
 xkb_symbols "shift_caps_switch" {
     key <CAPS> { [ ISO_First_Group, ISO_Last_Group ] };
@@ -114,7 +114,7 @@ xkb_symbols "ctrl_space_toggle" {
 };
 
 // Pressing the left Win key selects the first group,
-// pressing the right Win or the Menu key selects the last group.
+// pressing the right Win key or the Menu key selects the second group.
 partial modifier_keys
 xkb_symbols "win_menu_switch" {
     virtual_modifiers AltGr;
@@ -122,18 +122,18 @@ xkb_symbols "win_menu_switch" {
         virtualMods= AltGr,
         symbols[Group1] = [ ISO_First_Group ]
     };
-    key <MENU> {
+    key <RWIN> {
         virtualMods= AltGr,
         symbols[Group1] = [ ISO_Last_Group ]
     };
-    key <RWIN> {
+    key <MENU> {
         virtualMods= AltGr,
         symbols[Group1] = [ ISO_Last_Group ]
     };
 };
 
 // Pressing the left Ctrl key selects the first group,
-// pressing the right Ctrl key selects the last group.
+// pressing the right Ctrl key selects the second group.
 partial modifier_keys
 xkb_symbols "lctrl_rctrl_switch" {
     virtual_modifiers AltGr;
@@ -452,8 +452,8 @@ xkb_symbols "sclk_toggle" {
     };
 };
 
-// Control_L+Win_L selects the first group (presumably Lat),
-// Control_R+Menu selects the second group (presumably Rus).
+// Pressing Ctrl + the left Win key selects the first group,
+// pressing Ctrl + the Menu key selects the second group.
 partial modifier_keys
 xkb_symbols "lctrl_lwin_rctrl_menu" {
     key <LWIN> {

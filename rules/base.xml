@@ -6927,19 +6927,19 @@
       <option>
         <configItem>
           <name>grp:shift_caps_switch</name>
-          <description>Caps Lock to first layout; Shift+Caps Lock to last layout</description>
+          <description>Caps Lock to first layout; Shift+Caps Lock to second layout</description>
         </configItem>
       </option>
       <option>
         <configItem>
           <name>grp:win_menu_switch</name>
-          <description>Left Win to first layout; Right Win/Menu to last layout</description>
+          <description>Left Win to first layout; Right Win/Menu to second layout</description>
         </configItem>
       </option>
       <option>
         <configItem>
           <name>grp:lctrl_rctrl_switch</name>
-          <description>Left Ctrl to first layout; Right Ctrl to last layout</description>
+          <description>Left Ctrl to first layout; Right Ctrl to second layout</description>
         </configItem>
       </option>
       <option>
@@ -7077,7 +7077,7 @@
       <option>
         <configItem>
           <name>grp:lctrl_lwin_rctrl_menu</name>
-          <description>Left Ctrl+Left Win to first layout; Right Ctrl+Menu to second layout</description>
+          <description>Ctrl+Left Win to first layout; Ctrl+Menu to second layout</description>
         </configItem>
       </option>
       <option>
