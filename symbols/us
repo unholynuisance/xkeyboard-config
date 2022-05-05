@@ -80,7 +80,7 @@ xkb_symbols "ibm238l" {
     key <AB09> {        [    period,    period     ]       };
     key <BKSL> {        [     grave,    asciitilde ]       };
     key <LSGT> {        [ backslash,    bar        ]       };
-    key <TLDE> {        [ leftcaret,    rightcaret ]       };
+    key <TLDE> {        [      less,    greater    ]       };
 };
 
 partial alphanumeric_keys

@@ -1577,8 +1577,8 @@ xkb_symbols "tel-sarala"
     key <AB05> { [          U0C2C,          U0C2D                                 ] }; // బ భ
     key <AB06> { [          U0C28,          U0C23                                 ] }; // న ణ
     key <AB07> { [          U0C2E,          U0C01                                 ] }; // మ ఁ
-    key <AB08> { [         U002C,          U0C1E,      leftcaret 	    	  ] }; // , ఞ <
-    key <AB09> { [         U002E,          U0C19,     rightcaret              	  ] }; // . ఙ >
+    key <AB08> { [          comma,          U0C1E,           less                 ] }; // , ఞ <
+    key <AB09> { [         period,          U0C19,        greater                 ] }; // . ఙ >
     key <AB10> { [          U0C36,       question,      KP_Divide                 ] }; // శ ? /
     key <AC01> { [          U0C2F,          U0C3D           			  ] }; // య ఽ
     key <AC02> { [          U0C02,          U0C03                                 ] }; // ం ః
