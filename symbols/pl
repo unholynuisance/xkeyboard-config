@@ -570,9 +570,9 @@ xkb_symbols "glagolica"
     key <AC07> { [ U2C0A, U2C0A, any, any ] };//j/J/Ⰺ/Ⰺ
     key <AC08> { [ U2C0D, U2C0D, any, any ] };//k/K/Ⰽ/Ⰽ
     key <AC09> { [ U2C0E, U2C0E, any, any ] };//l/L/Ⰾ/Ⰾ
-    key <AC12> { [ U2C0C, any, any, any ] };//\/|/Ⰼ
     key <AC10> { [ U2C28, U2C24, any, any ] };//;/:/Ⱘ/Ⱔ
     key <AC11> { [ U2C06, any, any, any ] };//'/"/Ⰶ
+    key <AC12> { [ U2C0C, any, any, any ] };//\/|/Ⰼ
     key <AB01> { [ U2C08, U2C07, any, any ] };//z/Z/Ⰸ/Ⰷ
     key <AB02> { [ U2C20, U2C1F, any, any ] };//x/X/Ⱐ/Ⱏ
     key <AB03> { [ U2C1C, U2C1D, any, any] };//c/C/Ⱌ/Ⱍ

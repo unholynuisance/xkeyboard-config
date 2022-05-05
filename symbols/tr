@@ -514,7 +514,6 @@ xkb_symbols "ot" {
     key <TLDE> { [ quotedbl,    	division,         	VoidSymbol      ] };
     key <AE11> { [ minus,		Arabic_tatweel,		VoidSymbol	] };
     key <AE12> { [ equal,		plus,			VoidSymbol	] };
-    key <BKSL> { [ comma, 	 	bar,            	VoidSymbol  	] };
     key <SPCE> { [ space,		0x100200c,		VoidSymbol	] };
 
     key <AD01> { [ Arabic_qaf,		0x1000670,		VoidSymbol	] };
@@ -578,7 +577,6 @@ xkb_symbols "otf" {
     key <TLDE> { [ quotedbl,    	division,         	VoidSymbol      ] };
     key <AE11> { [ minus,		Arabic_tatweel,		VoidSymbol	] };
     key <AE12> { [ equal,		plus,			VoidSymbol	] };
-    key <BKSL> { [ comma, 	 	bar,            	VoidSymbol  	] };
     key <SPCE> { [ space,		0x100200c,		VoidSymbol	] };
 
     key <AD01> { [ Arabic_feh,		Arabic_fathatan,	VoidSymbol	] };

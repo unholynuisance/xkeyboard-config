@@ -123,7 +123,6 @@ xkb_symbols "phonetic"
         key <AD10> { [     Arabic_veh, Arabic_teh             ] };
         key <AD11> { [     bracketright, braceright           ] };
         key <AD12> { [     bracketleft, braceleft             ] };
-        key <AD13> { [     backslash,             bar         ] };
 
 //others
 
