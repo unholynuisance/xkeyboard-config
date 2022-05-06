@@ -1,4 +1,4 @@
-// The right Alt key (while pressed) chooses the second keyboard group.
+// The right Alt key (while pressed) chooses the next group.
 partial modifier_keys
 xkb_symbols "switch" {
     key <RALT> {
@@ -7,7 +7,7 @@ xkb_symbols "switch" {
     };
 };
 
-// The left Alt key (while pressed) chooses the second keyboard group.
+// The left Alt key (while pressed) chooses the next group.
 partial modifier_keys
 xkb_symbols "lswitch" {
     key <LALT> {
@@ -16,14 +16,14 @@ xkb_symbols "lswitch" {
     };
 };
 
-// Either Win key (while pressed) chooses the second keyboard group.
+// Either Win key (while pressed) chooses the next group.
 partial modifier_keys
 xkb_symbols "win_switch" {
     include "group(lwin_switch)"
     include "group(rwin_switch)"
 };
 
-// The left Win key (while pressed) chooses the second keyboard group.
+// The left Win key (while pressed) chooses the next group.
 partial modifier_keys
 xkb_symbols "lwin_switch" {
     key <LWIN> {
@@ -32,7 +32,7 @@ xkb_symbols "lwin_switch" {
     };
 };
 
-// The right Win key (while pressed) chooses the second keyboard group.
+// The right Win key (while pressed) chooses the next group.
 partial modifier_keys
 xkb_symbols "rwin_switch" {
     key <RWIN> {
@@ -41,7 +41,7 @@ xkb_symbols "rwin_switch" {
     };
 };
 
-// The right Menu key (while pressed) chooses the second keyboard group.
+// The Menu key (while pressed) chooses the next group,
 // while Shift+Menu acts as Menu.
 partial modifier_keys
 xkb_symbols "menu_switch" {
@@ -51,8 +51,7 @@ xkb_symbols "menu_switch" {
     };
 };
 
-// The right Ctrl key (while pressed) chooses the second keyboard group.
-// (Needed mainly for the Canadian keyboard.)
+// The right Ctrl key (while pressed) chooses the next group.
 partial modifier_keys
 xkb_symbols "rctrl_switch" {
     key <RCTL> {
@@ -412,7 +411,7 @@ xkb_symbols "rctrl_toggle" {
 };
 
 // Pressing Alt+Caps_Lock switches to the next group,
-// pressing Caps_Lock toggles CapsLock.
+// while pressing Caps_Lock alone toggles CapsLock.
 partial modifier_keys
 xkb_symbols "alt_caps_toggle" {
     key <CAPS> {
@@ -434,7 +433,7 @@ xkb_symbols "alt_space_toggle" {
     };
 };
 
-// Pressing the Scroll Lock key switches to the next group,
+// Pressing the Scroll Lock key switches to the next group.
 partial modifier_keys
 xkb_symbols "sclk_toggle" {
     virtual_modifiers AltGr;
@@ -458,7 +457,7 @@ xkb_symbols "lctrl_lwin_rctrl_menu" {
     };
 };
 
-// Control_L+Win_L toggles groups.
+// Pressing Ctrl + the left Win key switches to the next group.
 partial modifier_keys
 xkb_symbols "lctrl_lwin_toggle" {
     key <LWIN> {
@@ -466,4 +465,3 @@ xkb_symbols "lctrl_lwin_toggle" {
         symbols[ Group1 ] = [ Super_L,    ISO_Next_Group ]
     };
 };
-
