@@ -1145,7 +1145,7 @@ xkb_symbols "phonetic_mac" {
     key <AE03> { [                 3,        numbersign, numerosign  ] };
     key <AE04> { [                 4,            dollar, U20BD       ] }; // ruble
     key <AE05> { [                 5,           percent  ] };
-    key <AE06> { [                 6,             caret  ] };
+    key <AE06> { [                 6,       asciicircum  ] };
     key <AE11> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN, minus,       underscore  ] };
     key <AE12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN, equal,       plus        ] };
 
