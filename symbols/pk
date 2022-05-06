@@ -1,10 +1,7 @@
-// Urdu keymap
-// Developed by:
-// Zaeem Arshad <zaeem@linux.net.pk>
-// Last update: 2004-03-12
-// Notice:
-// Alt-key combinations are yet to be put in. The unavailable keys are
-// those which do not have a corresponding glyph in Unicode.
+// Urdu keymap, originally developed by Zaeem Arshad <zaeem@linux.net.pk>
+//
+// (Third-level symbols are yet to be put in. The unavailable symbols
+// are those which do not have a corresponding glyph in Unicode.)
 
 default partial alphanumeric_keys
 xkb_symbols "urd-phonetic" {
@@ -24,6 +21,7 @@ xkb_symbols "urd-phonetic" {
    key <AE10> {  [     0x1000030  ,       0x1000028      ]     };
    key <AE11> {  [     0x100002D  ,       0x100005F      ]     };
    key <AE12> {  [     0x100003D  ,       0x100002B      ]     };
+
    key <AD01> {  [     0x1000642  ,       0x1000652, 0x100200D     ]     };
    key <AD02> {  [     0x1000648  ,       0x1000624, 0x100200C     ]     };
    key <AD03> {  [     0x1000639  ,       0x1000670      ]     };
@@ -62,8 +60,6 @@ xkb_symbols "urd-phonetic" {
    key <AB09> {  [     0x10006d4  ,       0x100003E      ]     };
    key <AB10> {  [     0x100002f  ,       0x100061f      ]     };
 
-//   key <RALT> {  [ Mode_switch, Multi_key ] };
-
    include "level3(ralt_switch)"
 };
 
@@ -71,7 +67,7 @@ partial alphanumeric_keys
 xkb_symbols "urd-crulp" {
 
    name[Group1]= "Urdu (Pakistan, CRULP)";
-// www.crulp.org phonetic v1.1
+   // www.crulp.org phonetic v1.1
 
    key <TLDE> {  [     0x100007E  ,       0x100064B      ]     };
    key <AE01> {  [     0x10006F1  ,       0x1000031, 0x1000021      ]     };
@@ -125,16 +121,13 @@ xkb_symbols "urd-crulp" {
    key <AB09> {  [     0x10006d4  ,       0x100066B, 0x100003E      ]     };
    key <AB10> {  [     0x100002f  ,       0x100061F      ]     };
 
-//   key <RALT> {  [ Mode_switch, Multi_key ] };
-
    include "level3(ralt_switch)"
 };
-
 
 partial alphanumeric_keys
 xkb_symbols "urd-nla" {
    name[Group1]= "Urdu (Pakistan, NLA)";
-// www.nla.gov.pk
+   // www.nla.gov.pk
 
    key <TLDE> {  [     0x1000060  ,       0x100007E, 0x100200C     ]     };
    key <AE01> {  [     0x1000031  ,       0x1000021      ]     };
@@ -149,6 +142,7 @@ xkb_symbols "urd-nla" {
    key <AE10> {  [     0x1000030  ,       0x1000028      ]     };
    key <AE11> {  [     0x100002D  ,       0x100005F      ]     };
    key <AE12> {  [     0x100003D  ,       0x100002B      ]     };
+
    key <AD01> {  [     0x1000637  ,       0x1000638, 0x100200D      ]     };
    key <AD02> {  [     0x1000635  ,       0x1000636, 0x100200C      ]     };
    key <AD03> {  [     0x10006BE  ,       0x1000630      ]     };
@@ -193,7 +187,7 @@ xkb_symbols "urd-nla" {
 partial alphanumeric_keys
 xkb_symbols "snd" {
    name[Group1]= "Sindhi";
-// www.bhurgri.com
+   // www.bhurgri.com
 
     key <TLDE> {  [       0x1002019,       0x1002018                 ]       };
     key <AE01> {  [               1,          exclam, 0x1000610      ]       };
@@ -208,7 +202,6 @@ xkb_symbols "snd" {
     key <AE10> {  [               0,       parenleft                 ]       };
     key <AE11> {  [       0x100068F,       0x100005F, 0x100002D      ]       };
     key <AE12> {  [       0x100068C,            plus, 0x100003D      ]       };
-    key <BKSL> {  [       0x100068D,       0x100067A, 0x100007C      ]       };
 
     key <AD01> {  [       0x1000642,       0x100064E, 0x100064B      ]       };
     key <AD02> {  [       0x1000635,       0x1000636, 0x100FDFA      ]       };
@@ -234,6 +227,7 @@ xkb_symbols "snd" {
     key <AC09> {  [       0x1000644,       0x100003A                 ]       };
     key <AC10> {  [       0x10006A9,       0x100061B                 ]       };
     key <AC11> {  [       0x10006B1,       0x1000640                 ]       };
+    key <BKSL> {  [       0x100068D,       0x100067A, 0x100007C      ]       };
 
     key <AB01> {  [       0x1000632,       0x1000630, 0x1000652      ]       };
     key <AB02> {  [       0x100062E,       0x1000651, 0x100200C      ]       };
@@ -253,13 +247,9 @@ partial alphanumeric_keys
 xkb_symbols "ara" {
    name[Group1]= "Arabic (Pakistan)";
 
-// NOTES:
-//
-// there is also combined shadda diacritis in AltGr position of simple
-// diacritics fatha, fathatan, damma, dammatan, kasra and kasratan
-// should a third state be added to Group2 ?
-//
-// How is this different from ara(basic)? --bernie
+   // There are also combined shadda diacritis in the AltGr position
+   // of the simple diacritics fatha, fathatan, damma, dammatan,
+   // kasra and kasratan.  Should a third level be added?
 
    key <TLDE> {  [     0x100064d  ,       0x100064b      ]     };
    key <AE01> {  [     0x10006F1  ,       0x1000021      ]     };
@@ -274,6 +264,7 @@ xkb_symbols "ara" {
    key <AE10> {  [     0x10006F0  ,       0x1000028      ]     };
    key <AE11> {  [     0x1000623  ,       0x1000651      ]     };
    key <AE12> {  [     0x1000624  ,       0x1000622      ]     };
+
    key <AD01> {  [     0x1000642  ,       0x1000652      ]     };
    key <AD02> {  [     0x1000648  ,       0x10000a3      ]     };
    key <AD03> {  [     0x1000639  ,       0x10000a5      ]     };
@@ -316,15 +307,14 @@ xkb_symbols "ara" {
 partial alphanumeric_keys
 xkb_symbols "olpc" {
 
-// #HW-SPECIFIC
+   // #HW-SPECIFIC
 
-// Contact: Walter Bender <walter@laptop.org>
+   // Contact: Walter Bender <walter@laptop.org>
 
    include "pk(ara)"
 
    name[Group1]= "Urdu (Pakistan)";
 
-   // Keys '~' - '='
    key <TLDE> {  [ 0x1000654, 0x100064B ] };
    key <AE01> {  [ 0x10006F1, 0x1000603 ] };
    key <AE02> {  [ 0x10006F2, 0x1000602 ] };
@@ -339,7 +329,6 @@ xkb_symbols "olpc" {
    key <AE11> {  [ minus,     0x1000610 ] };
    key <AE12> {  [ equal, plus ] };
 
-   //Keys 'Q' - ']'
    key <AD01> {  [ 0x1000642, 0x1000652 ] };
    key <AD02> {  [ 0x1000648, 0x1000651 ] };
    key <AD03> {  [ 0x1000639, 0x1000670 ] };
@@ -353,11 +342,10 @@ xkb_symbols "olpc" {
    key <AD12> {  [ 0x100FDFD, 0x100FDFA ] };
    key <AD11> {  [ 0x100FDF2, 0x100FDFB ] };
 
-   // Keys 'A' - '''
    key <AC01> {  [ 0x1000627, 0x1000622 ] };
    key <AC02> {  [ 0x1000633, 0x1000635 ] };
    key <AC03> {  [ 0x100062F, 0x1000688 ] };
-   key <AC04> {  [ 0x1000641 ] }; //shift key not available
+   key <AC04> {  [ 0x1000641            ] };
    key <AC05> {  [ 0x10006AF, 0x100063A ] };
    key <AC06> {  [ 0x100062D, 0x10006BE ] };
    key <AC07> {  [ 0x100062C, 0x1000636 ] };
@@ -365,21 +353,20 @@ xkb_symbols "olpc" {
    key <AC09> {  [ 0x1000644, 0x1000656 ] };
    key <AC10> {  [ 0x100061B, colon ] };
    key <AC11> {  [ apostrophe, quotedbl ] };
-
    key <BKSL> { [  backslash, bar  ] };
-   key <SPCE> { [  space  ] };
 
-   // Keys: 'Z' - '/'
    key <AB01> {  [ 0x1000632, 0x1000622 ] };
    key <AB02> {  [ 0x1000634, 0x1000635 ] };
    key <AB03> {  [ 0x1000686, 0x1000688 ] };
-   key <AB04> {  [ 0x1000637 ] }; //shift key unavailable
+   key <AB04> {  [ 0x1000637            ] };
    key <AB05> {  [ 0x1000628, 0x100063A ] };
    key <AB06> {  [ 0x1000646, 0x10006BE ] };
    key <AB07> {  [ 0x1000645, 0x1000636 ] };
    key <AB08> {  [ 0x100060C, 0x100062E ] };
    key <AB09> {  [ 0x10006D4, 0x1000656 ] };
    key <AB10> {  [ slash,     0x100061F ] };
+
+   key <SPCE> { [  space  ] };
 
    include "group(olpc)"
 };
