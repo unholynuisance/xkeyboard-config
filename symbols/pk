@@ -6,9 +6,9 @@
 default partial alphanumeric_keys
 xkb_symbols "urd-phonetic" {
 
-   name[Group1]= "Urdu (Pakistan)";
+    name[Group1]= "Urdu (Pakistan)";
 
-    key <TLDE>	{[  U064b,     U007E,     U200C  ]};
+    key <TLDE>	{[  U064B,     U007E,     U200C  ]};
     key <AE01>	{[  U0031,     U0021  ]};
     key <AE02>	{[  U0032,     U0040  ]};
     key <AE03>	{[  U0033,     U0023  ]};
@@ -26,48 +26,48 @@ xkb_symbols "urd-phonetic" {
     key <AD02>	{[  U0648,     U0624,     U200C  ]};
     key <AD03>	{[  U0639,     U0670  ]};
     key <AD04>	{[  U0631,     U0691  ]};
-    key <AD05>	{[  U062a,     U0679  ]};
-    key <AD06>	{[  U06d2,     U064E  ]};
+    key <AD05>	{[  U062A,     U0679  ]};
+    key <AD06>	{[  U06D2,     U064E  ]};
     key <AD07>	{[  U0621,     U0626  ]};
-    key <AD08>	{[  U06cc,     U0650  ]};
-    key <AD09>	{[  U06c1,     U06c3  ]};
-    key <AD10>	{[  U067e,     U064f  ]};
-    key <AD11>	{[  U005d,     U007D  ]};
-    key <AD12>	{[  U005b,     U007B  ]};
+    key <AD08>	{[  U06CC,     U0650  ]};
+    key <AD09>	{[  U06C1,     U06C3  ]};
+    key <AD10>	{[  U067E,     U064F  ]};
+    key <AD11>	{[  U005D,     U007D  ]};
+    key <AD12>	{[  U005B,     U007B  ]};
 
     key <AC01>	{[  U0627,     U0622  ]};
     key <AC02>	{[  U0633,     U0635  ]};
-    key <AC03>	{[  U062f,     U0688  ]};
+    key <AC03>	{[  U062F,     U0688  ]};
     key <AC04>	{[  U0641,     U0651  ]};
-    key <AC05>	{[  U06af,     U063a  ]};
+    key <AC05>	{[  U06AF,     U063A  ]};
     key <AC06>	{[  U062D,     U06BE  ]};
-    key <AC07>	{[  U062c,     U0636  ]};
-    key <AC08>	{[  U06a9,     U062e  ]};
+    key <AC07>	{[  U062C,     U0636  ]};
+    key <AC08>	{[  U06A9,     U062E  ]};
     key <AC09>	{[  U0644,     U0654  ]};
-    key <AC10>	{[  U061b,     U003a  ]};
+    key <AC10>	{[  U061B,     U003A  ]};
     key <AC11>	{[  U0027,     U0022  ]};
     key <BKSL>	{[  U005C,     U007C  ]};
 
     key <LSGT>	{[    bar, brokenbar  ]};
     key <AB01>	{[  U0632,     U0630,     U200E  ]};
     key <AB02>	{[  U0634,     U0698,     U202A  ]};
-    key <AB03>	{[  U0686,     U062b,     U202D  ]};
+    key <AB03>	{[  U0686,     U062B,     U202D  ]};
     key <AB04>	{[  U0637,     U0638,     U202C  ]};
-    key <AB05>	{[  U0628,     U002e,     U202E  ]};
-    key <AB06>	{[  U0646,     U06ba,     U202B  ]};
+    key <AB05>	{[  U0628,     U002E,     U202E  ]};
+    key <AB06>	{[  U0646,     U06BA,     U202B  ]};
     key <AB07>	{[  U0645,     U0658,     U200F  ]};
-    key <AB08>	{[  U060c,     U003c  ]};
-    key <AB09>	{[  U06d4,     U003E  ]};
-    key <AB10>	{[  U002f,     U061f  ]};
+    key <AB08>	{[  U060C,     U003C  ]};
+    key <AB09>	{[  U06D4,     U003E  ]};
+    key <AB10>	{[  U002F,     U061F  ]};
 
-   include "level3(ralt_switch)"
+    include "level3(ralt_switch)"
 };
 
 partial alphanumeric_keys
 xkb_symbols "urd-crulp" {
 
-   name[Group1]= "Urdu (Pakistan, CRULP)";
-   // www.crulp.org phonetic v1.1
+    name[Group1]= "Urdu (Pakistan, CRULP)";
+    // www.crulp.org phonetic v1.1
 
     key <TLDE>	{[  U007E,     U064B             ]};
     key <AE01>	{[  U06F1,     U0031,     U0021  ]};
@@ -80,54 +80,54 @@ xkb_symbols "urd-crulp" {
     key <AE08>	{[  U06F8,     U0038,     U002A  ]};
     key <AE09>	{[  U06F9,     U0039,     U0029  ]};
     key <AE10>	{[  U06F0,     U0030,     U0028  ]};
-
     key <AE11>	{[  U002D,     U005F             ]};
     key <AE12>	{[  U003D,     U002B             ]};
+
     key <AD01>	{[  U0642,     U0652             ]};
     key <AD02>	{[  U0648,     U0651,     U0602  ]};
     key <AD03>	{[  U0639,     U0670,     U0656  ]};
     key <AD04>	{[  U0631,     U0691,     U0613  ]};
-    key <AD05>	{[  U062a,     U0679,     U0614  ]};
-    key <AD06>	{[  U06d2,     U064E,     U0601  ]};
+    key <AD05>	{[  U062A,     U0679,     U0614  ]};
+    key <AD06>	{[  U06D2,     U064E,     U0601  ]};
     key <AD07>	{[  U0621,     U0626,     U0654  ]};
-    key <AD08>	{[  U06cc,     U0650,     U0611  ]};
-    key <AD09>	{[  U06c1,     U06c3             ]};
-    key <AD10>	{[  U067e,     U064f,     U0657  ]};
-    key <AD11>	{[  U005d,     U007D             ]};
-    key <AD12>	{[  U005b,     U007B             ]};
+    key <AD08>	{[  U06CC,     U0650,     U0611  ]};
+    key <AD09>	{[  U06C1,     U06C3             ]};
+    key <AD10>	{[  U067E,     U064F,     U0657  ]};
+    key <AD11>	{[  U005D,     U007D             ]};
+    key <AD12>	{[  U005B,     U007B             ]};
 
     key <AC01>	{[  U0627,     U0622,     UFDF2  ]};
     key <AC02>	{[  U0633,     U0635,     U0610  ]};
-    key <AC03>	{[  U062f,     U0688,     UFDFA  ]};
+    key <AC03>	{[  U062F,     U0688,     UFDFA  ]};
     key <AC04>	{[  U0641,     U0651             ]};
-    key <AC05>	{[  U06af,     U063a             ]};
+    key <AC05>	{[  U06AF,     U063A             ]};
     key <AC06>	{[  U062D,     U06BE,     U0612  ]};
-    key <AC07>	{[  U062c,     U0636,     UFDFB  ]};
-    key <AC08>	{[  U06a9,     U062e             ]};
+    key <AC07>	{[  U062C,     U0636,     UFDFB  ]};
+    key <AC08>	{[  U06A9,     U062E             ]};
     key <AC09>	{[  U0644,     U0654             ]};
-    key <AC10>	{[  U061b,     U003a             ]};
+    key <AC10>	{[  U061B,     U003A             ]};
     key <AC11>	{[  U0027,     U0022             ]};
     key <BKSL>	{[  U005C,     U007C             ]};
 
     key <LSGT>	{[    bar, brokenbar             ]};
     key <AB01>	{[  U0632,     U0630,     U060F  ]};
     key <AB02>	{[  U0634,     U0698,     U060E  ]};
-    key <AB03>	{[  U0686,     U062b,     U0603  ]};
+    key <AB03>	{[  U0686,     U062B,     U0603  ]};
     key <AB04>	{[  U0637,     U0638             ]};
-    key <AB05>	{[  U0628,     U002e,     UFDFD  ]};
-    key <AB06>	{[  U0646,     U06ba,     U0600  ]};
+    key <AB05>	{[  U0628,     U002E,     UFDFD  ]};
+    key <AB06>	{[  U0646,     U06BA,     U0600  ]};
     key <AB07>	{[  U0645,     U0658             ]};
-    key <AB08>	{[  U060c,     U003c,     U003C  ]};
-    key <AB09>	{[  U06d4,     U066B,     U003E  ]};
-    key <AB10>	{[  U002f,     U061F             ]};
+    key <AB08>	{[  U060C,     U003C,     U003C  ]};
+    key <AB09>	{[  U06D4,     U066B,     U003E  ]};
+    key <AB10>	{[  U002F,     U061F             ]};
 
-   include "level3(ralt_switch)"
+    include "level3(ralt_switch)"
 };
 
 partial alphanumeric_keys
 xkb_symbols "urd-nla" {
-   name[Group1]= "Urdu (Pakistan, NLA)";
-   // www.nla.gov.pk
+    name[Group1]= "Urdu (Pakistan, NLA)";
+    // www.nla.gov.pk
 
     key <TLDE>	{[  U0060,     U007E,     U200C  ]};
     key <AE01>	{[  U0031,     U0021  ]};
@@ -153,8 +153,8 @@ xkb_symbols "urd-nla" {
     key <AD08>	{[  U0628,     U0640  ]};
     key <AD09>	{[  U062C,     U0686  ]};
     key <AD10>	{[  U062D,     U062E  ]};
-    key <AD11>	{[  U005d,     U007D  ]};
-    key <AD12>	{[  U005b,     U007B  ]};
+    key <AD11>	{[  U005D,     U007D  ]};
+    key <AD12>	{[  U005B,     U007B  ]};
 
     key <AC01>	{[  U0645,     U0698  ]};
     key <AC02>	{[  U0648,     U0632  ]};
@@ -163,9 +163,9 @@ xkb_symbols "urd-nla" {
     key <AC05>	{[  U0644,     U06C2  ]};
     key <AC06>	{[  U06C1,     U0621  ]};
     key <AC07>	{[  U0627,     U0622  ]};
-    key <AC08>	{[  U06a9,     U06AF  ]};
+    key <AC08>	{[  U06A9,     U06AF  ]};
     key <AC09>	{[  U06CC,     U064A  ]};
-    key <AC10>	{[  U061b,     U003a  ]};
+    key <AC10>	{[  U061B,     U003A  ]};
     key <AC11>	{[  U0027,     U0022  ]};
     key <BKSL>	{[  U005C,     U007C  ]};
 
@@ -177,17 +177,17 @@ xkb_symbols "urd-nla" {
     key <AB05>	{[  U0634,     U0624,     U202E  ]};
     key <AB06>	{[  U063A,     U0626,     U202B  ]};
     key <AB07>	{[  U0639,     U200F,     U200F  ]};
-    key <AB08>	{[  U060c,     U003E  ]};
-    key <AB09>	{[  U06d4,     U003C  ]};
-    key <AB10>	{[  U002F,     U061f  ]};
+    key <AB08>	{[  U060C,     U003E  ]};
+    key <AB09>	{[  U06D4,     U003C  ]};
+    key <AB10>	{[  U002F,     U061F  ]};
 
-   include "level3(ralt_switch)"
+    include "level3(ralt_switch)"
 };
 
 partial alphanumeric_keys
 xkb_symbols "snd" {
-   name[Group1]= "Sindhi";
-   // www.bhurgri.com
+    name[Group1]= "Sindhi";
+    // www.bhurgri.com
 
     key <TLDE>	{[  U2019,     U2018             ]};
     key <AE01>	{[      1,    exclam,     U0610  ]};
@@ -245,75 +245,75 @@ xkb_symbols "snd" {
 
 partial alphanumeric_keys
 xkb_symbols "ara" {
-   name[Group1]= "Arabic (Pakistan)";
+    name[Group1]= "Arabic (Pakistan)";
 
-   // There are also combined shadda diacritis in the AltGr position
-   // of the simple diacritics fatha, fathatan, damma, dammatan,
-   // kasra and kasratan.  Should a third level be added?
+    // There are also combined shadda diacritis in the AltGr position
+    // of the simple diacritics fatha, fathatan, damma, dammatan,
+    // kasra and kasratan.  Should a third level be added?
 
-    key <TLDE>	{[  U064d,     U064b  ]};
+    key <TLDE>	{[  U064D,     U064B  ]};
     key <AE01>	{[  U06F1,     U0021  ]};
     key <AE02>	{[  U06F2             ]};
-    key <AE03>	{[  U06F3,     U002f  ]};
+    key <AE03>	{[  U06F3,     U002F  ]};
     key <AE04>	{[  U06F4,     U0626  ]};
     key <AE05>	{[  U06F5             ]};
-    key <AE06>	{[  U06F6,     U06d6  ]};
+    key <AE06>	{[  U06F6,     U06D6  ]};
     key <AE07>	{[  U06F7,     U0654  ]};
-    key <AE08>	{[  U06F8,     U064c  ]};
+    key <AE08>	{[  U06F8,     U064C  ]};
     key <AE09>	{[  U06F9,     U0029  ]};
     key <AE10>	{[  U06F0,     U0028  ]};
     key <AE11>	{[  U0623,     U0651  ]};
     key <AE12>	{[  U0624,     U0622  ]};
 
     key <AD01>	{[  U0642,     U0652  ]};
-    key <AD02>	{[  U0648,     U00a3  ]};
-    key <AD03>	{[  U0639,     U00a5  ]};
+    key <AD02>	{[  U0648,     U00A3  ]};
+    key <AD03>	{[  U0639,     U00A5  ]};
     key <AD04>	{[  U0631,     U0691  ]};
-    key <AD05>	{[  U062a,     U0679  ]};
-    key <AD06>	{[  U06d2,     U0601  ]};
-    key <AD07>	{[  U0621,     U060c  ]};
-    key <AD08>	{[  U06cc,     U0670  ]};
-    key <AD09>	{[  U06c1,     U06c3  ]};
-    key <AD10>	{[  U067e,     U064f  ]};
-    key <AD11>	{[  U005d,     U0670  ]};
-    key <AD12>	{[  U005b,     U0670  ]};
+    key <AD05>	{[  U062A,     U0679  ]};
+    key <AD06>	{[  U06D2,     U0601  ]};
+    key <AD07>	{[  U0621,     U060C  ]};
+    key <AD08>	{[  U06CC,     U0670  ]};
+    key <AD09>	{[  U06C1,     U06C3  ]};
+    key <AD10>	{[  U067E,     U064F  ]};
+    key <AD11>	{[  U005D,     U0670  ]};
+    key <AD12>	{[  U005B,     U0670  ]};
 
     key <AC01>	{[  U0627,     U0653  ]};
     key <AC02>	{[  U0633,     U0635  ]};
-    key <AC03>	{[  U062f,     U0688  ]};
+    key <AC03>	{[  U062F,     U0688  ]};
     key <AC04>	{[  U0641             ]};
-    key <AC05>	{[  U06af,     U063a  ]};
-    key <AC06>	{[  U06be,     U062d  ]};
-    key <AC07>	{[  U062c,     U0636  ]};
-    key <AC08>	{[  U06a9,     U062e  ]};
+    key <AC05>	{[  U06AF,     U063A  ]};
+    key <AC06>	{[  U06BE,     U062D  ]};
+    key <AC07>	{[  U062C,     U0636  ]};
+    key <AC08>	{[  U06A9,     U062E  ]};
     key <AC09>	{[  U0644,     U0613  ]};
-    key <AC10>	{[  U061b,     U003a  ]};
+    key <AC10>	{[  U061B,     U003A  ]};
     key <AC11>	{[  U0670,     U0022  ]};
-    key <BKSL>	{[  U060e,     U0614  ]};
+    key <BKSL>	{[  U060E,     U0614  ]};
 
     key <LSGT>	{[    bar, brokenbar  ]};
     key <AB01>	{[  U0632,     U0630  ]};
     key <AB02>	{[  U0634,     U0698  ]};
-    key <AB03>	{[  U0686,     U062b  ]};
+    key <AB03>	{[  U0686,     U062B  ]};
     key <AB04>	{[  U0637,     U0638  ]};
     key <AB05>	{[  U0628,     U0612  ]};
-    key <AB06>	{[  U0646,     U06ba  ]};
+    key <AB06>	{[  U0646,     U06BA  ]};
     key <AB07>	{[  U0645             ]};
-    key <AB08>	{[  U060c,     U0650  ]};
-    key <AB09>	{[  U06d4,     U064e  ]};
-    key <AB10>	{[   none,     U061f  ]};
+    key <AB08>	{[  U060C,     U0650  ]};
+    key <AB09>	{[  U06D4,     U064E  ]};
+    key <AB10>	{[   none,     U061F  ]};
 };
 
 partial alphanumeric_keys
 xkb_symbols "olpc" {
 
-   // #HW-SPECIFIC
+    // #HW-SPECIFIC
 
-   // Contact: Walter Bender <walter@laptop.org>
+    // Contact: Walter Bender <walter@laptop.org>
 
-   include "pk(ara)"
+    include "pk(ara)"
 
-   name[Group1]= "Urdu (Pakistan)";
+    name[Group1]= "Urdu (Pakistan)";
 
     key <TLDE>	{[  U0654,     U064B  ]};
     key <AE01>	{[  U06F1,     U0603  ]};
@@ -339,8 +339,8 @@ xkb_symbols "olpc" {
     key <AD08>	{[  U06CC,     U0650  ]};
     key <AD09>	{[  U06C1,     U06C3  ]};
     key <AD10>	{[  U067E,     U064F  ]};
-    key <AD12>	{[  UFDFD,     UFDFA  ]};
     key <AD11>	{[  UFDF2,     UFDFB  ]};
+    key <AD12>	{[  UFDFD,     UFDFA  ]};
 
     key <AC01>	{[  U0627,     U0622  ]};
     key <AC02>	{[  U0633,     U0635  ]};
@@ -368,7 +368,7 @@ xkb_symbols "olpc" {
 
     key <SPCE>	{[  space  ]};
 
-   include "group(olpc)"
+    include "group(olpc)"
 };
 
 // EXTRAS:
