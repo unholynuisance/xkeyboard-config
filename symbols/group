@@ -330,16 +330,13 @@ xkb_symbols "rwin_toggle" {
 // (depending on which Ctrl is pressed first).
 partial modifier_keys
 xkb_symbols "ctrls_toggle" {
-    virtual_modifiers LControl, RControl;
     key <LCTL> {
         type[Group1]="PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ NoSymbol, ISO_Prev_Group ],
-        virtualMods= LControl
+        symbols[Group1] = [ NoSymbol, ISO_Prev_Group ]
     };
     key <RCTL> {
         type[Group1]="PC_CONTROL_LEVEL2",
-        symbols[Group1] = [ NoSymbol, ISO_Next_Group ],
-        virtualMods= RControl
+        symbols[Group1] = [ NoSymbol, ISO_Next_Group ]
     };
 };
 
@@ -347,16 +344,13 @@ xkb_symbols "ctrls_toggle" {
 // (depending on which Alt is pressed first).
 partial modifier_keys
 xkb_symbols "alts_toggle" {
-    virtual_modifiers LAlt, RAlt;
     key <LALT> {
         type[Group1]="PC_ALT_LEVEL2",
-        symbols[Group1] = [ Alt_L, ISO_Prev_Group ],
-        virtualMods= LAlt
+        symbols[Group1] = [ Alt_L, ISO_Prev_Group ]
     };
     key <RALT> {
         type[Group1]="PC_ALT_LEVEL2",
-        symbols[Group1] = [ Alt_R, ISO_Next_Group ],
-        virtualMods= RAlt
+        symbols[Group1] = [ Alt_R, ISO_Next_Group ]
     };
 };
 
