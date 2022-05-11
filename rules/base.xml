@@ -6962,6 +6962,12 @@
       </option>
       <option>
         <configItem>
+          <name>grp:alt_altgr_toggle</name>
+          <description>Both Alt together; AltGr alone chooses third level</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>grp:ctrls_toggle</name>
           <description>Both Ctrl together</description>
         </configItem>

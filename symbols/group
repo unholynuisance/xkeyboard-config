@@ -360,6 +360,20 @@ xkb_symbols "alts_toggle" {
     };
 };
 
+// Pressing Alt plus AltGr switches to the next or previous group
+// (depending on which one is pressed first).
+partial modifier_keys
+xkb_symbols "alt_altgr_toggle" {
+    key <LALT> {
+        type[Group1]="FOUR_LEVEL",
+        symbols[Group1] = [ Alt_L, Alt_L, ISO_Prev_Group, ISO_Prev_Group ]
+    };
+    key <RALT> {
+        type[Group1]="PC_ALT_LEVEL2",
+        symbols[Group1] = [ ISO_Level3_Shift, ISO_Next_Group ]
+    };
+};
+
 // Pressing the left Shift key switches to the next group.
 partial modifier_keys
 xkb_symbols "lshift_toggle" {

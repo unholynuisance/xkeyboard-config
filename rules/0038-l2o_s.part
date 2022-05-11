@@ -1,5 +1,6 @@
 ! layout[2]		option			= symbols
   *			grp:alts_toggle		= +group(alts_toggle):2
+  *			grp:alt_altgr_toggle	= +group(alt_altgr_toggle):2
   *			lv3:ralt_alt		= +level3(ralt_alt):2
   *			misc:typo		= +typo(base):2
   *			misc:apl		= +apl(level3):2
