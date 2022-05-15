@@ -13,8 +13,8 @@ xkb_symbols "basic" {
     key <AE08> { [      U1048,     asterisk,            8,    asterisk ] };
     key <AE09> { [      U1049,    parenleft,            9,   parenleft ] };
     key <AE10> { [      U1040,   parenright,            0,  parenright ] };
-    key <AE11> { [      minus,   underscore,        minus,  underscore ] };
-    key <AE12> { [      equal,         plus,        equal,        plus ] };
+    key <AE11> { [      minus,   underscore                            ] };
+    key <AE12> { [      equal,         plus                            ] };
 
     key <AD01> { [      U1006,        U1008,            q,           Q ] };
     key <AD02> { [      U1010,        U101D,            w,           W ] };
@@ -40,6 +40,7 @@ xkb_symbols "basic" {
     key <AC09> { [      U1030,        U1013,            l,           L ] };
     key <AC10> { [      U1038,        U1002,    semicolon,       colon ] };
     key <AC11> { [ apostrophe,      quotedbl                           ] };
+    key <BKSL> { [      U104F,      backslash,   backslash,        bar ] };
 
     key <AB01> { [      U1016,         U1007,           z,           Z ] };
     key <AB02> { [      U1011,         U100C,           x,           X ] };
@@ -51,15 +52,14 @@ xkb_symbols "basic" {
     key <AB08> { [      comma,         U104A,       comma,        less ] };
     key <AB09> { [     period,         U104B,      period,     greater ] };
     key <AB10> { [      slash,      question                           ] };
-
-    key <BKSL> { [      U104F,      backslash,   backslash,        bar ] };
 };
 
 partial alphanumeric_keys
 xkb_symbols "zawgyi" {
 
 	name[Group1]="Burmese Zawgyi";
-	include "level3(ralt_switch)"
+
+	include "mm(tilde_latch)"
 
 	key <AE01> { [ U1041, U100D, U100E, U106F ] };
 	key <AE02> { [ U1042, U1091, U106D ] };
@@ -98,6 +98,7 @@ xkb_symbols "zawgyi" {
 	key <AC09> { [ U1030, U1034, U108D, U108B ] };
 	key <AC10> { [ U1038, U105A ] };
 	key <AC11> { [ U1012, U1013, U1075, U1076 ] };
+	key <BKSL> { [ U104F, U1092 ] };
 
 	key <AB01> { [ U1016, U1007, U1079, U1068 ] };
 	key <AB02> { [ U1011, U100C, U1073, U1074 ] };
@@ -110,15 +111,13 @@ xkb_symbols "zawgyi" {
 	key <AB09> { [ period, U1008 ] };
 	key <AB10> { [ U104B, U104A ] };
 
-	key <BKSL> { [ U104F, U1092 ] };
-
-	include "mm(tilde_switch)"
+	include "level3(ralt_switch)"
 };
 
 // The following code creates the "Tilde key" phenomenon.
 
 partial modifier_keys
-xkb_symbols "tilde_switch" {
+xkb_symbols "tilde_latch" {
 	key <TLDE> {
 	symbols[Group1] = [ ISO_Level3_Latch,	asciitilde,	grave ]
 	};
@@ -168,6 +167,7 @@ xkb_symbols "mnw" {
     key <AC09> { [      U1030,      U1013,            l,           L ] };
     key <AC10> { [      U1038,      colon,    semicolon,       colon ] };
     key <AC11> { [ apostrophe,    quotedbl                           ] };
+    key <BKSL> { [      U1051,       U007C,   backslash,         bar ] };
 
     key <AB01> { [      U1016,       U1007,           z,           Z ] };
     key <AB02> { [      U1011,       U100C,           x,           X ] };
@@ -179,8 +179,6 @@ xkb_symbols "mnw" {
     key <AB08> { [      U101A,       U105E,       comma,        less ] };
     key <AB09> { [      U105C,       U1055,      period,     greater ] };
     key <AB10> { [      U104B,       U104A                           ] };
-
-    key <BKSL> { [      U1051,       U007C,   backslash,         bar ] }; 
 };
 
 // Mon A1 layout
@@ -229,6 +227,7 @@ xkb_symbols "mnw-a1" {
     key <AC09> { [      U101C,      U1060 ] };
     key <AC10> { [      U1025,      U1020 ] };
     key <AC11> { [ apostrophe,   quotedbl ] };
+    key <BKSL> { [      U105C,      U105D ] };
 
     key <AB01> { [      U1007,      U105B ] };
     key <AB02> { [      U100B,      U100C ] };
@@ -240,29 +239,26 @@ xkb_symbols "mnw-a1" {
     key <AB08> { [      U1036,      U1038 ] };
     key <AB09> { [      U102C,      U102B ] };
     key <AB10> { [      U104A,      U104B ] };
-
-    key <BKSL> { [      U105C,      U105D ] };
 };
-
 
 
 partial alphanumeric_keys
 xkb_symbols "shn" {
     name[Group1]= "Shan";
 
-    key <TLDE> { [      grave,  asciitilde,	grave,   asciitilde ] };
-    key <AE01> { [      1,      exclam, 	    1,       exclam ] };
-    key <AE02> { [      2,      at,		    2,           at ] };
-    key <AE03> { [      3,      numbersign,         3,   numbersign ] };
-    key <AE04> { [      4,      dollar                              ] };
-    key <AE05> { [      5,      percent                             ] };
-    key <AE06> { [      6,      asciicircum,        6,  asciicircum ] };
-    key <AE07> { [      7,      ampersand,          7,    ampersand ] };
-    key <AE08> { [      8,      asterisk,           8,     asterisk ] };
-    key <AE09> { [      9,      parenleft,          9,    parenleft ] };
-    key <AE10> { [      0,      parenright,         0,   parenright ] };
-    key <AE11> { [      minus,  underscore,     minus,   underscore ] };
-    key <AE12> { [      equal,  plus,           equal,         plus ] };
+    key <TLDE> { [      grave,  asciitilde  ]};
+    key <AE01> { [          1,  exclam      ]};
+    key <AE02> { [          2,  at          ]};
+    key <AE03> { [          3,  numbersign  ]};
+    key <AE04> { [          4,  dollar      ]};
+    key <AE05> { [          5,  percent     ]};
+    key <AE06> { [          6,  asciicircum ]};
+    key <AE07> { [          7,  ampersand   ]};
+    key <AE08> { [          8,  asterisk    ]};
+    key <AE09> { [          9,  parenleft   ]};
+    key <AE10> { [          0,  parenright  ]};
+    key <AE11> { [      minus,  underscore  ]};
+    key <AE12> { [      equal,  plus        ]};
 
     key <AD01> { [      U1078,      UAA61,           q,           Q ] };
     key <AD02> { [      U1010,      U107B,           w,           W ] };
@@ -274,8 +270,8 @@ xkb_symbols "shn" {
     key <AD08> { [      U1004,      U101B,           i,           I ] };
     key <AD09> { [      U101D,      U101E,           o,           O ] };
     key <AD10> { [      U1081,      U1080,           p,           P ] };
-    key <AD11> { [      bracketleft,       braceleft,  bracketleft,   braceleft ] };
-    key <AD12> { [      bracketright,      braceright, bracketright,  braceright ] };
+    key <AD11> {[  bracketleft,  braceleft  ]};
+    key <AD12> {[ bracketright, braceright  ]};
 
     key <AC01> { [      U1031,      U1035,            a,           A ] };
     key <AC02> { [      U1084,      U1085,            s,           S ] };
@@ -288,6 +284,7 @@ xkb_symbols "shn" {
     key <AC09> { [      U1030,      U108A,            l,           L ] };
     key <AC10> { [      U1088,      U1038,    semicolon,       colon ] };
     key <AC11> { [ apostrophe,    quotedbl                           ] };
+    key <BKSL> { [  backslash,         bar  ]};
 
     key <AB01> { [      U107D,       U107E,           z,           Z ] };
     key <AB02> { [      U1011,       UAA6A,           x,           X ] };
@@ -299,7 +296,6 @@ xkb_symbols "shn" {
     key <AB08> { [      comma,       U104A,       comma,        less ] };
     key <AB09> { [     period,       U104B,      period,     greater ] };
     key <AB10> { [      slash,    question                           ] };
-    key <BKSL> { [  backslash,         bar,   backslash,         bar ] };
 };
 
 
@@ -307,7 +303,8 @@ partial alphanumeric_keys
 xkb_symbols "zgt" {
 
 	name[Group1]="Shan (Zawgyi Tai)";
-	include "level3(ralt_switch)"
+
+	include "mm(tilde_latch)"
 
 	key <AE01> { [      U1041,         U100D,         U100E,         U106F  ] };
 	key <AE02> { [      U1042,         U1091,         U106D 		] };
@@ -346,6 +343,7 @@ xkb_symbols "zgt" {
 	key <AC09> { [      U1030,         U1034,         U108D,         U108B	] };
 	key <AC10> { [      U1038,         U105A				] };
 	key <AC11> { [      U1012,         U1013,         U1075,         U1076	] };
+	key <BKSL> { [      U104F,         U1092				] };
 
 	key <AB01> { [      U1016,         U1007,         U1079,         U1068	] };
 	key <AB02> { [      U1011,         U100C,         U1073,         U1074	] };
@@ -358,8 +356,6 @@ xkb_symbols "zgt" {
 	key <AB09> { [      period,        U1008 				] };
 	key <AB10> { [      U104B,         U104A 				] };
 
-	key <BKSL> { [      U104F,         U1092 				] };
-
-	include "mm(tilde_switch)"
+	include "level3(ralt_switch)"
 };
 
