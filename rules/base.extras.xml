@@ -59,6 +59,16 @@
     </layout>
     <layout>
       <configItem popularity="exotic">
+        <name>bqn</name>
+        <shortDescription>bqn</shortDescription>
+        <description>BQN</description>
+        <languageList>
+          <iso639Id>eng</iso639Id>
+        </languageList>
+      </configItem>
+    </layout>
+    <layout>
+      <configItem popularity="exotic">
         <name>ca</name>
         <shortDescription>fr</shortDescription>
         <description>French (Canada)</description>
