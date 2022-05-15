@@ -254,7 +254,8 @@ xkb_symbols "shn" {
     key <AE01> { [      1,      exclam, 	    1,       exclam ] };
     key <AE02> { [      2,      at,		    2,           at ] };
     key <AE03> { [      3,      numbersign,         3,   numbersign ] };
-    key <AE04> { [      4,      dollar,             4,      percent ] };
+    key <AE04> { [      4,      dollar                              ] };
+    key <AE05> { [      5,      percent                             ] };
     key <AE06> { [      6,      asciicircum,        6,  asciicircum ] };
     key <AE07> { [      7,      ampersand,          7,    ampersand ] };
     key <AE08> { [      8,      asterisk,           8,     asterisk ] };
