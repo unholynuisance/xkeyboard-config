@@ -69,6 +69,16 @@ xkb_symbols "toggle" {
     };
 };
 
+// Pressing the left Alt key switches to the next group.
+partial modifier_keys
+xkb_symbols "lalt_toggle" {
+    virtual_modifiers AltGr;
+    key <LALT> {
+        symbols[Group1] = [ ISO_Next_Group ],
+        virtualMods= AltGr
+    };
+};
+
 // Pressing both Shift keys switches to the next or previous group
 // (depending on which Shift is pressed first).
 partial modifier_keys
@@ -88,6 +98,15 @@ xkb_symbols "shift_caps_toggle" {
 partial modifier_keys
 xkb_symbols "shift_caps_switch" {
     key <CAPS> { [ ISO_First_Group, ISO_Last_Group ] };
+};
+
+// Pressing Alt+Space switches to the next group.
+partial modifier_keys
+xkb_symbols "alt_space_toggle" {
+    key <SPCE> {
+        type[Group1]="PC_ALT_LEVEL2",
+        symbols[Group1] = [ space, ISO_Next_Group ]
+    };
 };
 
 // Pressing Win+Space switches to the next group.
@@ -388,16 +407,6 @@ xkb_symbols "rshift_toggle" {
     };
 };
 
-// Pressing the left Alt key switches to the next group.
-partial modifier_keys
-xkb_symbols "lalt_toggle" {
-    virtual_modifiers AltGr;
-    key <LALT> {
-        symbols[Group1] = [ ISO_Next_Group ],
-        virtualMods= AltGr
-    };
-};
-
 // Pressing the left Ctrl key switches to the next group.
 partial modifier_keys
 xkb_symbols "lctrl_toggle" {
@@ -431,14 +440,6 @@ xkb_symbols "alt_caps_toggle" {
 hidden partial modifier_keys
 xkb_symbols "olpc" {
     key <I219> { [ ISO_Next_Group, ISO_Prev_Group ] };
-};
-
-partial modifier_keys
-xkb_symbols "alt_space_toggle" {
-    key <SPCE> {
-        type[Group1]="PC_ALT_LEVEL2",
-        symbols[Group1] = [ space, ISO_Next_Group ]
-    };
 };
 
 // Pressing the Scroll Lock key switches to the next group.

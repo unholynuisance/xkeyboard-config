@@ -7016,12 +7016,6 @@
       </option>
       <option>
         <configItem>
-          <name>grp:alt_space_toggle</name>
-          <description>Alt+Space</description>
-        </configItem>
-      </option>
-      <option>
-        <configItem>
           <name>grp:menu_toggle</name>
           <description>Menu</description>
         </configItem>
@@ -7030,6 +7024,12 @@
         <configItem>
           <name>grp:lwin_toggle</name>
           <description>Left Win</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
+          <name>grp:alt_space_toggle</name>
+          <description>Alt+Space</description>
         </configItem>
       </option>
       <option>
