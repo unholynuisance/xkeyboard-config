@@ -1,4 +1,5 @@
 ! layout[3]		option			= symbols
+  *			grp:toggle		= +group(toggle):3
   *			grp:alts_toggle		= +group(alts_toggle):3
   *			grp:alt_altgr_toggle	= +group(alt_altgr_toggle):3
   *			grp:win_space_toggle	= +group(win_space_toggle):3
