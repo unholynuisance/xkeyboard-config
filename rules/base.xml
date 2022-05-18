@@ -6951,25 +6951,25 @@
       <option>
         <configItem>
           <name>grp:shifts_toggle</name>
-          <description>Both Shift together</description>
+          <description>Both Shifts together</description>
         </configItem>
       </option>
       <option>
         <configItem>
           <name>grp:alts_toggle</name>
-          <description>Both Alt together</description>
+          <description>Both Alts together</description>
         </configItem>
       </option>
       <option>
         <configItem>
           <name>grp:alt_altgr_toggle</name>
-          <description>Both Alt together; AltGr alone chooses third level</description>
+          <description>Both Alts together; AltGr alone chooses third level</description>
         </configItem>
       </option>
       <option>
         <configItem>
           <name>grp:ctrls_toggle</name>
-          <description>Both Ctrl together</description>
+          <description>Both Ctrls together</description>
         </configItem>
       </option>
       <option>
@@ -7820,19 +7820,19 @@
       <option>
         <configItem>
           <name>shift:both_capslock</name>
-          <description>Both Shift together enable Caps Lock</description>
+          <description>Both Shifts together enable Caps Lock</description>
         </configItem>
       </option>
       <option>
         <configItem>
           <name>shift:both_capslock_cancel</name>
-          <description>Both Shift together enable Caps Lock; one Shift key disables it</description>
+          <description>Both Shifts together enable Caps Lock; one Shift key disables it</description>
         </configItem>
       </option>
       <option>
         <configItem>
           <name>shift:both_shiftlock</name>
-          <description>Both Shift together enable Shift Lock</description>
+          <description>Both Shifts together enable Shift Lock</description>
         </configItem>
       </option>
       <option>
