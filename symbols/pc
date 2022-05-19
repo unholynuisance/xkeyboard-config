@@ -1,26 +1,25 @@
+// The keys that are common to all standard layouts.
 default partial alphanumeric_keys modifier_keys
 xkb_symbols "pc105" {
 
     key  <ESC> {[  Escape  ]};
+    key  <TAB> {[  Tab,  ISO_Left_Tab  ]};
+    key <CAPS> {[  Caps_Lock  ]};
+
+    key <BKSP> {[  BackSpace,  BackSpace  ]};
+    key <BKSL> {[  backslash,  bar  ]};
+    key <RTRN> {[  Return  ]};
 
     // The extra key on many European keyboards:
     key <LSGT> {[  less,  greater,    bar,  brokenbar  ]};
 
-    // The following keys are common to all layouts.
-    key <BKSL> {[  backslash,  bar  ]};
     key <SPCE> {[  space  ]};
+
+    key <NMLK> {[  Num_Lock  ]};
 
     include "srvr_ctrl(fkey2vt)"
     include "pc(editing)"
     include "keypad(x11)"
-
-    key <BKSP> {[  BackSpace,  BackSpace  ]};
-
-    key  <TAB> {[  Tab,  ISO_Left_Tab  ]};
-    key <RTRN> {[  Return     ]};
-
-    key <CAPS> {[  Caps_Lock  ]};
-    key <NMLK> {[  Num_Lock   ]};
 
     key <LFSH> {[  Shift_L    ]};
     key <LCTL> {[  Control_L  ]};
@@ -41,19 +40,19 @@ xkb_symbols "pc105" {
     // Fake keys for virtual<->real modifiers mapping:
     key <LVL3> {[  ISO_Level3_Shift  ]};
     key <MDSW> {[  Mode_switch  ]};
-    modifier_map Mod5   { <LVL3>, <MDSW> };
+    modifier_map Mod5  { <LVL3>, <MDSW> };
 
     key <ALT>  {[  NoSymbol, Alt_L  ]};
     include "altwin(meta_alt)"
 
     key <META> {[  NoSymbol, Meta_L  ]};
-    modifier_map Mod1   { <META> };
+    modifier_map Mod1  { <META> };
 
     key <SUPR> {[  NoSymbol, Super_L  ]};
-    modifier_map Mod4   { <SUPR> };
+    modifier_map Mod4  { <SUPR> };
 
     key <HYPR> {[  NoSymbol, Hyper_L  ]};
-    modifier_map Mod4   { <HYPR> };
+    modifier_map Mod4  { <HYPR> };
     // End of modifier mappings.
 
     key <OUTP> {[  XF86Display  ]};
@@ -64,25 +63,19 @@ xkb_symbols "pc105" {
 
 hidden partial alphanumeric_keys
 xkb_symbols "editing" {
-    key <PRSC> {
-	type= "PC_ALT_LEVEL2",
-	symbols[Group1]= [  Print,  Sys_Req  ]
-    };
+    key <PRSC> {[  Print,  Sys_Req  ], type="PC_ALT_LEVEL2" };
     key <SCLK> {[  Scroll_Lock  ]};
-    key <PAUS> {
-	type= "PC_CONTROL_LEVEL2",
-	symbols[Group1]= [  Pause,  Break  ]
-    };
+    key <PAUS> {[  Pause,  Break  ], type="PC_CONTROL_LEVEL2" };
 
     key  <INS> {[  Insert  ]};
-    key <HOME> {[  Home    ]};
-    key <PGUP> {[  Prior   ]};
     key <DELE> {[  Delete  ]};
+    key <HOME> {[  Home    ]};
     key  <END> {[  End     ]};
+    key <PGUP> {[  Prior   ]};
     key <PGDN> {[  Next    ]};
 
     key   <UP> {[  Up      ]};
-    key <LEFT> {[  Left    ]};
     key <DOWN> {[  Down    ]};
+    key <LEFT> {[  Left    ]};
     key <RGHT> {[  Right   ]};
 };
