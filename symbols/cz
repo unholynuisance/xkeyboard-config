@@ -400,20 +400,8 @@ xkb_symbols "prog" {
     key <AE11> { [ equal,	minus,	underscore,	U2212 ] };
     key <AE12> { [ dead_acute,	dead_caron,	plusminus,	notequal ] };
     key <BKSL> { [ backslash,	bar,	dead_diaeresis ] };
-    key <BKSP> { [ BackSpace,	BackSpace ] };
-    key <CAPS> { [ Caps_Lock ] };
     key <COMP> { [ Menu,	Multi_key ] };
-    key <LALT> { [ Alt_L,	Meta_L ] };
-    key <LCTL> { [ Control_L ] };
-    key <LFSH> { [ Shift_L ] };
-    key <LWIN> { [ Super_L ] };
     key <RALT> { [ ISO_Level3_Shift ] };
-    key <RCTL> { [ Control_R ] };
-    key <RTRN> { [ Return ] };
-    key <RTSH> { [ Shift_R ] };
-    key <RWIN> { [ Super_R ] };
-    key <SPCE> { [ space ] };
-    key <TAB> { [ Tab,	ISO_Left_Tab ] };
     key <TLDE> { [ grave,	asciitilde ] };
     
     include "level3(ralt_switch)"
