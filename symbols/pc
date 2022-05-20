@@ -15,12 +15,6 @@ xkb_symbols "pc105" {
 
     key <SPCE> {[  space  ]};
 
-    key <NMLK> {[  Num_Lock  ]};
-
-    include "srvr_ctrl(fkey2vt)"
-    include "pc(editing)"
-    include "keypad(x11)"
-
     key <LFSH> {[  Shift_L    ]};
     key <LCTL> {[  Control_L  ]};
     key <LWIN> {[  Super_L    ]};
@@ -30,14 +24,13 @@ xkb_symbols "pc105" {
     key <RWIN> {[  Super_R    ]};
     key <MENU> {[  Menu       ]};
 
-    // Beginning of modifier mappings.
     modifier_map Shift   { Shift_L, Shift_R };
     modifier_map Lock    { Caps_Lock };
     modifier_map Control { Control_L, Control_R };
     modifier_map Mod2    { Num_Lock };
     modifier_map Mod4    { Super_L, Super_R };
 
-    // Fake keys for virtual<->real modifiers mapping:
+    // Six fake keys for virtual<->real modifiers mapping:
     key <LVL3> {[  ISO_Level3_Shift  ]};
     key <MDSW> {[  Mode_switch  ]};
     modifier_map Mod5  { <LVL3>, <MDSW> };
@@ -53,16 +46,9 @@ xkb_symbols "pc105" {
 
     key <HYPR> {[  NoSymbol, Hyper_L  ]};
     modifier_map Mod4  { <HYPR> };
-    // End of modifier mappings.
 
-    key <OUTP> {[  XF86Display  ]};
-    key <KITG> {[  XF86KbdLightOnOff  ]};
-    key <KIDN> {[  XF86KbdBrightnessDown  ]};
-    key <KIUP> {[  XF86KbdBrightnessUp  ]};
-};
+    include "srvr_ctrl(fkey2vt)"
 
-hidden partial alphanumeric_keys
-xkb_symbols "editing" {
     key <PRSC> {[  Print,  Sys_Req  ], type="PC_ALT_LEVEL2" };
     key <SCLK> {[  Scroll_Lock  ]};
     key <PAUS> {[  Pause,  Break  ], type="PC_CONTROL_LEVEL2" };
@@ -78,4 +64,12 @@ xkb_symbols "editing" {
     key <DOWN> {[  Down    ]};
     key <LEFT> {[  Left    ]};
     key <RGHT> {[  Right   ]};
+
+    key <NMLK> {[  Num_Lock  ]};
+    include "keypad(x11)"
+
+    key <OUTP> {[  XF86Display  ]};
+    key <KITG> {[  XF86KbdLightOnOff  ]};
+    key <KIDN> {[  XF86KbdBrightnessDown  ]};
+    key <KIUP> {[  XF86KbdBrightnessUp  ]};
 };
