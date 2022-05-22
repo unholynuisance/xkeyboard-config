@@ -810,7 +810,7 @@ xkb_symbols "olck" {
     key <AE01> { [  U1C51, exclam		] };
     key <AE02> { [  U1C52, at			] };
     key <AE03> { [  U1C53, numbersign		] };
-    key <AE04> { [  U1C54, dollar, U20B9	] }; // Rupee
+    key <AE04> { [  U1C54, dollar		] };
     key <AE05> { [  U1C55, percent		] };
     key <AE06> { [  U1C56, asciicircum		] };
     key <AE07> { [  U1C57, ampersand		] };
@@ -857,6 +857,7 @@ xkb_symbols "olck" {
     key <AB09> { [  U1C79, greater		] };
     key <AB10> { [  slash, question		] };
 
+    include "rupeesign(4)"
     include "level3(ralt_switch)"
 };
 
