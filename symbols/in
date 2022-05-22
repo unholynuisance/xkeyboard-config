@@ -979,11 +979,6 @@ xkb_symbols "ori-bolnagri" {
     key <AB09>  { [   period,     U0B3C,      U0B55     ] };            // period: period, nukta
     key <AB10>  { [   slash,      question    ] };
 
-//    modifier_map Shift  { Shift_L };
-//    modifier_map Lock   { Caps_Lock };
-//    modifier_map Control{ Control_L };
-//    modifier_map Mod3   { Mode_switch };
-
   include "level3(ralt_switch)"
 };
 

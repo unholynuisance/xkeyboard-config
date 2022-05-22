@@ -394,8 +394,6 @@ xkb_symbols "multix" {
 
     include "nbsp(level3s)"
 
-    modifier_map Control{ Control_L };
-
     include "level3(ralt_switch)"
     include "level5(rctrl_switch)"
 };
