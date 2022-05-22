@@ -660,11 +660,6 @@ xkb_symbols "kan" {
     key <AB09> { [ period		] };
     key <AB10> { [  U0caf,    at	] };
 
-    key <RALT> {
-	symbols[Group1] = [ Mode_switch, Multi_key ],
-	virtualMods = AltGr
-    };
-
     include "rupeesign(4)"
     include "level3(ralt_switch)"
 };
@@ -862,11 +857,6 @@ xkb_symbols "olck" {
     key <AB09> { [  U1C79, greater		] };
     key <AB10> { [  slash, question		] };
 
-    key <RALT> {
-	symbols[Group1] = [ Mode_switch, Multi_key ],
-	virtualMods = AltGr
-    };
-
     include "level3(ralt_switch)"
 };
 
@@ -925,11 +915,6 @@ xkb_symbols "ori" {
     key <AB08> { [  comma, U0b37	] };
     key <AB09> { [  period		] };
     key <AB10> { [  U0b2f,    at	] };
-
-    key <RALT> {
-	symbols[Group1] = [ Mode_switch, Multi_key ],
-	virtualMods = AltGr
-    };
 
     include "rupeesign(4)"
     include "level3(ralt_switch)"
@@ -1418,11 +1403,6 @@ xkb_symbols "tel" {
     key <AB08> { [  comma, U0c37	] };
     key <AB09> { [  period		] };
     key <AB10> { [  U0c2f, at		] };
-
-    key <RALT> {
-        symbols[Group1] = [ Mode_switch, Multi_key ],
-        virtualMods = AltGr
-    };
 
     include "rupeesign(4)"
     include "level3(ralt_switch)"
