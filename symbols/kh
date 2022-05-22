@@ -1,39 +1,18 @@
+// Khmer Unicode keyboard layout for XFree86 and XOrg,
+// by the National Information Communications Technology Development Authority
+// (NiDa) of Cambodia -- http://www.nida.gov.kh/.
 //
-//   khmer unicode keyboard for XFree86 4.3 or XOrg 
-//   (might work with older versions, not tested)
-//
-//   layout defined by National Information Communications Technology Development Authority (NiDA)
-//   http://www.nida.gov.kh
-//
-//   version:  1.0.1
-//
-//   date: 14.09.2005
-//
-//   author:  Jens Herden   (jens at khmeros.info)
-//
-//
-//   understanding the symbols:
-//
-//         0x100yyyy  = unicode, yyyy is hexcode
-//                      codes that are not assigned in unicode (0x10017fb-0x10017ff),
-//                      are used to make compositions for special vowels
-//
-//         voidsymbol = no symbol for this combination
-//
-//         all other symbol are defined in: /usr/X11/include/X11/keysymdef.h
-//         but with a leading 'XK_'
-//
+// version:  1.0.1
+// date:  14.09.2005
+// author:  Jens Herden  (jens at khmeros.info)
 
 default partial alphanumeric_keys
 xkb_symbols "basic" {
+
     name[Group1]= "Khmer (Cambodia)";
 
-// there are four levels defined:
-//
-//                 normal           shift			right-alt	right-alt + shift
-//
+//  Four levels:   normal		Shift			right Alt	Shift+right Alt
 
-//  keys: `1234567890-=\
     key <TLDE> { [ guillemotleft,	guillemotright,	0x100200d,	voidsymbol	] };
     key <AE01> { [ 0x10017e1,		exclam,			0x100200c, 	0x10017f1	] };
     key <AE02> { [ 0x10017e2,		0x10017d7,		at, 		0x10017f2	] };
@@ -47,9 +26,7 @@ xkb_symbols "basic" {
     key <AE10> { [ 0x10017e0,		parenright,		braceright, 0x10017f0	] };
     key <AE11> { [ 0x10017a5,		0x10017cc,		x, 		    voidsymbol	] };
     key <AE12> { [ 0x10017b2,		equal,			0x10017ce, 	voidsymbol	] };
-    key <BKSL> { [ 0x10017ae,		0x10017ad,		backslash, 	voidsymbol	] };
 
-//  keys: qwertyuiop[]
     key <AD01> { [ 0x1001786,		0x1001788,		0x10017dc, 	0x10019e0	] };
     key <AD02> { [ 0x10017b9,		0x10017ba,		0x10017dd, 	0x10019e1	] };
     key <AD03> { [ 0x10017c1,		0x10017c2,		0x10017af, 	0x10019e2	] };
@@ -63,7 +40,6 @@ xkb_symbols "basic" {
     key <AD11> { [ 0x10017c0,		0x10017bf,		0x10017a9, 	0x10019ea	] };
     key <AD12> { [ 0x10017aa,		0x10017a7,		0x10017b3, 	0x10019eb	] };
 
-//  keys: asdfghjkl;'
     key <AC01> { [ 0x10017b6,		0x10017ff,		voidsymbol, 0x10019ec	] };
     key <AC02> { [ 0x100179f,		0x10017c3,		voidsymbol, 0x10019ed	] };
     key <AC03> { [ 0x100178a,		0x100178c,		voidsymbol, 0x10019ee	] };
@@ -75,8 +51,8 @@ xkb_symbols "basic" {
     key <AC09> { [ 0x100179b,		0x10017a1,		voidsymbol, 0x10019f4	] };
     key <AC10> { [ 0x10017be,		0x10017fe,		0x10017d6, 	0x10019f5	] };
     key <AC11> { [ 0x10017cb,		0x10017c9,		0x10017c8, 	0x10019f6	] };
+    key <BKSL> { [ 0x10017ae,		0x10017ad,		backslash, 	voidsymbol	] };
 
-//  keys: zxcvbnm,./
     key <AB01> { [ 0x100178b,		0x100178d,		voidsymbol, 0x10019f7	] };
     key <AB02> { [ 0x1001781,		0x1001783,		voidsymbol, 0x10019f8	] };
     key <AB03> { [ 0x1001785,		0x1001787,		voidsymbol, 0x10019f9	] };
@@ -89,9 +65,8 @@ xkb_symbols "basic" {
     key <AB10> { [ 0x10017ca,		question,		slash,		voidsymbol	] };
 
     key <SPCE> { [ 0x100200b,		space,			0x10000a0,	voidsymbol	] };
-    key <RALT> { [ Alt_R	] };
 
-// third level with right-Alt
+    // Third and fourth level with right Alt key (AltGr):
     include "level3(ralt_switch)"
 };
 
@@ -99,7 +74,7 @@ partial alphanumeric_keys
 xkb_symbols "olpc" {
     include "kh(basic)"
 
-// Contact Walter@laptop.org
+    // contact: Walter@laptop.org
 
     key <AC10> { [ 0x10017be,		0x10017c8,		0x10017d6, 	0x10019f5	] };
     key <AE01> { [ 0x10017e1,		0x100200c,		exclam, 	0x10017f1	] };
@@ -107,6 +82,6 @@ xkb_symbols "olpc" {
     key <AE05> { [ 0x10017e5,		EuroSign,		percent, 	0x10017f5	] };
     key <AE12> { [ 0x10017b2,		0x10017ce,		equal, 	 	voidsymbol	] };
 
-   //language key
-   include "group(olpc)"
+    // Language key:
+    include "group(olpc)"
 };
