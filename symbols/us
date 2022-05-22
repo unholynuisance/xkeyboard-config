@@ -1498,6 +1498,25 @@ xkb_symbols "workman-intl" {
     include "level3(ralt_switch)"
 };
 
+// US Workman-P layout based on US Workman with top row digits switched only
+// US Workman layout site: https://workmanlayout.org
+partial alphanumeric_keys
+xkb_symbols "workman-p" {
+    include "us(workman)"
+    name[Group1]= "English (Workman-P)";
+
+    key <AE01> { [ exclam,      1 ] };
+    key <AE02> { [ at,          2 ] };
+    key <AE03> { [ numbersign,  3 ] };
+    key <AE04> { [ dollar,      4 ] };
+    key <AE05> { [ percent,     5 ] };
+    key <AE06> { [ asciicircum, 6 ] };
+    key <AE07> { [ ampersand,   7 ] };
+    key <AE08> { [ asterisk,    8 ] };
+    key <AE09> { [ parenleft,   9 ] };
+    key <AE10> { [ parenright,  0 ] };
+};
+
 // Norman keyboard layout symbols for xkb on X.Org Server 7.x
 // Written 11/23/2012, revised 3/7/2013 by David Norman http://normanlayout.info
 // To the extent possible under law, the author(s) have dedicated all

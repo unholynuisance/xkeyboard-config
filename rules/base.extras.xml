@@ -536,6 +536,16 @@
         </variant>
         <variant>
           <configItem popularity="exotic">
+            <name>workman-p</name>
+            <shortDescription>workman-p</shortDescription>
+            <description>English (Workman-P)</description>
+            <languageList>
+              <iso639Id>eng</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem popularity="exotic">
             <name>scn</name>
             <description>Sicilian (US keyboard)</description>
             <languageList>
