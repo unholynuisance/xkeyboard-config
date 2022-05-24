@@ -68,6 +68,17 @@ xkb_symbols "pc105" {
     key <NMLK> {[  Num_Lock  ]};
     include "keypad(x11)"
 
+    // Extra Japanese keys:
+    key <MUHE> {[  Muhenkan           ]};
+    key <HENK> {[  Henkan             ]};
+    key <HKTG> {[  Hiragana_Katakana  ]};
+    key <HIRA> {[  Hiragana           ]}; // This key and the next are rare.
+    key <KATA> {[  Katakana           ]};
+
+    // Extra Korean keys:
+    key <HNGL> {[  Hangul        ]};
+    key <HJCV> {[  Hangul_Hanja  ]};
+
     key <OUTP> {[  XF86Display  ]};
     key <KITG> {[  XF86KbdLightOnOff  ]};
     key <KIDN> {[  XF86KbdBrightnessDown  ]};

@@ -101,17 +101,6 @@ xkb_symbols "evdev" {
     key <HELP>   {      [ Help                  ]       };
     key <LNFD>   {      [ Linefeed              ]       };
 
-// Commented out because HZTG has same keycode as TLDE
-//    key <HZTG>   {      [ Zenkaku_Hankaku       ]       };
-
-    key <HKTG>   {      [ Hiragana_Katakana     ]       };
-    key <HENK>   {      [ Henkan                ]       };
-    key <MUHE>   {      [ Muhenkan              ]       };
-    key <KATA>   {      [ Katakana              ]       };
-    key <HIRA>   {      [ Hiragana              ]       };
-
-    key <HNGL>   {      [ Hangul                ]       };
-    key <HJCV>   {      [ Hangul_Hanja          ]       };
     key <FK21>   {      [ XF86TouchpadToggle    ]       };
     key <FK22>   {      [ XF86TouchpadOn        ]       };
     key <FK23>   {      [ XF86TouchpadOff       ]       };
