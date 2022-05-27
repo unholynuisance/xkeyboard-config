@@ -231,7 +231,7 @@ xkb_symbols "ben" {
 
 xkb_symbols "ben_probhat" {
    name[Group1]= "Bangla (India, Probhat)";
-   key.type="FOUR_LEVEL";
+   key.type[group1]="FOUR_LEVEL";
 
    // Digits row:
    key <TLDE> { [ U200D, asciitilde   ] };
@@ -2354,7 +2354,7 @@ xkb_symbols "san-misc" {
 partial alphanumeric_keys
 xkb_symbols "modi-kagapa" {
     name[Group1] = "Modi (KaGaPa phonetic)";
-    key.type="FOUR_LEVEL";
+    key.type[group1]="FOUR_LEVEL";
 
     key <TLDE>  { [   grave,        asciitilde,   U201C           ] };  // U201C: left double quotation mark
     key <AE01>  { [   1,            exclam,       U11651          ] };
