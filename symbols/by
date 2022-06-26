@@ -10,6 +10,7 @@ xkb_symbols "basic" {
 	include "ru(winkeys)"
 	name[Group1]= "Belarusian";
 
+	key <AD07> {[  Cyrillic_ghe,         Cyrillic_GHE,        Ukrainian_ghe_with_upturn,  Ukrainian_GHE_WITH_UPTURN  ]};
 	key <AD09> {[  Byelorussian_shortu,  Byelorussian_SHORTU  ]};
 	key <AD12> {[  apostrophe,           apostrophe           ]};
 	key <AB05> {[  Ukrainian_i,          Ukrainian_I          ]};
