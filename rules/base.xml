@@ -1863,6 +1863,12 @@
             <description>Belarusian (intl.)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>phonetic</name>
+            <description>Belarusian (phonetic)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
