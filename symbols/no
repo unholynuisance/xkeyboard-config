@@ -115,30 +115,30 @@ xkb_symbols "smi" {
 
     name[Group1]= "Northern Saami (Norway)";
 
-    key <TLDE>	{ [       bar,    section,         none,    paragraph ]	};
-    key <AE01>	{ [         1,     exclam,    copyright,   exclamdown ]	};
-    key <AE02>	{ [         2,   quotedbl,           at,         none ]	};
+    key <TLDE>	{ [       bar,    section,        grave,   asciitilde ]	};
+    key <AE01>	{ [         1,     exclam,        U2022,   exclamdown ]	}; // bullet
+    key <AE02>	{ [         2,   quotedbl,           at,    copyright ]	};
     key <AE03>	{ [         3, numbersign,     sterling,         none ]	};
-    key <AE04>	{ [         4,   currency,       dollar,         none ]	};
+    key <AE04>	{ [         4,   currency,       dollar,         cent ]	};
     key <AE05>	{ [         5,    percent,     EuroSign,     permille ]	};
-    key <AE06>	{ [         6,  ampersand,         none,         none ]	};
-    key <AE07>	{ [         7,      slash,    braceleft,         none ]	};
-    key <AE08>	{ [         8,  parenleft,  bracketleft,         none ]	};
-    key <AE09>	{ [         9, parenright, bracketright,         none ]	};
+    key <AE06>	{ [         6,  ampersand,  asciicircum,     multiply ]	};
+    key <AE07>	{ [         7,      slash,    braceleft,     division ]	};
+    key <AE08>	{ [         8,  parenleft,  bracketleft,    lessthanequal ]};
+    key <AE09>	{ [         9, parenright, bracketright, greaterthanequal ]};
     key <AE10>	{ [         0,      equal,   braceright,     notequal ]	};
-    key <AE11>	{ [      plus,   question,     division, questiondown ]	};
-    key <AE12>	{ [ backslash, dead_grave,   dead_acute,   asciitilde ]	};
+    key <AE11>	{ [      plus,   question,    plusminus, questiondown ]	};
+    key <AE12>	{ [ backslash, dead_grave,   dead_acute,      notsign ]	};
 
     key <AD01>	{ [    aacute,     Aacute,            q,            Q ]	};
     key <AD02>	{ [    scaron,     Scaron,            w,            W ]	};
     key <AD03>	{ [         e,          E,     EuroSign,         none ]	};
     key <AD04>	{ [         r,          R,   registered,    trademark ]	};
-    key <AD05>	{ [         t,          T,         none,         none ]	};
+    key <AD05>	{ [         t,          T,        thorn,        THORN ]	};
     key <AD06>	{ [    tslash,     Tslash,            y,            Y ]	};
     key <AD07>	{ [         u,          U,   udiaeresis,   Udiaeresis ]	};
     key <AD08>	{ [         i,          I,   idiaeresis,   Idiaeresis ]	};
     key <AD09>	{ [         o,          O,       otilde,       Otilde ]	};
-    key <AD10>	{ [         p,          P,        thorn,        THORN ]	};
+    key <AD10>	{ [         p,          P,           oe,           OE ]	};
     key <AD11>	{ [     aring,      Aring, dead_diaeresis, dead_circumflex ]	};
     key <AD12>	{ [       eng,        ENG,   dead_tilde,   dead_caron ]	};
 
@@ -148,7 +148,7 @@ xkb_symbols "smi" {
     key <AC04>	{ [         f,          F,         none,  ordfeminine ]	};
     key <AC05>	{ [         g,          G,       gcaron,       Gcaron ]	};
     key <AC06>	{ [         h,          H,        U01E5,        U01E4 ]	};
-    key <AC07>	{ [         j,          J,      notsign,     multiply ]	};
+    key <AC07>	{ [         j,          J,   doublelowquotemark,   singlelowquotemark ]};  // „ ‚
     key <AC08>	{ [         k,          K,        U01E9,        U01E8 ]	};
     key <AC09>	{ [         l,          L,       degree,       hyphen ]	};
     key <AC10>	{ [    oslash,     Oslash,   odiaeresis,   Odiaeresis ]	};
@@ -158,10 +158,10 @@ xkb_symbols "smi" {
     key <LSGT>	{ [    zcaron,     Zcaron,        U01EF,        U01EE ] }; // ǯ Ǯ
     key <AB01>	{ [         z,          Z,          ezh,          EZH ]	}; // ʒ Ʒ
     key <AB02>	{ [    ccaron,     Ccaron,            x,            X ]	};
-    key <AB03>	{ [         c,          C,     ccedilla,     Ccedilla ]	};
-    key <AB04>	{ [         v,          V, lessthanequal, guillemotleft ] };
-    key <AB05>	{ [         b,          B, greaterthanequal, guillemotright ] };
-    key <AB06>	{ [         n,          N, leftsinglequotemark, leftdoublequotemark ] };
+    key <AB03>	{ [         c,          C,  leftdoublequotemark,  leftsinglequotemark ]}; // “ ‘
+    key <AB04>	{ [         v,          V,        guillemotleft,                U2039 ]}; // « ‹
+    key <AB05>	{ [         b,          B,       guillemotright,                U203A ]}; // » ›
+    key <AB06>	{ [         n,          N, rightdoublequotemark, rightsinglequotemark ]}; // ” ’
     key <AB07>	{ [         m,          M,           mu,    masculine ]	};
     key <AB08>	{ [     comma,  semicolon,       less, periodcentered ] };
     key <AB09>	{ [    period,      colon,      greater,     ellipsis ] };
