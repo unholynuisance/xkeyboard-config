@@ -1820,6 +1820,12 @@
             <description>Azerbaijani (Cyrillic)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>azb</name>
+            <description>Azerbaijani (Iran)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
