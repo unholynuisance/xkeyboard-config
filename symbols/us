@@ -262,7 +262,6 @@ xkb_symbols "dvorak" {
 partial alphanumeric_keys
 xkb_symbols "dvorak-intl" {
 
-    include "us(dvorak)"
     name[Group1]= "English (Dvorak, intl., with dead keys)";
 
     key <TLDE> { [dead_grave, dead_tilde,         grave,       asciitilde ] };
@@ -285,13 +284,13 @@ xkb_symbols "dvorak-intl" {
     key <AD03> { [    period,    greater, dead_abovedot,       dead_caron ] };
     key <AD04> { [	   p,          P,    odiaeresis,       Odiaeresis ] };
     key <AD05> { [	   y,          Y,    udiaeresis,       Udiaeresis ] };
-    // key <AD06> { [	   f,	F		]	};
-    // key <AD07> { [	   g,	G		]	};
+    key <AD06> { [	   f,	F		]	};
+    key <AD07> { [	   g,	G		]	};
     key <AD08> { [	   c,          C,     copyright,             cent ] };
     key <AD09> { [	   r,          R,    registered,       registered ] };
     key <AD10> { [	   l,          L,        oslash,           Oslash ] };
     key <AD11> { [     slash,   question,  questiondown,        dead_hook ] };
-    // key <AD12> { [     equal,       plus,      multiply,         division ] };
+    key <AD12> { [     equal,       plus,      multiply,         division ] };
 
     key <AC01> { [	   a,          A,        aacute,           Aacute ] };
     key <AC02> { [	   o,          O,        oacute,           Oacute ] };
@@ -299,21 +298,21 @@ xkb_symbols "dvorak-intl" {
     key <AC04> { [	   u,          U,        uacute,           Uacute ] };
     key <AC05> { [	   i,          I,        iacute,           Iacute ] };
     key <AC06> { [	   d,          D,           eth,              ETH ] };
-    // key <AC07> { [	   h,	H		]	};
+    key <AC07> { [	   h,	H		]	};
     key <AC08> { [	   t,          T,         thorn,            THORN ] };
     key <AC09> { [	   n,          N,        ntilde,           Ntilde ] };
     key <AC10> { [	   s,          S,        ssharp,          section ] };
-    // key <AC11> { [     minus, underscore,           yen,    dead_belowdot ] };
+    key <AC11> { [     minus, underscore,           yen,    dead_belowdot ] };
 
     key <AB01> { [ semicolon,      colon,     paragraph,           degree ] };
     key <AB02> { [	   q,          Q,    adiaeresis,       Adiaeresis ] };
-    // key <AB03> { [	   j,	J		]	};
+    key <AB03> { [	   j,	J		]	};
     key <AB04> { [	   k,          K,            oe,               OE ] };
-    // key <AB05> { [	   x,	X		]	};
-    // key <AB06> { [	   b,	B		]	};
+    key <AB05> { [	   x,	X		]	};
+    key <AB06> { [	   b,	B		]	};
     key <AB07> { [	   m,          M,            mu,               mu ] };
     key <AB08> { [	   w,          W,         aring,            Aring ] };
-    // key <AB09> { [	   v,	V		]	};
+    key <AB09> { [	   v,	V		]	};
     key <AB10> { [	   z,          Z,            ae,               AE ] };
 
     key <BKSL> { [ backslash,        bar,       notsign,        brokenbar ] };
