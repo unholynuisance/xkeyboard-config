@@ -2109,6 +2109,17 @@
         </variant>
         <variant>
           <configItem>
+            <name>guj-kagapa</name>
+            <!-- Keyboard indicator for Hindi layouts -->
+            <shortDescription>guj</shortDescription>
+            <description>Gujarati (KaGaPa, phonetic)</description>
+            <languageList>
+              <iso639Id>guj</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>guru</name>
             <!-- Keyboard indicator for Punjabi layouts -->
             <shortDescription>pa</shortDescription>
