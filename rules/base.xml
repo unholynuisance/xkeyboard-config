@@ -4641,7 +4641,13 @@
         <variant>
           <configItem>
             <name>modern</name>
-            <description>Latvian (modern)</description>
+            <description>Latvian (Modern Latin)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>modern-cyr</name>
+            <description>Latvian (Modern Cyrillic)</description>
           </configItem>
         </variant>
         <variant>
