@@ -7306,6 +7306,12 @@
       </option>
       <option>
         <configItem>
+          <name>ctrl:swap_ralt_rctl</name>
+          <description>Swap Right Alt with Right Ctrl</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>ctrl:swap_lwin_lctl</name>
           <description>Swap Left Win with Left Ctrl</description>
         </configItem>

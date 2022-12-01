@@ -88,6 +88,7 @@
   ctrl:menu_rctrl	=	+ctrl(menu_rctrl)
   ctrl:ralt_rctrl	=	+ctrl(ralt_rctrl)
   ctrl:swap_lalt_lctl	=	+ctrl(swap_lalt_lctl)
+  ctrl:swap_ralt_rctl	=	+ctrl(swap_ralt_rctl)
   ctrl:swap_lwin_lctl	=	+ctrl(swap_lwin_lctl)
   ctrl:swap_rwin_rctl	=	+ctrl(swap_rwin_rctl)
   ctrl:swap_lalt_lctl_lwin  =	+ctrl(swap_lalt_lctl_lwin)
