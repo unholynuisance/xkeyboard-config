@@ -104,7 +104,7 @@ xkb_symbols "intl" {
     key <AD01> { [	   q,          Q,    adiaeresis,       Adiaeresis ] };
     key <AD02> { [	   w,          W,         aring,            Aring ] };
     key <AD03> { [	   e,          E,        eacute,           Eacute ] };
-    key <AD04> { [	   r,          R,    registered,       registered ] };
+    key <AD04> { [	   r,          R,    registered,        trademark ] };
     key <AD05> { [	   t,          T,         thorn,            THORN ] };
     key <AD06> { [	   y,          Y,    udiaeresis,       Udiaeresis ] };
     key <AD07> { [	   u,          U,        uacute,           Uacute ] };
@@ -287,7 +287,7 @@ xkb_symbols "dvorak-intl" {
     key <AD06> { [	   f,	F		]	};
     key <AD07> { [	   g,	G		]	};
     key <AD08> { [	   c,          C,     copyright,             cent ] };
-    key <AD09> { [	   r,          R,    registered,       registered ] };
+    key <AD09> { [	   r,          R,    registered,        trademark ] };
     key <AD10> { [	   l,          L,        oslash,           Oslash ] };
     key <AD11> { [     slash,   question,  questiondown,        dead_hook ] };
     key <AD12> { [     equal,       plus,      multiply,         division ] };
@@ -971,7 +971,7 @@ xkb_symbols "altgr-intl" {
    key <AD04> { [        r, R,           ediaeresis,   Ediaeresis      ] };
    key <AC07> { [        j, J,           idiaeresis,   Idiaeresis      ] };
    key <AB02> { [        x, X,           oe,           OE              ] };
-   key <AB04> { [        v, V,           registered,   registered      ] };
+   key <AB04> { [        v, V,           registered,   trademark       ] };
 
 // onequarter etc (not in iso8859-15) moved to get three unshifted deadkeys:
 
