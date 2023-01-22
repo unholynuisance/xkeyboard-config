@@ -934,6 +934,23 @@ xkb_symbols "colemak_dh_iso" {
     include "level3(ralt_switch)"
 };
 
+// Colemak-DH (ortholinear) symbols for xkb on X.Org Server 7.x
+// https://colemakmods.github.io/mod-dh/
+
+xkb_symbols "colemak_dh_ortho" {
+
+    include "us(colemak_dh)"
+    name[Group1]= "English (Colemak-DH Ortholinear)";
+
+    key <AB01> { [            z,            Z,              ae,               AE ] };
+    key <AB02> { [            x,            X, dead_circumflex,       asciitilde ] };
+    key <AB03> { [            c,            C,        ccedilla,         Ccedilla ] };
+    key <AB04> { [            d,            D,  dead_diaeresis,       asciitilde ] };
+    key <AB05> { [            v,            V,              oe,               OE ] };
+    
+};
+
+
 // I do NOT like dead-keys - the International keyboard as defined by Microsoft
 // does not fit my needs. Why use two keystrokes for all simple characters (eg '
 // and <space> generates a single ') just to have an é (eacute) in two strokes
