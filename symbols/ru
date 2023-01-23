@@ -1248,3 +1248,35 @@ xkb_symbols "winkeys-p" {
     key <AE09> { [ parenleft,   9 ] };
     key <AE10> { [ parenright,  0 ] };
 };
+
+// Russian keyboard layout with typography symbols.
+// This is a modified Russian standard keyboard, with the third level containing
+// typographic symbols commonly used in Russian language and punctuation symbols
+// from Latin keyboard layout.
+// Boolat Kamalov <800147@gmail.com>
+partial alphanumeric_keys
+xkb_symbols "ru_typo" {
+    include "ru(winkeys)"
+    name[Group1]= "Russian (with typographic symbols)";
+
+    key <TLDE> { [ NoSymbol, NoSymbol,              grave,          asciitilde ] };
+    key <AE01> { [ NoSymbol, NoSymbol, enfilledcircbullet                      ] };
+    key <AE02> { [ NoSymbol, NoSymbol,                 at,          apostrophe ] };
+    key <AE03> { [ NoSymbol, NoSymbol,         numbersign,             section ] };
+    key <AE04> { [ NoSymbol, NoSymbol,             dollar                      ] };
+    key <AE06> { [ NoSymbol, NoSymbol,        asciicircum,               U0301 ] }; // Combining Acute Accent
+    key <AE07> { [ NoSymbol, NoSymbol,          ampersand                      ] };
+    key <AE09> { [ NoSymbol, NoSymbol,               less                      ] };
+    key <AE10> { [ NoSymbol, NoSymbol,            greater                      ] };
+    key <AE11> { [ NoSymbol, NoSymbol,             emdash,              endash ] };
+
+    key <AD11> { [ NoSymbol, NoSymbol,        bracketleft,           braceleft ] };
+    key <AD12> { [ NoSymbol, NoSymbol,       bracketright,          braceright ] };
+
+    key <AB08> { [ NoSymbol, NoSymbol,      guillemotleft,  doublelowquotemark ] };
+    key <AB09> { [ NoSymbol, NoSymbol,     guillemotright, leftdoublequotemark ] };
+    key <AB10> { [ NoSymbol, NoSymbol,           ellipsis,               U2019 ] }; // Right Single Quotation Mark
+    key <SPCE> { [    space,    space,       nobreakspace,               U2060 ] }; // Word Joiner
+
+    include "level3(ralt_switch)"
+};
