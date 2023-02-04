@@ -1409,8 +1409,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>colemak_dh_iso</name>
-            <description>English (Colemak-DH ISO)</description>
+            <name>colemak_dh_wide</name>
+            <description>English (Colemak-DH Wide)</description>
           </configItem>
         </variant>
         <variant>
@@ -1419,7 +1419,18 @@
             <description>English (Colemak-DH Ortholinear)</description>
           </configItem>
         </variant>
-
+        <variant>
+          <configItem>
+            <name>colemak_dh_iso</name>
+            <description>English (Colemak-DH ISO)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_dh_wide_iso</name>
+            <description>English (Colemak-DH Wide ISO)</description>
+          </configItem>
+        </variant>
         <variant>
           <configItem>
             <name>dvorak</name>
@@ -4894,6 +4905,18 @@
           <configItem>
             <name>colemak</name>
             <description>Norwegian (Colemak)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_dh</name>
+            <description>Norwegian (Colemak-DH)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_dh_wide</name>
+            <description>Norwegian (Colemak-DH Wide)</description>
           </configItem>
         </variant>
       </variantList>

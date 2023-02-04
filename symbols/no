@@ -249,6 +249,33 @@ xkb_symbols "colemak" {
     key <AB06>	{ [         k,          K,          kra,    ampersand ] };
 };
 
+// Having a Colemak-DH variant in the Norwegian layout provides validation for users that this layout is suitable for typing Norwegian text.
+// Furthermore, staying true to the US layout gives interchangabilty benefits which far outperforms the benefits of providing a unique layout.
+// You can use the referenced layout to type Norwegian characters. See: https://colemak.com/Multilingual#Norwegian_.28Norsk_bokm.C3.A5l.29
+
+// Colemak-DH (ISO) symbols for xkb on X.Org Server 7.x
+// 2014-10-25 by SteveP, https://colemakmods.github.io/mod-dh/
+
+xkb_symbols "colemak_dh" {
+
+    name[Group1]= "Norwegian (Colemak-DH)";
+    include "us(colemak_dh_iso)"
+    
+
+    include "level3(ralt_switch)"
+};
+
+// Colemak-DH (Wide ISO) symbols for xkb on X.Org Server 7.x
+// https://colemakmods.github.io/mod-dh/
+
+xkb_symbols "colemak_dh_wide" {
+
+    include "us(colemak_dh_wide_iso)"
+    name[Group1]= "Norwegian (Colemak-DH Wide)";
+
+    include "level3(ralt_switch)"
+};
+
 // EXTRAS:
 
 partial alphanumeric_keys

@@ -917,10 +917,56 @@ xkb_symbols "colemak_dh" {
     key <AB09> { [       period,      greater,   dead_abovedot,       asciitilde ] };
     key <AB10> { [        slash,     question,    questiondown,       asciitilde ] };
 
+    key <CAPS> { [    BackSpace,    BackSpace,       BackSpace,        BackSpace ] };
     key <SPCE> { [        space,        space,           space,     nobreakspace ] };
 
     include "level3(ralt_switch)"
 };
+
+// Colemak-DH (Wide) symbols for xkb on X.Org Server 7.x
+// https://colemakmods.github.io/mod-dh/
+
+xkb_symbols "colemak_dh_wide" {
+
+    include "us(colemak_dh)"
+    name[Group1]= "English (Colemak-DH Wide)";
+
+
+    key <AE07> { [        equal,         plus,             multiply,             division ] };
+    key <AE08> { [            7,    ampersand,                  eth,                  ETH ] };
+    key <AE09> { [            8,     asterisk,                thorn,                THORN ] };
+    key <AE10> { [            9,    parenleft,  leftsinglequotemark,  leftdoublequotemark ] };
+    key <AE11> { [            0,   parenright, rightsinglequotemark, rightdoublequotemark ] };
+    key <AE12> { [        minus,   underscore,               endash,               emdash ] };
+
+
+    key <AD06> { [  bracketleft,    braceleft,        guillemotleft,            0x1002039 ] };
+    key <AD07> { [            j,            J,              dstroke,              Dstroke ] };
+    key <AD08> { [            l,            L,              lstroke,              Lstroke ] };
+    key <AD09> { [            u,            U,               uacute,               Uacute ] };
+    key <AD10> { [            y,            Y,           udiaeresis,           Udiaeresis ] };
+    key <AD11> { [    semicolon,        colon,           odiaeresis,           Odiaeresis ] };
+    key <AD12> { [   apostrophe,     quotedbl,               otilde,               Otilde ] };
+
+
+    key <AC06> { [ bracketright,   braceright,       guillemotright,            0x100203a ] };
+    key <AC07> { [            m,            M,          dead_macron,           asciitilde ] };
+    key <AC08> { [            n,            N,               ntilde,               Ntilde ] };
+    key <AC09> { [            e,            E,               eacute,               Eacute ] };
+    key <AC10> { [            i,            I,               iacute,               Iacute ] };
+    key <AC11> { [            o,            O,               oacute,               Oacute ] };
+
+
+    key <AB06> { [        slash,     question,         questiondown,           asciitilde ] };
+    key <AB07> { [            k,            K,       dead_abovering,           asciitilde ] };
+    key <AB08> { [            h,            H,           dead_caron,           asciitilde ] };
+    key <AB09> { [        comma,         less,         dead_cedilla,           asciitilde ] };
+    key <AB10> { [       period,      greater,        dead_abovedot,           asciitilde ] };
+    key <AB11> { [        slash,     question,         questiondown,           asciitilde ] };
+
+    include "level3(ralt_switch)"
+};
+
 
 // Colemak-DH (ISO) symbols for xkb on X.Org Server 7.x
 // https://colemakmods.github.io/mod-dh/
@@ -930,7 +976,32 @@ xkb_symbols "colemak_dh_iso" {
     include "us(colemak_dh)"
     name[Group1]= "English (Colemak-DH ISO)";
 
-    key <AB05> { [ backslash, bar, asciitilde, brokenbar] };
+
+    key <BKSL> { [ numbersign, asciitilde,  backslash,       bar ] };
+
+
+    key <AB05> { [  backslash,        bar, asciitilde, brokenbar ] };
+
+
+    include "level3(ralt_switch)"
+};
+
+// Colemak-DH (Wide ISO) symbols for xkb on X.Org Server 7.x
+// https://colemakmods.github.io/mod-dh/
+
+xkb_symbols "colemak_dh_wide_iso" {
+
+    include "us(colemak_dh_wide)"
+    name[Group1]= "English (Colemak-DH Wide ISO)";
+
+
+    key <AD12> { [ numbersign, asciitilde,    backslash,  bar       ] };
+    key <BKSL> { [ apostrophe,   quotedbl,       otilde,     Otilde ] };
+
+
+    key <AB05> { [  backslash,        bar,   asciitilde,  brokenbar ] };
+    key <AB06> { [      slash,   question, questiondown, asciitilde ] };
+
 
     include "level3(ralt_switch)"
 };
