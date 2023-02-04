@@ -1280,3 +1280,25 @@ xkb_symbols "typo" {
 
     include "level3(ralt_switch)"
 };
+
+// Russian-Tatar United keyboard layout.
+// This is a modified Russian standard keyboard, with the third level containing
+// Tatar alphabetic letters, typographic symbols commonly used in Russian language
+// and punctuation symbols from Latin keyboard layout.
+// Boolat Kamalov <800147@gmail.com>
+partial alphanumeric_keys
+xkb_symbols "rtu" {
+    include "ru(typo)"
+    name[Group1]= "Russian (with Tatar layout)";
+
+    key <AD03> { [ NoSymbol, NoSymbol,    Cyrillic_u_straight,    Cyrillic_U_straight ] };
+    key <AD06> { [ NoSymbol, NoSymbol,  Cyrillic_en_descender,  Cyrillic_EN_descender ] };
+    key <AD11> { [ NoSymbol, NoSymbol,          Cyrillic_shha,          Cyrillic_SHHA ] };
+
+    key <AC04> { [ NoSymbol, NoSymbol,         Cyrillic_schwa,         Cyrillic_SCHWA ] };
+    key <AC07> { [ NoSymbol, NoSymbol,         Cyrillic_o_bar,         Cyrillic_O_bar ] };
+    key <AC10> { [ NoSymbol, NoSymbol, Cyrillic_zhe_descender, Cyrillic_ZHE_descender ] };
+    key <AC11> { [ NoSymbol, NoSymbol,            bracketleft,              braceleft ] };
+
+    include "level3(ralt_switch)"
+};
