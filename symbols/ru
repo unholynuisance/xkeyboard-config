@@ -1255,9 +1255,9 @@ xkb_symbols "winkeys-p" {
 // from Latin keyboard layout.
 // Boolat Kamalov <800147@gmail.com>
 partial alphanumeric_keys
-xkb_symbols "ru_typo" {
+xkb_symbols "typo" {
     include "ru(winkeys)"
-    name[Group1]= "Russian (with typographic symbols)";
+    name[Group1]= "Russian (typographic)";
 
     key <TLDE> { [ NoSymbol, NoSymbol,              grave,          asciitilde ] };
     key <AE01> { [ NoSymbol, NoSymbol, enfilledcircbullet                      ] };
