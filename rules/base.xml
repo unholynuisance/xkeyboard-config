@@ -3251,6 +3251,18 @@
             </languageList>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>winkeys</name>
+            <description>Czech (QWERTZ, Windows flavour)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>winkeys-qwerty</name>
+            <description>Czech (QWERTY, Windows flavour)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
