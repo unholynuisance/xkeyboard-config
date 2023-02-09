@@ -6928,6 +6928,9 @@
 	<name>custom</name>
         <shortDescription>custom</shortDescription>
         <description>A user-defined custom Layout</description>
+        <languageList>
+          <iso639Id>und</iso639Id>
+        </languageList>
       </configItem>
       <variantList/>
     </layout>
@@ -8291,6 +8294,18 @@
           <name>terminate:ctrl_alt_bksp</name>
           <description>Ctrl+Alt+Backspace</description>
         </configItem>
+      </option>
+    </group>
+    <group allowMultipleSelection="true">
+      <configItem>
+        <name>custom</name>
+        <description>Miscellaneous options</description>
+      </configItem>
+      <option>
+        <configItem>
+          <name>custom:types</name>
+          <description>Use user-defined custom XKB types</description>
+       </configItem>
       </option>
     </group>
   </optionList>
