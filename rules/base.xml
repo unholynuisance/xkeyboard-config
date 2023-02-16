@@ -2549,6 +2549,17 @@
         </variant>
         <variant>
           <configItem>
+            <name>rus</name>
+            <!-- Keyboard indicator for Russian layouts -->
+            <shortDescription>ru</shortDescription>
+            <description>Russian (Brazil, phonetic)</description>
+            <languageList>
+              <iso639Id>rus</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>nativo-us</name>
             <description>Portuguese (Brazil, Nativo for US keyboards)</description>
           </configItem>
