@@ -1209,14 +1209,14 @@ xkb_symbols "us-azerty" {
 //   © 2019 Cimbali <me @ cimba.li>
 //
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
-// │ # ̑  │ 1 À │ 2 É │ 3 È │ 4 Ê │ 5 ̋  │ 6 ̏  │ 7   │ 8 — │ 9 ‹ │ 0 › │ " ˚ │ ¨   ┃ ⌫ Retour┃
-// │ @ ̆̆̆  ̆│ à § │ é  ́ │ è  ̀ │ ê & │ ( [ │ ) ] │ ‘ ̄̄  │ ’ _ │ « “ │ » ” │ ' ° │ ̂  ̌̌̌  ┃  arrière┃
+// │ #  ̑ │ 1 À │ 2 É │ 3 È │ 4 Ê │ 5  ̋ │ 6  ̏ │ 7   │ 8 — │ 9 ‹ │ 0 › │ " ˚ │ ¨   ┃ ⌫ Retour┃
+// │ @  ̆ │ à § │ é  ́ │ è  ̀ │ ê & │ ( [ │ ) ] │ ‘  ̄ │ ’ _ │ « “ │ » ” │ ' ° │  ̂  ̌ ┃  arrière┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
 // ┃       ┃ A Æ │ Z   │ E   │ R   │ T ™ │ Y   │ U Ù │ I  ̣ │ O Œ │ P ‰ │ – ‑ │ ± ‡ ┃Entrée ┃
-// ┃Tab ↹  ┃ a æ │ z £ │ e € │ r ® │ t { │ y } │ u ù │ i ̇  │ o œ │ p % │ - − │ + † ┃   ⏎   ┃
+// ┃Tab ↹  ┃ a æ │ z £ │ e € │ r ® │ t { │ y } │ u ù │ i  ̇ │ o œ │ p % │ - − │ + † ┃   ⏎   ┃
 // ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
 // ┃        ┃ Q   │ S ẞ │ D   │ F   │ G   │ H ̱  │ J   │ K   │ L   │ M   │ \ √ │ ½ ¼ ┃      ┃
-// ┃Maj ⇬   ┃ q θ │ s ß │ d $ │ f ¤ │ g µ │ h   │ j   │ k ̷  │ l | │ m ∞ │ / ÷ │ * × ┃      ┃
+// ┃Maj ⇬   ┃ q θ │ s ß │ d $ │ f ¤ │ g µ │ h   │ j   │ k  ̷ │ l | │ m ∞ │ / ÷ │ * × ┃      ┃
 // ┣━━━━━━━┳┹────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┲┷━━━━━┻━━━━━━┫
 // ┃       ┃ > ≥ │ W Ʒ │ X   │ C Ç │ V ˛ │ B   │ N   │ ?   │ !  ̦ │ …   │ = ≠ ┃             ┃
 // ┃Shift ⇧┃ < ≤ │ w ʒ │ x © │ c ç │ v ¸ │ b  ̵ │ n ~ │ . ¿ │ , ¡ │ : · │ ; ≃ ┃Shift ⇧      ┃
@@ -1227,7 +1227,6 @@ xkb_symbols "us-azerty" {
 partial alphanumeric_keys
 xkb_symbols "afnor" {
 
-    include "latin"
     include "level3(ralt_switch)"
     include "nbsp(level3n)"
     include "keypad(oss)"
@@ -1235,19 +1234,19 @@ xkb_symbols "afnor" {
     name[Group1]="French (AZERTY, AFNOR)";
 
      // First row
-     key <TLDE> { [                  at,      numbersign,               dead_breve,   dead_invertedbreve ] }; // @ # ̑  ̆̆̆  //
+     key <TLDE> { [                  at,      numbersign,               dead_breve,   dead_invertedbreve ] }; // @ #  ̑  ̆
      key <AE01> { [              agrave,               1,                  section,               Agrave ] }; // à 1 § À
      key <AE02> { [              eacute,               2,               dead_acute,               Eacute ] }; // é 2  ́ É
      key <AE03> { [              egrave,               3,               dead_grave,               Egrave ] }; // è 3  ̀ È
      key <AE04> { [         ecircumflex,               4,                ampersand,          Ecircumflex ] }; // ê 4 & Ê
-     key <AE05> { [           parenleft,               5,              bracketleft,     dead_doubleacute ] }; // ( 5 [
-     key <AE06> { [          parenright,               6,             bracketright,     dead_doublegrave ] }; // ) 6 ]
-     key <AE07> { [ leftsinglequotemark,               7,              dead_macron,           VoidSymbol ] }; // ‘ 7
+     key <AE05> { [           parenleft,               5,              bracketleft,     dead_doubleacute ] }; // ( 5 [  ̋
+     key <AE06> { [          parenright,               6,             bracketright,     dead_doublegrave ] }; // ) 6 ]  ̏
+     key <AE07> { [ leftsinglequotemark,               7,              dead_macron,           VoidSymbol ] }; // ‘ 7  ̄
      key <AE08> { [rightsinglequotemark,               8,               underscore,               emdash ] }; // ’ 8 _ —
      key <AE09> { [       guillemotleft,               9,      leftdoublequotemark,                U2039 ] }; // « 9 “ ‹
      key <AE10> { [      guillemotright,               0,     rightdoublequotemark,                U203A ] }; // » 0 ” ›
-     key <AE11> { [          apostrophe,        quotedbl,                   degree,       dead_abovering ] }; // ' " °
-     key <AE12> { [     dead_circumflex,  dead_diaeresis,               dead_caron,           VoidSymbol ] }; // ̂  ¨ ̌̌̌    //
+     key <AE11> { [          apostrophe,        quotedbl,                   degree,       dead_abovering ] }; // ' " °  ̊
+     key <AE12> { [     dead_circumflex,  dead_diaeresis,               dead_caron,           VoidSymbol ] }; //  ̂  ̈  ̌
 
      // Second row
      key <AD01> { [                   a,               A,                       ae,                   AE ] }; // a A æ Æ
@@ -1257,7 +1256,7 @@ xkb_symbols "afnor" {
      key <AD05> { [                   t,               T,                braceleft,            trademark ] }; // t T { ™
      key <AD06> { [                   y,               Y,               braceright,           VoidSymbol ] }; // y Y }
      key <AD07> { [                   u,               U,                   ugrave,               Ugrave ] }; // u U ù Ù
-     key <AD08> { [                   i,               I,            dead_abovedot,        dead_belowdot ] }; // i I ̇   ̣ //
+     key <AD08> { [                   i,               I,            dead_abovedot,        dead_belowdot ] }; // i I  ̇  ̣
      key <AD09> { [                   o,               O,                       oe,                   OE ] }; // o O œ Œ
      key <AD10> { [                   p,               P,                  percent,             permille ] }; // p P % ‰
      key <AD11> { [               minus,          endash,                    U2212,                U2011 ] }; // - – − ‑ // signe moins (minus sign), trait d'union insécable (non-breaking hyphen)
@@ -1269,9 +1268,9 @@ xkb_symbols "afnor" {
      key <AC03> { [                   d,               D,                   dollar,           VoidSymbol ] }; // d D $
      key <AC04> { [                   f,               F,            dead_currency,           VoidSymbol ] }; // f F ¤
      key <AC05> { [                   g,               G,               dead_greek,           VoidSymbol ] }; // g G µ
-     key <AC06> { [                   h,               H,               VoidSymbol,     dead_belowmacron ] }; // h H   ̱  // Missing dead key for other european keys (ªəƏþÞıİºſðÐƞȠĳĲ)
+     key <AC06> { [                   h,               H,               VoidSymbol,     dead_belowmacron ] }; // h H    ̱ // Missing dead key for other european characters (ªəƏþÞıİºſðÐƞȠĳĲ)
      key <AC07> { [                   j,               J,               VoidSymbol,           VoidSymbol ] }; // j J
-     key <AC08> { [                   k,               K,              dead_stroke,           VoidSymbol ] }; // k K ̷    //
+     key <AC08> { [                   k,               K,              dead_stroke,           VoidSymbol ] }; // k K  ̷
      key <AC09> { [                   l,               L,                      bar,           VoidSymbol ] }; // l L |
      key <AC10> { [                   m,               M,                 infinity,           VoidSymbol ] }; // m M ∞
      key <AC11> { [               slash,       backslash,                 division,              radical ] }; // / \ ÷ √
@@ -1282,11 +1281,11 @@ xkb_symbols "afnor" {
      key <AB01> { [                   w,               W,                      ezh,                 EZH ] }; // w W ʒ Ʒ
      key <AB02> { [                   x,               X,                copyright,          VoidSymbol ] }; // x X ©
      key <AB03> { [                   c,               C,                 ccedilla,            Ccedilla ] }; // c C ç Ç
-     key <AB04> { [                   v,               V,             dead_cedilla,         dead_ogonek ] }; // v V ̧  ̨  //
-     key <AB05> { [                   b,               B,              dead_stroke,          VoidSymbol ] }; // b B ̵    //
-     key <AB06> { [                   n,               N,               dead_tilde,          VoidSymbol ] }; // n N ~
+     key <AB04> { [                   v,               V,             dead_cedilla,         dead_ogonek ] }; // v V  ̧  ̨
+     key <AB05> { [                   b,               B,              dead_stroke,          VoidSymbol ] }; // b B  ̵
+     key <AB06> { [                   n,               N,               dead_tilde,          VoidSymbol ] }; // n N  ̃
      key <AB07> { [              period,        question,             questiondown,          VoidSymbol ] }; // . ? ¿
-     key <AB08> { [               comma,          exclam,               exclamdown,     dead_belowcomma ] }; // , ! ¡ ̦  //
+     key <AB08> { [               comma,          exclam,               exclamdown,     dead_belowcomma ] }; // , ! ¡  ̦
      key <AB09> { [               colon,        ellipsis,           periodcentered,          VoidSymbol ] }; // : … ·
      key <AB10> { [           semicolon,           equal,             similarequal,            notequal ] }; // ; = ≃ ≠
 };
