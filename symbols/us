@@ -1537,9 +1537,7 @@ xkb_symbols "workman" {
     key <AB06> {  [   k,  K   ] };
     key <AB07> {  [   l,  L   ] };
 
-    key <CAPS> { [    BackSpace,       Escape,       BackSpace,        BackSpace ] };
-
-    include "level3(ralt_switch)"
+    key <CAPS> {  [   BackSpace,  Escape  ] };
 };
 
 partial alphanumeric_keys
