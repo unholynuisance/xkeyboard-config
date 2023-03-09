@@ -2207,6 +2207,17 @@
           </configItem>
          </variant>
          <variant>
+          <configItem>
+            <name>mal_poorna</name>
+            <!-- Keyboard indicator for Malayalam layouts -->
+            <shortDescription>ml</shortDescription>
+            <description>Malayalam (Poorna, extended InScript)</description>
+            <languageList>
+              <iso639Id>mal</iso639Id>
+            </languageList>
+          </configItem>
+         </variant>
+         <variant>
            <configItem>
             <name>ori</name>
             <!-- Keyboard indicator for Oriya layouts -->

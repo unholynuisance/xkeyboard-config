@@ -1823,6 +1823,75 @@ xkb_symbols "mal_enhanced" {
     include "level3(ralt_switch)"
 };
 
+// Description : Poorna Extended INSCRIPT keymap for Malayalam
+// Encoding    : Unicode (http://www.unicode.org)
+// Author      : Mujeeb Rahman K <mujeebcpy@gmail.com>, Swathanthra Malayalam Computing (SMC)
+// Date        : October, 2022
+// Source      : http://www.nongnu.org/smc/docs/images/ml_inscript_layout.jpg
+// Comment     : Based on the InScript Keyboard created by M Baiju
+
+partial alphanumeric_keys
+xkb_symbols "mal_poorna" {
+
+    name[Group1] = "Malayalam (Poorna, extended InScript)";
+
+    // From grave to backslash:
+    key <TLDE> {[  U0D4A, U0D12, U0060, U007E  ]};
+    key <AE01> {[  U0031, U0021, U0D70, U0D67  ]};
+    key <AE02> {[  U0032, U0040, U0D71, U0D68  ]};
+    key <AE03> {[  U0033, U0023, U0D72, U0D69  ]};
+    key <AE04> {[  U0034, U0024, U20B9, U0D6A  ]};
+    key <AE05> {[  U0035, U0025, U0D73, U0D6B  ]};
+    key <AE06> {[  U0036, U005E, U0D74, U0D6C  ]};
+    key <AE07> {[  U0037, U0026, U0D75, U0D6D  ]};
+    key <AE08> {[  U0038, U0D7E, U002A, U0D6E  ]};
+    key <AE09> {[  U0039, U0028, U007B, U0D6F  ]};
+    key <AE10> {[  U0030, U0029, U007D, U0D66  ]};
+    key <AE11> {[  U002D, U0D03, U005F,  none  ]};
+    key <AE12> {[  U0D43, U0D0B, U0D44, U0D60  ]};
+
+    // From Q to right bracket:
+    key <AD01> {[  U0D57, U0D14, U0D4C, U0D5E  ]};
+    key <AD02> {[  U0D48, U0D10,  none, U0D77  ]};
+    key <AD03> {[  U0D3E, U0D06, U0D5F, U0D5C  ]};
+    key <AD04> {[  U0D40, U0D08, U0D63, U0D61  ]};
+    key <AD05> {[  U0D42, U0D0A,  none, U0D76  ]};
+    key <AD06> {[  U0D2C, U0D2D,  none, U0D5B  ]};
+    key <AD07> {[  U0D39, U0D19,  none, U0D59  ]};
+    key <AD08> {[  U0D17, U0D18,  none, U0D58  ]};
+    key <AD09> {[  U0D26, U0D27,  none, U0D78  ]};
+    key <AD10> {[  U0D1C, U0D1D,  none, U0D5D  ]};
+    key <AD11> {[  U0D21, U0D22, U005B, U0D5A  ]};
+    key <AD12> {[  U200D, U0D1E, U005D, U002B  ]};
+    key <BKSL> {[  U200C, U0D7C, U005C, U007C  ]};
+
+    // From A to apostrophe:
+    key <AC01> {[  U0D4B, U0D13,  none,  none  ]};
+    key <AC02> {[  U0D47, U0D0F, U0D3B, U0D3C  ]};
+    key <AC03> {[  U0D4D, U0D05, U0D3D, U0D01  ]};
+    key <AC04> {[  U0D3F, U0D07, U0D62, U0D0C  ]};
+    key <AC05> {[  U0D41, U0D09,  none,  none  ]};
+    key <AC06> {[  U0D2A, U0D2B, U0D4F,  none  ]};
+    key <AC07> {[  U0D30, U0D31, U0D4E, U0D3A  ]};
+    key <AC08> {[  U0D15, U0D16,  none, U0D7F  ]};
+    key <AC09> {[  U0D24, U0D25,  none,  none  ]};
+    key <AC10> {[  U0D1A, U0D1B, U003B, U003A  ]};
+    key <AC11> {[  U0D1F, U0D20, U0027, U0022  ]};
+
+    // From Z to slash:
+    key <AB01> {[  U0D46, U0D0E,  none,  none  ]};
+    key <AB02> {[  U0D02, U0D7A, U0D00, U0D04  ]};
+    key <AB03> {[  U0D2E, U0D23,  none, U0D54  ]};
+    key <AB04> {[  U0D28, U0D7B, U0D79, U0D29  ]};
+    key <AB05> {[  U0D35, U0D34,  none, U0D56  ]};
+    key <AB06> {[  U0D32, U0D33,  none,  none  ]};
+    key <AB07> {[  U0D38, U0D36,  none,  none  ]};
+    key <AB08> {[  U002C, U0D37, U003C,  none  ]};
+    key <AB09> {[  U002E, U0D7D, U003E,  none  ]};
+    key <AB10> {[  U0D2F, U003F, U002F, U0D55  ]};
+
+    include "level3(ralt_switch)"
+};
 
 // ---- BEGIN Hindi KaGaPa phonetic ----
 // Name:        KaGaPa phonetic
