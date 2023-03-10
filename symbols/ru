@@ -1189,9 +1189,9 @@ xkb_symbols "ruchey_ru" {
 partial alphanumeric_keys
 xkb_symbols "ruchey_en" {
 
-    name[Group1]= "Russian (engineering, EN)";
-
     include "us(basic)"
+
+    name[Group1]= "Russian (engineering, EN)";
 
     key <TLDE> { [ VoidSymbol,   VoidSymbol,          grave, VoidSymbol ] };
 

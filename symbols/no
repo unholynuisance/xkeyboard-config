@@ -258,11 +258,8 @@ xkb_symbols "colemak" {
 
 xkb_symbols "colemak_dh" {
 
-    name[Group1]= "Norwegian (Colemak-DH)";
     include "us(colemak_dh_iso)"
-    
-
-    include "level3(ralt_switch)"
+    name[Group1]= "Norwegian (Colemak-DH)";
 };
 
 // Colemak-DH (Wide ISO) symbols for xkb on X.Org Server 7.x
@@ -272,8 +269,6 @@ xkb_symbols "colemak_dh_wide" {
 
     include "us(colemak_dh_wide_iso)"
     name[Group1]= "Norwegian (Colemak-DH Wide)";
-
-    include "level3(ralt_switch)"
 };
 
 // EXTRAS:
