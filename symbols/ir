@@ -1,23 +1,18 @@
-// Iranian keyboard layout
+// Keyboard layouts for Iran.
 
-////////////////////////////////////////
-// Persian layout,
-// based on
-// Information Technology – Layout of Persian Letters and Symbols on Computer Keyboards
-// ISIRI 9147 – 1st Edition
-// Institute of Standards and Industrial Research of Iran
-// http://www.isiri.org/UserStd/DownloadStd.aspx?id=9147
-// http://behnam.esfahbod.info/standards/isiri-keyboard-9147.pdf
+// Standard Persian layout, based on ISIRI 9147 (1st Edition),
+// "Layout of Persian Letters and Symbols on Computer Keyboards"
+// by the Institute of Standards and Industrial Research of Iran.
+// (http://www.isiri.org/UserStd/DownloadStd.aspx?id=9147)
+// https://persian-computing.org/archives/ISIRI/ISIRI-9147.pdf
 //
-// Author: Behnam Esfahbod <behnam@esfahbod.info>
-//
+// Original author: Behnam Esfahbod <behnam@esfahbod.info>
 
 default partial alphanumeric_keys
 xkb_symbols "pes" {
     name[Group1]= "Persian";
 
     include "ir(pes_part_basic)"
-    include "ir(pes_part_ext)"
 
     include "nbsp(zwnj2nb3nnb4)"
     include "level3(ralt_switch)"
@@ -29,7 +24,6 @@ xkb_symbols "pes_keypad" {
     name[Group1]= "Persian (with Persian keypad)";
 
     include "ir(pes_part_basic)"
-    include "ir(pes_part_ext)"
     include "ir(pes_part_keypad)"
 
     include "nbsp(zwnj2nb3nnb4)"
@@ -39,17 +33,17 @@ xkb_symbols "pes_keypad" {
 hidden partial alphanumeric_keys
 xkb_symbols "pes_part_basic" {
 
-    // Persian digits
-    key <AE01> { [ Farsi_1,	exclam,		grave			] };
-    key <AE02> { [ Farsi_2,	0x100066c,	at			] };
-    key <AE03> { [ Farsi_3,	0x100066b,	numbersign		] };
-    key <AE04> { [ Farsi_4,	0x100fdfc,	dollar			] };
-    key <AE05> { [ Farsi_5,	0x100066a,	percent			] };
-    key <AE06> { [ Farsi_6,	multiply,	asciicircum		] };
-    key <AE07> { [ Farsi_7,	Arabic_comma,	ampersand		] };
-    key <AE08> { [ Farsi_8,	asterisk,	enfilledcircbullet	] };
-    key <AE09> { [ Farsi_9,	parenright,	0x100200e		] };
-    key <AE10> { [ Farsi_0,	parenleft,	0x100200f		] };
+    // Persian and ASCII digits
+    key <AE01> { [ Farsi_1,	exclam,		grave,			1	] };
+    key <AE02> { [ Farsi_2,	0x100066c,	at,			2	] };
+    key <AE03> { [ Farsi_3,	0x100066b,	numbersign,		3	] };
+    key <AE04> { [ Farsi_4,	0x100fdfc,	dollar,			4	] };
+    key <AE05> { [ Farsi_5,	0x100066a,	percent,		5	] };
+    key <AE06> { [ Farsi_6,	multiply,	asciicircum,		6	] };
+    key <AE07> { [ Farsi_7,	Arabic_comma,	ampersand,		7	] };
+    key <AE08> { [ Farsi_8,	asterisk,	enfilledcircbullet,	8	] };
+    key <AE09> { [ Farsi_9,	parenright,	0x100200e,		9	] };
+    key <AE10> { [ Farsi_0,	parenleft,	0x100200f,		0	] };
 
     // Persian letters and symbols
     key <AD01> { [ Arabic_dad,		Arabic_sukun,		degree		] };
@@ -92,22 +86,6 @@ xkb_symbols "pes_part_basic" {
     key <AE11> { [ minus,		Arabic_tatweel,		underscore	] };
     key <AE12> { [ equal,		plus,			0x1002212	] };
     key <BKSL> { [ backslash,		bar,			0x1002010	] };
-};
-
-hidden partial alphanumeric_keys
-xkb_symbols "pes_part_ext" {
-
-    // Persian and ASCII digits
-    key <AE01> { [ Farsi_1,	exclam,		grave,			1	] };
-    key <AE02> { [ Farsi_2,	0x100066c,	at,			2	] };
-    key <AE03> { [ Farsi_3,	0x100066b,	numbersign,		3	] };
-    key <AE04> { [ Farsi_4,	0x100fdfc,	dollar,			4	] };
-    key <AE05> { [ Farsi_5,	0x100066a,	percent,		5	] };
-    key <AE06> { [ Farsi_6,	multiply,	asciicircum,		6	] };
-    key <AE07> { [ Farsi_7,	Arabic_comma,	ampersand,		7	] };
-    key <AE08> { [ Farsi_8,	asterisk,	enfilledcircbullet,	8	] };
-    key <AE09> { [ Farsi_9,	parenright,	0x100200e,		9	] };
-    key <AE10> { [ Farsi_0,	parenleft,	0x100200f,		0	] };
 };
 
 hidden partial alphanumeric_keys
