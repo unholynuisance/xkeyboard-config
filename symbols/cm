@@ -15,8 +15,6 @@
 
 // Cameroon is officially a bilingual country, using French and English, but there are over 270 minority languages.  
 
-// * Cameroon Français is an exact copy of the French France keyboard intended for AZERTY users.
-// * Cameroon is an exact copy of the Basic US Keyboard. I can not currently name this "Cameroon English" due to a limitation of XKB.
 // * Cameroon QWERTY and Cameroon AZERTY are based largely on SIL Cameroon's Keyman and Microsoft keyboards of the same style already in wide use.  These keyboards are designed to allow the user to type any of Cameroon's 270+ languages and dialects that use the approved orthography.  This Approved Orthography was adopted in 1979 by the National Committee for the Unification and Harmonisation of Alphabets of Camerooninan Languages. 
 // * Cameroon Dvorak is described below.
 
@@ -46,100 +44,17 @@
 // Cameroon Dvorak is uses a similar system to Cameroon QWERTY.
 
 default partial alphanumeric_keys
-xkb_symbols "basic" {
-
+xkb_symbols "basic"
+{
+	include "us(basic)"
 	name[Group1]="English (Cameroon)";
-
-	key <TLDE> { [ grave, asciitilde ] };
-	key <AE01> { [ 1, exclam ] };
-	key <AE02> { [ 2, at ] };
-	key <AE03> { [ 3, numbersign ] };
-	key <AE04> { [ 4, dollar ] };
-	key <AE05> { [ 5, percent ] };
-	key <AE06> { [ 6, asciicircum ] };
-	key <AE07> { [ 7, ampersand ] };
-	key <AE08> { [ 8, asterisk ] };
-	key <AE09> { [ 9, parenleft ] };
-	key <AE10> { [ 0, parenright ] };
-	key <AE11> { [ minus, underscore ] };
-	key <AE12> { [ equal, plus ] };
-
-	key <AD01> { [ q, Q ] };
-	key <AD02> { [ w, W ] };
-	key <AD03> { [ e, E ] };
-	key <AD04> { [ r, R ] };
-	key <AD05> { [ t, T ] };
-	key <AD06> { [ y, Y ] };
-	key <AD07> { [ u, U ] };
-	key <AD08> { [ i, I ] };
-	key <AD09> { [ o, O ] };
-	key <AD10> { [ p, P ] };
-	key <AD11> { [ bracketleft, braceleft ] };
-	key <AD12> { [ bracketright, braceright ] };
-	key <AC01> { [ a, A ] };
-	key <AC02> { [ s, S ] };
-	key <AC03> { [ d, D ] };
-	key <AC04> { [ f, F ] };
-	key <AC05> { [ g, G ] };
-	key <AC06> { [ h, H ] };
-	key <AC07> { [ j, J ] };
-	key <AC08> { [ k, K ] };
-	key <AC09> { [ l, L ] };
-	key <AC10> { [ semicolon, colon ] };
-	key <AC11> { [ apostrophe, quotedbl ] };
-
-	key <AB01> { [ z, Z ] };
-	key <AB02> { [ x, X ] };
-	key <AB03> { [ c, C ] };
-	key <AB04> { [ v, V ] };
-	key <AB05> { [ b, B ] };
-	key <AB06> { [ n, N ] };
-	key <AB07> { [ m, M ] };
-	key <AB08> { [ comma, less ] };
-	key <AB09> { [ period, greater ] };
-	key <AB10> { [ slash, U003F ] };
-
-	key <BKSL> { [ backslash, bar ] };
 };
 
 partial alphanumeric_keys
 xkb_symbols "french"
 {
-	include "latin"
+	include "fr(basic)"
 	name[Group1]="French (Cameroon)";
-
-	key <TLDE> { [twosuperior, asciitilde, notsign, notsign ] };
-	key <AE01> { [ ampersand, 1, onesuperior, exclamdown ] };
-	key <AE02> { [ eacute, 2, asciitilde, oneeighth ] };
-	key <AE03> { [ quotedbl, 3, numbersign, sterling ] };
-	key <AE04> { [apostrophe, 4, braceleft, dollar ] };
-	key <AE05> { [ parenleft, 5, bracketleft, threeeighths ] };
-	key <AE06> { [ minus, 6, bar, fiveeighths ] };
-	key <AE07> { [ egrave, 7, grave, seveneighths ] };
-	key <AE08> { [underscore, 8, backslash, trademark ] };
-	key <AE09> { [ ccedilla, 9, asciicircum, plusminus ] };
-	key <AE10> { [ agrave, 0, at, degree ] };
-	key <AE11> { [parenright, degree, bracketright, questiondown ] };
-	key <AE12> { [ equal, plus, braceright, dead_ogonek ] };
-
-	key <AD01> { [ a, A, ae, AE ] };
-	key <AD02> { [ z, Z, guillemotleft, less ] };
-	key <AD03> { [ e, E, EuroSign, cent ] };
-	key <AD11> { [dead_circumflex, dead_diaeresis, dead_diaeresis, dead_abovering ] };
-	key <AD12> { [ dollar, sterling, currency, dead_macron ] };
-
-	key <AC01> { [ q, Q, at, Greek_OMEGA ] };
-	key <AC10> { [ m, M, mu, masculine ] };
-	key <AC11> { [ ugrave, percent, dead_circumflex, dead_caron] };
-	key <BKSL> { [ asterisk, mu, dead_grave, dead_breve ] };
-
-	key <AB01> { [ w, W, lstroke, Lstroke ] };
-	key <AB07> { [ comma, U003F, dead_acute, dead_doubleacute ] };
-	key <AB08> { [ semicolon, period, U2022, multiply ] }; // bullet
-	key <AB09> { [ colon, slash, periodcentered, division ] };
-	key <AB10> { [ exclam, section, dead_belowdot, dead_abovedot ] };
-
-	include "level3(ralt_switch)"
 };
 
 partial alphanumeric_keys
