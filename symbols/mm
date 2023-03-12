@@ -119,7 +119,7 @@ xkb_symbols "zawgyi" {
 // This fragment creates the "Tilde key" phenomenon.
 partial modifier_keys
 xkb_symbols "tilde_latch" {
-	key <TLDE> { symbols[Group1] = [ ISO_Level3_Latch,  asciitilde,  grave ] };
+	key <TLDE> {[  ISO_Level3_Latch,  asciitilde,  grave  ]};
 	modifier_map Mod5  { ISO_Level3_Latch };
 };
 
