@@ -104,10 +104,10 @@ xkb_symbols "azerty"
 	key <AE07> { [ U00E8, KP_7, U0300 ] };	// SMALL LETTER E WITH GRAVE, 7, COMBINING GRAVE
 	key <AE08> { [ underscore, KP_8, backslash, U20D6 ] };	// UNDERSCORE, 8, BACKSLASH, COMBINING LEFT ARROW ABOVE
 	key <AE09> { [ ccedilla, KP_9, U005E] };	// SMALL LETTER C WITH CEDILLA, 9, CIRCUMFLEX
-	key <AE10> { [ U00E0, KP_0, at, U20D7 ] };	// SMALL LETTER A WITH GRAVE
+	key <AE10> { [ U00E0, KP_0, at, U20D7 ] };	// SMALL LETTER A WITH GRAVE, 0, @, COMBINING RIGHT ARROW ABOVE
 	key <AE11> { [ U0029, U00B0, U005D ] };	// RIGHT PARENTHESIS, DEGREE, RIGHT SQUARE BRACKET
 	key <AE12> { [ U003D, U002B, U007D, U00B1 ] };	// EQUAL SIGN, PLUS SIGN, RIGHT CURLY BRACKET, PLUS-MINUS SIGN
-	key <BKSL> { [ U1DC6, U1DC7, KP_Multiply, U00A4 ] };	//  COMBINING MID-LOW, COMBINING HIGH-MID, MULTIPLY, CURRENCY SIGN
+	key <BKSL> { [ U1DC6, U1DC7, asterisk, U00A4 ] };	//  COMBINING MID-LOW, COMBINING HIGH-MID, MULTIPLY, CURRENCY SIGN
 	key <LSGT> { [ U003C, U003E, U00AB, U00BB ] };	// LESS THAN, GREATER THAN, LEFT GUILLEMET, RIGHT GUILLEMET
 	key <TLDE> { [ U0024, U20AC, U00B2, U00B3 ] };	// DOLLAR, EURO, SUPERSCRIPT 2, SUPERSCRIPT 3
 	include "cm(exclamation_switch)"
@@ -205,16 +205,16 @@ xkb_symbols "dvorak"
 	key <AD10> { [ l, L, U1DC6, U1DC4 ] };	// SMALL LETTER L, CAPITAL LETTER L, COMBINING MID-LOW, COMBINING MID-HIGH TONE
 	key <AD11> { [ slash, U003F, U00F7, U0294 ] };	// SLASH, QUESTION MARK, DIVISION SIGN, GLOTTAL STOP
 	key <AD12> { [ equal, plus, NoSymbol, plusminus ] };	// EQUAL, PLUS, , PLUS-MINUS
-	key <AE01> { [ KP_1, exclam, U00BC ] };	// 1, EXCLAMATION POINT, ONE QUARTER
-	key <AE02> { [ KP_2, at, U00BD ] };	// 2, AT SYMBOL, ONE HALF
-	key <AE03> { [ KP_3, numbersign, U00BE ] };	// 3, NUMBER SIGN, THREE QUARTERS
-	key <AE04> { [ KP_4, dollar, NoSymbol, U20AC ] };	// 4, DOLLAR, , EURO SIGN
-	key <AE05> { [ KP_5, percent ] };	// 5, PERCENT
-	key <AE06> { [ KP_6, asciicircum ] };	// 6, CARET
-	key <AE07> { [ KP_7, ampersand ] };	// 7, AMPERSAND
-	key <AE08> { [ KP_8, asterisk, NoSymbol, multiply ] };	// 8, ASTERISK, , MULTIPLY
-	key <AE09> { [ KP_9, parenleft, leftsinglequotemark, leftdoublequotemark ] };	// 9, LEFT PARENTHESIS, LEFT SINGLE QUOTE MARK, LEFT DOUBLE QUOTE MARK
-	key <AE10> { [ KP_0, parenright, rightsinglequotemark, rightdoublequotemark ] };	// 0, RIGHT PARENTHESIS, RIGHT SINGLE QUOTE MARK, LEFT DOUBLE QUOTE MARK
+	key <AE01> { [ 1, exclam, U00BC ] };	// 1, EXCLAMATION POINT, ONE QUARTER
+	key <AE02> { [ 2, at, U00BD ] };	// 2, AT SYMBOL, ONE HALF
+	key <AE03> { [ 3, numbersign, U00BE ] };	// 3, NUMBER SIGN, THREE QUARTERS
+	key <AE04> { [ 4, dollar, NoSymbol, U20AC ] };	// 4, DOLLAR, , EURO SIGN
+	key <AE05> { [ 5, percent ] };	// 5, PERCENT
+	key <AE06> { [ 6, asciicircum ] };	// 6, CARET
+	key <AE07> { [ 7, ampersand ] };	// 7, AMPERSAND
+	key <AE08> { [ 8, asterisk, NoSymbol, multiply ] };	// 8, ASTERISK, , MULTIPLY
+	key <AE09> { [ 9, parenleft, leftsinglequotemark, leftdoublequotemark ] };	// 9, LEFT PARENTHESIS, LEFT SINGLE QUOTE MARK, LEFT DOUBLE QUOTE MARK
+	key <AE10> { [ 0, parenright, rightsinglequotemark, rightdoublequotemark ] };	// 0, RIGHT PARENTHESIS, RIGHT SINGLE QUOTE MARK, LEFT DOUBLE QUOTE MARK
 	key <AE11> { [ U0301, U030C, U005B, U007B ] };	// COMBINING HIGH TONE, COMBINING RISING TONE, LEFT SQUARE BRACKET, LEFT CURLY BRACKET
 	key <AE12> { [ U0327, dead_diaeresis, U005D, braceright ] };	// COMBINING CEDILLA, DEAD DIAERESIS, RIGHT SQUARE BRACKET, RIGHT CURLY BRACKET
 	key <BKSL> { [ backslash, bar ] };	// BACKSLASH, BAR

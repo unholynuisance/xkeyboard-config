@@ -1414,7 +1414,7 @@ xkb_symbols "tel-sarala"
     key <AB07> {[       U0C2E,       U0C01                           ]}; // మ ఁ
     key <AB08> {[       comma,       U0C1E,         less             ]}; // , ఞ <
     key <AB09> {[      period,       U0C19,      greater             ]}; // . ఙ >
-    key <AB10> {[       U0C36,    question,    KP_Divide             ]}; // శ ? /
+    key <AB10> {[       U0C36,    question,        slash             ]}; // శ ? /
 
     key <AC01> {[       U0C2F,       U0C3D                           ]}; // య ఽ
     key <AC02> {[       U0C02,       U0C03                           ]}; // ం ః
@@ -1441,18 +1441,18 @@ xkb_symbols "tel-sarala"
     key <AD11> {[       U0C1C,       U0C1D,  bracketleft,  braceleft ]}; // జ ఝ [ {
     key <AD12> {[       U0C48,       U0C10, bracketright, braceright ]}; // ై  ఐ ] }
 
-    key <AE01> {[        KP_1,      exclam,        U0C67,      U0C78 ]}; // 1 ! ౦ ౸
-    key <AE02> {[        KP_2,          at,        U0C68,      U0C79 ]}; // 2 @ ౨ ౹
-    key <AE03> {[        KP_3,  numbersign,        U0C69,      U0C7A ]}; // 3 # ౩ ౺
-    key <AE04> {[        KP_4,      dollar,        U0C6A,      U0C7B ]}; // 4 $ ౪ ౻
-    key <AE05> {[        KP_5,     percent,        U0C6B,      U0C7C ]}; // 5 % ౫ ౼
-    key <AE06> {[        KP_6, asciicircum,        U0C6C,      U0C7D ]}; // 6 ^ ౬ ౽
-    key <AE07> {[        KP_7,   ampersand,        U0C6D,      U0C7E ]}; // 7 & ౭ ౾
-    key <AE08> {[        KP_8, KP_Multiply,        U0C6E,      U0C7F ]}; // 8 * ౮ ౿
-    key <AE09> {[        KP_9,   parenleft,        U0C6F,      U20B9 ]}; // 9 ( ౯ ₹
-    key <AE10> {[        KP_0,  parenright,        U0C66,      U0C55 ]}; // 0 ) ౦ ౕ
-    key <AE11> {[ KP_Subtract,  underscore,     NoSymbol,      U0C56 ]}; // - _  ౖ
-    key <AE12> {[    KP_Equal,      KP_Add                           ]}; // = +
+    key <AE01> {[           1,      exclam,        U0C67,      U0C78 ]}; // 1 ! ౦ ౸
+    key <AE02> {[           2,          at,        U0C68,      U0C79 ]}; // 2 @ ౨ ౹
+    key <AE03> {[           3,  numbersign,        U0C69,      U0C7A ]}; // 3 # ౩ ౺
+    key <AE04> {[           4,      dollar,        U0C6A,      U0C7B ]}; // 4 $ ౪ ౻
+    key <AE05> {[           5,     percent,        U0C6B,      U0C7C ]}; // 5 % ౫ ౼
+    key <AE06> {[           6, asciicircum,        U0C6C,      U0C7D ]}; // 6 ^ ౬ ౽
+    key <AE07> {[           7,   ampersand,        U0C6D,      U0C7E ]}; // 7 & ౭ ౾
+    key <AE08> {[           8,    asterisk,        U0C6E,      U0C7F ]}; // 8 * ౮ ౿
+    key <AE09> {[           9,   parenleft,        U0C6F,      U20B9 ]}; // 9 ( ౯ ₹
+    key <AE10> {[           0,  parenright,        U0C66,      U0C55 ]}; // 0 ) ౦ ౕ
+    key <AE11> {[       minus,  underscore,     NoSymbol,      U0C56 ]}; // - _   ౖ
+    key <AE12> {[       equal,        plus                           ]}; // = +
     key <BKSL> {[       U0C4C,       U0C14,        U0964,      U0965 ]}; // ౌ  ఔ । ॥
     key <TLDE> {[       U0C43,       U0C0B,        grave, asciitilde ]}; // ృ ఋ ` ~
 
