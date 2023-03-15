@@ -868,7 +868,7 @@ xkb_symbols "chu" {
 };
 
 
-// RUU (Russian-Ukrainian-Belarusian United keyboard layout).
+// RUU (Russian-Ukrainian United keyboard layout).
 // This is a modified Russian standard keyboard, with the third level containing
 // Ukrainian and Belorusian alphabetic letters and commonly used Unicode symbols.
 // For a description see http://wiki.opennet.ru/RUU [in Russian].
@@ -895,7 +895,7 @@ partial alphanumeric_keys
 xkb_symbols "ruu" {
 
     include "ru(common)"
-    name[Group1]= "Russian (plus Ukrainian and Belarusian letters)";
+    name[Group1]= "Russian (with Ukrainian-Belorussian layout)";
 
     key <TLDE> { [  U2019,  apostrophe,         U0301,  asciitilde  ] };  // Apostrophe and Stress symbol
     key <AE01> { [      1,      exclam,      division,       U2248  ] };  // Division Sign and Almost Equal To
