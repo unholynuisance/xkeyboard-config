@@ -230,7 +230,7 @@ xkb_symbols "multix" {
 
     name[Group1] = "Canadian (CSA)";
 
-    key.type[group1]="EIGHT_LEVEL_SEMIALPHABETIC";
+    key.type[group1]="EIGHT_LEVEL";
     key <TLDE> {[     slash,  backslash,            bar, NoSymbol,       NoSymbol,        hyphen ]};
     key <AE01> {[         1,     exclam,      plusminus, NoSymbol,    onesuperior,    exclamdown ]};
     key <AE02> {[         2,         at,             at, NoSymbol,    twosuperior,      NoSymbol ]};
@@ -245,6 +245,7 @@ xkb_symbols "multix" {
     key <AE11> {[     minus, underscore,        onehalf, NoSymbol,       NoSymbol,  questiondown ]};
     key <AE12> {[     equal,       plus,        notsign, NoSymbol,   dead_cedilla,   dead_ogonek ]};
 
+    key.type[group1]="EIGHT_LEVEL_SEMIALPHABETIC";
     key <AD01> {[         q,          Q,       NoSymbol, NoSymbol,       NoSymbol,   Greek_OMEGA ]};
     key <AD02> {[         w,          W,       NoSymbol, NoSymbol,        lstroke,       Lstroke ]};
     key <AD03> {[         e,          E,       EuroSign, NoSymbol,             oe,            OE ]};
