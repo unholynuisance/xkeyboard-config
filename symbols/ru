@@ -1258,7 +1258,7 @@ xkb_symbols "winkeys-p" {
 partial alphanumeric_keys
 xkb_symbols "typo" {
     include "ru(winkeys)"
-    name[Group1]= "Russian (typographic)";
+    name[Group1]= "Russian (plus typographic symbols)";
 
     key <TLDE> { [ NoSymbol, NoSymbol,              grave,          asciitilde ] };
     key <AE01> { [ NoSymbol, NoSymbol, enfilledcircbullet                      ] };
@@ -1290,7 +1290,7 @@ xkb_symbols "typo" {
 partial alphanumeric_keys
 xkb_symbols "rtu" {
     include "ru(typo)"
-    name[Group1]= "Russian (with Tatar layout)";
+    name[Group1]= "Russian (plus Tatar letters)";
 
     key <AD03> { [ NoSymbol, NoSymbol,    Cyrillic_u_straight,    Cyrillic_U_straight ] };
     key <AD06> { [ NoSymbol, NoSymbol,  Cyrillic_en_descender,  Cyrillic_EN_descender ] };

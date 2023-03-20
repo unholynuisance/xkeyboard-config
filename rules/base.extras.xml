@@ -847,7 +847,7 @@
           <configItem popularity="exotic">
             <name>typo</name>
             <shortDescription>ru</shortDescription>
-            <description>Russian (typographic)</description>
+            <description>Russian (plus typographic symbols)</description>
             <countryList>
               <iso3166Id>RU</iso3166Id>
             </countryList>
@@ -860,7 +860,7 @@
           <configItem popularity="exotic">
             <name>rtu</name>
             <shortDescription>ru</shortDescription>
-            <description>Russian (with Tatar layout)</description>
+            <description>Russian (plus Tatar letters)</description>
             <countryList>
               <iso3166Id>RU</iso3166Id>
             </countryList>
