@@ -1051,12 +1051,6 @@
         </variant>
         <variant>
           <configItem popularity="exotic">
-            <name>typo</name>
-            <description>Czech (typographic)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem popularity="exotic">
             <name>coder</name>
             <description>Czech (coder)</description>
           </configItem>

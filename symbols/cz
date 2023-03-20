@@ -493,13 +493,12 @@ xkb_symbols "prog" {
     include "level3(ralt_switch)"
 };
 
+hidden
 xkb_symbols "typo" {
     // cz-typo 1.0 2019-05-15 by Viktor Grešák <vgresak@gmail.com> and Tomáš Hudec <Tommy.Hudec@gmail.com>
     //
     // Contains typographic symbols on the third and fourth levels.
     // It is intended to be used in conjuction with another layout, e.g. setxkbmap "cz(basic)+cz(typo)"
-
-    name[Group1]="Czech (typographic)";
 
     key <TLDE> {[ none,	none,	singlelowquotemark,	leftsinglequotemark ]};
     key <AE01> {[ none,	none,	none,		rightsinglequotemark ]};
