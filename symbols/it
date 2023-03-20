@@ -292,6 +292,8 @@ xkb_symbols "fur" {
 
 	key <LSGT>	{[      less,    greater, guillemotleft,guillemotright ]};
 	key <AB03>	{[         c,          C,         U1D9C,     copyright ]};
+    key <AB04>	{ [         v,          V, leftdoublequotemark, leftsinglequotemark ]	};
+    key <AB05>	{ [         b,          B, rightdoublequotemark, rightsinglequotemark ] };
 	key <AB06>	{[         n,          N,         U207F,        Ntilde ]};
 	key <AB07>	{[         m,          M,         U1D50,            mu ]};
 	key <AB08>	{[     comma,  semicolon,    dead_acute,      multiply ]};
