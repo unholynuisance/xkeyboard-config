@@ -132,7 +132,7 @@ xkb_symbols "intl" {
     key <AB04> { [	   v,          V,             v,                V ] };
     key <AB05> { [	   b,          B,             b,                B ] };
     key <AB06> { [	   n,          N,        ntilde,           Ntilde ] };
-    key <AB07> { [	   m,          M,            mu,               mu ] };
+    key <AB07> { [	   m,          M,            mu,        plusminus ] };
     key <AB08> { [     comma,       less,      ccedilla,         Ccedilla ] };
     key <AB09> { [    period,    greater, dead_abovedot,       dead_caron ] };
     key <AB10> { [     slash,   question,  questiondown,        dead_hook ] };
@@ -310,7 +310,7 @@ xkb_symbols "dvorak-intl" {
     key <AB04> { [	   k,          K,            oe,               OE ] };
     key <AB05> { [	   x,          X,             x,                X ] };
     key <AB06> { [	   b,          B,             b,                B ] };
-    key <AB07> { [	   m,          M,            mu,               mu ] };
+    key <AB07> { [	   m,          M,            mu,        plusminus ] };
     key <AB08> { [	   w,          W,         aring,            Aring ] };
     key <AB09> { [	   v,          V,             v,                V ] };
     key <AB10> { [	   z,          Z,            ae,               AE ] };
@@ -1553,7 +1553,7 @@ xkb_symbols "workman-intl" {
 
     key <AB01> { [     z,          Z,            ae,               AE ] };
     key <AB02> { [     x,          X,             x,                X ] };
-    key <AB03> { [     m,          M,            mu,               mu ] };
+    key <AB03> { [     m,          M,            mu,        plusminus ] };
     key <AB04> { [     c,          C,     copyright,             cent ] };
     key <AB05> { [     v,          V,             v,                V ] };
     key <AB06> { [     k,          K,            oe,               OE ] };
@@ -1717,7 +1717,7 @@ xkb_symbols "carpalx-intl" {
 
     key <AD01> { [	   q,          Q,        degree,        paragraph ] };
     key <AD02> { [	   g,          G,         U011F,            U011E ] };
-    key <AD03> { [	   m,          M,            mu,               mu ] };
+    key <AD03> { [	   m,          M,            mu,        plusminus ] };
     key <AD04> { [	   l,          L,     copyright,             cent ] };
     key <AD05> { [	   w,          W,             w,                W ] };
     key <AD06> { [	   y,          Y,    idiaeresis,       Idiaeresis ] };
