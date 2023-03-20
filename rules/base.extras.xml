@@ -559,17 +559,18 @@
           <configItem popularity="exotic">
             <name>altgr-weur</name>
             <description>English (Western European AltGr dead keys)</description>
-            <languageList><iso639Id>dan</iso639Id>
-                          <iso639Id>nld</iso639Id>
-                          <iso639Id>eng</iso639Id>
-                          <iso639Id>fin</iso639Id>
-                          <iso639Id>fra</iso639Id>
-                          <iso639Id>deu</iso639Id>
-                          <iso639Id>ita</iso639Id>
-                          <iso639Id>nor</iso639Id>
-                          <iso639Id>por</iso639Id>
-                          <iso639Id>spa</iso639Id>
-                          <iso639Id>swe</iso639Id>
+            <languageList>
+              <iso639Id>eng</iso639Id>
+              <iso639Id>dan</iso639Id>
+              <iso639Id>deu</iso639Id>
+              <iso639Id>fin</iso639Id>
+              <iso639Id>fra</iso639Id>
+              <iso639Id>ita</iso639Id>
+              <iso639Id>nld</iso639Id>
+              <iso639Id>nor</iso639Id>
+              <iso639Id>por</iso639Id>
+              <iso639Id>spa</iso639Id>
+              <iso639Id>swe</iso639Id>
             </languageList>
           </configItem>
         </variant>
@@ -1051,14 +1052,14 @@
         </variant>
         <variant>
           <configItem popularity="exotic">
-            <name>coder</name>
-            <description>Czech (coder)</description>
+            <name>prog_typo</name>
+            <description>Czech (programming, typographic)</description>
           </configItem>
         </variant>
         <variant>
           <configItem popularity="exotic">
-            <name>prog_typo</name>
-            <description>Czech (programming, typographic)</description>
+            <name>coder</name>
+            <description>Czech (coder)</description>
           </configItem>
         </variant>
         <variant>
@@ -1339,7 +1340,7 @@
           <configItem popularity="exotic">
           <name>urd-navees</name>
           <description>Urdu (Pakistan, Navees)</description>
-          <languageList>
+            <languageList>
               <iso639Id>urd</iso639Id>
             </languageList>
           </configItem>
