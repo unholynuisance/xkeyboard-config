@@ -102,6 +102,65 @@ xkb_symbols "pes_keypad" {
     key <KPDL> { [ KP_Delete,	0x100066b	] };
 };
 
+partial alphanumeric_keys
+xkb_symbols "winkeys" {
+    name[Group1]= "Persian (Windows)";
+
+    key <TLDE> { [ division,	multiply	] };
+    key <AE01> { [ 1,		exclam,		VoidSymbol,	0x100200d	] };
+    key <AE02> { [ 2,		at,		VoidSymbol,	0x100200c	] };
+    key <AE03> { [ 3,		numbersign,	VoidSymbol,	0x100200e	] };
+    key <AE04> { [ 4,		dollar,		VoidSymbol,	0x100200f	] };
+    key <AE05> { [ 5,		percent		] };
+    key <AE06> { [ 6,		asciicircum	] };
+    key <AE07> { [ 7,		ampersand	] };
+    key <AE08> { [ 8,		asterisk	] };
+    key <AE09> { [ 9,		parenright	] };
+    key <AE10> { [ 0,		parenleft	] };
+    key <AE11> { [ minus,	underscore	] };
+    key <AE12> { [ equal,	plus		] };
+
+    key <AD01> { [ Arabic_dad,		Arabic_fathatan		] };
+    key <AD02> { [ Arabic_sad,		Arabic_dammatan		] };
+    key <AD03> { [ Arabic_theh,		Arabic_kasratan		] };
+    key <AD04> { [ Arabic_qaf,		0x100fdfc		] };
+    key <AD05> { [ Arabic_feh,		Arabic_comma		] };
+    key <AD06> { [ Arabic_ghain,	Arabic_semicolon	] };
+    key <AD07> { [ Arabic_ain,		comma			] };
+    key <AD08> { [ Arabic_heh,		bracketright		] };
+    key <AD09> { [ Arabic_khah,		bracketleft		] };
+    key <AD10> { [ Arabic_hah,		backslash		] };
+    key <AD11> { [ Arabic_jeem,		braceright		] };
+    key <AD12> { [ Arabic_tcheh,	braceleft		] };
+
+    key <AC01> { [ Arabic_sheen,	Arabic_fatha		] };
+    key <AC02> { [ Arabic_seen,		Arabic_damma		] };
+    key <AC03> { [ Farsi_yeh,		Arabic_kasra		] };
+    key <AC04> { [ Arabic_beh,		Arabic_shadda		] };
+    key <AC05> { [ Arabic_lam,		0x10006c0		] };
+    key <AC06> { [ Arabic_alef,		Arabic_maddaonalef	] };
+    key <AC07> { [ Arabic_teh,		Arabic_tatweel		] };
+    key <AC08> { [ Arabic_noon,		guillemotleft		] };
+    key <AC09> { [ Arabic_meem,		guillemotright		] };
+    key <AC10> { [ Arabic_keheh,	colon			] };
+    key <AC11> { [ Arabic_gaf,		quotedbl		] };
+    key <BKSL> { [ Arabic_peh,		bar			] };
+
+    key <LSGT> { [ Arabic_peh,		bar			] };
+    key <AB01> { [ Arabic_zah,		Arabic_tehmarbuta	] };
+    key <AB02> { [ Arabic_tah,		Arabic_yeh		] };
+    key <AB03> { [ Arabic_zain,		Arabic_jeh		] };
+    key <AB04> { [ Arabic_ra,		Arabic_hamzaonwaw	] };
+    key <AB05> { [ Arabic_thal,		Arabic_hamzaonalef	] };
+    key <AB06> { [ Arabic_dal,		Arabic_hamzaunderalef	] };
+    key <AB07> { [ Arabic_hamzaonyeh,	Arabic_hamza		] };
+    key <AB08> { [ Arabic_waw,		less			] };
+    key <AB09> { [ period,		greater			] };
+    key <AB10> { [ slash,		Arabic_question_mark	] };
+
+    include "level3(ralt_switch)"
+};
+
 
 // Symbols definition for South Azerbaijani keyboard layout.
 // 2022 - Alborz Jafari <alborz.jf@gmail.com>
