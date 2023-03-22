@@ -1,3 +1,5 @@
+// Keyboard layouts for Moldava.
+
 default partial alphanumeric_keys
 xkb_symbols "basic" {
 
@@ -27,8 +29,8 @@ xkb_symbols "basic" {
 
 // A, Ä, B, C, Ç, D, E, Ê, F, G, H, I, İ, J, K, L, M, N, O, Ö, P, R, S, Ş, T, Ţ, U, Ü, V, Y, Z.
 
-partial alphanumeric_keys								
-xkb_symbols "gag" {								
+partial alphanumeric_keys
+xkb_symbols "gag" {
 
     include "us(basic)"
 
@@ -87,4 +89,4 @@ xkb_symbols "gag" {
     key <BKSL> 	{	[	backslash,	bar			]	};
 
     include "level3(ralt_switch)"
-};								
+};

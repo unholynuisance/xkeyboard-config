@@ -1,8 +1,8 @@
-// Symbols definition for a Azerbaijani keyboard layout.
-// Based on AZS 495-2010 standard.
+// Keyboard layouts for Azerbaijan.
+
+// Azerbaijani layout, based on the AZS 495-2010 standard.
 // 2001 - Pablo Saratxaga <pablo@mandrakesoft.com>
 // 2015 - Adil Aliyev <adilaliev@gmail.com>
-
 default partial alphanumeric_keys
 xkb_symbols "latin" {
 

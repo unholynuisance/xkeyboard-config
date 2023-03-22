@@ -1,9 +1,8 @@
-//
-// Ethiopia
-// Designed as a part of OLPC project
+// Keyboard layouts for Ethiopia.
+
+// Designed as a part of OLPC project.
 //
 // 2007 Sergey Udaltsov <svu@gnome.org>
-//
 
 default partial alphanumeric_keys
 xkb_symbols "basic" {
@@ -20,7 +19,7 @@ xkb_symbols "olpc" {
 
     key <AE01>	{ [        0x01001369,  0x01001372 ] }; // 1
     key <AE02>	{ [        0x0100136a,  0x01001373 ] }; // 2
-    key <AE03>	{ [        0x0100136b,  0x01001374 ] }; // 3 
+    key <AE03>	{ [        0x0100136b,  0x01001374 ] }; // 3
     key <AE04>	{ [        0x0100136c,  0x01001375 ] }; // 4
     key <AE05>	{ [        0x0100136d,  0x01001376 ] }; // 5
     key <AE06>	{ [        0x0100136e,  0x01001377 ] }; // 6
@@ -56,6 +55,7 @@ xkb_symbols "olpc" {
 
     key <AC10>	{ [        0x01001362,  0x01001361 ]	}; // :;
     key <AC11>  { [        0x01001366,  0x01001365 ]    }; // '"
+    key <BKSL> {  [        VoidSymbol,  0x01002010 ]    }; // bksl
 
     key <AB01>	{ [        0x010012D8,  0x010012E0 ]	}; // z
     key <AB02>	{ [        0x010012A0,  0x010012D0 ]	}; // x
@@ -68,8 +68,6 @@ xkb_symbols "olpc" {
     key <AB08>	{ [        0x01001363,  VoidSymbol ]	}; // <
     key <AB09>	{ [        0x01001364,  VoidSymbol ]	}; // >
     key <AB10>  { [        0x01001367,  question   ]    }; // ?
-
-    key <BKSL> {  [        VoidSymbol,  0x01002010 ]    }; // bksl
 
     include "group(olpc)"
 };

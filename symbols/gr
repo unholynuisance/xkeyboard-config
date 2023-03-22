@@ -1,5 +1,5 @@
-// Hellenic keyboard map for X.org
-//
+// Keyboard layouts for Greece.
+
 // Original version:
 //   Kostas Gewrgiou <gewrgiou@imbc.gr>
 // Heavily modified and maintained by:
@@ -9,7 +9,6 @@
 // Final modifications for proper support of
 //   the Hellenic language by:
 //   Web Dolphins® <foo@foofootus.eu>
-
 
 default  partial alphanumeric_keys alternate_group
 xkb_symbols "basic" {

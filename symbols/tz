@@ -1,7 +1,8 @@
-// Keyboard layout for Swahili in Arabic script.
+// Keyboard layout for Tanzania.
+
+// Layout for Swahili in Arabic script.
 // Based on Martin Vidner's Buckwalter transliteration variant of the Arabic keyboard.
 // Please notify Kevin Donnelly (kevin@dotmon.com) of any corrections or omission.
-
 default partial alphanumeric_keys
 xkb_symbols "swa" {
 

@@ -1,3 +1,5 @@
+// Keyboard layouts for Brazil.
+
 default
 xkb_symbols "abnt2" {
 

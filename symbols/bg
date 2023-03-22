@@ -1,3 +1,5 @@
+// Keyboard layouts for Bulgaria.
+
 //////////////////////////////////////////////////////////////////////////
 // Copyright (C) 1999, 2000, 2007, 2009 by Anton Zinoviev <anton@lml.bas.bg>
 //
@@ -44,9 +46,8 @@
 
 //////////////////////////////////////////////////////////////////////////
 
-// Describes Bulgarian keyboard "BDS" modified according to the
-// the new state standard BDS 5237:2006 and extended with symbols in
-// levels 3 and 4.
+// Describes Bulgarian keyboard "BDS" according to the new state standard
+// BDS 5237:2006 and extended with symbols in levels 3 and 4.
 default partial alphanumeric_keys
 xkb_symbols "bds" {
 

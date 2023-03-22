@@ -1,3 +1,5 @@
+// Keyboard layouts for Canada.
+
 default partial
 xkb_symbols "fr" {
     name[Group1] = "French (Canada)";

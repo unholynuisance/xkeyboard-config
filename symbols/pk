@@ -1,8 +1,8 @@
+// Keyboard layouts for Pakistan.
+
 // Urdu keymap, originally developed by Zaeem Arshad <zaeem@linux.net.pk>
-//
 // (Third-level symbols are yet to be put in. The unavailable symbols
 // are those which do not have a corresponding glyph in Unicode.)
-
 default partial alphanumeric_keys
 xkb_symbols "urd-phonetic" {
 

@@ -1,4 +1,4 @@
-// Irish keyboard map
+// Keyboard layouts for Ireland.
 
 // Support for Irish (old and new orthography) and English
 // Seamus O Ciardhuain <seoc@cnds.ucd.ie>  (19 December 2002)
@@ -6,20 +6,14 @@
 // The general idea is to provide the characters in ISO 8859-1,
 // ISO 8859-15, ISO 8859-14, CP1252 and "Extended Latin-8".
 // However, not all are accessible directly because there aren't
-// enough keys; some need deadkeys to access them, others the 
+// enough keys; some need dead keys to access them, others the
 // "Multi_key" compose sequences.
 
-// Designed to be similar to the layouts used on Windows
-// and the Macintosh.
-
-// Everything is in Group 1 to be compatible with the
-// multi-layout keyboard support in XFree86 4.3.
-
 // The basic layout is a modern keyboard, but dotted consonants are
-// accessible using a deadkey (AltGr+H or AltGr+W).
+// accessible using a dead key (AltGr+H or AltGr+W).
 // If a proper Clo Gaelach keyboard is needed, then use the layout
 // defined below as ie(CloGaelach), which gives dotted consonants
-// without use of a deadkey.
+// without use of a dead key.
 
 
 default partial alphanumeric_keys

@@ -1,3 +1,5 @@
+// Keyboard layouts for Sweden.
+
 default partial alphanumeric_keys
 xkb_symbols "basic" {
     include "latin(type2)"

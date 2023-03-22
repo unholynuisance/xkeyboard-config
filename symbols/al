@@ -1,4 +1,6 @@
-// Albanian keyboard layout, by Pablo Saratxaga <pablo@mandrakesoft.com>.
+// Keyboard layouts for Albania.
+
+// Basic Albanian layout, by Pablo Saratxaga <pablo@mandrakesoft.com>.
 default partial alphanumeric_keys
 xkb_symbols "basic" {
 
