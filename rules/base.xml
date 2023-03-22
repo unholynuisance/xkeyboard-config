@@ -1807,9 +1807,9 @@
     <layout>
       <configItem>
         <name>au</name>
-        <!-- Keyboard indicator for Australian layouts -->
+        <!-- Keyboard indicator for English layouts -->
         <shortDescription>en</shortDescription>
-        <description>English (Australian)</description>
+        <description>English (Australia)</description>
         <countryList>
           <iso3166Id>AU</iso3166Id>
         </countryList>
