@@ -117,7 +117,7 @@ xkb_symbols "e1" {
     key <AE12>	{[      dead_acute, dead_grave,        dead_abovedot, NoSymbol,             sterling,                U035C ]};
 
     // second row
-    key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
+    key.type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC";
     key <AD01>	{[               q,          Q,                   at, NoSymbol,            masculine,                U2642 ]};
     key <AD02>	{[               w,          W,          dead_macron, NoSymbol,          ordfeminine,                U2640 ]};
     key <AD03>	{[               e,          E,             EuroSign, NoSymbol,                schwa,                SCHWA ]};
@@ -133,7 +133,7 @@ xkb_symbols "e1" {
     key <AD12>	{[            plus,   asterisk,           asciitilde, NoSymbol,            plusminus,                U2052 ]};
 
     // third row
-    key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
+    key.type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC";
     // Per DIN 2137-1:2018-12, p. 11-12, (Alt)Gr+a can either invoke
     // a selection possibility for emojis or special characters, or
     // output the U+263A smiley.
@@ -152,7 +152,7 @@ xkb_symbols "e1" {
     key <BKSL>	{[      numbersign, apostrophe,                U2212, NoSymbol,                U2020,                U2021 ]};
 
     // fourth row
-    key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
+    key.type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC";
     key <AB01>	{[               y,          Y,                U203A, NoSymbol,                U2423,                U23D1 ]};
     key <AB02>	{[               x,          X,       guillemotright, NoSymbol,   doublelowquotemark,   singlelowquotemark ]};
     key <AB03>	{[               c,          C,                U202F, NoSymbol,                 cent,            copyright ]};
