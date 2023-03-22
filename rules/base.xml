@@ -5525,12 +5525,6 @@
             </languageList>
           </configItem>
         </variant>
-        <variant>
-          <configItem>
-            <name>mac</name>
-            <description>Spanish (Macintosh)</description>
-          </configItem>
-        </variant>
       </variantList>
     </layout>
     <layout>
