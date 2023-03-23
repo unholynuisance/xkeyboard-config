@@ -52,8 +52,8 @@ xkb_symbols "basic"
 	key <AD10> { [    Cyrillic_ze,    Cyrillic_ZE                                 ] }; // з З
 	key <AD11> { [    Cyrillic_ha,    Cyrillic_HA                                 ] }; // х Х
 	key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN                           ] }; // ъ Ъ
-	key <AE01> { [              1,         exclam,      0x10000a7                 ] }; // 1 ! §
-	key <AE02> { [              2,       quotedbl,      0x10000ab,      0x10000bb ] }; // 2 " « »
+	key <AE01> { [              1,         exclam,        section                 ] }; // 1 ! §
+	key <AE02> { [              2,       quotedbl,  guillemotleft, guillemotright ] }; // 2 " « »
 	key <AE03> { [              3,     numerosign                                 ] }; // 3 №
 	key <AE04> { [              4,      semicolon                                 ] }; // 4 ;
 	key <AE05> { [              5,        percent                                 ] }; // 5 %
@@ -61,7 +61,7 @@ xkb_symbols "basic"
 	key <AE07> { [              7,       question,      ampersand                 ] }; // 7 ? &
 	key <AE08> { [              8,       asterisk                                 ] }; // 8 *
 	key <AE09> { [              9,      parenleft                                 ] }; // 9 (
-	key <AE10> { [              0,     parenright,      0x10000b0                 ] }; // 0 ) °
+	key <AE10> { [              0,     parenright,         degree                 ] }; // 0 ) °
 	key <AE11> { [ Cyrillic_ghe_bar, Cyrillic_GHE_bar,      minus,     underscore ] }; // ғ Ғ - _
 	key <AE12> { [ Cyrillic_u_macron, Cyrillic_U_macron,    equal,           plus ] }; // ӯ Ӯ = +
 	key <BKSL> { [      backslash,          slash                                 ] }; // \ /
@@ -118,8 +118,8 @@ xkb_symbols "legacy"
 	key <AD10> { [    Cyrillic_ze,    Cyrillic_ZE                                 ] }; // з З
 	key <AD11> { [    Cyrillic_ha,    Cyrillic_HA, Cyrillic_ha_descender, Cyrillic_HA_descender ] }; // х Х ҳ Ҳ
 	key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN                           ] }; // ъ Ъ
-	key <AE01> { [              1,         exclam,      0x10000a7                 ] }; // 1 ! §
-	key <AE02> { [              2,       quotedbl,      0x10000ab,      0x10000bb ] }; // 2 " « »
+	key <AE01> { [              1,         exclam,        section                 ] }; // 1 ! §
+	key <AE02> { [              2,       quotedbl,  guillemotleft, guillemotright ] }; // 2 " « »
 	key <AE03> { [              3,     numerosign                                 ] }; // 3 №
 	key <AE04> { [              4,      semicolon                                 ] }; // 4 ;
 	key <AE05> { [              5,        percent                                 ] }; // 5 %

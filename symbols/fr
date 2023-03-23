@@ -972,7 +972,7 @@ xkb_symbols "geo" {
     key <AD01> { [ Georgian_an,    0x010010fa     ] };
     key <AD02> { [ Georgian_zen,   Z              ] };
     key <AD03> { [ Georgian_en,    E, Georgian_he ] };
-    key <AD04> { [ Georgian_rae,   0x010000ae     ] };
+    key <AD04> { [ Georgian_rae,   registered     ] };
     key <AD05> { [ Georgian_tar,   T              ] };
     key <AD06> { [ Georgian_qar,   0x010010f8     ] };
     key <AD07> { [ Georgian_un,    U              ] };
@@ -993,12 +993,12 @@ xkb_symbols "geo" {
     key <AC09> { [ Georgian_las,   L              ] };
     key <AC10> { [ Georgian_man,   M              ] };
     key <AC11> { [ Georgian_zhar,  J              ] };
-    key <BKSL> { [ Georgian_chin,  0x010000a9     ] };
+    key <BKSL> { [ Georgian_chin,  copyright      ] };
 
     key <LSGT> { [ guillemotleft,  guillemotright ] };
     key <AB01> { [ Georgian_cil,   W              ] };
     key <AB02> { [ Georgian_xan,   Georgian_har   ] };
-    key <AB03> { [ Georgian_can,   0x010000a9     ] };
+    key <AB03> { [ Georgian_can,   copyright      ] };
     key <AB04> { [ Georgian_vin,   Georgian_we    ] };
     key <AB05> { [ Georgian_ban,   B              ] };
     key <AB06> { [ Georgian_nar,   0x010010fc     ] };

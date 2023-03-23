@@ -156,8 +156,7 @@ xkb_symbols "UnicodeExpert" {
     //
     // Numeric row `1234567890-=
     //
-    key <TLDE> { [        grave,     notsign,        0x10000A6,        0x10000A6 ] };
-                                                 // broken bar
+    key <TLDE> { [        grave,     notsign,        brokenbar,        brokenbar ] };
     key <AE01> { [            1,      exclam,         NoSymbol,         NoSymbol ] };
     key <AE02> { [            2,    quotedbl, dead_doubleacute, dead_doubleacute ] };
     key <AE03> { [            3,    sterling,         NoSymbol,         NoSymbol ] };

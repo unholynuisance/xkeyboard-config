@@ -53,7 +53,7 @@ xkb_symbols "fula" {
 
     name[Group1]= "Fula";
 
-    key <AD01> { [ 0x01000071, 0x01000051,          q,          Q ] };
+    key <AD01> { [          q,          Q,          q,          Q ] };
     key <AD02> { [ udiaeresis, Udiaeresis,          w,          W ] };
     key <AD03> { [          e,          E,   EuroSign,	     cent ] };
     key <AD11> { [ 0x010001B4, 0x010001B3,bracketleft,  braceleft ] };
@@ -143,7 +143,7 @@ xkb_symbols "gillbt" {
     key <AC11> { [ apostrophe, quotedbl,    0x01000301,   0x01000301  ] }; // combining acute
     key <AB01> { [ z,          Z,           0x01000292,   0x010001B7  ] }; // ʒ, Ʒ
     key <AB02> { [ 0x01000269, 0x01000196,  x,            X           ] }; // ɩ, Ɩ
-    key <AB03> { [ c,          C,           0x010000E7,   0x010000C7  ] }; // ç, Ç
+    key <AB03> { [ c,          C,           ccedilla,     Ccedilla    ] }; // ç, Ç
 
     include "level3(ralt_switch)"
 };

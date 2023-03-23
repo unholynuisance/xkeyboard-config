@@ -39,7 +39,7 @@ xkb_symbols "hausa" {
 
     name[Group1]= "Hausa (Nigeria)";
 
-    key <AD01> { [ 0x01000071, 0x01000051,          q,          Q ] };
+    key <AD01> { [          q,          Q,          q,          Q ] };
     key <AD02> { [ udiaeresis, Udiaeresis,          w,          W ] };
     key <AD03> { [          e,          E,   EuroSign,       cent ] };
     key <AD11> { [ 0x010001B4, 0x010001B3,bracketleft,  braceleft ] };

@@ -318,12 +318,12 @@ xkb_symbols "ratise" {
     key <AB06> { [          v,           V,           squareroot,          0x10025CA ] }; // LOZENGE
     key <AB07> { [          m,           M,                    0,                 mu ] };
     key <AB08> { [          d,           D,               period,       doubledagger ] };
-    key <AB09> { [     scaron,      Scaron,                comma,          0x10000B7 ] }; // MIDDLE DOT
+    key <AB09> { [     scaron,      Scaron,                comma,     periodcentered ] };
     key <AB10> { [     ccaron,      Ccaron,                 plus,          plusminus ] };
 
     key <SPCE> { [      space,       space,                space,       nobreakspace ] };
 
-    key <TAB>  { [        Tab,ISO_Left_Tab,            Multi_key                     ] }; // Tab as Multi_key (Compose)
+    key <TAB>  { [        Tab,ISO_Left_Tab,            Multi_key                     ] }; // AltGr+Tab is Compose
 };
 
 // EXTRAS:
