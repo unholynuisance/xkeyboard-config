@@ -1,14 +1,9 @@
 // Keyboard layouts for Greece.
 
-// Original version:
-//   Kostas Gewrgiou <gewrgiou@imbc.gr>
-// Heavily modified and maintained by:
-//   Vasilis Vasaitis <vvas@hal.csd.auth.gr>
-// Originally converted to single group form by:
-//   Ivan Pascal <pascal@info.tsu.ru>
-// Final modifications for proper support of
-//   the Hellenic language by:
-//   Web Dolphins® <foo@foofootus.eu>
+// Original version:  Kostas Gewrgiou <gewrgiou@imbc.gr>
+// Heavily modified by:  Vasilis Vasaitis <vvas@hal.csd.auth.gr>
+// Converted to single-group form by:  Ivan Pascal <pascal@info.tsu.ru>
+// More modifications by:  Web Dolphins® <foo@foofootus.eu>
 
 default  partial alphanumeric_keys
 xkb_symbols "basic" {
@@ -16,55 +11,53 @@ xkb_symbols "basic" {
 
 	name[Group1] = "Greek";
 
-	include "eurosign(e)"
-	include "eurosign(5)"
-	include "kpdl(comma)"
-	include "level3(ralt_switch)"
-
-	key <AB01> {[  any,  any,          U037D,          U03FF ]};
-	key <AB02> {[  any,  any,     rightarrow,      leftarrow ]};
-	key <AB03> {[  any,  any,      copyright                 ]};
-	key <AB04> {[  any,  any,          U03D6                 ]};
-	key <AB05> {[  any,  any,          U03D0                 ]};
-	key <AB06> {[  any,  any,          U0374,          U0375 ]};
-	key <AB07> {[  any,  any,          U03FB,          U03FA ]};
-	key <AB08> {[  any,  any,  guillemotleft                 ]};
-	key <AB09> {[  any,  any, guillemotright, periodcentered ]};
-
-	key <AC03> {[  any,  any,      downarrow,        uparrow ]};
-	key <AC04> {[  any,  any,          U03D5,      Greek_PHI ]};
-	key <AC05> {[  any,  any,          U03DD,          U03DC ]};
-	key <AC07> {[  any,  any,          U037C,          U03FE ]};
-	key <AC08> {[  any,  any,          U03DF,          U03DE ]};
-	key <AC09> {[  any,  any,          U03F2,          U03F9 ]};
-	key <AC10> {[  any,  any,     dead_acute,     dead_psili ]};
-	key <AC11> {[  any,  any,     dead_grave,     dead_dasia ]};
-
-	key <AD01> {[  any,  any, periodcentered                 ]};
-	key <AD02> {[  any,  any,          U03DB,          U03DA ]};
-	key <AD04> {[  any,  any,     registered,          U03F1 ]};
-	key <AD06> {[  any,  any,          U03D2,          U03D2 ]};
-	key <AD07> {[  any,  any,          U03D1,          U03F4 ]};
-	key <AD08> {[  any,  any,          U037B,          U03FD ]};
-	key <AD10> {[  any,  any,          U03E1,          U03E0 ]};
-	key <AD11> {[  any,  any,     dead_tilde,    dead_macron ]};
-	key <AD12> {[  any,  any,      dead_iota,     dead_breve ]};
-
 	key <AE01> {[  any,  any,            any,    onesuperior ]};
 	key <AE02> {[  any,  any,        onehalf,    twosuperior ]};
 	key <AE03> {[  any,  any,       sterling,  threesuperior ]};
 	key <AE04> {[  any,  any,     onequarter,  threequarters ]};
-	key <AE06> {[  any,  any,          U03F0                 ]};
-	key <AE07> {[  any,  any,          U03D7,          U03CF ]};
-	key <AE08> {[  any,  any,          U20AF                 ]};
+	key <AE06> {[  any,  any,          U03F0                 ]}; // ϰ
+	key <AE07> {[  any,  any,          U03D7,          U03CF ]}; // ϗ Ϗ
+	key <AE08> {[  any,  any,          U20AF                 ]}; // ₯
 	key <AE10> {[  any,  any,         degree                 ]};
 	key <AE11> {[  any,  any,      plusminus                 ]};
+
+	key <AD01> {[  any,  any, periodcentered                 ]};
+	key <AD02> {[  any,  any,          U03DB,          U03DA ]}; // ϛ Ϛ
+	key <AD04> {[  any,  any,     registered,          U03F1 ]}; // ® ϱ
+	key <AD06> {[  any,  any,          U03D2,          U03D2 ]}; // ϒ ϒ
+	key <AD07> {[  any,  any,          U03D1,          U03F4 ]}; // ϑ ϴ
+	key <AD08> {[  any,  any,          U037B,          U03FD ]}; // ͻ Ͻ
+	key <AD10> {[  any,  any,          U03E1,          U03E0 ]}; // ϡ Ϡ
+	key <AD11> {[  any,  any,     dead_tilde,    dead_macron ]};
+	key <AD12> {[  any,  any,      dead_iota,     dead_breve ]};
+
+	key <AC03> {[  any,  any,      downarrow,        uparrow ]};
+	key <AC04> {[  any,  any,          U03D5,      Greek_PHI ]}; // ϕ Φ
+	key <AC05> {[  any,  any,          U03DD,          U03DC ]}; // ϝ Ϝ
+	key <AC07> {[  any,  any,          U037C,          U03FE ]}; // ͼ Ͼ
+	key <AC08> {[  any,  any,          U03DF,          U03DE ]}; // ϟ Ϟ
+	key <AC09> {[  any,  any,          U03F2,          U03F9 ]}; // ϲ Ϲ
+	key <AC10> {[  any,  any,     dead_acute,     dead_psili ]};
+	key <AC11> {[  any,  any,     dead_grave,     dead_dasia ]};
+
+	key <AB01> {[  any,  any,          U037D,          U03FF ]}; // ͽ Ͽ
+	key <AB02> {[  any,  any,     rightarrow,      leftarrow ]};
+	key <AB03> {[  any,  any,      copyright                 ]};
+	key <AB04> {[  any,  any,          U03D6                 ]}; // ϖ
+	key <AB05> {[  any,  any,          U03D0                 ]}; // ϐ
+	key <AB06> {[  any,  any,          U0374,          U0375 ]}; // ʹ ͵
+	key <AB07> {[  any,  any,          U03FB,          U03FA ]}; // ϻ Ϻ
+	key <AB08> {[  any,  any,  guillemotleft                 ]};
+	key <AB09> {[  any,  any, guillemotright, periodcentered ]};
+
+	include "eurosign(5)"
+	include "eurosign(e)"
+
+	include "level3(ralt_switch)"
 };
 
 partial alphanumeric_keys
 xkb_symbols "simple" {
-
-    include "gr(bare)"
 
     name[Group1] = "Greek (simple)";
 
@@ -82,22 +75,6 @@ xkb_symbols "simple" {
     key <AE11>	{[              minus,      underscore ]}; // - _
     key <AE12>	{[              equal,            plus ]}; // = +
 
-    key <AD11>	{[        bracketleft,       braceleft ]}; // [ {
-    key <AD12>	{[       bracketright,      braceright ]}; // ] }
-
-    key <AC11>	{[         apostrophe,        quotedbl ]}; // ' "
-
-    key <AB08>	{[              comma,            less ]}; // , <
-    key <AB09>	{[             period,         greater ]}; // . >
-    key <AB10>	{[              slash,        question ]}; // / ?
-    key <BKSL>	{[          backslash,             bar ]}; // \ |
-
-    include "kpdl(comma)"
-};
-
-hidden partial alphanumeric_keys
-xkb_symbols "bare" {
-
     key <AD01>	{[           semicolon,          colon ]}; // ; :
     key <AD02>	{[ Greek_finalsmallsigma,  Greek_SIGMA ]}; // ς Σ
     key <AD03>	{[       Greek_epsilon,  Greek_EPSILON ]}; // ε Ε
@@ -108,6 +85,9 @@ xkb_symbols "bare" {
     key <AD08>	{[          Greek_iota,     Greek_IOTA ]}; // ι Ι
     key <AD09>	{[       Greek_omicron,  Greek_OMICRON ]}; // ο Ο
     key <AD10>	{[            Greek_pi,       Greek_PI ]}; // π Π
+
+    key <AD11>	{[        bracketleft,       braceleft ]}; // [ {
+    key <AD12>	{[       bracketright,      braceright ]}; // ] }
 
     key <AC01>	{[         Greek_alpha,    Greek_ALPHA ]}; // α Α
     key <AC02>	{[         Greek_sigma,    Greek_SIGMA ]}; // σ Σ
@@ -120,6 +100,11 @@ xkb_symbols "bare" {
     key <AC09>	{[         Greek_lamda,    Greek_LAMDA ]}; // λ Λ
     key <AC10>	{[          dead_acute, dead_diaeresis ]}; // ´ ¨
 
+    key <AC11>	{[         apostrophe,        quotedbl ]}; // ' "
+    key <BKSL>	{[          backslash,             bar ]}; // \ |
+
+    key <LSGT>	{[       guillemotleft, guillemotright ]}; // « »
+
     key <AB01>	{[          Greek_zeta,     Greek_ZETA ]}; // ζ Ζ
     key <AB02>	{[           Greek_chi,      Greek_CHI ]}; // χ Χ
     key <AB03>	{[           Greek_psi,      Greek_PSI ]}; // ψ Ψ
@@ -128,8 +113,13 @@ xkb_symbols "bare" {
     key <AB06>	{[            Greek_nu,       Greek_NU ]}; // ν Ν
     key <AB07>	{[            Greek_mu,       Greek_MU ]}; // μ Μ
 
-    key <LSGT>	{[       guillemotleft, guillemotright ]}; // « »
+    key <AB08>	{[              comma,            less ]}; // , <
+    key <AB09>	{[             period,         greater ]}; // . >
+    key <AB10>	{[              slash,        question ]}; // / ?
+
+    include "kpdl(comma)"
 };
+
 
 // Greek - Extended
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
@@ -174,9 +164,10 @@ xkb_symbols "extended" {
     key <AB08>	{[  any,  any,  guillemotleft ]}; // «
     key <AB09>	{[  any,  any, guillemotright ]}; // »
 
-    include "level3(ralt_switch)"
     include "eurosign(5)"
     include "eurosign(e)"
+
+    include "level3(ralt_switch)"
 };
 
 partial alphanumeric_keys
@@ -219,8 +210,8 @@ xkb_symbols "nodeadkeys" {
     key <AC10>	{[ semicolon, colon ]}; // ; :
 };
 
-// Greek layout rearranged as Colemak
 
+// Greek layout rearranged as Colemak.
 partial alphanumeric_keys
 xkb_symbols "colemak" {
 
