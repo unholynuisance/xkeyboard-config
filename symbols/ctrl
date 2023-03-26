@@ -14,7 +14,7 @@ xkb_symbols "lctrl_meta" {
 // Swap the functions of the CapsLock key and the left Ctrl key.
 partial modifier_keys
 xkb_symbols "swapcaps" {
-    replace key <CAPS> { [ Control_L ] };
+    replace key <CAPS> { [ Control_L ], type[group1] = "ONE_LEVEL" };
     replace key <LCTL> { [ Caps_Lock ] };
     modifier_map Control { <CAPS> };
     modifier_map  Lock { <LCTL> };
@@ -24,7 +24,7 @@ xkb_symbols "swapcaps" {
 // and the CapsLock key a left Control.
 partial modifier_keys
 xkb_symbols "hyper_capscontrol" {
-    replace key <CAPS> { [ Control_L ] };
+    replace key <CAPS> { [ Control_L ], type[group1] = "ONE_LEVEL" };
     replace key <LCTL> { [ Hyper_L ] };
     modifier_map Control { <CAPS> };
     modifier_map  Mod4 { <LCTL> };
@@ -35,7 +35,7 @@ xkb_symbols "hyper_capscontrol" {
 // file has defined appropriate aliases for the keys in question.
 partial modifier_keys
 xkb_symbols "ac_ctrl" {
-    replace key <AC00> { [ Control_L ] };
+    replace key <AC00> { [ Control_L ], type[group1] = "ONE_LEVEL" };
     replace key <AA00> { [ Caps_Lock ] };
     modifier_map  Control { <AC00> };
     modifier_map  Lock    { <AA00> };
