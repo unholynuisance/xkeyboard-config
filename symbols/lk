@@ -71,8 +71,7 @@ xkb_symbols "sin_phonetic" {
   key <AB09> { [ any, any, Sinh_kunddaliya, NoSymbol ] };
   key <AB10> { [ any, any, 0x100200d, NoSymbol ] };
 
-  // Space
-  include "nbsp(nb2zwnj3s)"
+  key <SPCE> { [  space,  nobreakspace,  U200c,  any  ] }; // ZWNJ
 
   include "level3(ralt_switch)"
 };

@@ -106,10 +106,3 @@ partial
 xkb_symbols "zwnj3zwj4" {
   key <SPCE> {[  space,  space,  U200c,  U200d  ], type[group1]="FOUR_LEVEL" };
 };
-
-// NBSP on level 2
-// ZWNJ on level 3
-partial
-xkb_symbols "nb2zwnj3s" {
-  key <SPCE> {[  space,  nobreakspace,  U200c,  any  ], type[group1]="FOUR_LEVEL" };
-};
