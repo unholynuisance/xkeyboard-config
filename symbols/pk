@@ -390,10 +390,10 @@ xkb_symbols "urd-navees" {
     key <AE08>	{[  U06F8,      8,  U002A  ]};  // EXTENDED ARABIC-INDIC DIGIT EIGHT,  DIGIT EIGHT,      ASTERISK
     key <AE09>	{[  U06F9,      9,  U0029  ]};  // EXTENDED ARABIC-INDIC DIGIT NINE,   DIGIT NINE,       RIGHT PARENTHESIS
     key <AE10>	{[  U06F0,      0,  U0028  ]};  // EXTENDED ARABIC-INDIC DIGIT ZERO,   DIGIT ZERO,       LEFT PARENTHESIS
-    key <AE11>	{[  U002D,  U005F,    any  ]};  // HYPHEN-MINUS,                       LOW LINE
-    key <AE12>	{[  U003D,  U002B,    any  ]};  // EQUALS SIGN,                        PLUS SIGN
+    key <AE11>	{[  U002D,  U005F,   none  ]};  // HYPHEN-MINUS,                       LOW LINE
+    key <AE12>	{[  U003D,  U002B,   none  ]};  // EQUALS SIGN,                        PLUS SIGN
 
-    key <AD01>	{[  U0642,  U0652,    any  ]};  // ARABIC LETTER QAF,         ARABIC SUKUN
+    key <AD01>	{[  U0642,  U0652,   none  ]};  // ARABIC LETTER QAF,         ARABIC SUKUN
     key <AD02>	{[  U0648,  U0651,  U0624  ]};  // ARABIC LETTER WAW,         ARABIC SHADDA,                   ARABIC LETTER WAW WITH HAMZA ABOVE
     key <AD03>	{[  U0639,  U0670,  U0656  ]};  // ARABIC LETTER AIN,         ARABIC LETTER SUPERSCRIPT ALEF,  ARABIC SUBSCRIPT ALEF
     key <AD04>	{[  U0631,  U0691,  U0613  ]};  // ARABIC LETTER REH,         ARABIC LETTER RREH,              ARABIC SIGN RADI ALLAHOU ANHU
@@ -410,25 +410,25 @@ xkb_symbols "urd-navees" {
     key <AC01>	{[  U0627,  U0622,  U0623  ]};  // ARABIC LETTER ALEF,   ARABIC LETTER ALEF WITH MADDA ABOVE,  ARABIC LETTER ALEF WITH HAMZA ABOVE
     key <AC02>	{[  U0633,  U0635,  U0610  ]};  // ARABIC LETTER SEEN,   ARABIC LETTER SAD,                    ARABIC SIGN SALLALLAHOU ALAYHE WASSALLAM
     key <AC03>	{[  U062F,  U0688,  UFDFA  ]};  // ARABIC LETTER DAL,    ARABIC LETTER DDAL,                   ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM
-    key <AC04>	{[  U0641,    any,  U0602  ]};  // ARABIC LETTER FEH,                                          ARABIC FOOTNOTE MARKER
-    key <AC05>	{[  U06AF,  U063A,    any  ]};  // ARABIC LETTER GAF,    ARABIC LETTER GHAIN
+    key <AC04>	{[  U0641,   none,  U0602  ]};  // ARABIC LETTER FEH,                                          ARABIC FOOTNOTE MARKER
+    key <AC05>	{[  U06AF,  U063A,   none  ]};  // ARABIC LETTER GAF,    ARABIC LETTER GHAIN
     key <AC06>	{[  U062D,  U06BE,  U0612  ]};  // ARABIC LETTER HAH,    ARABIC LETTER HEH DOACHASHMEE,        ARABIC SIGN RAHMATULLAH ALAYHE
     key <AC07>	{[  U062C,  U0636,  UFDFB  ]};  // ARABIC LETTER JEEM,   ARABIC LETTER DAD,                    ARABIC LIGATURE JALLAJALALOUHOU
     key <AC08>	{[  U06A9,  U062E,  U0601  ]};  // ARABIC LETTER KEHEH,  ARABIC LETTER KHAH,                   ARABIC SIGN SANAH
-    key <AC09>	{[  U0644,    any,    any  ]};  // ARABIC LETTER LAM
-    key <AC10>	{[  U061B,  U003A,    any  ]};  // ARABIC SEMICOLON,     COLON
-    key <AC11>	{[  U0027,  U0022,    any  ]};  // APOSTROPHE,           QUOTATION MARK
+    key <AC09>	{[  U0644,   none,   none  ]};  // ARABIC LETTER LAM
+    key <AC10>	{[  U061B,  U003A,   none  ]};  // ARABIC SEMICOLON,     COLON
+    key <AC11>	{[  U0027,  U0022,   none  ]};  // APOSTROPHE,           QUOTATION MARK
 
     key <AB01>	{[  U0632,  U0630,  U060F  ]};  // ARABIC LETTER ZAIN,   ARABIC LETTER THAL,         ARABIC SIGN MISRA
     key <AB02>	{[  U0634,  U0698,  U060E  ]};  // ARABIC LETTER SHEEN,  ARABIC LETTER JEH,          ARABIC POETIC VERSE SIGN
     key <AB03>	{[  U0686,  U062B,  U0603  ]};  // ARABIC LETTER TCHEH,  ARABIC LETTER THEH,         ARABIC SIGN SAFHA
-    key <AB04>	{[  U0637,  U0638,    any  ]};  // ARABIC LETTER TAH,    ARABIC LETTER ZAH
-    key <AB05>	{[  U0628,    any,  UFDFD  ]};  // ARABIC LETTER BEH,                                ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM
+    key <AB04>	{[  U0637,  U0638,   none  ]};  // ARABIC LETTER TAH,    ARABIC LETTER ZAH
+    key <AB05>	{[  U0628,   none,  UFDFD  ]};  // ARABIC LETTER BEH,                                ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM
     key <AB06>	{[  U0646,  U06BA,  U0600  ]};  // ARABIC LETTER NOON,   ARABIC LETTER NOON GHUNNA,  ARABIC NUMBER SIGN
-    key <AB07>	{[  U0645,  U0658,    any  ]};  // ARABIC LETTER MEEM,   ARABIC MARK NOON GHUNNA
+    key <AB07>	{[  U0645,  U0658,   none  ]};  // ARABIC LETTER MEEM,   ARABIC MARK NOON GHUNNA
     key <AB08>	{[  U060C,  U060D,  U003C  ]};  // ARABIC COMMA,         ARABIC DATE SEPARATOR,      GREATER-THAN SIGN
     key <AB09>	{[  U06D4,  U066B,  U003E  ]};  // ARABIC FULL STOP,     ARABIC DECIMAL SEPARATOR,   LESS-THAN SIGN
-    key <AB10>	{[  U002F,  U061F,    any  ]};  // SOLIDUS,              ARABIC QUESTION MARK
+    key <AB10>	{[  U002F,  U061F,   none  ]};  // SOLIDUS,              ARABIC QUESTION MARK
 
     include "nbsp(zwnj2)"
 
