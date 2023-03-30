@@ -502,32 +502,32 @@ xkb_symbols "typo" {
     // Contains typographic symbols on the third and fourth levels.
     // It is intended to be used in conjuction with another layout, e.g. setxkbmap "cz(basic)+cz(typo)"
 
-    key <TLDE> {[ none,	none,	singlelowquotemark,	leftsinglequotemark ]};
-    key <AE01> {[ none,	none,	none,		rightsinglequotemark ]};
-    key <AE11> {[ none,	none,	underscore,	U2212 ]};
+    key <TLDE> {[  any,	 any,	singlelowquotemark,	leftsinglequotemark ]};
+    key <AE01> {[  any,	 any,	any,			rightsinglequotemark ]};
+    key <AE11> {[  any,	 any,	underscore,	U2212 ]};
 
-    key <AD04> {[ none,	none,	U2030,		registered ]};
-    key <AD06> {[ none,	none,	leftarrow	]};
-    key <AD07> {[ none,	none,	downarrow,	uparrow ]};
-    key <AD08> {[ none,	none,	rightarrow,	UFB01 ]};
-    key <AD10> {[ none,	none,	minutes,	seconds ]};
+    key <AD04> {[  any,	 any,	U2030,		registered ]};
+    key <AD06> {[  any,	 any,	leftarrow	]};
+    key <AD07> {[  any,	 any,	downarrow,	uparrow ]};
+    key <AD08> {[  any,	 any,	rightarrow,	UFB01 ]};
+    key <AD10> {[  any,	 any,	minutes,	seconds ]};
 
-    key <AC04> {[ none,	none,	UFB00,		UFB05 ]};
-    key <AC06> {[ none,	none,	U2010,		U2011 ]};
-    key <AC07> {[ none,	none,	guillemotright,	guillemotleft ]};
-    key <AC08> {[ none,	none,	dagger,		doubledagger ]};
-    key <AC09> {[ none,	none,	UFB02,		UFB04 ]};
-    key <AC11> {[ none,	none,	none,		UFB03 ]};
+    key <AC04> {[  any,	 any,	UFB00,		UFB05 ]};
+    key <AC06> {[  any,	 any,	U2010,		U2011 ]};
+    key <AC07> {[  any,	 any,	guillemotright,	guillemotleft ]};
+    key <AC08> {[  any,	 any,	dagger,		doubledagger ]};
+    key <AC09> {[  any,	 any,	UFB02,		UFB04 ]};
+    key <AC11> {[  any,	 any,	any,		UFB03 ]};
 
-    key <AB01> {[ none,	none,	degree,		U2300 ]};
-    key <AB02> {[ none,	none,	multiply,	U22C5 ]};
-    key <AB03> {[ none,	none,	ampersand,	copyright ]};
-    key <AB04> {[ none,	none,	at,		ordfeminine ]};
-    key <AB05> {[ none,	none,	enfilledcircbullet,	enopencircbullet ]};
-    key <AB07> {[ none,	none,	U203A,		U2039 ]};
-    key <AB08> {[ none,	none,	doublelowquotemark,	leftdoublequotemark ]};
-    key <AB09> {[ none,	none,	ellipsis,	rightdoublequotemark ]};
-    key <AB10> {[ none,	none,	endash,		emdash ]};
+    key <AB01> {[  any,	 any,	degree,		U2300 ]};
+    key <AB02> {[  any,	 any,	multiply,	U22C5 ]};
+    key <AB03> {[  any,	 any,	ampersand,	copyright ]};
+    key <AB04> {[  any,	 any,	at,		ordfeminine ]};
+    key <AB05> {[  any,	 any,	enfilledcircbullet,	enopencircbullet ]};
+    key <AB07> {[  any,	 any,	U203A,		U2039 ]};
+    key <AB08> {[  any,	 any,	doublelowquotemark,	leftdoublequotemark ]};
+    key <AB09> {[  any,	 any,	ellipsis,		rightdoublequotemark ]};
+    key <AB10> {[  any,	 any,	endash,		emdash ]};
 
     key <SPCE> {[ space, space,	space,		nobreakspace ]};
 };
