@@ -70,24 +70,25 @@ xkb_symbols "qwerty" {
 
 // Replaces the Western numeral signs with Arabic-script digits on the keypad,
 // pushing the Western digits to the third level accessible by the right Alt key.
+// Additionally, the fourth level gives the Persian digits.
 hidden partial keypad_keys
 xkb_symbols "digits_KP" {
 
     key.type[Group1]="FOUR_LEVEL_MIXED_KEYPAD";
 
-    key <KP7>  {[ KP_Home,   Arabic_7,  7, any ]};
-    key <KP8>  {[ KP_Up,     Arabic_8,  8, any ]};
-    key <KP9>  {[ KP_Prior,  Arabic_9,  9, any ]};
+    key <KP7>  {[ KP_Home,   Arabic_7,  7, Farsi_7 ]};
+    key <KP8>  {[ KP_Up,     Arabic_8,  8, Farsi_8 ]};
+    key <KP9>  {[ KP_Prior,  Arabic_9,  9, Farsi_9 ]};
 
-    key <KP4>  {[ KP_Left,   Arabic_4,  4, any ]};
-    key <KP5>  {[ KP_Begin,  Arabic_5,  5, any ]};
-    key <KP6>  {[ KP_Right,  Arabic_6,  6, any ]};
+    key <KP4>  {[ KP_Left,   Arabic_4,  4, Farsi_4 ]};
+    key <KP5>  {[ KP_Begin,  Arabic_5,  5, Farsi_5 ]};
+    key <KP6>  {[ KP_Right,  Arabic_6,  6, Farsi_6 ]};
 
-    key <KP1>  {[ KP_End,    Arabic_1,  1, any ]};
-    key <KP2>  {[ KP_Down,   Arabic_2,  2, any ]};
-    key <KP3>  {[ KP_Next,   Arabic_3,  3, any ]};
+    key <KP1>  {[ KP_End,    Arabic_1,  1, Farsi_1 ]};
+    key <KP2>  {[ KP_Down,   Arabic_2,  2, Farsi_2 ]};
+    key <KP3>  {[ KP_Next,   Arabic_3,  3, Farsi_3 ]};
 
-    key <KP0>  {[ KP_Insert, Arabic_0,  0, any ]};
+    key <KP0>  {[ KP_Insert, Arabic_0,  0, Farsi_0 ]};
 
     include "kpdl(momayyezoss)"
 };
@@ -409,29 +410,6 @@ xkb_symbols "basic_ext" {
     include "level3(ralt_switch)"
 };
 
-// Replaces the Western numeral signs with Arabic-script digits on the keypad,
-// pushing the Western digits to the third level accessible by the right Alt key.
-hidden partial keypad_keys
-xkb_symbols "basic_ext_digits_KP" {
-
-    key.type[Group1]="FOUR_LEVEL_MIXED_KEYPAD";
-
-    key <KP7>  {[ KP_Home,   Arabic_7,  7, Farsi_7 ]};
-    key <KP8>  {[ KP_Up,     Arabic_8,  8, Farsi_8 ]};
-    key <KP9>  {[ KP_Prior,  Arabic_9,  9, Farsi_9 ]};
-
-    key <KP4>  {[ KP_Left,   Arabic_4,  4, Farsi_4 ]};
-    key <KP5>  {[ KP_Begin,  Arabic_5,  5, Farsi_5 ]};
-    key <KP6>  {[ KP_Right,  Arabic_6,  6, Farsi_6 ]};
-
-    key <KP1>  {[ KP_End,    Arabic_1,  1, Farsi_1 ]};
-    key <KP2>  {[ KP_Down,   Arabic_2,  2, Farsi_2 ]};
-    key <KP3>  {[ KP_Next,   Arabic_3,  3, Farsi_3 ]};
-
-    key <KP0>  {[ KP_Insert, Arabic_0,  0, Farsi_0 ]};
-
-    include "kpdl(momayyezoss)"
-};
 
 // Replaces the Western numeral signs with Arabic-script digits on the numeric row,
 // pushing the Western digits to the third level accessible by the right alt key.
@@ -456,7 +434,7 @@ xkb_symbols "basic_ext_digits" {
     key <AE09> {[   Arabic_9,     parenright,       9,     Farsi_9 ]};
     key <AE10> {[   Arabic_0,      parenleft,       0,     Farsi_0 ]};
 
-    include "ara(basic_ext_digits_KP)"
+    include "ara(digits_KP)"
 };
 
 // In this layout the Ugaritic characters get the places of the Arabic characters with the matching sound values.
