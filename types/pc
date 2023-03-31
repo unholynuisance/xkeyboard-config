@@ -41,8 +41,8 @@ default partial xkb_types "default" {
 	preserve[Shift+LevelThree] = Shift;
 	level_name[Level1] = "Base";
 	level_name[Level2] = "Shift";
-	level_name[Level3] = "Alt Base";
-	level_name[Level4] = "Shift Alt";
+	level_name[Level3] = "AltGr";
+	level_name[Level4] = "Shift AltGr";
 	level_name[Level5] = "Ctrl+Alt";
     };
 

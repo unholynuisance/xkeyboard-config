@@ -17,12 +17,12 @@ default partial xkb_types "default" {
 	map[Shift+LevelThree+LevelFive] = Level8;
 	level_name[Level1] = "Base";
 	level_name[Level2] = "Shift";
-	level_name[Level3] = "Alt Base";
-	level_name[Level4] = "Shift Alt";
+	level_name[Level3] = "AltGr";
+	level_name[Level4] = "Shift AltGr";
 	level_name[Level5] = "X";
 	level_name[Level6] = "X Shift";
-	level_name[Level7] = "X Alt Base";
-	level_name[Level8] = "X Shift Alt";
+	level_name[Level7] = "X AltGr";
+	level_name[Level8] = "X Shift AltGr";
     };
 
     type "EIGHT_LEVEL_ALPHABETIC" {
@@ -47,12 +47,12 @@ default partial xkb_types "default" {
 
 	level_name[Level1] = "Base";
 	level_name[Level2] = "Shift";
-	level_name[Level3] = "Alt Base";
-	level_name[Level4] = "Shift Alt";
+	level_name[Level3] = "AltGr";
+	level_name[Level4] = "Shift AltGr";
 	level_name[Level5] = "X";
 	level_name[Level6] = "X Shift";
-	level_name[Level7] = "X Alt Base";
-	level_name[Level8] = "X Shift Alt";
+	level_name[Level7] = "X AltGr";
+	level_name[Level8] = "X Shift AltGr";
     };
 
     type "EIGHT_LEVEL_SEMIALPHABETIC" {
@@ -82,12 +82,12 @@ default partial xkb_types "default" {
 
 	level_name[Level1] = "Base";
 	level_name[Level2] = "Shift";
-	level_name[Level3] = "Alt Base";
-	level_name[Level4] = "Shift Alt";
+	level_name[Level3] = "AltGr";
+	level_name[Level4] = "Shift AltGr";
 	level_name[Level5] = "X";
 	level_name[Level6] = "X Shift";
-	level_name[Level7] = "X Alt Base";
-	level_name[Level8] = "X Shift Alt";
+	level_name[Level7] = "X AltGr";
+	level_name[Level8] = "X Shift AltGr";
     };
 
     type "EIGHT_LEVEL_LEVEL_FIVE_LOCK" {
@@ -143,12 +143,12 @@ default partial xkb_types "default" {
 
 	level_name[Level1] = "Base";
 	level_name[Level2] = "Shift";
-	level_name[Level3] = "Alt Base";
-	level_name[Level4] = "Shift Alt";
+	level_name[Level3] = "AltGr";
+	level_name[Level4] = "Shift AltGr";
 	level_name[Level5] = "X";
 	level_name[Level6] = "X Shift";
-	level_name[Level7] = "X Alt Base";
-	level_name[Level8] = "X Shift Alt";
+	level_name[Level7] = "X AltGr";
+	level_name[Level8] = "X Shift AltGr";
     };
 
     type "EIGHT_LEVEL_ALPHABETIC_LEVEL_FIVE_LOCK" {
@@ -202,12 +202,12 @@ default partial xkb_types "default" {
 
 	level_name[Level1] = "Base";
 	level_name[Level2] = "Shift";
-	level_name[Level3] = "Alt Base";
-	level_name[Level4] = "Shift Alt";
+	level_name[Level3] = "AltGr";
+	level_name[Level4] = "Shift AltGr";
 	level_name[Level5] = "X";
 	level_name[Level6] = "X Shift";
-	level_name[Level7] = "X Alt Base";
-	level_name[Level8] = "X Shift Alt";
+	level_name[Level7] = "X AltGr";
+	level_name[Level8] = "X Shift AltGr";
     };
 
 };
