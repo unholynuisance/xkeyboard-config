@@ -10,14 +10,11 @@ xkb_symbols "latin" {
 
   name[Group1]= "Azerbaijani";
 
-  key <TLDE> { [ grave,      asciitilde  ] };
   key <AE02> { [ 2,          quotedbl    ] };
   key <AE03> { [ 3,          U2166       ] };
   key <AE04> { [ 4,          semicolon   ] };
-  key <AE05> { [ 5,          percent     ] };
   key <AE06> { [ 6,          colon       ] };
   key <AE07> { [ 7,          question    ] };
-  key <AE08> { [ 8,          asterisk    ] };
 
   key <BKSL> { [ backslash,  slash      ] };
 
@@ -25,8 +22,10 @@ xkb_symbols "latin" {
   key <AD08> { [ i,          Iabovedot   ] };
   key <AD11> { [ odiaeresis, Odiaeresis  ] };
   key <AD12> { [ gbreve,     Gbreve      ] };
+
   key <AC10> { [ idotless,   I           ] };
   key <AC11> { [ schwa,      SCHWA       ] };
+
   key <AB08> { [ ccedilla,   Ccedilla    ] };
   key <AB09> { [ scedilla,   Scedilla    ] };
   key <AB10> { [ period,     comma       ] };
