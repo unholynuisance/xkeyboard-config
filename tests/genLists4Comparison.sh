@@ -1,10 +1,8 @@
 #!/bin/sh
 
-#
-# This script compares the group names which "have to be", according to the descriptions in base.xml -
-# and actually existing in the symbol files. Some differences are ok (like extra double quotes or 
-# extra escaping character) - but all the rest should be in sync.
-#
+# This script compares the group names that are mentioned in base*.xml with the ones
+# that actually exist in the symbol files.  Some differences are okay -- like extra
+# quotes or an extra escaping character -- but apart from that they should match.
 
 cd $(dirname $0)
 ROOT=".."
@@ -43,14 +41,14 @@ for sym in $ROOT/symbols/*; do
   isUnregistered = 1;
 }
 /^[[:space:]]*\/\//{
-  next 
+  next
 }
 /.*default.*/{
   isDefault = 1;
 }
 /xkb_symbols/{
   variant = $2;
-}/^[[:space:]]*name\[Group1\][[:space:]]*=/{
+}/^[[:space:]]*name\[[Gg]roup1\][[:space:]]*=/{
   if (isUnregistered == 1) {
     isUnregistered = 0;
   } else if (isDefault == 1)
@@ -75,7 +73,7 @@ diff -u $registry_names $group_names
 rc=$?
 
 if [ $rc != 0 ] ; then
-  echo "Legend: '-' is for rules/base.*xml.in, '+' is for symbols/*"
+  echo "Legend: '-' is for rules/base*.xml, '+' is for symbols/*"
 fi
 
 rm -f $registry_names $group_names
