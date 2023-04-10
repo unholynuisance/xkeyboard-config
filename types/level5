@@ -90,7 +90,7 @@ default partial xkb_types "default" {
 	level_name[Level8] = "X Shift AltGr";
     };
 
-    type "EIGHT_LEVEL_LEVEL_FIVE_LOCK" {
+    type "EIGHT_LEVEL_WITH_LEVEL5_LOCK" {
 	// Level5-Lock is implemented with virtual modifier NumLock.
 
 	modifiers = Shift + LevelThree + LevelFive + NumLock;
@@ -128,7 +128,7 @@ default partial xkb_types "default" {
 	level_name[Level8] = "X Shift AltGr";
     };
 
-    type "EIGHT_LEVEL_ALPHABETIC_LEVEL_FIVE_LOCK" {
+    type "EIGHT_LEVEL_ALPHABETIC_WITH_LEVEL5_LOCK" {
 	// Level5-Lock is implemented with virtual modifier NumLock.
 
 	modifiers = Shift + Lock + LevelThree + LevelFive + NumLock;
