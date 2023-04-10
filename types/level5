@@ -93,7 +93,7 @@ default partial xkb_types "default" {
     type "EIGHT_LEVEL_LEVEL_FIVE_LOCK" {
 	// Level5-Lock is implemented with virtual modifier NumLock.
 
-	modifiers = Shift + Lock + LevelThree + LevelFive + NumLock;
+	modifiers = Shift + LevelThree + LevelFive + NumLock;
 
 	map[None]                                    = Level1;
 	map[Shift]                                   = Level2;
@@ -115,31 +115,8 @@ default partial xkb_types "default" {
 	map[NumLock+LevelFive+LevelThree]            = Level3;
 	map[NumLock+LevelFive+LevelThree+Shift]      = Level4;
 
-	// Lock has no effect
-	map[Lock]                                    = Level1;
-	map[Lock+Shift]                              = Level2;
-	map[Lock+LevelThree]                         = Level3;
-	map[Lock+LevelThree+Shift]                   = Level4;
-
-	map[Lock+LevelFive]                          = Level5;
-	map[Lock+LevelFive+Shift]                    = Level6;
-	map[Lock+LevelFive+LevelThree]               = Level7;
-	map[Lock+LevelFive+LevelThree+Shift]         = Level8;
-
-	map[Lock+NumLock]                            = Level5;
-	map[Lock+NumLock+Shift]                      = Level6;
-	map[Lock+NumLock+LevelThree]                 = Level7;
-	map[Lock+NumLock+LevelThree+Shift]           = Level8;
-
-	map[Lock+NumLock+LevelFive]                  = Level1;
-	map[Lock+NumLock+LevelFive+Shift]            = Level2;
-	map[Lock+NumLock+LevelFive+LevelThree]       = Level3;
-	map[Lock+NumLock+LevelFive+LevelThree+Shift] = Level4;
-
 	preserve[LevelFive+Shift] = Shift;
 	preserve[NumLock+Shift] = Shift;
-	preserve[Lock+LevelFive+Shift] = Shift;
-	preserve[Lock+NumLock+Shift] = Shift;
 
 	level_name[Level1] = "Base";
 	level_name[Level2] = "Shift";
