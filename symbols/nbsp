@@ -49,7 +49,7 @@ xkb_symbols "level4n" {
 partial
 xkb_symbols "level4nl" {
   key <SPCE> {[  space,  space,  space,  nobreakspace,  space,  U202F,  any,  any  ],
-                 type[group1]="LOCAL_EIGHT_LEVEL" };
+                 type[group1]="EIGHT_LEVEL_BY_CTRL" };
 };
 
 

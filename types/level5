@@ -187,4 +187,41 @@ default partial xkb_types "default" {
 	level_name[Level8] = "X Shift AltGr";
     };
 
+    // When you want part of your layout to have eight levels but cannot use
+    // LevelFive as modifier, as this would take over the right Ctrl key for
+    // the whole layout and is too invasive for the average four-level user.
+    // Needed to fix https://bugs.freedesktop.org/9529.
+    type "EIGHT_LEVEL_BY_CTRL" {
+	modifiers = Shift + Lock + LevelThree + Control;
+
+	map[None]       = Level1;
+	map[Lock+Shift] = Level1;
+	map[Shift] = Level2;
+	map[Lock]  = Level2;
+
+	map[LevelThree]            = Level3;
+	map[Lock+Shift+LevelThree] = Level3;
+	map[Shift+LevelThree] = Level4;
+	map[Lock+LevelThree]  = Level4;
+
+	map[Control]            = Level5;
+	map[Lock+Shift+Control] = Level5;
+	map[Shift+Control] = Level6;
+	map[Lock+Control]  = Level6;
+
+	map[LevelThree+Control]            = Level7;
+	map[Lock+Shift+LevelThree+Control] = Level7;
+	map[Shift+LevelThree+Control] = Level8;
+	map[Lock+LevelThree+Control]  = Level8;
+
+	level_name[Level1] = "Base";
+	level_name[Level2] = "Shift";
+	level_name[Level3] = "Level3";
+	level_name[Level4] = "Shift Level3";
+	level_name[Level5] = "Ctrl";
+	level_name[Level6] = "Shift Ctrl";
+	level_name[Level7] = "Level3 Ctrl";
+	level_name[Level8] = "Shift Level3 Ctrl";
+    };
+
 };
