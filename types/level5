@@ -194,25 +194,25 @@ default partial xkb_types "default" {
     type "EIGHT_LEVEL_BY_CTRL" {
 	modifiers = Shift + Lock + LevelThree + Control;
 
-	map[None]       = Level1;
-	map[Lock+Shift] = Level1;
+	map[None] = Level1;
 	map[Shift] = Level2;
 	map[Lock]  = Level2;
+	map[Shift+Lock] = Level1;
 
-	map[LevelThree]            = Level3;
-	map[Lock+Shift+LevelThree] = Level3;
+	map[LevelThree] = Level3;
 	map[Shift+LevelThree] = Level4;
 	map[Lock+LevelThree]  = Level4;
+	map[Shift+Lock+LevelThree] = Level3;
 
-	map[Control]            = Level5;
-	map[Lock+Shift+Control] = Level5;
+	map[Control] = Level5;
 	map[Shift+Control] = Level6;
 	map[Lock+Control]  = Level6;
+	map[Shift+Lock+Control] = Level5;
 
-	map[LevelThree+Control]            = Level7;
-	map[Lock+Shift+LevelThree+Control] = Level7;
+	map[LevelThree+Control] = Level7;
 	map[Shift+LevelThree+Control] = Level8;
 	map[Lock+LevelThree+Control]  = Level8;
+	map[Shift+Lock+LevelThree+Control] = Level7;
 
 	level_name[Level1] = "Base";
 	level_name[Level2] = "Shift";

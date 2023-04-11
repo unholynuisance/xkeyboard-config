@@ -6,6 +6,14 @@ default partial xkb_types "default" {
 
     virtual_modifiers  Alt, LevelThree;
 
+    type "PC_ALT_LEVEL2" {
+	modifiers = Alt;
+	map[None] = Level1;
+	map[Alt] = Level2;
+	level_name[Level1] = "Base";
+	level_name[Level2] = "Alt";
+    };
+
     type "PC_SUPER_LEVEL2" {
 	modifiers = Mod4;
 	map[None] = Level1;
@@ -20,14 +28,6 @@ default partial xkb_types "default" {
 	map[Control] = Level2;
 	level_name[Level1] = "Base";
 	level_name[Level2] = "Control";
-    };
-
-    type "PC_ALT_LEVEL2" {
-	modifiers = Alt;
-	map[None] = Level1;
-	map[Alt] = Level2;
-	level_name[Level1] = "Base";
-	level_name[Level2] = "Alt";
     };
 
     type "CTRL+ALT" {

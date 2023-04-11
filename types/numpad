@@ -9,7 +9,7 @@ default partial xkb_types "pc" {
     };
 };
 
-// On Mac keypads, level 1 and 2 are swapped.
+// On Mac keypads, levels 1 and 2 are swapped.
 partial xkb_types "mac" {
     type "KEYPAD" {
 	modifiers = None;
