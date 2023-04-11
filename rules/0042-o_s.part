@@ -165,7 +165,6 @@
   grp:rctrl_switch		= +group(rctrl_switch)
   grp:menu_switch		= +group(menu_switch)
   grp:caps_switch		= +group(caps_switch)
-  grp:shifts_toggle		= +group(shifts_toggle)
   grp:ctrls_toggle		= +group(ctrls_toggle)
   grp:caps_toggle		= +group(caps_toggle)
   grp:shift_caps_toggle		= +group(shift_caps_toggle)

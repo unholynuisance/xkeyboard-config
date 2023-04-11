@@ -9,3 +9,4 @@
   *			grp:win_space_toggle	= +group(win_space_toggle)
   *			grp:ctrl_space_toggle	= +group(ctrl_space_toggle)
   *			grp:rctrl_rshift_toggle	= +group(rctrl_rshift_toggle)
+  *			grp:shifts_toggle	= +group(shifts_toggle)

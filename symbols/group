@@ -65,8 +65,8 @@ xkb_symbols "lalt_toggle" {
 // (depending on which Shift is pressed first).
 partial modifier_keys
 xkb_symbols "shifts_toggle" {
-    key <LFSH> {[  Shift_L,  ISO_Prev_Group  ]};
-    key <RTSH> {[  Shift_R,  ISO_Next_Group  ]};
+    key <LFSH> {[  Shift_L,  ISO_Prev_Group  ], type[group1] = "TWO_LEVEL" };
+    key <RTSH> {[  Shift_R,  ISO_Next_Group  ], type[group1] = "TWO_LEVEL" };
 };
 
 // Pressing Caps_Lock switches to the next group,
