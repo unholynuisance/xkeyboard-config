@@ -13,6 +13,17 @@ xkb_symbols "106" {
     key <AE13>	{[ backslash, bar	]};
 };
 
+partial alphanumeric_keys
+xkb_symbols "OADG109A" {
+
+    include "jp(common)"
+
+    name[Group1]= "Japanese (OADG 109A)";
+
+    key <AE10>	{[ 0		]};
+    key <AE13>	{[ yen, bar	]};
+};
+
 // Keys that are common to 106-key and 109-key keyboards.
 hidden partial alphanumeric_keys
 xkb_symbols "common" {
@@ -76,23 +87,6 @@ xkb_symbols "common" {
     key <HKTG>	{[ Hiragana_Katakana, Romaji ], type[group1]="PC_ALT_LEVEL2" };
 
     key <PRSC>	{[ Print, Execute ], type[group1]= "PC_ALT_LEVEL2" };
-};
-
-// Kludge for overriding the XF86AudioMedia symbol for non-evdev machines.
-partial alphanumeric_keys
-xkb_symbols "henkan" {
-    key <XFER>	{[ Henkan, Mode_switch ], type[group1]="PC_ALT_LEVEL2" };
-};
-
-partial alphanumeric_keys
-xkb_symbols "OADG109A" {
-
-    include "jp(common)"
-
-    name[Group1]= "Japanese (OADG 109A)";
-
-    key <AE10>	{[ 0		]};
-    key <AE13>	{[ yen, bar	]};
 };
 
 // 86 keys with kana map
@@ -180,20 +174,6 @@ xkb_symbols "kana" {
     key <PRSC>	{[ Print, Execute ], type[group1]= "PC_ALT_LEVEL2" };
 };
 
-// Option for a Nicola-F-style Backspace key.
-partial alphanumeric_keys
-xkb_symbols "nicola_f_bs" {
-    key <AE10>	{[ 0, underscore        ]};
-
-    key <AD11>	{[ colon, asterisk      ]};
-
-    key <AC11>	{[ BackSpace, BackSpace ]};
-    key <AC12>	{[ Escape               ]};
-    key <BKSP>	{[ bracketright, braceright ]};
-
-    key <AB11>	{[ at, grave            ]};
-};
-
 partial alphanumeric_keys
 xkb_symbols "mac" {
 
@@ -202,11 +182,6 @@ xkb_symbols "mac" {
     name[Group1]= "Japanese (Macintosh)";
 
     replace key <CAPS>	{[ Caps_Lock ]};
-};
-
-partial alphanumeric_keys
-xkb_symbols "hztg_escape" {
-    replace key <HZTG>	{[ Escape ]};
 };
 
 partial alphanumeric_keys
@@ -250,6 +225,32 @@ xkb_symbols "dvorak" {
     key <AB08>	{[ w, W			]};
     key <AB09>	{[ v, V			]};
     key <AB10>	{[ z, Z			]};
+};
+
+
+// Kludge for overriding the XF86AudioMedia symbol for non-evdev machines.
+partial alphanumeric_keys
+xkb_symbols "henkan" {
+    key <XFER>	{[ Henkan, Mode_switch ], type[group1]="PC_ALT_LEVEL2" };
+};
+
+// Option for a Nicola-F-style Backspace key.
+partial alphanumeric_keys
+xkb_symbols "nicola_f_bs" {
+    key <AE10>	{[ 0, underscore        ]};
+
+    key <AD11>	{[ colon, asterisk      ]};
+
+    key <AC11>	{[ BackSpace, BackSpace ]};
+    key <AC12>	{[ Escape               ]};
+    key <BKSP>	{[ bracketright, braceright ]};
+
+    key <AB11>	{[ at, grave            ]};
+};
+
+partial alphanumeric_keys
+xkb_symbols "hztg_escape" {
+    replace key <HZTG>	{[ Escape ]};
 };
 
 
