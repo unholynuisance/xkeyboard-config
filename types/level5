@@ -171,8 +171,8 @@ default partial xkb_types "default" {
 
 	map[Lock+NumLock+LevelFive]                  = Level2;
 	map[Lock+NumLock+LevelFive+Shift]            = Level1;
-	map[Lock+NumLock+LevelFive+LevelThree]       = Level4;
-	map[Lock+NumLock+LevelFive+LevelThree+Shift] = Level3;
+	map[Lock+NumLock+LevelFive+LevelThree]       = Level3;
+	map[Lock+NumLock+LevelFive+LevelThree+Shift] = Level4;
 
 	preserve[LevelFive+Shift] = Shift;
 	preserve[NumLock+Shift] = Shift;
