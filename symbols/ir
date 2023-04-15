@@ -6,7 +6,8 @@
 // (http://www.isiri.org/UserStd/DownloadStd.aspx?id=9147)
 // https://persian-computing.org/archives/ISIRI/ISIRI-9147.pdf
 //
-// The standard is extended with ASCII digits on the 4th level of the top row.
+// The standard is extended with ASCII digits on the 4th level of the top row,
+// and the letter He with Ye above (U06C0) on the third level of the AC05 key.
 //
 // Original author: Behnam Esfahbod <behnam@esfahbod.info>
 
@@ -44,7 +45,7 @@ xkb_symbols "pes" {
     key <AC02> { [ Arabic_seen,		Arabic_hamzaonyeh,	none		] };
     key <AC03> { [ Farsi_yeh,		Arabic_yeh,		Arabic_alefmaksura ] };
     key <AC04> { [ Arabic_beh,		Arabic_hamzaunderalef,	none		] };
-    key <AC05> { [ Arabic_lam,		Arabic_hamzaonalef,	none		] };
+    key <AC05> { [ Arabic_lam,		Arabic_hamzaonalef,	U06C0		] };
     key <AC06> { [ Arabic_alef,		Arabic_maddaonalef,	U0671		] };
     key <AC07> { [ Arabic_teh,		Arabic_tehmarbuta,	none		] };
     key <AC08> { [ Arabic_noon,		guillemotright,		UFD3E		] };
