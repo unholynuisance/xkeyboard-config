@@ -86,7 +86,7 @@ xkb_symbols "common" {
     key <XFER>	{[ Henkan, Mode_switch ], type[group1]="PC_ALT_LEVEL2" };
     key <HKTG>	{[ Hiragana_Katakana, Romaji ], type[group1]="PC_ALT_LEVEL2" };
 
-    key <PRSC>	{[ Print, Execute ], type[group1]= "PC_ALT_LEVEL2" };
+    key <PRSC>	{[ Print, Execute ], type[group1]="PC_ALT_LEVEL2" };
 };
 
 // 86 keys with kana map
@@ -171,7 +171,7 @@ xkb_symbols "kana" {
     key <XFER>	{[ Henkan, Mode_switch ], type[group1]="PC_ALT_LEVEL2" };
     key <HKTG>	{[ Hiragana_Katakana, Romaji ], type[group1]="PC_ALT_LEVEL2" };
 
-    key <PRSC>	{[ Print, Execute ], type[group1]= "PC_ALT_LEVEL2" };
+    key <PRSC>	{[ Print, Execute ], type[group1]="PC_ALT_LEVEL2" };
 };
 
 partial alphanumeric_keys

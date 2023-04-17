@@ -6,8 +6,8 @@
 // (http://www.isiri.org/UserStd/DownloadStd.aspx?id=9147)
 // https://persian-computing.org/archives/ISIRI/ISIRI-9147.pdf
 //
-// The standard is extended with ASCII digits on the 4th level of the top row,
-// and the letter He with Ye above (U06C0) on the third level of the AC05 key.
+// The standard is extended with ASCII digits on the fourth level of the top row,
+// and the letter He with Ye above (U+06C0) on the third level of the AC05 key.
 //
 // Original author: Behnam Esfahbod <behnam@esfahbod.info>
 

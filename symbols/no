@@ -147,9 +147,9 @@ xkb_symbols "smi" {
     key <AC03>	{ [         d,          D,          eth,          ETH ]	};
     key <AC04>	{ [         f,          F,         none,  ordfeminine ]	};
     key <AC05>	{ [         g,          G,       gcaron,       Gcaron ]	};
-    key <AC06>	{ [         h,          H,        U01E5,        U01E4 ]	};
+    key <AC06>	{ [         h,          H,        U01E5,        U01E4 ]	}; // ǥ Ǥ
     key <AC07>	{ [         j,          J,   doublelowquotemark,   singlelowquotemark ]};  // „ ‚
-    key <AC08>	{ [         k,          K,        U01E9,        U01E8 ]	};
+    key <AC08>	{ [         k,          K,        U01E9,        U01E8 ]	}; // ǩ Ǩ
     key <AC09>	{ [         l,          L,       degree,       hyphen ]	};
     key <AC10>	{ [    oslash,     Oslash,   odiaeresis,   Odiaeresis ]	};
     key <AC11>	{ [        ae,         AE,   adiaeresis,   Adiaeresis ]	};
