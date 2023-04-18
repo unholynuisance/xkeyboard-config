@@ -31,7 +31,7 @@ xkb_symbols "pc105" {
     modifier_map Control { Control_L, Control_R };
     modifier_map Mod1    { Alt_L, Alt_R, Meta_L, Meta_R };
     modifier_map Mod2    { Num_Lock };
-    modifier_map Mod4    { Super_L, Super_R };
+    modifier_map Mod4    { <LWIN>, <RWIN> };
 
     // Six fake keys for virtual<->real modifiers mapping:
     key <LVL3> {[  ISO_Level3_Shift  ]};
