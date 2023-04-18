@@ -2,4 +2,5 @@
 partial modifier_keys
 xkb_symbols "lsgt_switch" {
   key <LSGT> {[  Shift_L  ], type[group1]="ONE_LEVEL" };
+  modifier_map Shift { <LSGT> };
 };
