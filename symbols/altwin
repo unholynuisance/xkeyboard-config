@@ -51,7 +51,7 @@ xkb_symbols "meta_win" {
     key <LWIN> {[  Meta_L  ]};
     key <RWIN> {[  Meta_R  ]};
     modifier_map Mod1 { <LALT>, <RALT> };
-    modifier_map Mod4 { <META> };
+    modifier_map Mod4 { <META>, Meta_L, Meta_R };
 };
 
 // Meta is mapped to the left Super key.
@@ -60,7 +60,7 @@ xkb_symbols "left_meta_win" {
     key <LALT> {[  Alt_L,  Alt_L  ]};
     key <LWIN> {[  Meta_L  ]};
     modifier_map Mod1 { <LALT> };
-    modifier_map Mod4 { <META> };
+    modifier_map Mod4 { <META>, Meta_L };
 };
 
 // Hyper is mapped to the Super keys.
@@ -125,5 +125,5 @@ xkb_symbols "swap_alt_win" {
 partial modifier_keys
 xkb_symbols "prtsc_rwin" {
     replace key <PRSC> {[  Super_R,  Super_R  ]};
-    modifier_map Mod4 { <PRSC> };
+    modifier_map Mod4 { <PRSC>, <RWIN> };
 };

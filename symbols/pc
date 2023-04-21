@@ -26,12 +26,12 @@ xkb_symbols "pc105" {
 
     key <MENU> {[  Menu  ]};
 
-    modifier_map Shift   { <LFSH>, <RTSH> };
+    modifier_map Shift   { Shift_L, Shift_R };
     modifier_map Lock    { Caps_Lock };
-    modifier_map Control { <LCTL>, <RCTL> };
-    modifier_map Mod1    { <LALT>, <RALT> };
+    modifier_map Control { Control_L, Control_R };
+    modifier_map Mod1    { Alt_L, Alt_R, Meta_L, Meta_R };
     modifier_map Mod2    { Num_Lock };
-    modifier_map Mod4    { <LWIN>, <RWIN> };
+    modifier_map Mod4    { Super_L, Super_R };
 
     // Six fake keys for virtual<->real modifiers mapping:
     key <LVL3> {[  ISO_Level3_Shift  ]};
