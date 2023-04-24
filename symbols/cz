@@ -69,10 +69,10 @@ xkb_symbols "basic" {
 
 xkb_symbols "bksl" {
 
-    // Use <BKSL> instead of <LSGT> (useful for keyboards without <LSGT> key).
+    // Put backslash on BKSL key (for when LSGT key is missing).
 
     include "cz(basic)"
-    name[Group1]= "Czech (with <\|> key)";
+    name[Group1]= "Czech (extra backslash)";
 
     key <BKSL>  {[ backslash,        bar,        slash,     NoSymbol ] };
 };
@@ -99,10 +99,8 @@ xkb_symbols "qwerty" {
 
 xkb_symbols "qwerty_bksl" {
 
-    // Use <BKSL> instead of <LSGT> (useful for keyboards without <LSGT> key).
-
     include "cz(qwerty)"
-    name[Group1]= "Czech (QWERTY, extended backslash)";
+    name[Group1]= "Czech (QWERTY, extra backslash)";
 
     key <BKSL>  {[ backslash,        bar,        slash,     NoSymbol ] };
 };

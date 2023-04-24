@@ -110,10 +110,10 @@ xkb_symbols "acc" {
 
 xkb_symbols "bksl" {
 
-    // Use <BKSL> instead of <LSGT> (useful for keyboards without <LSGT> key).
+    // Put backslash on BKSL key (for when LSGT key is missing).
 
     include "sk(basic)"
-    name[Group1] = "Slovak (extended backslash)";
+    name[Group1] = "Slovak (extra backslash)";
 
     key <BKSL>  { [ backslash,        bar,        slash,     parenright ] };
     key <LSGT>  { [ backslash,  parenleft,        slash,     NoSymbol ] };
@@ -135,10 +135,8 @@ xkb_symbols "qwerty" {
 
 xkb_symbols "qwerty_bksl" {
 
-    // Use <BKSL> instead of <LSGT> (useful for keyboards without <LSGT> key).
-
     include "sk(qwerty)"
-    name[Group1] = "Slovak (QWERTY, extended backslash)";
+    name[Group1] = "Slovak (QWERTY, extra backslash)";
 
     key <BKSL>  { [ backslash,        bar,        slash,     parenright ] };
     key <LSGT>  { [ backslash,  parenleft,        slash,     NoSymbol ] };

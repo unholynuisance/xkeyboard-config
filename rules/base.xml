@@ -3229,7 +3229,7 @@
         <variant>
           <configItem>
             <name>bksl</name>
-            <description>Czech (with &lt;\|&gt; key)</description>
+            <description>Czech (extra backslash)</description>
           </configItem>
         </variant>
         <variant>
@@ -3241,7 +3241,7 @@
         <variant>
           <configItem>
             <name>qwerty_bksl</name>
-            <description>Czech (QWERTY, extended backslash)</description>
+            <description>Czech (QWERTY, extra backslash)</description>
           </configItem>
         </variant>
         <variant>
@@ -5450,7 +5450,7 @@
         <variant>
           <configItem>
             <name>bksl</name>
-            <description>Slovak (extended backslash)</description>
+            <description>Slovak (extra backslash)</description>
           </configItem>
         </variant>
         <variant>
@@ -5462,7 +5462,7 @@
         <variant>
           <configItem>
             <name>qwerty_bksl</name>
-            <description>Slovak (QWERTY, extended backslash)</description>
+            <description>Slovak (QWERTY, extra backslash)</description>
           </configItem>
         </variant>
       </variantList>
