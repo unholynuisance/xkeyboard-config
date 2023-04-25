@@ -5,6 +5,27 @@
   <layoutList>
     <layout>
       <configItem popularity="exotic">
+        <name>ancient</name>
+        <shortDescription>xx</shortDescription>
+        <description>Ancient</description>
+        <languageList>
+          <iso639Id>got</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem popularity="exotic">
+            <name>got</name>
+            <description>Gothic</description>
+            <languageList>
+              <iso639Id>got</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem popularity="exotic">
         <name>apl</name>
         <shortDescription>apl</shortDescription>
         <description>APL</description>

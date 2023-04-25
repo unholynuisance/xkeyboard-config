@@ -220,6 +220,7 @@ def test_iso3166(layout):
     pycountry = pytest.importorskip('pycountry')
     country_codes = [c.alpha_2 for c in pycountry.countries]
     expected_without_country = [
+        "ancient", # from before current-day countries
         "apl", "bqn", # programming
         "brai", # Braille not specific to any country
         "custom",

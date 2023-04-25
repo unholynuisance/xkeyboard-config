@@ -1,0 +1,78 @@
+// Keyboard layouts for languages from antiquity.
+
+
+default partial alphanumeric_keys
+xkb_symbols "dummy" {
+    include "ancient(got)"
+    name[group1]= "Ancient";
+};
+
+
+// EXTRAS:
+
+// Gothic layout, created by Tim Nelson <wayland@wayland.id.au>, 2016.
+// (Reference: http://www.alanwood.net/unicode/gothic.html.)
+//
+// Priorities in selecting keys for letters:
+//   1. Make the layout like QWERTY (with Jer = Y)
+//   2. Borrow a thing from Greek layout (Iggws = X)
+//   3. Fit remaining things in (Hwair = V, Thiuth = J)
+//   4. Put the numbers in; use Shift for ×10 (10, 20, 30...);
+//      unshifted AE10 = 900, since Gothic didn't have a zero
+//
+partial alphanumeric_keys
+xkb_symbols "got" {
+
+    name[group1]= "Gothic";
+
+    key <TLDE>	{[	 grave,  asciitilde	]};
+    key <AE01>	{[	U10330,  U10339		]}; // AHSA / EIS
+    key <AE02>	{[	U10331,  U1033A		]}; // BAIRKAN / KUSMA
+    key <AE03>	{[	U10332,  U1033B		]}; // GIBA / LAGUS
+    key <AE04>	{[	U10333,  U1033C		]}; // DAGS / MANNA
+    key <AE05>	{[	U10334,  U1033D		]}; // AIHVUS / NAUTHS
+    key <AE06>	{[	U10335,  U1033E		]}; // QAIRTHRA / JER
+    key <AE07>	{[	U10336,  U1033F		]}; // IUJA / URUS
+    key <AE08>	{[	U10337,  U10340		]}; // HAGL / PAIRTHRA
+    key <AE09>	{[	U10338,  U10341		]}; // THIUTH / NINETY
+    key <AE10>	{[	U1034A,  U10342		]}; // NINE HUNDRED / RAIDA
+    key <AE11>	{[       minus,  underscore	]};
+    key <AE12>	{[       equal,  plus		]};
+
+    key <AD01>	{[	U10335			]}; // Qairthra
+    key <AD02>	{[	U10345			]}; // Winja
+    key <AD03>	{[	U10334			]}; // Aihvus
+    key <AD04>	{[	U10342			]}; // Raida
+    key <AD05>	{[	U10344			]}; // Teiws
+    key <AD06>	{[	U1033E			]}; // Jer
+    key <AD07>	{[	U1033F			]}; // Urus
+    key <AD08>	{[	U10339			]}; // Eis
+    key <AD09>	{[	U10349			]}; // Othal
+    key <AD10>	{[	U10340			]}; // Pairthra
+    key <AD11>	{[ bracketleft,  braceleft	]};
+    key <AD12>	{[bracketright,  braceright	]};
+
+    key <AC01>	{[	U10330			]}; // Ahsa
+    key <AC02>	{[	U10343			]}; // Sauil
+    key <AC03>	{[	U10333			]}; // Dags
+    key <AC04>	{[	U10346			]}; // Faihu
+    key <AC05>	{[	U10332			]}; // Giba
+    key <AC06>	{[	U10337			]}; // Hagl
+    key <AC07>	{[	U10338			]}; // Thiuth
+    key <AC08>	{[	U1033A			]}; // Kusma
+    key <AC09>	{[	U1033B			]}; // Lagus
+    key <AC10>	{[   semicolon,  colon		]};
+    key <AC11>	{[  apostrophe,  quotedbl	]};
+    key <BKSL>	{[   backslash,  bar		]};
+
+    key <AB01>	{[	U10336			]}; // Iuja
+    key <AB02>	{[	U10347			]}; // Iggws
+    key <AB03>	{[	     c,  C		]};
+    key <AB04>	{[	U10348			]}; // Hwair
+    key <AB05>	{[	U10331			]}; // Bairkan
+    key <AB06>	{[	U1033D			]}; // Nauths
+    key <AB07>	{[	U1033C			]}; // Manna
+    key <AB08>	{[       comma,  less		]};
+    key <AB09>	{[      period,  greater	]};
+    key <AB10>	{[       slash,  question	]};
+};
