@@ -20,4 +20,5 @@ pk	urd		pk	urd-phonetic
 syr	basic		sy	syc
 syr	phonetic	sy	syc_phonetic
 tel	basic		in	tel
-ara	uga	ancient		uga
+ara	uga	ancient		uga	// Delete in 2028.
+ir	ave	ancient		ave	// Delete in 2028.

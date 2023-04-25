@@ -11,6 +11,7 @@
         <languageList>
           <iso639Id>got</iso639Id>
           <iso639Id>uga</iso639Id>
+          <iso639Id>ave</iso639Id>
         </languageList>
       </configItem>
       <variantList>
@@ -29,6 +30,15 @@
             <description>Ugaritic</description>
             <languageList>
               <iso639Id>uga</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem popularity="exotic">
+            <name>ave</name>
+            <description>Avestan</description>
+            <languageList>
+              <iso639Id>ave</iso639Id>
             </languageList>
           </configItem>
         </variant>
@@ -282,30 +292,6 @@
             <name>oldhunlig</name>
             <shortDescription>oldhun(lig)</shortDescription>
             <description>Old Hungarian (for ligatures)</description>
-          </configItem>
-        </variant>
-      </variantList>
-    </layout>
-    <layout>
-      <configItem popularity="exotic">
-        <name>ir</name>
-        <shortDescription>fa</shortDescription>
-        <description>Persian</description>
-        <countryList>
-          <iso3166Id>IR</iso3166Id>
-        </countryList>
-        <languageList>
-          <iso639Id>fas</iso639Id>
-        </languageList>
-      </configItem>
-      <variantList>
-        <variant>
-          <configItem popularity="exotic">
-            <name>ave</name>
-            <description>Avestan</description>
-            <languageList>
-              <iso639Id>ave</iso639Id>
-            </languageList>
           </configItem>
         </variant>
       </variantList>
