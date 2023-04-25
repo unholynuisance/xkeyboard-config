@@ -1,4 +1,4 @@
-// Keyboard layouts for languages of Myanmar.
+// Keyboard layouts for Myanmar.
 
 default partial alphanumeric_keys
 xkb_symbols "basic" {

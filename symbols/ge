@@ -1,19 +1,13 @@
-// Georgian Keyboard Layouts by Aiet Kolkhi <aietkolkhi@gmail.com>
-// Full layout descriptions available at http://www.gakartuleba.org/layouts/
+// Keyboard layouts for Georgia.
+
+// Original author: Aiet Kolkhi <aietkolkhi@gmail.com>
 //
-// This includes the following keyboard layouts: Georgian QWERTY; Georgian Ergonomic;
-// Georgian MESS; Georgian AZERTY Tskapo; Georgian Russian.
+// This includes the following keyboard layouts: Georgian QWERTY;
+// Georgian Ergonomic; Georgian MESS; and Georgian Russian.
 //
-// Layouts include Georgian Mkhedruli alphabeth; most layouts also include some special
-// and ancient characters (like Fi, Yn, Elifi, Turned Gan and Ain). Layouts do not
-// include Georgian Asomtavruli or Georgian Khutsuri alphabeths which are also present
-// in Unicode.
-//
-// Georgian Typewriter no longer supported, as it is no longer used in Georgia.
-//
-// some layouts based on Georgian keyboard map, in the so called "latin" layout.
-// 1999, Pablo Saratxaga <srtxg@chanae.alphanet.ch>
-//
+// Layouts include the Georgian Mkhedruli alphabet; most layouts also include
+// some special and ancient characters (like Fi, Yn, Elifi, Turned Gan and Ain).
+// The Georgian Asomtavruli or Georgian Khutsuri alphabets are not included.
 
 default partial alphanumeric_keys
 xkb_symbols "basic" {

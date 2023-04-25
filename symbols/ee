@@ -1,3 +1,5 @@
+// Keyboard layouts for Estonia.
+
 // Estonian keyboard layout, by Ville Hallik <ville@linux.ee>.
 // This layout conforms to both EVS8:1993 and EVS8:2000 standards.
 default partial alphanumeric_keys

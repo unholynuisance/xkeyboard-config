@@ -1,3 +1,5 @@
+// Keyboard layouts for Belarus.
+
 // Belarusian standard keyboard, by Alexander Mikhailian <mikhailian@altern.org>.
 // Reworked to use Russian keymap as base and winkeys by default,
 // by Paul Lubetsky <vegeek@gmail.com>, see https://bugs.freedesktop.org/23604.

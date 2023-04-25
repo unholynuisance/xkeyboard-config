@@ -1,16 +1,11 @@
-// Bosnian, Croatian, Serbian and Slovenian XKB keyboard mappings.
-//
+// Keyboard layouts for Serbia.
+
 // Derived from "Danube" D.2 from 2003-05-12,
 // which is available at http://srpski.org/dunav/.
 //
 // Original authors:
-//  Danilo Segan (Данило Шеган) <danilo@kvota.net>
-//  Chusslove Illich (Часлав Илић) <caslav.ilic@gmx.net>
-//
-// Danilo Segan <danilo@kvota.net>:
-// - Modified for inclusion in XFree86.
-// - Further modifications on 2005-08-18 to support Bosnian,
-//   Croatian and Slovenian in xkeyboard-config.
+//   Danilo Segan (Данило Шеган) <danilo@kvota.net>
+//   Chusslove Illich (Часлав Илић) <caslav.ilic@gmx.net>
 
 default partial alphanumeric_keys
 xkb_symbols "basic" {
