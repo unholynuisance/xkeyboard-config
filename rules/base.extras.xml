@@ -10,6 +10,7 @@
         <description>Ancient</description>
         <languageList>
           <iso639Id>got</iso639Id>
+          <iso639Id>uga</iso639Id>
         </languageList>
       </configItem>
       <variantList>
@@ -19,6 +20,15 @@
             <description>Gothic</description>
             <languageList>
               <iso639Id>got</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem popularity="exotic">
+            <name>uga</name>
+            <description>Ugaritic</description>
+            <languageList>
+              <iso639Id>uga</iso639Id>
             </languageList>
           </configItem>
         </variant>
@@ -986,12 +996,6 @@
           <configItem popularity="exotic">
             <name>basic_ext_digits</name>
             <description>Arabic (Eastern Arabic numerals, extensions in the 4th level)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem popularity="exotic">
-            <name>uga</name>
-            <description>Ugaritic instead of Arabic</description>
           </configItem>
         </variant>
 	<variant>
