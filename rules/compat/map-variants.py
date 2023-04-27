@@ -27,9 +27,8 @@ class Layout(object):
 def read_file(path):
     '''Returns a list of two-layout tuples [(layout1, layout2), ...]'''
 
-    # This parses both input files, one with two elements, one with four elements,
-    # all separated by tabs
-    pattern = re.compile(r'([^\t]+)\s+([^\t]+)\s*([^\t]*)\s*([^\t]*)')
+    # This parses both input files, one with two elements, one with four.
+    pattern = re.compile(r'([^\s]+)\s+([^\s]+)\s*([^\s]*)\s*([^\s]*)')
 
     layouts = []
     for line in open(path):
