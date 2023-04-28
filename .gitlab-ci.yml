@@ -34,6 +34,10 @@ variables:
   # string, but we use the date for human benefits.
   FDO_DISTRIBUTION_TAG: '2022-01-20.0'
 
+  # xkbcommon: needed to share artifacts between jobs
+  XKBCOMMON_DIR: 'libxkbcommon'
+  XKBCOMMON_BUILD_DIR: $XKBCOMMON_DIR/$BUILDDIR
+
 
 stages:
   - prep
@@ -111,7 +115,7 @@ meson_test:
   variables:
       NINJA_EXTRA_COMMAND: "test"
 
-meston_dist:
+meson_dist:
   extends: .meson_build
   stage: build
   variables:
@@ -121,6 +125,41 @@ meston_dist:
     expire_in: 2 weeks
     paths:
       - $BUILDDIR/meson-dist/xkeyboard-config-*.tar.xz
+
+
+# Download and build xkbcommon
+xkbcommon build:
+  extends: .default_setup
+  stage: build
+  script:
+    # Ensure there are no leftovers
+    - rm -rf xorgproto libxkbcommon 
+    # Get latest xorgproto so we definitely have all keysyms
+    - git clone --depth=1 https://gitlab.freedesktop.org/xorg/proto/xorgproto
+    - export X11_HEADERS_PREFIX="$PWD/xorgproto/"
+    # Get latest xkbcommon
+    - git clone --depth=1 https://github.com/xkbcommon/libxkbcommon "$XKBCOMMON_DIR"
+    - pushd "$XKBCOMMON_DIR" > /dev/null
+    - ./scripts/update-keysyms
+    - >
+      meson setup "$BUILDDIR" \
+        -Denable-wayland=false \
+        -Denable-x11=false \
+        -Denable-docs=false \
+        -Dxkb-config-root="$INSTDIR/share/X11/xkb"
+    - meson compile -C "$BUILDDIR"
+  artifacts:
+    when: on_success
+    name: xkbcommon build
+    expire_in: 3 hours
+    paths:
+      - $XKBCOMMON_BUILD_DIR/libxkbcommon.so*
+      - $XKBCOMMON_BUILD_DIR/xkbcli-compile-keymap
+      - $XKBCOMMON_BUILD_DIR/xkeyboard-config-test
+    exclude:
+      - $XKBCOMMON_BUILD_DIR/libxkbcommon.so*.[^0-9]
+      - $XKBCOMMON_BUILD_DIR/libxkbcommon.so*.[^0-9]/**/*
+
 
 # Checks for new evdev keycodes to be added to keycodes/evdev
 evdev keycode check:
@@ -197,31 +236,37 @@ xkbcli list check:
     paths:
       - rmlvo.yaml
 
-# download libxkbcommon and run its layout test program. This will
+
+# Run the libxkbcommon layout test program. This will
 # run a basic keymap compile test against every combination of
 # layout/variant/option. Syntax errors will fail the test, check the
 # archived file for details.
 layout_tests:
   extends: .default_setup
   stage: test
-  needs: ["meson_install"]
+  needs:
+    - job: meson_install
+      artifacts: true
+    - job: xkbcommon build
+      artifacts: true
   script:
     # make sure the custom layout resolves to something
     - ln -s "$INSTDIR/share/X11/xkb/symbols/us" "$INSTDIR/share/X11/xkb/symbols/custom"
     # make sure the custom types resolves to something
     - ln -s "$INSTDIR/share/X11/xkb/types/basic" "$INSTDIR/share/X11/xkb/types/custom"
-    - rm -rf xorgproto libxkbcommon
-    # Get latest xorgproto so we definitely have all keysyms
-    - git clone --depth=1 https://gitlab.freedesktop.org/xorg/proto/xorgproto
-    - export X11_HEADERS_PREFIX="$PWD/xorgproto/"
-    - git clone --depth=1 https://github.com/xkbcommon/libxkbcommon
-    - pushd libxkbcommon > /dev/null
-    - ./scripts/update-keysyms
-    - meson builddir -Denable-wayland=false -Denable-x11=false -Denable-docs=false -Dxkb-config-root="$INSTDIR/share/X11/xkb"
-    - ninja -C builddir
+    # run xkbcommon test
     - echo Running test script - this will take several minutes
-    - ./builddir/xkeyboard-config-test --verbose "$INSTDIR/share/X11/xkb/rules/evdev.xml" > $INSTDIR/keymaps-success.yaml 2> $INSTDIR/keymaps-failed.yaml
-    - ./builddir/xkeyboard-config-test --verbose "$INSTDIR/share/X11/xkb/rules/evdev.extras.xml" >> $INSTDIR/keymaps-success.yaml 2>> $INSTDIR/keymaps-failed.yaml
+    - pushd "$XKBCOMMON_BUILD_DIR" > /dev/null
+    - >
+      "./xkeyboard-config-test" --verbose \
+          "$INSTDIR/share/X11/xkb/rules/evdev.xml" \
+          >  $INSTDIR/keymaps-success.yaml \
+          2> $INSTDIR/keymaps-failed.yaml
+    - >
+      "./xkeyboard-config-test" --verbose \
+          "$INSTDIR/share/X11/xkb/rules/evdev.extras.xml" \
+          >>  $INSTDIR/keymaps-success.yaml \
+          2>> $INSTDIR/keymaps-failed.yaml
     - popd > /dev/null
   after_script:
     - echo "Failed keymap compilations:"
@@ -249,13 +294,17 @@ layout_tests:
 keymap_tests:
   extends: .default_setup
   stage: test
+  needs:
+    # use the installed tree from the meson_install job
+    - job: meson_install
+      artifacts: true
+    - job: xkbcommon build
+      artifacts: true
   script:
     - export XKB_CONFIG_ROOT="$INSTDIR/share/X11/xkb"
+    - export XKBCOMMON_LIB_PATH="$XKBCOMMON_BUILD_DIR/libxkbcommon.so"
+    - export PYTHONPATH="$PWD/tests:$PYTHONPATH"
     - pytest --junitxml=results.xml
   artifacts:
     reports:
       junit: results.xml
-  # use the installed tree from the meson_install job
-  needs:
-    - job: meson_install
-      artifacts: true
