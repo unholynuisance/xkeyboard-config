@@ -31,7 +31,7 @@ xkb_symbols "basic" {
 partial alphanumeric_keys
 xkb_symbols "gag" {
 
-    name[Group1]="Moldavian (Gagauz)";
+    name[Group1]="Gagauz (Moldova)";
 
     key <TLDE>	{[	grave,	asciitilde		]};
     key <AE01>	{[	1,	exclam			]};
