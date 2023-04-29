@@ -313,6 +313,8 @@ xkb_symbols "olpc" {
 
     key <AD03>	{[          e,           E,      EuroSign,     none ]};
 
+    key <AB09>	{[     period,      period,         U2010,     none ]}; // HYPHEN
+
     key <I219>	{[ guillemotleft, guillemotright,  degree,     none ]};
 };
 
