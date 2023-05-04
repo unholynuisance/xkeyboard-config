@@ -31,7 +31,7 @@ from xkbcommon import Mod1, Mod4, Mod5, ModifierMask, NoModifier, Shift
 # pytest fixtures:
 # • The only fixture intended in the test code is `keymap`.
 # • Other fixtures are just helpers that are used indirectly.
-# • The intented use is documented in `TestSuiteDoc`.
+# • The intended use is documented in `TestSuiteDoc`.
 
 
 KEYCODE_PATTERN = re.compile(
@@ -46,7 +46,7 @@ BASE_LEVEL = 1
 
 
 def check_keycode(key: str) -> bool:
-    """Check keycode has the required syntax."""
+    """Check that keycode has the required syntax."""
     return bool(KEYCODE_PATTERN.match(key))
 
 
@@ -64,7 +64,7 @@ class Keymap:
         )
 
     def release(self, key: str) -> xkbcommon.Result:
-        """Update the state by pressing a key"""
+        """Update the state by releasing a key"""
         assert check_keycode(key), "key must be a [2-4]-character keycode"
         return self._state.process_key_event(
             key, xkbcommon.xkb_key_direction.XKB_KEY_UP
@@ -80,7 +80,7 @@ class Keymap:
         self, key: str, keysym: str, group: int = BASE_GROUP, level: int = BASE_LEVEL
     ) -> xkbcommon.Result:
         """
-        Check that taping a key produces the expected keysym in the
+        Check that tapping a key produces the expected keysym in the
         expected group and level.
         """
         r = self.tap(key)
@@ -178,13 +178,13 @@ def keymap(
 
 
 # Documented example
-# The parameters RMLVO parameters “rules”, “model”, “layout”, “variant” and
-# “options” are optional and are implicitely consumed by the keymap fixture.
+# The RMLVO parameters (“rules”, “model”, “layout”, “variant” and “options”)
+# are optional and are implicitely consumed by the keymap fixture.
 @pytest.mark.parametrize("layout", ["us"])
 class TestSuiteDoc:
     # The keymap argument is mandatory. It will:
-    # • Load the keymap corresponding to RMLVO input.
-    # • Initialize a new state
+    # • Load the keymap corresponding to the RMLVO input;
+    # • Initialize a new state;
     # • Return a convenient `Keymap` object, that will manage the
     #   low-level xkbcommon stuff and provide methods to safely change
     #   the state.
@@ -205,9 +205,9 @@ class TestSuiteDoc:
 ###############################################################################
 
 # • Create one class per topic. It should have a meaningful name prefixed by
-#   `Test` and refering to the topic: e.g. TestCompatibilityOption1Option2.
+#   `Test` and refer to the topic: e.g. TestCompatibilityOption1Option2.
 #   If there is a Gitlab issue it can be named after it: e.g. TestGitlabIssue382.
-# • The intented use is commented in the following `TestExample` class.
+# • The intended use is commented in the following `TestExample` class.
 
 
 # The RMLVO XKB configuration is set with parameters “rules”, “model”, “layout”,
@@ -237,7 +237,7 @@ class TestExample:
             keymap.tap_and_check("AC01", "A", level=2)
         # We can also use multiple keys:
         with keymap.key_down("LFSH", "RALT") as r:
-            # In this case the result refer to the last key
+            # In this case the result refers to the last key
             assert r.keysym == "ISO_Level3_Shift"
             r = keymap.tap_and_check("AC01", "AE", level=4)
             # We can also check (real) modifiers directly
