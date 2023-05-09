@@ -35,11 +35,32 @@ from xkbcommon import Mod1, Mod4, Mod5, ModifierMask, NoModifier, Shift
 
 
 KEYCODE_PATTERN = re.compile(
-    r"""[A-Z]               # Start with an upper case letter
-        [A-Za-z0-9+\-]{1,3} # Followed by up to 3 characters
+    r"""^(?:
+        # Usual keycodes
+          [A-Z]         # Start with an upper case letter
+          [A-Z0-9]{1,3} # Followed by up to 3 characters
+        # Latin aliases
+        | Lat[A-Z]      
+        # Special cases
+        | VOL-
+        | VOL\+
+        )$
      """,
     re.VERBOSE,
 )
+
+
+@pytest.mark.parametrize("key", ("UP", "TAB", "AE01", "RTRN", "VOL-", "I120", "LatA"))
+def test_valid_keycode_pattern(key: str):
+    assert KEYCODE_PATTERN.match(key)
+
+
+@pytest.mark.parametrize(
+    "key", ("U", "LFTSH", "Shift_L", "lfsh", "9", "1I20", "latA", "Lat9")
+)
+def test_invalid_keycode_pattern(key: str):
+    assert not KEYCODE_PATTERN.match(key)
+
 
 BASE_GROUP = 1
 BASE_LEVEL = 1
