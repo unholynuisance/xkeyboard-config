@@ -36,7 +36,7 @@ variables:
 
   # xkbcommon: needed to share artifacts between jobs
   XKBCOMMON_DIR: 'libxkbcommon'
-  XKBCOMMON_BUILD_DIR: $XKBCOMMON_DIR/$BUILDDIR
+  XKBCOMMON_INST_DIR: $CI_PROJECT_DIR/$XKBCOMMON_DIR/_inst
 
 
 stages:
@@ -141,24 +141,32 @@ xkbcommon build:
     - git clone --depth=1 https://github.com/xkbcommon/libxkbcommon "$XKBCOMMON_DIR"
     - pushd "$XKBCOMMON_DIR" > /dev/null
     - ./scripts/update-keysyms
+    # Setup meson for minimal xkbcommon build with explicit paths.
+    # NOTE: we set the library directory as it may depend on the host architecture.
     - >
       meson setup "$BUILDDIR" \
         -Denable-wayland=false \
         -Denable-x11=false \
         -Denable-docs=false \
-        -Dxkb-config-root="$INSTDIR/share/X11/xkb"
+        -Dxkb-config-root="$INSTDIR/share/X11/xkb" \
+        -Dxkb-config-extra-path="$INSTDIR/share/X11/xkb" \
+        -Dprefix="$XKBCOMMON_INST_DIR" \
+        -Dlibdir="lib"
     - meson compile -C "$BUILDDIR"
+    - meson install -C "$BUILDDIR"
+    # We want also the test script. It requires "xkbcli-compile-keymap".
+    - cp "$BUILDDIR/xkeyboard-config-test" "$XKBCOMMON_INST_DIR/bin"
   artifacts:
     when: on_success
     name: xkbcommon build
     expire_in: 3 hours
     paths:
-      - $XKBCOMMON_BUILD_DIR/libxkbcommon.so*
-      - $XKBCOMMON_BUILD_DIR/xkbcli-compile-keymap
-      - $XKBCOMMON_BUILD_DIR/xkeyboard-config-test
-    exclude:
-      - $XKBCOMMON_BUILD_DIR/libxkbcommon.so*.[^0-9]
-      - $XKBCOMMON_BUILD_DIR/libxkbcommon.so*.[^0-9]/**/*
+      # Keep artifact as small as possible.
+      # At the moment only "layout_tests" and "keymap_tests" require our build.
+      # The other jobs use the distro xkbcommon.
+      - $XKBCOMMON_INST_DIR/bin
+      - $XKBCOMMON_INST_DIR/lib/libxkbcommon.so*
+      - $XKBCOMMON_INST_DIR/libexec/xkbcommon/xkbcli-compile-keymap
 
 
 # Checks for new evdev keycodes to be added to keycodes/evdev
@@ -256,18 +264,22 @@ layout_tests:
     - ln -s "$INSTDIR/share/X11/xkb/types/basic" "$INSTDIR/share/X11/xkb/types/custom"
     # run xkbcommon test
     - echo Running test script - this will take several minutes
-    - pushd "$XKBCOMMON_BUILD_DIR" > /dev/null
+    # Ensure we use our local version of xkbcommon
+    - export LD_LIBRARY_PATH="$XKBCOMMON_INST_DIR/lib:$LD_LIBRARY_PATH"
+    # Ensure xkeyboard-config-test and xkbcli-compile-keymap are in the PATH
+    - export PATH="$XKBCOMMON_INST_DIR/bin:$XKBCOMMON_INST_DIR/libexec/xkbcommon:$PATH"
+    # For debugging: check if executable is working and output its XKB_CONFIG_ROOT
+    - xkbcli-compile-keymap --layout pc --verbose > /dev/null
     - >
-      "./xkeyboard-config-test" --verbose \
+      xkeyboard-config-test --verbose \
           "$INSTDIR/share/X11/xkb/rules/evdev.xml" \
           >  $INSTDIR/keymaps-success.yaml \
           2> $INSTDIR/keymaps-failed.yaml
     - >
-      "./xkeyboard-config-test" --verbose \
+      xkeyboard-config-test --verbose \
           "$INSTDIR/share/X11/xkb/rules/evdev.extras.xml" \
           >>  $INSTDIR/keymaps-success.yaml \
           2>> $INSTDIR/keymaps-failed.yaml
-    - popd > /dev/null
   after_script:
     - echo "Failed keymap compilations:"
     - yq -c ".[] | select(.status != 0) | .cmd, .error" $INSTDIR/keymaps-failed.yaml
@@ -301,9 +313,11 @@ keymap_tests:
     - job: xkbcommon build
       artifacts: true
   script:
+    # Configure the environment for our local xkbcommon build & Python bindings.
     - export XKB_CONFIG_ROOT="$INSTDIR/share/X11/xkb"
-    - export XKBCOMMON_LIB_PATH="$XKBCOMMON_BUILD_DIR/libxkbcommon.so"
+    - export XKBCOMMON_LIB_PATH="$XKBCOMMON_INST_DIR/lib/libxkbcommon.so"
     - export PYTHONPATH="$PWD/tests:$PYTHONPATH"
+    # Run the tests
     - pytest --junitxml=results.xml
   artifacts:
     reports:
