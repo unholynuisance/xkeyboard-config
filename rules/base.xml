@@ -8015,7 +8015,7 @@
     <group allowMultipleSelection="true">
       <configItem>
         <name>lv5</name>
-        <description>Key to choose 5th level</description>
+        <description>Key to choose the 5th level</description>
       </configItem>
       <option>
         <configItem>
