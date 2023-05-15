@@ -4393,7 +4393,7 @@
     <layout>
       <configItem>
         <name>jp</name>
-        <!-- Keyboard indicator for Japaneses -->
+        <!-- Keyboard indicator for Japanese layouts -->
         <shortDescription>ja</shortDescription>
         <description>Japanese</description>
         <countryList>
