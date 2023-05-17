@@ -442,7 +442,7 @@
         <variant>
           <configItem popularity="exotic">
             <name>cz_sk_de</name>
-            <description>Czech Slovak and German (US)</description>
+            <description>Czech, Slovak and German (US)</description>
             <languageList>
               <iso639Id>eng</iso639Id>
               <iso639Id>ces</iso639Id>
