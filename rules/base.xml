@@ -3267,7 +3267,7 @@
             <name>rus</name>
             <!-- Keyboard indicator for Russian layouts -->
             <shortDescription>ru</shortDescription>
-            <description>Russian (Czech, phonetic)</description>
+            <description>Russian (Czechia, phonetic)</description>
             <languageList>
               <iso639Id>rus</iso639Id>
             </languageList>
