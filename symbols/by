@@ -41,12 +41,19 @@ xkb_symbols "latin" {
 	key <AD02> {[    w,    W,    scaron,    Scaron    ]};
 	key <AD07> {[    u,    U,    ubreve,    Ubreve    ]};
 	key <AC02> {[    s,    S,    sacute,    Sacute    ]};
+	key <AC08> {[    k,    K,    lacute,    Lacute    ]};
 	key <AC09> {[    l,    L,    lstroke,   Lstroke   ]};
 	key <AB01> {[    z,    Z,    zacute,    Zacute    ]};
 	key <AB02> {[    x,    X,    zcaron,    Zcaron    ]};
 	key <AB03> {[    c,    C,    cacute,    Cacute    ]};
 	key <AB04> {[    v,    V,    ccaron,    Ccaron    ]};
 	key <AB06> {[    n,    N,    nacute,    Nacute    ]};
+
+	// Poland
+	key <AD03> {[    e,    E,    eogonek,     Eogonek   ]};
+	key <AD09> {[    o,    O,    oacute,      Oacute    ]};
+	key <AC01> {[    a,    A,    aogonek,     Aogonek   ]};
+	key <AC10> {[    j,    J,    zabovedot,   Zabovedot   ]};
 
 	include "level3(ralt_switch)"
 };
