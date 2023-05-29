@@ -43,10 +43,11 @@ xkb_symbols "nodeadkeys" {
     key <AE12>	{ [exclamdown, questiondown,     cedilla,      ogonek ]	};
     key <AD11>	{ [     grave, asciicircum,  bracketleft,      degree ]	};
     key <AD12>	{ [      plus,   asterisk, bracketright,       macron ]	};
+    key <AC07>	{ [         j,          J,          ezh,          EZH ] };
     key <AC10>	{ [    ntilde,     Ntilde,   asciitilde,  doubleacute ]	};
     key <AC11>	{ [     acute,  diaeresis,    braceleft,        caron ]	};
     key <BKSL>	{ [  ccedilla,   Ccedilla,   braceright,        breve ]	};
-    key <AB10>	{ [     minus, underscore, dead_belowdot,    abovedot ]	};
+    key <AB10>	{ [     minus, underscore,     ellipsis,     abovedot ]	};
 };
 
 // Spanish Dvorak mapping (note R-H exchange)

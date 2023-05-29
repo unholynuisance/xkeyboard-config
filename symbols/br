@@ -50,10 +50,14 @@ xkb_symbols "nodeadkeys" {
     name[Group1]="Portuguese (Brazil, no dead keys)";
 
     key <AE06> { [            6,      diaeresis,       notsign,         notsign ] };
+    key <AE12> { [        equal,           plus,       section,         radical ] };
     key <AD11> { [   apostrophe,          grave                                 ] };
+    key <AD12> { [  bracketleft,      braceleft,   ordfeminine,          dagger ] };
+    key <AC07> { [            j,              J,           ezh,             EZH ] };
     key <AC10> { [     ccedilla,       Ccedilla,         acute,     doubleacute ] };
     key <AC11> { [   asciitilde,    asciicircum                                 ] };
-    key <AB10> { [    semicolon,          colon, dead_belowdot,        abovedot ] };
+    key <LSGT> { [    backslash,            bar,        endash,          emdash ] };
+    key <AB10> { [    semicolon,          colon,      ellipsis,        abovedot ] };
 };
 
 

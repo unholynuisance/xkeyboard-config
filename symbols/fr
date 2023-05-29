@@ -74,12 +74,13 @@ xkb_symbols "nodeadkeys" {
     name[Group1]="French (no dead keys)";
 
     key <AE12>	{ [     equal,       plus,   braceright,       ogonek ]	};
-    key <AD11>	{ [asciicircum,  diaeresis ]	};
+    key <AD11>	{ [asciicircum, diaeresis,      radical,       dagger ] };
     key <AD12>	{ [    dollar,   sterling,     currency,       macron ]	};
+    key <AC07>	{ [         j,          J,          ezh,          EZH ] };
     key <AC11>	{ [    ugrave,    percent,  asciicircum,        caron ]	};
     key <BKSL>	{ [  asterisk,         mu,        grave,        breve ]	};
     key <AB07>	{ [     comma,   question,        acute,  doubleacute ]	};
-    key <AB10>	{ [    exclam,    section, dead_belowdot,    abovedot ]	};
+    key <AB10>	{ [    exclam,    section,     ellipsis,     abovedot ]	};
 };
 
 

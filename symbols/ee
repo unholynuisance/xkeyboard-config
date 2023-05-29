@@ -44,16 +44,17 @@ xkb_symbols "nodeadkeys" {
     name[Group1] = "Estonian (no dead keys)";
 
     key <TLDE>	{[asciicircum, asciitilde                             ]};
-    key <AE12>	{[ apostrophe,      grave                             ]};
+    key <AE12>	{[ apostrophe,      grave,        grave,       dagger ]};
 
     key <AD11>	{[ udiaeresis, Udiaeresis,    diaeresis,       degree ]};
     key <AD12>	{[     otilde,     Otilde,      section,       macron ]};
 
+    key <AC07>	{[          j,          J,          ezh,          EZH ]};
     key <AC10>	{[ odiaeresis, Odiaeresis,        acute,  doubleacute ]};
     key <AC11>	{[ adiaeresis, Adiaeresis,  asciicircum,        caron ]};
     key <BKSL>	{[ apostrophe,   asterisk,      onehalf,        breve ]};
 
-    key <AB10>	{[      minus, underscore, dead_belowdot,    abovedot ]};
+    key <AB10>	{[      minus, underscore,     ellipsis,     abovedot ]};
 };
 
 // The US Dvorak layout with Estonian letters on the third level.

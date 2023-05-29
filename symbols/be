@@ -153,6 +153,7 @@ xkb_symbols "nodeadkeys" {
     key <AE12>	{[      minus, underscore,      cedilla,       ogonek ]};
     key <AD11>	{[asciicircum,  diaeresis,  bracketleft,  bracketleft ]};
     key <AD12>	{[     dollar,   asterisk, bracketright,       macron ]};
+    key <AC07>	{[          j,          J,          ezh,          EZH ]};
     key <AC10>	{[          m,          M,        acute,  doubleacute ]};
     key <AC11>	{[     ugrave,    percent,   apostrophe,   apostrophe ]};
     key <BKSL>	{[         mu,   sterling,        grave,        grave ]};
