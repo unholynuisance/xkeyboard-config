@@ -144,17 +144,6 @@ xkb_symbols "rus" {
     key <AB07> {	[ Cyrillic_em, Cyrillic_EM ]	};
 };
 
-partial alphanumeric_keys
-xkb_symbols "rus_nodeadkeys" {
-
-    include "se(nodeadkeys)"
-    include "se(rus)"
-
-    name[Group1]="Russian (Sweden, phonetic, no dead keys)";
-
-    key <AE12> {	[ Cyrillic_hardsign, Cyrillic_HARDSIGN ]	};
-};
-
 xkb_symbols "smi" {
     include "fi(smi)"
     name[Group1]= "Northern Saami (Sweden)";
