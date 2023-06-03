@@ -129,7 +129,7 @@ xkb_symbols "intl" {
     key <AC11> { [dead_acute, dead_diaeresis, apostrophe,        quotedbl ] };
 
     key <AB01> { [	   z,          Z,            ae,               AE ] };
-    key <AB02> { [	   x,          X,             x,                X ] };
+    key <AB02> { [	   x,          X, periodcentered,     dead_stroke ] };
     key <AB03> { [	   c,          C,     copyright,             cent ] };
     key <AB04> { [	   v,          V,             v,                V ] };
     key <AB05> { [	   b,          B,             b,                B ] };
@@ -190,10 +190,11 @@ xkb_symbols "alt-intl" {
 
   key <AC10> { [  semicolon, colon,	     dead_ogonek,   dead_diaeresis  ] };
   key <AC11> { [ dead_acute, dead_diaeresis, apostrophe,    quotedbl	    ] };
-
+  
+  key <AB02> { [	  x, X,              periodcentered, dead_stroke    ] };
   key <AB08> { [      comma, less,	     dead_cedilla,  dead_caron	    ] };
   key <AB09> { [     period, greater,	     dead_abovedot, dead_circumflex ] };
-  key <AB10> { [      slash, question,	     dead_hook,	    dead_hook	    ] };
+  key <AB10> { [      slash, question,	     dead_hook,     dead_hook	    ] };
 
   key <LSGT> { [ backslash,   bar,            backslash,      bar ] };
 
@@ -310,7 +311,7 @@ xkb_symbols "dvorak-intl" {
     key <AB02> { [	   q,          Q,    adiaeresis,       Adiaeresis ] };
     key <AB03> { [	   j,          J,    idiaeresis,       Idiaeresis ] };
     key <AB04> { [	   k,          K,            oe,               OE ] };
-    key <AB05> { [	   x,          X,             x,                X ] };
+    key <AB05> { [	   x,          X, periodcentered,     dead_stroke ] };
     key <AB06> { [	   b,          B,             b,                B ] };
     key <AB07> { [	   m,          M,            mu,        plusminus ] };
     key <AB08> { [	   w,          W,         aring,            Aring ] };
@@ -364,7 +365,7 @@ xkb_symbols "dvorak-alt-intl" {
     key <AB02> { [         q,       Q,  odiaeresis,      dead_ogonek ] };
     key <AB03> { [         j,       J,      egrave, dead_doubleacute ] };
     key <AB04> { [         k,       K,      ugrave ] };
-    key <AB05> { [         x,       X,  idiaeresis ] };
+    key <AB05> { [         x,       X,  idiaeresis,      dead_stroke ] };
 
     include "level3(ralt_switch)"
 };
@@ -1002,6 +1003,7 @@ xkb_symbols "altgr-intl" {
    key <AC04> { [        f, F,           f,            F               ] };
    key <AB02> { [        x, X,           oe,           OE              ] };
    key <AB04> { [        v, V,           registered,   trademark       ] };
+   key <AB05> { [        b, B,         periodcentered, dead_stroke     ] };
 
 // onequarter etc (not in iso8859-15) moved to get three unshifted deadkeys:
 
@@ -1510,7 +1512,7 @@ xkb_symbols "workman-intl" {
     key <AC10> { [     i,          I,        iacute,           Iacute ] };
 
     key <AB01> { [     z,          Z,            ae,               AE ] };
-    key <AB02> { [     x,          X,             x,                X ] };
+    key <AB02> { [     x,          X, periodcentered,     dead_stroke ] };
     key <AB03> { [     m,          M,            mu,        plusminus ] };
     key <AB04> { [     c,          C,     copyright,             cent ] };
     key <AB05> { [     v,          V,             v,                V ] };
@@ -1698,7 +1700,7 @@ xkb_symbols "carpalx-intl" {
     key <AC10> { [	   h,          H,        uacute,           Uacute ] };
     key <AC11> { [dead_acute, dead_diaeresis, apostrophe,        quotedbl ] };
 
-    key <AB01> { [	   z,          Z,             z,                Z ] };
+    key <AB01> { [	   z,          Z, periodcentered,     dead_stroke ] };
     key <AB02> { [	   x,          X,         U015F,            U015E ] };
     key <AB03> { [	   c,          C,      ccedilla,         Ccedilla ] };
     key <AB04> { [	   v,          V,            ae,               AE ] };
