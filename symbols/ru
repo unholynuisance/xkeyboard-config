@@ -1248,6 +1248,8 @@ xkb_symbols "winkeys-p" {
     key <AE08> { [ asterisk,    8 ] };
     key <AE09> { [ parenleft,   9 ] };
     key <AE10> { [ parenright,  0 ] };
+    key <FK11> { [ F11,         question ] };
+    key <FK12> { [ F12,         bar ] };
 };
 
 // Russian keyboard layout with typography symbols.
