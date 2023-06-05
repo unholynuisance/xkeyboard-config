@@ -1738,7 +1738,7 @@
           <configItem popularity="exotic">
             <name>modi-kagapa</name>
             <shortDescription>mr</shortDescription>
-            <description>Modi (KaGaPa phonetic)</description>
+            <description>Modi (KaGaPa, phonetic)</description>
             <languageList>
               <iso639Id>mar</iso639Id>
             </languageList>

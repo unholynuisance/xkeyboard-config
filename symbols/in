@@ -1898,7 +1898,7 @@ xkb_symbols "mal_poorna" {
 // ---- BEGIN Hindi KaGaPa phonetic ----
 // Name:        KaGaPa phonetic
 // Brief:       Devanagari layout (Hindi, Sanskrit, Nepali, Marathi, etc.)
-// Diagram:     (Original)[http://baraha.com/help/Keyboards/dev_brhkbd.htm]
+// Diagram:     (Original)[https://baraha.com/help/Keyboards/dev-brhkbd.htm]
 //              (This layout)[http://bdsatish.in/lang/dev-kagapa.png]
 //
 // Description: Based on KaGaPa layout (also called Baraha layout or Nudi layout)
@@ -1992,10 +1992,9 @@ xkb_symbols "mar-kagapa" {
   name[Group1] = "Marathi (KaGaPa, phonetic)";
 };
 
-
 // ---- BEGIN Kannada KaGaPa phonetic ----
 // Name:        Kannada KaGaPa phonetic
-// Diagram:     (Original)[http://www.baraha.com/help/Keyboards/kan_brhkbd.htm]
+// Diagram:     (Original)[https://baraha.com/help/Keyboards/kan-brhkbd.htm]
 //              (This layout)[http://bdsatish.in/lang/kan-kagapa.png]
 //
 // Description: Based on KaGaPa layout (also called Baraha layout or Nudi layout).
@@ -2068,7 +2067,7 @@ xkb_symbols "kan-kagapa" {
 
 // ---- BEGIN Telugu KaGaPa phonetic ----
 // Name:        Telugu KaGaPa phonetic
-// Diagram:     (Original)[http://www.baraha.com/help/Keyboards/tel_brhkbd.htm]
+// Diagram:     (Original)[https://baraha.com/help/Keyboards/tel-brhkbd.htm]
 //              (This layout)[http://bdsatish.in/lang/tel-kagapa.png]
 //
 // Description: Based on KaGaPa layout (also called Baraha layout or Nudi layout).
@@ -2140,7 +2139,8 @@ xkb_symbols "tel-kagapa" {
 // ---- BEGIN Gujarati KaGaPa phonetic ----
 // Name:        KaGaPa phonetic
 // Author:      Sharad Gor <docbroke@protonmail.com>
-// Layout image at https://github.com/Docbroke/Gujarati_KaGaPa/blob/main/Guj_KaGaPa_layout.jpg
+// Diagram:     (Original)[https://baraha.com/help/Keyboards/guj-brhkbd.htm]
+//              (This layout)[https://github.com/Docbroke/Gujarati_KaGaPa/blob/main/Guj_KaGaPa_layout.jpg]
 
 partial alphanumeric_keys
 xkb_symbols "guj-kagapa" {
@@ -2476,7 +2476,7 @@ xkb_symbols "san-misc" {
 // Date : 9th February, 2020
 partial alphanumeric_keys
 xkb_symbols "modi-kagapa" {
-    name[Group1] = "Modi (KaGaPa phonetic)";
+    name[Group1] = "Modi (KaGaPa, phonetic)";
     key.type[group1]="FOUR_LEVEL";
 
     key <TLDE>  { [   grave,        asciitilde,   U201C           ] };  // U201C: left double quotation mark
