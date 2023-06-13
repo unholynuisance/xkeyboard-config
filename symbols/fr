@@ -928,7 +928,7 @@ xkb_symbols "mac" {
     key <BKSL> {	[ dead_grave, sterling,  at,     numbersign	]	};
 
     key <LSGT> {	[      less, greater, VoidSymbol, VoidSymbol	]	};
-    key <AB01> {	[         w, W, VoidSymbol,   VoidSymbol	]	}; // MISSING: half-guillemot (single angle bracket)
+    key <AB01> {	[         w, W,      U2039,        U203A	]	}; // ‹ ›
     key <AB02> {	[         x, X, VoidSymbol,   VoidSymbol	]	}; // CHECK similarequal; MISSING: extra-slanted slash
     key <AB03> {	[         c, C,  copyright,         cent	]	};
     key <AB04> {	[         v, V,    diamond,  leftradical	]	}; // CHECK diamond, leftradical

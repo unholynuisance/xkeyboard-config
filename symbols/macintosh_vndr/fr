@@ -78,7 +78,7 @@ xkb_symbols "extended" {
     key <RTRN> {	[    Return			]	};
 
     key <LSGT> {	[	 less,	  greater,	lessthanequal,		greaterthanequal	]	};
-    key <AB01> {	[	  w,	W,		guilsinglleft,		guilsinglright	]	}; // MISSING: half-guillemot (single angle bracket)
+    key <AB01> {	[	  w,	W,		U2039,			U203A		]	}; // ‹ ›
     key <AB02> {	[	  x,	X,		VoidSymbol,		VoidSymbol	]	}; // CHECK: similarequal; MISSING: extra-slanted slash
     key <AB03> {	[	  c,	C,		copyright,		cent		]	};
     key <AB04> {	[	  v,	V,		diamond,		radical		]	}; // CHECK diamond
