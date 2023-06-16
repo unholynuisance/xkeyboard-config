@@ -886,7 +886,7 @@ xkb_symbols "mac" {
 
     name[Group1]= "French (Macintosh)";
 
-    key <TLDE> {	[          at, numbersign, periodcentered,  Ydiaeresis	]	};
+    key <TLDE> {	[          at, numbersign, periodcentered,  ydiaeresis	]	};
     key <AE01> {	[   ampersand,    1,   VoidSymbol,    dead_acute	]	}; // MISSING: Apple
     key <AE02> {	[      eacute,    2,   ediaeresis,        Eacute	]	};
     key <AE03> {	[    quotedbl,    3, leftdoublequotemark, rightdoublequotemark ]};
