@@ -12,15 +12,24 @@ xkb_symbols "se" {
     name[Group1]="Swedish";
 
     key <TLDE>	{ [   section,    onehalf,    paragraph, threequarters]	};
-    key <AE05>	{ [         5,    percent,     EuroSign,         cent ]	};
+    key <AE05>	{ [         5,    percent,     EuroSign,     permille ]	};
+    key <AE06>	{ [         6,  ampersand,          yen,      radical ]	};
     key <AE11>	{ [      plus,   question,    backslash, questiondown ]	};
     key <AE12>	{ [dead_acute, dead_grave,    plusminus,      notsign ]	};
 
+    key <AD01>	{ [         q,          Q,  Greek_omega,  Greek_OMEGA ]	};
+    key <AD02>	{ [         w,          W,  Greek_sigma,  Greek_SIGMA ]	};
+    key <AD04>	{ [         r,          R,   registered,    trademark ]	};
+    key <AD10>	{ [         p,          P,     Greek_pi,     Greek_PI ]	};
+
+    key <AC08>	{ [         k,          K,          kra,       dagger ]	};
     key <AC10>	{ [odiaeresis, Odiaeresis,       oslash,       Oslash ]	};
     key <AC11>	{ [adiaeresis, Adiaeresis,           ae,           AE ]	};
     key <BKSL>	{ [apostrophe,   asterisk,        acute,     multiply ]	};
 
     key <LSGT>  { [      less,     greater,         bar,    brokenbar ] };
+    key <AB03>	{ [         c,          C,    copyright,       U1F12F ] }; // 🄯  (copyleft)
+    key <AB09>	{ [    period,      colon, periodcentered,   ellipsis ] };
 
     key <SPCE>	{ [     space,      space,        space, nobreakspace ]	};
 
