@@ -756,7 +756,7 @@ xkb_symbols "mac" {
     key <AD01> { [	   q,          Q,            oe,               OE ] };
     key <AD02> { [	   w,          W,         U2211,doublelowquotemark] };
     key <AD03> { [	   e,          E,    dead_acute,            acute ] };
-    key <AD04> { [	   r,          R,    registered,            U2030 ] };
+    key <AD04> { [	   r,          R,    registered,         permille ] };
     key <AD05> { [	   t,          T,        dagger,       dead_caron ] };
     key <AD06> { [	   y,          Y,           yen,       onequarter ] };
     key <AD07> { [	   u,        U,  dead_diaeresis,        diaeresis ] };
@@ -1811,7 +1811,7 @@ xkb_symbols "symbolic" {
  key <AE02> { [ 2,     at,          twosuperior,   therefore      ] }; // 2 @ ² ∴
  key <AE03> { [ 3,     numbersign,  threesuperior, sterling       ] }; // 3 # ³ £
  key <AE04> { [ 4,     dollar,      foursuperior,  EuroSign       ] }; // 4 $ ⁴ €
- key <AE05> { [ 5,     percent,     fivesuperior,  U2030          ] }; // 5 % ⁵ ‰
+ key <AE05> { [ 5,     percent,     fivesuperior,  permille       ] }; // 5 % ⁵ ‰
  key <AE06> { [ 6,     asciicircum, sixsuperior,   squareroot     ] }; // 6 ^ ⁶ √
  key <AE07> { [ 7,     ampersand,   sevensuperior, section        ] }; // 7 & ⁷ §
  key <AE08> { [ 8,     asterisk,    eightsuperior, infinity       ] }; // 8 * ⁸ ∞
@@ -2299,7 +2299,7 @@ xkb_symbols "drix" {
 	key <AC08> {[ k,           K,              singlelowquotemark,   doublelowquotemark    ]}; // k K ‚ „
 	key <AC09> {[ l,           L,              sterling,             Greek_lambda          ]}; // l L £ λ
 	key <AC10> {[ m,           M,              mu,                   M                     ]}; // m M µ M
-	key <AC11> {[ numbersign,  percent,        asciitilde,           0x1002030             ]}; // # % ~ ‰
+	key <AC11> {[ numbersign,  percent,        asciitilde,           permille              ]}; // # % ~ ‰
 
 	// Fourth row
 	key <LSGT> {[ less,        greater,        lessthanequal,        greaterthanequal      ]}; // < > ≤ ≥

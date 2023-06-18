@@ -560,7 +560,7 @@ xkb_symbols "bepo_afnor" {
 	key <AE09> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ slash, 9, division, onehalf ] }; // / 9 ÷ ½
 	key <AE10> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ asterisk, 0, multiply, threequarters ] }; // * 0 × ¾
 	key <AE11> { type[group1] = "FOUR_LEVEL", [ equal, degree, notequal, minutes ] }; // = ° ≠ ′
-	key <AE12> { type[group1] = "FOUR_LEVEL", [ percent, grave, U2030, seconds ] }; // % ` ‰ ″
+	key <AE12> { type[group1] = "FOUR_LEVEL", [ percent, grave, permille, seconds ] }; // % ` ‰ ″
 
 	key <AD01> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ b, B, bar, underscore ] }; // b B | _
 	key <AD02> { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ eacute, Eacute, dead_acute, heart ] }; // é É ´ ♥

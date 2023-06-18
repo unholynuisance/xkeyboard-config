@@ -218,7 +218,7 @@ xkb_symbols "latin" {
   key <AE02> {[ 2,                 at,                twosuperior,       enfilledcircbullet  ]};
   key <AE03> {[ 3,                 numbersign,        threesuperior,     notequal            ]};
   key <AE04> {[ 4,                 dollar,            EuroSign,          sterling            ]};
-  key <AE05> {[ 5,                 percent,           U2030,             U2030               ]};
+  key <AE05> {[ 5,                 percent,           permille,          permille            ]};
   key <AE06> {[ 6,                 asciicircum,       logicaland,        logicalor           ]};
   key <AE07> {[ 7,                 ampersand,         section,           section             ]};
   key <AE08> {[ 8,                 asterisk,          infinity,          multiply            ]};

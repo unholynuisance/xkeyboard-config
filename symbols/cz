@@ -504,7 +504,7 @@ xkb_symbols "typo" {
     key <AE01> {[  any,	 any,	any,			rightsinglequotemark ]};
     key <AE11> {[  any,	 any,	underscore,	U2212 ]};
 
-    key <AD04> {[  any,	 any,	U2030,		registered ]};
+    key <AD04> {[  any,	 any,	permille,	registered ]};
     key <AD06> {[  any,	 any,	leftarrow	]};
     key <AD07> {[  any,	 any,	downarrow,	uparrow ]};
     key <AD08> {[  any,	 any,	rightarrow,	UFB01 ]};

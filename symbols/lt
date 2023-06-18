@@ -274,7 +274,7 @@ xkb_symbols "ratise" {
     key <AE02> { [      colon,          at,            0x10027E8,          0x1002190 ] }; // MATHEMATICAL LEFT ANGLE BRACKET; LEFTWARDS ARROW
     key <AE03> { [     period,  numbersign,            0x10027E9,          0x1002192 ] }; // MATHEMATICAL RIGHT ANGLE BRACKET; RIGHTWARDS ARROW
     key <AE04> { [   asterisk,      dollar, rightdoublequotemark,           sterling ] };
-    key <AE05> { [ underscore,     percent,             ellipsis,          0x1002030 ] }; // PER MILLE SIGN
+    key <AE05> { [ underscore,     percent,             ellipsis,           permille ] };
     key <AE06> { [     emdash,         bar,          asciicircum,          brokenbar ] };
     key <AE07> { [      equal,   ampersand,                    7,           notequal ] };
     key <AE08> { [      comma,        less,                    8,      lessthanequal ] };

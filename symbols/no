@@ -10,7 +10,7 @@ xkb_symbols "basic" {
     name[Group1]="Norwegian";
 
     key <TLDE>	{ [       bar,    section,    brokenbar,    paragraph ]	};
-    key <AE05>	{ [         5,    percent,      onehalf,    0x1002030 ]	};
+    key <AE05>	{ [         5,    percent,      onehalf,     permille ]	};
     key <AE11>	{ [      plus,   question,    plusminus, questiondown ]	};
     key <AE12>	{ [ backslash, dead_grave,   dead_acute,      notsign ]	};
 

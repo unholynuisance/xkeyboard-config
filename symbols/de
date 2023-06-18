@@ -103,7 +103,7 @@ xkb_symbols "e1" {
     key <AE02>	{[            2,   quotedbl,          twosuperior,  any,              onehalf,            brokenbar ]};
     key <AE03>	{[            3,    section,        threesuperior,  any,        threequarters,            paragraph ]};
     key <AE04>	{[            4,     dollar,               emdash,  any,             currency,                U2133 ]};
-    key <AE05>	{[            5,    percent,           exclamdown,  any,                U2030,                U20B0 ]};
+    key <AE05>	{[            5,    percent,           exclamdown,  any,             permille,                U20B0 ]};
     key <AE06>	{[            6,  ampersand,         questiondown,  any,                U2044,                U204A ]};
     key <AE07>	{[            7,      slash,            braceleft,  any,                U2300,                U2116 ]};
     key <AE08>	{[            8,  parenleft,          bracketleft,  any,                U27E8,                U27EA ]};
@@ -513,7 +513,7 @@ xkb_symbols "neo_base" {
 
     // Bottommost row
     // --------------------------------------------------------------
-    key  <KP0> { [ KP_0,                    U2423,                   percent,                 U2030,                   KP_Insert,               KP_Insert,               U25A1,                   NoSymbol                 ] };
+    key  <KP0> { [ KP_0,                    U2423,                   percent,                 permille,                KP_Insert,               KP_Insert,               U25A1,                   NoSymbol                 ] };
     key <KPDL> { [ KP_Separator,            period,                  comma,                   minutes,                 KP_Delete,               KP_Delete,               seconds,                 NoSymbol                 ] };
 };
 

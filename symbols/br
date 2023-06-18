@@ -174,7 +174,7 @@ xkb_symbols "dvorak" {
     key <AE02> { [            2,              at,          twosuperior,          onehalf ] };
     key <AE03> { [            3,      numbersign,        threesuperior,    threequarters ] };
     key <AE04> { [            4,          dollar,             sterling,       onequarter ] };
-    key <AE05> { [            5,         percent,                 cent,       0x01002030 ] };
+    key <AE05> { [            5,         percent,                 cent,         permille ] };
     key <AE06> { [            6,  dead_diaeresis,              notsign,        diaeresis ] };
     key <AE07> { [            7,       ampersand,        dead_belowdot,    dead_abovedot ] };
     key <AE08> { [            8,        asterisk,          dead_ogonek,        dead_horn ] };
@@ -253,7 +253,7 @@ xkb_symbols "nativo" {
     key <AE02> { [            2,              at,          twosuperior,          onehalf ] };
     key <AE03> { [            3,      numbersign,        threesuperior,    threequarters ] };
     key <AE04> { [            4,          dollar,             sterling,       onequarter ] };
-    key <AE05> { [            5,         percent,                 cent,       0x01002030 ] };
+    key <AE05> { [            5,         percent,                 cent,         permille ] };
     key <AE06> { [            6,  dead_diaeresis,              notsign,        diaeresis ] };
     key <AE07> { [            7,       ampersand,        dead_belowdot,    dead_abovedot ] };
     key <AE08> { [            8,        asterisk,          dead_ogonek,        dead_horn ] };
