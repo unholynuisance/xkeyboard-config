@@ -1349,8 +1349,8 @@
       <variantList>
         <variant>
           <configItem popularity="exotic">
-          <name>urd-navees</name>
-          <description>Urdu (Pakistan, Navees)</description>
+            <name>urd-navees</name>
+            <description>Urdu (Pakistan, Navees)</description>
             <languageList>
               <iso639Id>urd</iso639Id>
             </languageList>

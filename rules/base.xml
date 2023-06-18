@@ -1307,37 +1307,37 @@
     </model>
     <model>
       <configItem>
-       <name>teck227</name>
-       <description>Truly Ergonomic 227</description>
-       <vendor>Truly Ergonomic</vendor>
+        <name>teck227</name>
+        <description>Truly Ergonomic 227</description>
+        <vendor>Truly Ergonomic</vendor>
      </configItem>
     </model>
     <model>
       <configItem>
-       <name>teck229</name>
-       <description>Truly Ergonomic 229</description>
-       <vendor>Truly Ergonomic</vendor>
+        <name>teck229</name>
+        <description>Truly Ergonomic 229</description>
+        <vendor>Truly Ergonomic</vendor>
      </configItem>
     </model>
     <model>
       <configItem>
-       <name>apex300</name>
-       <description>SteelSeries Apex 300 (Apex RAW)</description>
-       <vendor>SteelSeries</vendor>
+        <name>apex300</name>
+        <description>SteelSeries Apex 300 (Apex RAW)</description>
+        <vendor>SteelSeries</vendor>
      </configItem>
     </model>
     <model>
       <configItem>
-       <name>chromebook</name>
-       <description>Chromebook</description>
-       <vendor>Google</vendor>
+        <name>chromebook</name>
+        <description>Chromebook</description>
+        <vendor>Google</vendor>
      </configItem>
     </model>
     <model>
       <configItem>
-       <name>ppkb</name>
-       <description>PinePhone Keyboard</description>
-       <vendor>Pine64</vendor>
+        <name>ppkb</name>
+        <description>PinePhone Keyboard</description>
+        <vendor>Pine64</vendor>
      </configItem>
     </model>
   </modelList>
