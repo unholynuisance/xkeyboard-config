@@ -341,6 +341,71 @@ xkb_symbols "mac" {
     key <AB10> {[            slash,  Arabic_question_mark  ]};
 };
 
+// Macintosh Arabic QWERTY layout
+// https://github.com/unicode-org/cldr/blob/main/keyboards/osx/ar-t-k0-osx-qwerty.xml
+// LSGT is modified to match TLDE rather than having ^C on all levels
+
+partial alphanumeric_keys
+xkb_symbols "mac-phonetic" {
+    name[Group1]= "Arabic (Macintosh, phonetic)";
+
+    key <TLDE> {[    Arabic_tatweel,        Arabic_tatweel,               greater,               less ]};
+    key <AE01> {[          Arabic_1,                exclam, Arabic_hamzaunderalef,             exclam, 1 ], type[group1]="FOUR_LEVEL_PLUS_LOCK" };
+    key <AE02> {[          Arabic_2,          Arabic_hamza,                 U274A,              U274A, 2 ], type[group1]="FOUR_LEVEL_PLUS_LOCK" };
+    key <AE03> {[          Arabic_3,    Arabic_hamzaonalef,            numbersign,         numbersign, 3 ], type[group1]="FOUR_LEVEL_PLUS_LOCK" };
+    key <AE04> {[          Arabic_4,    Arabic_maddaonalef,                dollar,           EuroSign, 4 ], type[group1]="FOUR_LEVEL_PLUS_LOCK" };
+    key <AE05> {[          Arabic_5, Arabic_hamzaunderalef,        Arabic_percent,     Arabic_percent, 5 ], type[group1]="FOUR_LEVEL_PLUS_LOCK" };
+    key <AE06> {[          Arabic_6,     Arabic_hamzaonyeh,             ampersand,          ampersand, 6 ], type[group1]="FOUR_LEVEL_PLUS_LOCK" };
+    key <AE07> {[          Arabic_7,     Arabic_hamzaonwaw,           asciicircum,        asciicircum, 7 ], type[group1]="FOUR_LEVEL_PLUS_LOCK" };
+    key <AE08> {[          Arabic_8,    Arabic_alefmaksura,              asterisk,           asterisk, 8 ], type[group1]="FOUR_LEVEL_PLUS_LOCK" };
+    key <AE09> {[          Arabic_9,            parenright,            parenright,         parenright, 9 ], type[group1]="FOUR_LEVEL_PLUS_LOCK" };
+    key <AE10> {[          Arabic_0,             parenleft,             parenleft,          parenleft, 0 ], type[group1]="FOUR_LEVEL_PLUS_LOCK" };
+    key <AE11> {[             minus,            underscore,            underscore,         underscore ]};
+    key <AE12> {[             equal,                  plus,                  plus,               plus ]};
+
+    key <AD01> {[        Arabic_qaf,            Arabic_veh,            Arabic_veh,         Arabic_gaf ]};
+    key <AD02> {[      Arabic_sheen,         Arabic_shadda,         Arabic_shadda,      Arabic_shadda ]};
+    key <AD03> {[        Arabic_ain,          Arabic_ghain,      Arabic_farsi_yeh,               none ]};
+    key <AD04> {[         Arabic_ra,           Arabic_zain,          Arabic_ghain,        Arabic_rreh ]};
+    key <AD05> {[        Arabic_teh,           Arabic_theh,            Arabic_tah,  Arabic_tehmarbuta ]};
+    key <AD06> {[        Arabic_tah,            Arabic_zah,           Arabic_theh, Arabic_alefmaksura ]};
+    key <AD07> {[        Arabic_waw,      Arabic_yeh_baree,          Arabic_damma,    Arabic_dammatan ]};
+    key <AD08> {[        Arabic_yeh,    Arabic_alefmaksura,          Arabic_kasra,    Arabic_kasratan ]};
+    key <AD09> {[         Arabic_ha,     Arabic_tehmarbuta,          Arabic_sukun,              U06D5 ]};
+    key <AD10> {[ Arabic_tehmarbuta,            Arabic_teh,         Arabic_shadda,         Arabic_peh ]};
+    key <AD11> {[       Arabic_theh,            braceright,          bracketright,         braceright ]};
+    key <AD12> {[        Arabic_zah,             braceleft,           bracketleft,          braceleft ]};
+    key <BKSL> {[      Arabic_hamza, Arabic_hamzaunderalef,    Arabic_hamzaonalef, Arabic_maddaonalef ]};
+
+    key <AC01> {[       Arabic_alef,    Arabic_maddaonalef,          Arabic_fatha,    Arabic_fathatan ]};
+    key <AC02> {[       Arabic_seen,          Arabic_sheen,            Arabic_sad,      Arabic_shadda ]};
+    key <AC03> {[        Arabic_dal,           Arabic_thal,            Arabic_dad,        Arabic_ddal ]};
+    key <AC04> {[        Arabic_feh,            Arabic_qaf,            Arabic_veh,         Arabic_veh ]};
+    key <AC05> {[      Arabic_ghain,            Arabic_ain,            Arabic_ain,         Arabic_gaf ]};
+    key <AC06> {[        Arabic_hah,           Arabic_khah,             Arabic_ha,       Arabic_tcheh ]};
+    key <AC07> {[       Arabic_jeem,          Arabic_tcheh,           Arabic_khah,         Arabic_jeh ]};
+    key <AC08> {[        Arabic_kaf,            Arabic_gaf,           Arabic_khah,       Arabic_keheh ]};
+    key <AC09> {[        Arabic_lam,                 U274A,                  none,               none ]};
+    key <AC10> {[  Arabic_semicolon,                 colon,                  none,               none ]};
+    key <AC11> {[        apostrophe,              quotedbl,                 U0671,               none ]};
+
+    key <LSGT> {[    Arabic_tatweel,        Arabic_tatweel,               greater,               less ]};
+    key <AB01> {[       Arabic_zain,            Arabic_jeh,            Arabic_zah,         Arabic_jeh ]};
+    key <AB02> {[       Arabic_khah,            Arabic_hah,            Arabic_hah,               none ]};
+    key <AB03> {[        Arabic_sad,            Arabic_dad,           Arabic_theh,       Arabic_tcheh ]};
+    key <AB04> {[       Arabic_thal,            Arabic_dal,            Arabic_zah,         Arabic_veh ]};
+    key <AB05> {[        Arabic_beh,            Arabic_peh,            Arabic_peh,        Arabic_tteh ]};
+    key <AB06> {[       Arabic_noon,           Arabic_theh,                  none, Arabic_noon_ghunna ]};
+    key <AB07> {[       Arabic_meem,    Arabic_maddaonalef,    Arabic_maddaonalef, Arabic_maddaonalef ]};
+    key <AB08> {[      Arabic_comma,               greater,        guillemotright,              U274A ]};
+    key <AB09> {[            period,                  less,         guillemotleft,               none ]};
+    key <AB10> {[         backslash,  Arabic_question_mark,                 slash,          backslash ]};
+
+    key <SPCE> {[             space,                 space,          nobreakspace,       nobreakspace ]};
+
+    include "level3(ralt_switch)"
+};
+
 // EXTRAS:
 
 partial alphanumeric_keys

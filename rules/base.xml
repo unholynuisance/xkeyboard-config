@@ -1700,6 +1700,12 @@
             <description>Arabic (Macintosh)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>mac-phonetic</name>
+            <description>Arabic (Macintosh, phonetic)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
