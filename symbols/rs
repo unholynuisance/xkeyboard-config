@@ -182,7 +182,7 @@ xkb_symbols "latlevel3" {
     key <AB03> { [ any, any,   cent,                copyright        ] }; // c
     key <AB04> { [ any, any,   at,                  grave            ] }; // v
     key <AB05> { [ any, any,   braceleft,           apostrophe       ] }; // b
-    key <AB06> { [ any, any,   braceright,          braceright       ] }; // n
+    key <AB06> { [ any, any,   braceright,          acute            ] }; // n
     key <AB07> { [ any, any,   section,             masculine        ] }; // m
     key <AB08> { [ any, any,   less,                multiply         ] }; // , <
     key <AB09> { [ any, any,   greater,             division         ] }; // . >
