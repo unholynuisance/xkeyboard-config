@@ -101,6 +101,7 @@ default partial xkb_compatibility "misc" {
     include "ledscroll"
 
     include "misc(assign_shift_left_action)"
+    include "misc(assign_shift_right_action)"
 };
 
 partial xkb_compatibility "assign_shift_left_action" {
@@ -111,6 +112,17 @@ partial xkb_compatibility "assign_shift_left_action" {
     // The following statement ensures Shift_L always sets the Shift
     // modifier.
     interpret Shift_L {
+	action = SetMods(modifiers = Shift);
+    };
+};
+
+partial xkb_compatibility "assign_shift_right_action" {
+    // A similar issue as assign_shift_left_action hereinabove may
+    // happen to <RTSH> with some combinations of options,
+    // involving e.g symbols/shift(shift_both_capslock) and
+    // symbols/group(lalt_lshift_toggle). The following statement
+    // ensures Shift_R always sets the Shift modifier.
+    interpret Shift_R {
 	action = SetMods(modifiers = Shift);
     };
 };
