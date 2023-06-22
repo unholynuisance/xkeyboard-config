@@ -36,7 +36,7 @@ provided by xkeyboard-config, the layout will not be overwritten on updates.
 
 .SH MODELS
 .TS
-box;
+nowarn,box;
 lB lB
 ___
 lB l.
@@ -47,7 +47,7 @@ Model	Description
 .TE
 .SH LAYOUTS
 .TS
-box;
+nowarn,box;
 lB lB
 ____
 lB l.
@@ -140,7 +140,7 @@ option2 description:
             <xsl:text><![CDATA[
 .BR
 .TS
-box;
+nowarn,box;
 lB lB
 ___
 lB l.
