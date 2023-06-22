@@ -5,6 +5,7 @@
 //     - Marathi
 //     - Sanskrit
 //     - Bangla
+//     - Assamese
 //     - Gujarati
 //     - Kannada
 //     - Malayalam
@@ -608,6 +609,13 @@ xkb_symbols "ben-kagapa" {
     include "level3(ralt_switch)"
 };
 // ---- END Bangla KaGaPa phonetic ----
+
+// Assamese uses Bangla layout
+partial alphanumeric_keys
+xkb_symbols "asm-kagapa" {
+  include "in(ben-kagapa)"
+  name[Group1] = "Assamese (KaGaPa, phonetic)";
+};
 
 partial alphanumeric_keys
 xkb_symbols "guj" {

@@ -2036,6 +2036,17 @@
       <variantList>
         <variant>
           <configItem>
+            <name>asm-kagapa</name>
+            <!-- Keyboard indicator for Assamese layouts -->
+            <shortDescription>as</shortDescription>
+            <description>Assamese (KaGaPa, phonetic)</description>
+            <languageList>
+              <iso639Id>asm</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>ben</name>
             <!-- Keyboard indicator for Bangla layouts -->
             <shortDescription>bn</shortDescription>
