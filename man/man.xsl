@@ -38,7 +38,7 @@ provided by xkeyboard-config, the layout will not be overwritten on updates.
 .TS
 nowarn,box;
 lB lB
-___
+__
 lB l.
 Model	Description
 ]]></xsl:text>
@@ -49,7 +49,7 @@ Model	Description
 .TS
 nowarn,box;
 lB lB
-____
+__
 lB l.
 Layout(Variant)	Description
 ]]></xsl:text>
@@ -142,7 +142,7 @@ option2 description:
 .TS
 nowarn,box;
 lw25B lxB
-___
+__
 lB lx.
 Option	Description
 ]]></xsl:text>
