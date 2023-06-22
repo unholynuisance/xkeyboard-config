@@ -141,7 +141,7 @@ option2 description:
 .BR
 .TS
 nowarn,box;
-lB lxB
+lw25B lxB
 ___
 lB lx.
 Option	Description
