@@ -141,16 +141,16 @@ option2 description:
 .BR
 .TS
 nowarn,box;
-lB lB
+lB lxB
 ___
-lB l.
+lB lx.
 Option	Description
 ]]></xsl:text>
             <xsl:for-each select="option">
                 <xsl:value-of select="configItem/name"/>
-                <xsl:text>&#9;</xsl:text>
+                <xsl:text>&#9;T{&#10;</xsl:text>
                 <xsl:value-of select="configItem/description"/>
-                <xsl:text>&#10;</xsl:text>
+                <xsl:text>&#10;T}&#10;</xsl:text>
             </xsl:for-each>
             <xsl:text><![CDATA[
 .TE
