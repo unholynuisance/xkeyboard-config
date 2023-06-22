@@ -2082,6 +2082,16 @@
             </languageList>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>ben-kagapa</name>
+            <description>Bangla (India, KaGaPa, phonetic)</description>
+            <languageList>
+              <iso639Id>ben</iso639Id>
+              <iso639Id>sat</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
          <variant>
           <configItem>
             <name>ben_gitanjali</name>
