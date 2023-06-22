@@ -21,6 +21,7 @@ xkb_symbols "basic" {
     key <AE10>	{[         0, parenright, dead_doubleacute,   degree ]};
     key <AE11>	{[     minus, underscore, dead_diaeresis, questiondown]};
 
+    key <AD02>	{[         w,          W,          bar,  Greek_SIGMA ]};
     key <AD03>	{[         e,          E,     EuroSign,     EuroSign ]};
     key <AD11>	{[  ccedilla,   Ccedilla,     division, dead_abovering]};
     key <AD12>	{[        at, apostrophe,     multiply,  dead_macron ]};

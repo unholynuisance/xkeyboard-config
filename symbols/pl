@@ -115,6 +115,7 @@ xkb_symbols "qwertz" {
     key <AE11>	{ [      plus,   question, dead_diaeresis, questiondown ] };
     key <AE12>	{ [apostrophe,   asterisk, dead_cedilla,  dead_ogonek ]	};
 
+    key <AD02>	{ [         w,          W,          bar,  Greek_SIGMA ] };
     key <AD03>	{ [         e,          E,     EuroSign,         cent ]	};
     key <AD11>	{ [ zabovedot,     nacute,     division, dead_abovering ] };
     key <AD12>	{ [    sacute,     cacute,     multiply,  dead_macron ]	};
