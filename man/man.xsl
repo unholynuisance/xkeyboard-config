@@ -43,8 +43,7 @@ lB l.
 Model	Description
 ]]></xsl:text>
         <xsl:apply-templates select="modelList"/>
-        <xsl:text><![CDATA[
-.TE
+        <xsl:text><![CDATA[.TE
 .SH LAYOUTS
 .TS
 nowarn,box;
@@ -54,8 +53,7 @@ lB l.
 Layout(Variant)	Description
 ]]></xsl:text>
         <xsl:apply-templates select="layoutList"/>
-        <xsl:text><![CDATA[
-.TE
+        <xsl:text><![CDATA[.TE
 .SH OPTIONS
 ]]></xsl:text>
         <xsl:apply-templates select="optionList"/>
@@ -115,8 +113,9 @@ setxkbmap(1)
                 <xsl:value-of select="configItem/description"/>
                 <xsl:text>&#10;</xsl:text>
             </xsl:for-each>
-            <xsl:text>&#10;</xsl:text>
-            <xsl:text>_&#10;</xsl:text>
+            <xsl:if test="position()!=last()">
+                <xsl:text>_&#10;</xsl:text>
+            </xsl:if>
         </xsl:for-each>
     </xsl:template>
 
@@ -152,8 +151,7 @@ Option	Description
                 <xsl:value-of select="configItem/description"/>
                 <xsl:text>&#10;T}&#10;</xsl:text>
             </xsl:for-each>
-            <xsl:text><![CDATA[
-.TE
+            <xsl:text><![CDATA[.TE
 
 ]]></xsl:text>
         </xsl:for-each>
