@@ -261,7 +261,7 @@ xkb_symbols "olpc" {
     //    but these the place of kasra and kasratan which establish themselves in the braces’ former steads.
     //  ‣ The … character on <BKSL> is replaced by |, because OLPC laptops have no <LSGT> key installed where the bar is else placed.
 
-    key <TLDE> {[           grave,      asciitilde, percent, U2030     ]};
+    key <TLDE> {[           grave,      asciitilde, percent, permille  ]};
 
     key <AE01> {[       Arabic_1,          exclam,  1                  ]};
     key <AE02> {[       Arabic_2,              at,  2                  ]};
