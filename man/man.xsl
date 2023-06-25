@@ -44,6 +44,7 @@ Model	Description
 ]]></xsl:text>
         <xsl:apply-templates select="modelList"/>
         <xsl:text><![CDATA[.TE
+.sp
 .SH LAYOUTS
 .TS
 nowarn,box;
@@ -54,7 +55,9 @@ Layout(Variant)	Description
 ]]></xsl:text>
         <xsl:apply-templates select="layoutList"/>
         <xsl:text><![CDATA[.TE
+.sp
 .SH OPTIONS
+.BR
 ]]></xsl:text>
         <xsl:apply-templates select="optionList"/>
         <xsl:text><![CDATA[
