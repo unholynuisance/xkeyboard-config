@@ -342,7 +342,7 @@ xkb_symbols "winkeys" {
     // 2023 by Milos Kozák <milos.kozak@lejmr.com>
 
     include "latin"
-    name[Group1]= "Czech (QWERTZ, Windows flavour)";
+    name[Group1]= "Czech (QWERTZ, Windows)";
 
     key <TLDE>  {[ semicolon, dead_abovering,    grave,   asciitilde ] };
     key <AE01>  {[      plus,          1,       exclam,   dead_tilde ] };
@@ -412,7 +412,7 @@ xkb_symbols "winkeys-qwerty" {
     // 2023 by Milos Kozák <milos.kozak@lejmr.com>
 
     include "cz(winkeys)"
-    name[Group1]= "Czech (QWERTY, Windows flavour)";
+    name[Group1]= "Czech (QWERTY, Windows)";
     
     key <AD06>  {[         y,          Y,     NoSymbol,         NoSymbol ] };
     key <AB01>  {[         z,          Z,       degree,         NoSymbol ] };

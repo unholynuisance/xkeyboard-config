@@ -3282,13 +3282,13 @@
         <variant>
           <configItem>
             <name>winkeys</name>
-            <description>Czech (QWERTZ, Windows flavour)</description>
+            <description>Czech (QWERTZ, Windows)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>winkeys-qwerty</name>
-            <description>Czech (QWERTY, Windows flavour)</description>
+            <description>Czech (QWERTY, Windows)</description>
           </configItem>
         </variant>
       </variantList>
