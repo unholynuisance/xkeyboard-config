@@ -3273,6 +3273,18 @@
         </variant>
         <variant>
           <configItem>
+            <name>winkeys</name>
+            <description>Czech (QWERTZ, Windows)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>winkeys-qwerty</name>
+            <description>Czech (QWERTY, Windows)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>qwerty-mac</name>
             <description>Czech (QWERTY, Macintosh)</description>
           </configItem>
@@ -3298,18 +3310,6 @@
             <languageList>
               <iso639Id>rus</iso639Id>
             </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>winkeys</name>
-            <description>Czech (QWERTZ, Windows)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>winkeys-qwerty</name>
-            <description>Czech (QWERTY, Windows)</description>
           </configItem>
         </variant>
       </variantList>

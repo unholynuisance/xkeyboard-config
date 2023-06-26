@@ -106,6 +106,44 @@ xkb_symbols "qwerty_bksl" {
 };
 
 partial alphanumeric_keys
+xkb_symbols "winkeys" {
+
+    // This layout conforms (mostly) to the one in Windows, which differs
+    // slightly from the standard ČSN 36 9050, but it is printed on every
+    // physical keyboard currently on the market.
+    //
+    // Originally by Milos Kozák <milos.kozak@lejmr.com>, 2023.
+
+    include "cz(basic)"
+
+    name[Group1]= "Czech (QWERTZ, Windows)";
+
+    key <AE11>	{[     equal,    percent,        minus,  underscore ]};
+    key <AE12>	{[dead_acute, dead_caron,        equal,  plus       ]};
+
+    key <AD11>	{[    uacute,      slash,  bracketleft,  braceleft  ]};
+    key <AD12>	{[parenright,  parenleft, bracketright,  braceright ]};
+
+    key <AC10>	{[     uring,   quotedbl,    semicolon,  colon      ]};
+    key <AC11>	{[   section,     exclam,   apostrophe,  quotedbl   ]};
+
+    key <AB08>	{[     comma,   question,         less,  comma      ]};
+    key <AB09>	{[    period,      colon,      greater,  period     ]};
+    key <AB10>	{[     minus, underscore,        slash,  question   ]};
+};
+
+partial alphanumeric_keys
+xkb_symbols "winkeys-qwerty" {
+
+    include "cz(winkeys)"
+
+    name[Group1]= "Czech (QWERTY, Windows)";
+
+    key <AD06>	{[         y,          Y,          any,  any        ]};
+    key <AB01>	{[         z,          Z,       degree,  any        ]};
+};
+
+partial alphanumeric_keys
 xkb_symbols "qwerty-mac" {
 
     // This layout corresponds to the Apple's Czech - QWERTY.
@@ -329,44 +367,6 @@ xkb_symbols "rus" {
     key <AB10> {[             minus,             slash                         ] };
 
    include "level3(ralt_switch)"
-};
-
-partial alphanumeric_keys
-xkb_symbols "winkeys" {
-
-    // This layout conforms (mostly) to the one in Windows, which differs
-    // slightly from the standard ČSN 36 9050, but it is printed on every
-    // physical keyboard currently on the market.
-    //
-    // Originally by Milos Kozák <milos.kozak@lejmr.com>, 2023.
-
-    include "cz(basic)"
-
-    name[Group1]= "Czech (QWERTZ, Windows)";
-
-    key <AE11>  {[     equal,    percent,        minus, underscore]};
-    key <AE12>  {[dead_acute, dead_caron,        equal, plus ] };
-
-    key <AD11>  {[    uacute,      slash,  bracketleft,     braceleft ] };
-    key <AD12>  {[parenright,  parenleft, bracketright,     braceright ] };
-
-    key <AC10>  {[     uring,   quotedbl,    semicolon,     colon ] };
-    key <AC11>  {[   section,     exclam,   apostrophe,     quotedbl ] };
-
-    key <AB08>  {[     comma,   question,         less,     comma ] };
-    key <AB09>  {[    period,      colon,      greater,     period ] };
-    key <AB10>  {[     minus, underscore,         slash,    question ] };
-};
-
-partial alphanumeric_keys
-xkb_symbols "winkeys-qwerty" {
-
-    include "cz(winkeys)"
-
-    name[Group1]= "Czech (QWERTY, Windows)";
-
-    key <AD06>  {[         y,          Y,     NoSymbol,         NoSymbol ] };
-    key <AB01>  {[         z,          Z,       degree,         NoSymbol ] };
 };
 
 
