@@ -241,7 +241,7 @@ match group names to registry:
   needs: ['container-prep']
   stage: test
   script:
-    - "./tests/genLists4Comparison.sh"
+    - "./tests/verify-group-names.sh"
 
 
 # libxkbcommon's xkbcli list prints out YAML-like format, if yq cannot parse it, our
