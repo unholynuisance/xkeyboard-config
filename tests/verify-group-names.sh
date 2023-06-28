@@ -14,21 +14,18 @@ ROOT=$(realpath "$scriptdir/..")
 cd "$tmpdir" || exit 1
 
 # temporary files
-registry_names=reg_names.lst
-group_names=grp_names.lst
-registry_names_base=${registry_names}.base
-registry_names_extras=${registry_names}.extras
+registry_names=registry_names.lst
+group_names=group_names.lst
 
 # Convert base.xml and base.extras.xml to a list of `layout(variant):"blah blah"` lines
-xsltproc "$ROOT"/tests/reg2ll.xsl "$ROOT"/rules/base.xml        > $registry_names_base
-xsltproc "$ROOT"/tests/reg2ll.xsl "$ROOT"/rules/base.extras.xml | grep -v sun_type > $registry_names_extras
+xsltproc "$ROOT"/tests/reg2ll.xsl "$ROOT"/rules/base.xml "$ROOT"/rules/base.extras.xml | grep -v sun_type > $registry_names
 
 # Filter out empty lines and the custom layout
-cat $registry_names_base $registry_names_extras | \
+grep -v -e '^$' \
+        -e '^custom:' $registry_names | \
   sort | \
-  uniq | \
-  grep -v -e '^$' \
-          -e '^custom:' > $registry_names
+  uniq > $registry_names.tmp
+mv $registry_names.tmp $registry_names
 
 # Now search each symbols file for xkb_symbols "variant" and the description of
 # name[Group1]="blah blah" and print out a line `filename(variant):"blah blah"`.
