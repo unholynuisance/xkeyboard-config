@@ -56,6 +56,8 @@ if xsltproc.found()
                           install:true,
                           install_dir: dir_man7)
 
+  verify_group_names = find_program('tests/verify-group-names.sh')
+  test('verify group names', verify_group_names)
 endif
 
 # pytest suite
