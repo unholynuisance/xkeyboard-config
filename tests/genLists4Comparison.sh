@@ -4,7 +4,7 @@
 # that actually exist in the symbol files.  Some differences are okay -- like extra
 # quotes or an extra escaping character -- but apart from that they should match.
 
-cd $(dirname $0)
+cd "$(dirname "$0")" || exit 1
 ROOT=".."
 
 # temporary files
@@ -13,8 +13,8 @@ group_names=grp_names.lst
 registry_names_base=${registry_names}.base
 registry_names_extras=${registry_names}.extras
 
-xsltproc reg2ll.xsl $ROOT/rules/base.xml        > $registry_names_base
-xsltproc reg2ll.xsl $ROOT/rules/base.extras.xml | grep -v sun_type > $registry_names_extras
+xsltproc reg2ll.xsl "$ROOT"/rules/base.xml        > $registry_names_base
+xsltproc reg2ll.xsl "$ROOT"/rules/base.extras.xml | grep -v sun_type > $registry_names_extras
 
 cat $registry_names_base $registry_names_extras | \
   sort | \
@@ -23,9 +23,9 @@ cat $registry_names_base $registry_names_extras | \
           -e '^custom:' > $registry_names
 rm -f $registry_names_base $registry_names_extras
 
-for sym in $ROOT/symbols/*; do
-  if [ -f $sym ]; then
-    id="`basename $sym`"
+for sym in "$ROOT"/symbols/*; do
+  if [ -f "$sym" ]; then
+    id="$(basename "$sym")"
     export id
     gawk 'BEGIN{
   FS = "\"";
@@ -65,7 +65,7 @@ for sym in $ROOT/symbols/*; do
       printf "%s(%s):\"%s\"\n", id, variant, name;
     }
   }
-}' $sym
+}' "$sym"
   fi
 done | sort | uniq > $group_names
 
