@@ -4,8 +4,14 @@
 # that actually exist in the symbol files.  Some differences are okay -- like extra
 # quotes or an extra escaping character -- but apart from that they should match.
 
-cd "$(dirname "$0")" || exit 1
-ROOT=".."
+set -e
+
+pwd="$PWD"
+tmpdir=$(mktemp -d xkeyboard-config.XXXX)
+scriptdir=$(dirname "$0")
+ROOT=$(realpath "$scriptdir/..")
+
+cd "$tmpdir" || exit 1
 
 # temporary files
 registry_names=reg_names.lst
@@ -13,15 +19,14 @@ group_names=grp_names.lst
 registry_names_base=${registry_names}.base
 registry_names_extras=${registry_names}.extras
 
-xsltproc reg2ll.xsl "$ROOT"/rules/base.xml        > $registry_names_base
-xsltproc reg2ll.xsl "$ROOT"/rules/base.extras.xml | grep -v sun_type > $registry_names_extras
+xsltproc "$ROOT"/tests/reg2ll.xsl "$ROOT"/rules/base.xml        > $registry_names_base
+xsltproc "$ROOT"/tests/reg2ll.xsl "$ROOT"/rules/base.extras.xml | grep -v sun_type > $registry_names_extras
 
 cat $registry_names_base $registry_names_extras | \
   sort | \
   uniq | \
   grep -v -e '^$' \
           -e '^custom:' > $registry_names
-rm -f $registry_names_base $registry_names_extras
 
 for sym in "$ROOT"/symbols/*; do
   if [ -f "$sym" ]; then
@@ -76,6 +81,6 @@ if [ $rc != 0 ] ; then
   echo "Legend: '-' is for rules/base*.xml, '+' is for symbols/*"
 fi
 
-rm -f $registry_names $group_names
+cd "$pwd" || exit 1
 
 exit $rc
