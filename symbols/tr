@@ -58,23 +58,6 @@ xkb_symbols "basic" {
 };
 
 
-// Turkish Q layout (swap i and ı)
-// Ali Riza KESKIN <parduscix@yandex.ru>, 2021
-// https://gitlab.com/sulincix
-partial
-xkb_symbols "us" {
-
-    include "tr(basic)"
-
-    name[Group1]="Turkish (Turkey, Latin Q, Swap i and ı)";
-    key <AC11>  { type[group1] = "FOUR_LEVEL_ALPHABETIC",
-                  [          i,         I,     paragraph,    VoidSymbol ] };
-    key <AD08>  { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC",
-                  [  idotless,  Iabovedot,    apostrophe,    dead_caron ] };
-    
-};
-
-
 // Turkish F layout
 partial
 xkb_symbols "f" {
@@ -369,6 +352,22 @@ partial alphanumeric_keys
 	xkb_symbols "sun_type6" {
 	include "sun_vndr/tr(sun_type6)"
 };
+
+// The basic Turkish layout with i and ı swapped.
+// Ali Riza KESKIN <parduscix@yandex.ru>, 2021
+partial
+xkb_symbols "us" {
+
+    include "tr(basic)"
+
+    name[Group1]="Turkish (i and ı swapped)";
+
+    key <AC11>  { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC",
+                  [          i,         I,     paragraph,    VoidSymbol ] };
+    key <AD08>  { type[group1] = "FOUR_LEVEL_SEMIALPHABETIC",
+                  [  idotless,  Iabovedot,    apostrophe,    dead_caron ] };
+};
+
 
 // Layout for Old Turkic (Orkhon script).
 // Originally by Emir SARI <bitigchi@me.com>

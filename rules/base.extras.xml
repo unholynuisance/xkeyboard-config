@@ -1525,14 +1525,8 @@
         </variant>
         <variant>
           <configItem popularity="exotic">
-            <name>otk</name>
-            <description>Old Turkic</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem popularity="exotic">
             <name>us</name>
-            <description>Turkish (Turkey, Latin Q, Swap i and ı)</description>
+            <description>Turkish (i and ı swapped)</description>
           </configItem>
         </variant>
         <variant>
