@@ -377,57 +377,57 @@ xkb_symbols "otk" {
 
     name[Group1]="Old Turkic";
 
-    key <TLDE> { [ quotedbl, guillemotleft, guillemotright, NoSymbol       ] };
-    key <AE01> { [    U10C48,  NoSymbol,     1,      exclam ] };
-    key <AE02> { [    U10C05,  NoSymbol,     2,    quotedbl ] };
-    key <AE03> { [    U10C02,  NoSymbol,     3, asciicircum ] };
-    key <AE04> { [    U10C47,  NoSymbol,     4,      dollar ] };
-    key <AE05> { [    U10C21,  NoSymbol,     5,     percent ] };
-    key <AE06> { [    U10C26,    U10C27,     6,   ampersand ] };
-    key <AE07> { [    U10C36,    U10C37,     7,  apostrophe ] };
-    key <AE08> { [    U10C38,    U10C39,     8,   parenleft ] };
-    key <AE09> { [    U10C1C,    U10C1D,     9,  parenright ] };
-    key <AE10> { [    U10C31,     U2E2E,     0,       equal ] };
-    key <AE11> { [ backslash,     colon, slash,    question ] };
-    key <AE12> { [     comma, semicolon, minus,  underscore ] };
+    key <TLDE>	{[quotedbl, guillemotleft, guillemotright, any ]};
+    key <AE01>	{[ U10C48,       any,      1,      exclam ]};
+    key <AE02>	{[ U10C05,       any,      2,    quotedbl ]};
+    key <AE03>	{[ U10C02,       any,      3, asciicircum ]};
+    key <AE04>	{[ U10C47,       any,      4,      dollar ]};
+    key <AE05>	{[ U10C21,       any,      5,     percent ]};
+    key <AE06>	{[ U10C26,    U10C27,      6,   ampersand ]};
+    key <AE07>	{[ U10C36,    U10C37,      7,  apostrophe ]};
+    key <AE08>	{[ U10C38,    U10C39,      8,   parenleft ]};
+    key <AE09>	{[ U10C1C,    U10C1D,      9,  parenright ]};
+    key <AE10>	{[ U10C31,     U2E2E,      0,       equal ]};
+    key <AE11>	{[backslash,   colon,  slash,    question ]};
+    key <AE12>	{[  comma, semicolon,  minus,  underscore ]};
 
-    key <AD01> { [ U10C13, NoSymbol,           at, NoSymbol ] };
-    key <AD02> { [ U10C11,   U10C12,   numbersign, NoSymbol ] };
-    key <AD03> { [ U10C0F,   U10C10,       dollar, NoSymbol ] };
-    key <AD04> { [ U10C0D,   U10C0E,    braceleft, NoSymbol ] };
-    key <AD05> { [ U10C23, NoSymbol,   braceright, NoSymbol ] };
-    key <AD06> { [ U10C14,   U10C15,  bracketleft, NoSymbol ] };
-    key <AD07> { [ U10C43,   U10C44, bracketright, NoSymbol ] };
-    key <AD08> { [ U10C3A,   U10C3B,    parenleft, NoSymbol ] };
-    key <AD09> { [ U10C3C, NoSymbol,   parenright, NoSymbol ] };
-    key <AD10> { [ U10C2F,   U10C30,    backslash, NoSymbol ] };
-    key <AD11> { [ U10C32,   U10C33,          bar, NoSymbol ] };
-    key <AD12> { [ U10C2A,   U10C2B,   asciitilde, NoSymbol ] };
+    key <AD01>	{[ U10C13,       any,           at,   any ]};
+    key <AD02>	{[ U10C11,    U10C12,   numbersign,   any ]};
+    key <AD03>	{[ U10C0F,    U10C10,       dollar,   any ]};
+    key <AD04>	{[ U10C0D,    U10C0E,    braceleft,   any ]};
+    key <AD05>	{[ U10C23,       any,   braceright,   any ]};
+    key <AD06>	{[ U10C14,    U10C15,  bracketleft,   any ]};
+    key <AD07>	{[ U10C43,    U10C44, bracketright,   any ]};
+    key <AD08>	{[ U10C3A,    U10C3B,    parenleft,   any ]};
+    key <AD09>	{[ U10C3C,       any,   parenright,   any ]};
+    key <AD10>	{[ U10C2F,    U10C30,    backslash,   any ]};
+    key <AD11>	{[ U10C32,    U10C33,          bar,   any ]};
+    key <AD12>	{[ U10C2A,    U10C2B,   asciitilde,   any ]};
 
-    key <AC01> { [ U10C00,   U10C01,   NoSymbol, NoSymbol ] };
-    key <AC02> { [ U10C07,   U10C08,   NoSymbol, NoSymbol ] };
-    key <AC03> { [ U10C06, NoSymbol,   EuroSign, NoSymbol ] };
-    key <AC04> { [ U10C03,   U10C04, dead_breve, NoSymbol ] };
-    key <AC05> { [ U10C24,   U10C25, dead_acute, NoSymbol ] };
-    key <AC06> { [ U10C45,   U10C46,      U20BA, NoSymbol ] };
-    key <AC07> { [ U10C34,   U10C35,   NoSymbol, NoSymbol ] };
-    key <AC08> { [ U10C22, NoSymbol,   NoSymbol, NoSymbol ] };
-    key <AC09> { [ U10C1E,   U10C1F,   sterling, NoSymbol ] };
-    key <AC10> { [ U10C16,   U10C17,        yen, NoSymbol ] };
-    key <AC11> { [ U10C41,   U10C42,     endash, NoSymbol ] };
-    key <BKSL> { [ U10C3F,   U10C40,     emdash, NoSymbol ] };
+    key <AC01>	{[ U10C00,    U10C01,          any,   any ]};
+    key <AC02>	{[ U10C07,    U10C08,          any,   any ]};
+    key <AC03>	{[ U10C06,       any,     EuroSign,   any ]};
+    key <AC04>	{[ U10C03,    U10C04,   dead_breve,   any ]};
+    key <AC05>	{[ U10C24,    U10C25,   dead_acute,   any ]};
+    key <AC06>	{[ U10C45,    U10C46,        U20BA,   any ]};
+    key <AC07>	{[ U10C34,    U10C35,          any,   any ]};
+    key <AC08>	{[ U10C22,       any,          any,   any ]};
+    key <AC09>	{[ U10C1E,    U10C1F,     sterling,   any ]};
+    key <AC10>	{[ U10C16,    U10C17,          yen,   any ]};
+    key <AC11>	{[ U10C41,    U10C42,       endash,   any ]};
+    key <BKSL>	{[ U10C3F,    U10C40,       emdash,   any ]};
 
-    key <LSGT> { [    less,        greater,           plus, NoSymbol       ] };
-    key <AB01> { [   U10C28,        U10C29,       NoSymbol, less           ] };
-    key <AB02> { [   U10C2D,        U10C2E,         U10C2C, greater        ] };
-    key <AB03> { [   U10C3D,      NoSymbol,      copyright, guillemotleft  ] };
-    key <AB04> { [   U10C09,        U10C0A,     registered, guillemotright ] };
-    key <AB05> { [   U10C0B,        U10C0C,       NoSymbol, NoSymbol       ] };
-    key <AB06> { [   U10C1A,        U10C1B,       NoSymbol, NoSymbol       ] };
-    key <AB07> { [   U10C3E,      NoSymbol,       NoSymbol, NoSymbol       ] };
-    key <AB08> { [   U10C20,      NoSymbol,       multiply, NoSymbol       ] };
-    key <AB09> { [   U10C18,        U10C19,       division, NoSymbol       ] };
-    key <AB10> { [    U2E31,        period,          minus, NoSymbol       ] };
+    key <LSGT>	{[   less,   greater,         plus,   any ]};
+    key <AB01>	{[ U10C28,    U10C29,          any,   less           ]};
+    key <AB02>	{[ U10C2D,    U10C2E,       U10C2C,   greater        ]};
+    key <AB03>	{[ U10C3D,       any,    copyright,   guillemotleft  ]};
+    key <AB04>	{[ U10C09,    U10C0A,   registered,   guillemotright ]};
+    key <AB05>	{[ U10C0B,    U10C0C,          any,   any ]};
+    key <AB06>	{[ U10C1A,    U10C1B,          any,   any ]};
+    key <AB07>	{[ U10C3E,       any,          any,   any ]};
+    key <AB08>	{[ U10C20,       any,     multiply,   any ]};
+    key <AB09>	{[ U10C18,    U10C19,     division,   any ]};
+    key <AB10>	{[  U2E31,    period,        minus,   any ]};
 
     include "kpdl(comma)"
     include "level3(ralt_switch)"
@@ -440,42 +440,42 @@ xkb_symbols "otkf" {
 
     name[Group1]="Old Turkic (F)";
 
-    key <AD01> { [ U10C03,   U10C04, dead_breve, NoSymbol ] };
-    key <AD02> { [ U10C24,   U10C25, dead_acute, NoSymbol ] };
-    key <AD03> { [ U10C32,   U10C33,        bar, NoSymbol ] };
-    key <AD04> { [ U10C3A,   U10C3B,  parenleft, NoSymbol ] };
-    key <AD05> { [ U10C3C, NoSymbol, parenright, NoSymbol ] };
-    key <AD06> { [ U10C06, NoSymbol,   EuroSign, NoSymbol ] };
-    key <AD07> { [ U10C0D,   U10C0E,  braceleft, NoSymbol ] };
-    key <AD08> { [ U10C1A,   U10C1B,   NoSymbol, NoSymbol ] };
-    key <AD09> { [ U10C45,   U10C46,      U20BA, NoSymbol ] };
-    key <AD10> { [ U10C2F,   U10C30,  backslash, NoSymbol ] };
-    key <AD11> { [ U10C13, NoSymbol,         at, NoSymbol ] };
-    key <AD12> { [ U10C11,   U10C12, numbersign, NoSymbol ] };
+    key <AD01>	{[ U10C03,  U10C04,   dead_breve,  none ]};
+    key <AD02>	{[ U10C24,  U10C25,   dead_acute,  none ]};
+    key <AD03>	{[ U10C32,  U10C33,          bar,  none ]};
+    key <AD04>	{[ U10C3A,  U10C3B,    parenleft,  none ]};
+    key <AD05>	{[ U10C3C,    none,   parenright,  none ]};
+    key <AD06>	{[ U10C06,    none,     EuroSign,  none ]};
+    key <AD07>	{[ U10C0D,  U10C0E,    braceleft,  none ]};
+    key <AD08>	{[ U10C1A,  U10C1B,         none,  none ]};
+    key <AD09>	{[ U10C45,  U10C46,        U20BA,  none ]};
+    key <AD10>	{[ U10C2F,  U10C30,    backslash,  none ]};
+    key <AD11>	{[ U10C13,    none,           at,  none ]};
+    key <AD12>	{[ U10C11,  U10C12,   numbersign,  none ]};
 
-    key <AC01> { [ U10C43,   U10C44, bracketright, NoSymbol ] };
-    key <AC02> { [ U10C41,   U10C42,       endash, NoSymbol ] };
-    key <AC03> { [ U10C0F,   U10C10,       dollar, NoSymbol ] };
-    key <AC04> { [ U10C00,   U10C01,     NoSymbol, NoSymbol ] };
-    key <AC05> { [ U10C2A,   U10C2B,   asciitilde, NoSymbol ] };
-    key <AC06> { [ U10C23, NoSymbol,   braceright, NoSymbol ] };
-    key <AC07> { [ U10C22, NoSymbol,     NoSymbol, NoSymbol ] };
-    key <AC08> { [ U10C3E, NoSymbol,     NoSymbol, NoSymbol ] };
-    key <AC09> { [ U10C1E,   U10C1F,     sterling, NoSymbol ] };
-    key <AC10> { [ U10C14,   U10C15,  bracketleft, NoSymbol ] };
-    key <AC11> { [ U10C16,   U10C17,          yen, NoSymbol ] };
-    key <BKSL> { [ U10C2D,   U10C2E,       U10C2C, NoSymbol ] };
+    key <AC01>	{[ U10C43,  U10C44, bracketright,  none ]};
+    key <AC02>	{[ U10C41,  U10C42,       endash,  none ]};
+    key <AC03>	{[ U10C0F,  U10C10,       dollar,  none ]};
+    key <AC04>	{[ U10C00,  U10C01,         none,  none ]};
+    key <AC05>	{[ U10C2A,  U10C2B,   asciitilde,  none ]};
+    key <AC06>	{[ U10C23,    none,   braceright,  none ]};
+    key <AC07>	{[ U10C22,    none,         none,  none ]};
+    key <AC08>	{[ U10C3E,    none,         none,  none ]};
+    key <AC09>	{[ U10C1E,  U10C1F,     sterling,  none ]};
+    key <AC10>	{[ U10C14,  U10C15,  bracketleft,  none ]};
+    key <AC11>	{[ U10C16,  U10C17,          yen,  none ]};
+    key <BKSL>	{[ U10C2D,  U10C2E,       U10C2C,  none ]};
 
-    key <AB01> { [   U10C34,        U10C35,       NoSymbol, less           ] };
-    key <AB02> { [   U10C20,      NoSymbol,       multiply, greater        ] };
-    key <AB03> { [   U10C09,        U10C0A,     registered, guillemotleft  ] };
-    key <AB04> { [   U10C3D,      NoSymbol,      copyright, guillemotright ] };
-    key <AB05> { [   U10C18,        U10C19,       division, NoSymbol       ] };
-    key <AB06> { [   U10C28,        U10C29,       NoSymbol, NoSymbol       ] };
-    key <AB07> { [   U10C07,        U10C08,       NoSymbol, NoSymbol       ] };
-    key <AB08> { [   U10C0B,        U10C0C,       NoSymbol, NoSymbol       ] };
-    key <AB09> { [    U2E31,        period,          minus, NoSymbol       ] };
-    key <AB10> { [   U10C3F,        U10C40,         emdash, NoSymbol       ] };
+    key <AB01>	{[ U10C34,  U10C35,         none,  less           ]};
+    key <AB02>	{[ U10C20,    none,     multiply,  greater        ]};
+    key <AB03>	{[ U10C09,  U10C0A,   registered,  guillemotleft  ]};
+    key <AB04>	{[ U10C3D,    none,    copyright,  guillemotright ]};
+    key <AB05>	{[ U10C18,  U10C19,     division,  none ]};
+    key <AB06>	{[ U10C28,  U10C29,         none,  none ]};
+    key <AB07>	{[ U10C07,  U10C08,         none,  none ]};
+    key <AB08>	{[ U10C0B,  U10C0C,         none,  none ]};
+    key <AB09>	{[  U2E31,  period,        minus,  none ]};
+    key <AB10>	{[ U10C3F,  U10C40,       emdash,  none ]};
 };
 
 
@@ -485,58 +485,58 @@ xkb_symbols "ot" {
 
     name[Group1]= "Ottoman (Q)";
 
-    key <TLDE> { [ quotedbl,	division,	VoidSymbol		] };
-    key <AE01> { [ U06f1,	exclam,		grave			] };
-    key <AE02> { [ U06f2,	U066c,		at			] };
-    key <AE03> { [ U06f3,	U066b,		numbersign		] };
-    key <AE04> { [ U06f4,	Ufdfc,		dollar			] };
-    key <AE05> { [ U06f5,	U066a,		percent			] };
-    key <AE06> { [ U06f6,	multiply,	asciicircum		] };
-    key <AE07> { [ U06f7,	Arabic_comma,	ampersand		] };
-    key <AE08> { [ U06f8,	asterisk,	enfilledcircbullet	] };
-    key <AE09> { [ U06f9,	parenright,	U200e			] }; // LRM
-    key <AE10> { [ U06f0,	parenleft,	U200f			] }; // RLM
-    key <AE11> { [ minus,	Arabic_tatweel,	VoidSymbol		] };
-    key <AE12> { [ equal,	plus,		VoidSymbol		] };
+    key <TLDE>	{[ quotedbl,	division,	none			]};
+    key <AE01>	{[ U06f1,	exclam,		grave			]};
+    key <AE02>	{[ U06f2,	U066c,		at			]};
+    key <AE03>	{[ U06f3,	U066b,		numbersign		]};
+    key <AE04>	{[ U06f4,	Ufdfc,		dollar			]};
+    key <AE05>	{[ U06f5,	U066a,		percent			]};
+    key <AE06>	{[ U06f6,	multiply,	asciicircum		]};
+    key <AE07>	{[ U06f7,	Arabic_comma,	ampersand		]};
+    key <AE08>	{[ U06f8,	asterisk,	enfilledcircbullet	]};
+    key <AE09>	{[ U06f9,	parenright,	U200e			]}; // LRM
+    key <AE10>	{[ U06f0,	parenleft,	U200f			]}; // RLM
+    key <AE11>	{[ minus,	Arabic_tatweel,	none			]};
+    key <AE12>	{[ equal,	plus,		none			]};
 
-    key <AD01> { [ Arabic_qaf,		U0670,			VoidSymbol	] };
-    key <AD02> { [ Arabic_thal,		U0656,			VoidSymbol	] };
-    key <AD03> { [ Arabic_heh,		Arabic_fatha,		VoidSymbol	] };
-    key <AD04> { [ Arabic_ra,		VoidSymbol,		VoidSymbol	] };
-    key <AD05> { [ Arabic_teh,		Arabic_tehmarbuta,	VoidSymbol	] };
-    key <AD06> { [ U06CC,		Arabic_yeh,		VoidSymbol	] };
-    key <AD07> { [ Arabic_sad,		Arabic_damma,		VoidSymbol	] };
-    key <AD08> { [ Arabic_ain,		VoidSymbol,		VoidSymbol	] };
-    key <AD09> { [ Arabic_tah,		VoidSymbol,		VoidSymbol	] };
-    key <AD10> { [ Arabic_peh,		VoidSymbol,		VoidSymbol	] };
-    key <AD11> { [ Arabic_ghain,	VoidSymbol,		VoidSymbol	] };
-    key <AD12> { [ Arabic_hah,		VoidSymbol,		VoidSymbol	] };
+    key <AD01>	{[ Arabic_qaf,		U0670,			none	]};
+    key <AD02>	{[ Arabic_thal,		U0656,			none	]};
+    key <AD03>	{[ Arabic_heh,		Arabic_fatha,		none	]};
+    key <AD04>	{[ Arabic_ra,		none,			none	]};
+    key <AD05>	{[ Arabic_teh,		Arabic_tehmarbuta,	none	]};
+    key <AD06>	{[ U06CC,		Arabic_yeh,		none	]};
+    key <AD07>	{[ Arabic_sad,		Arabic_damma,		none	]};
+    key <AD08>	{[ Arabic_ain,		none,			none	]};
+    key <AD09>	{[ Arabic_tah,		none,			none	]};
+    key <AD10>	{[ Arabic_peh,		none,			none	]};
+    key <AD11>	{[ Arabic_ghain,	none,			none	]};
+    key <AD12>	{[ Arabic_hah,		none,			none	]};
 
-    key <AC01> { [ Arabic_alef,		VoidSymbol,		VoidSymbol	] };
-    key <AC02> { [ Arabic_seen,		Arabic_sukun,		VoidSymbol	] };
-    key <AC03> { [ Arabic_dal,		Arabic_dammatan,	VoidSymbol	] };
-    key <AC04> { [ Arabic_feh,		Arabic_fathatan,	VoidSymbol	] };
-    key <AC05> { [ Arabic_gaf,		VoidSymbol,		VoidSymbol	] };
-    key <AC06> { [ Arabic_heh,		Arabic_hamzaonyeh,	VoidSymbol	] };
-    key <AC07> { [ Arabic_jeh,		VoidSymbol,		VoidSymbol	] };
-    key <AC08> { [ Arabic_keheh,	Arabic_kasratan,	VoidSymbol	] };
-    key <AC09> { [ Arabic_lam,		VoidSymbol,		VoidSymbol	] };
-    key <AC10> { [ Arabic_sheen,	Arabic_shadda,		VoidSymbol	] };
-    key <AC11> { [ Arabic_dad,		Arabic_kasra,		VoidSymbol	] };
-    key <AC12> { [ U2018,		Arabic_semicolon,	VoidSymbol	] };
+    key <AC01>	{[ Arabic_alef,		none,			none	]};
+    key <AC02>	{[ Arabic_seen,		Arabic_sukun,		none	]};
+    key <AC03>	{[ Arabic_dal,		Arabic_dammatan,	none	]};
+    key <AC04>	{[ Arabic_feh,		Arabic_fathatan,	none	]};
+    key <AC05>	{[ Arabic_gaf,		none,			none	]};
+    key <AC06>	{[ Arabic_heh,		Arabic_hamzaonyeh,	none	]};
+    key <AC07>	{[ Arabic_jeh,		none,			none	]};
+    key <AC08>	{[ Arabic_keheh,	Arabic_kasratan,	none	]};
+    key <AC09>	{[ Arabic_lam,		none,			none	]};
+    key <AC10>	{[ Arabic_sheen,	Arabic_shadda,		none	]};
+    key <AC11>	{[ Arabic_dad,		Arabic_kasra,		none	]};
+    key <AC12>	{[ U2018,		Arabic_semicolon,	none	]};
 
-    key <AB01> { [ Arabic_zain,		Arabic_zah,		VoidSymbol	] };
-    key <AB02> { [ Arabic_khah,		Arabic_hamza,		VoidSymbol	] };
-    key <AB03> { [ Arabic_jeem,		Arabic_hamzaonalef,	VoidSymbol	] };
-    key <AB04> { [ Arabic_waw,		Arabic_hamzaonwaw,	VoidSymbol	] };
-    key <AB05> { [ Arabic_beh,		Arabic_hamzaunderalef,	VoidSymbol	] };
-    key <AB06> { [ Arabic_noon,		U06AD,			VoidSymbol	] };
-    key <AB07> { [ Arabic_meem,		U0653,			VoidSymbol	] };
-    key <AB08> { [ Arabic_theh,		Arabic_maddaonalef,	VoidSymbol	] };
-    key <AB09> { [ Arabic_tcheh,	VoidSymbol,		VoidSymbol	] };
-    key <AB10> { [ period,		colon,			VoidSymbol	] };
+    key <AB01>	{[ Arabic_zain,		Arabic_zah,		none	]};
+    key <AB02>	{[ Arabic_khah,		Arabic_hamza,		none	]};
+    key <AB03>	{[ Arabic_jeem,		Arabic_hamzaonalef,	none	]};
+    key <AB04>	{[ Arabic_waw,		Arabic_hamzaonwaw,	none	]};
+    key <AB05>	{[ Arabic_beh,		Arabic_hamzaunderalef,	none	]};
+    key <AB06>	{[ Arabic_noon,		U06AD,			none	]};
+    key <AB07>	{[ Arabic_meem,		U0653,			none	]};
+    key <AB08>	{[ Arabic_theh,		Arabic_maddaonalef,	none	]};
+    key <AB09>	{[ Arabic_tcheh,	none,			none	]};
+    key <AB10>	{[ period,		colon,			none	]};
 
-    key <SPCE> { [ space,		U200C,			VoidSymbol	] }; // ZWNJ
+    key <SPCE>	{[ space,		U200C,			none	]}; // ZWNJ
 
     include "level3(ralt_switch)"
 };
@@ -548,41 +548,40 @@ xkb_symbols "otf" {
 
     name[Group1]= "Ottoman (F)";
 
-    key <AD01> { [ Arabic_feh,		Arabic_fathatan,	VoidSymbol	] };
-    key <AD02> { [ Arabic_gaf,		VoidSymbol,		VoidSymbol	] };
-    key <AD03> { [ Arabic_ghain,	Arabic_fatha,		VoidSymbol	] };
-    key <AD04> { [ Arabic_ain,		VoidSymbol,		VoidSymbol	] };
-    key <AD05> { [ Arabic_tah,		VoidSymbol,		VoidSymbol	] };
-    key <AD06> { [ Arabic_dal,		Arabic_dammatan,	VoidSymbol	] };
-    key <AD07> { [ Arabic_ra,		VoidSymbol,		VoidSymbol	] };
-    key <AD08> { [ Arabic_noon,		U06AD,			VoidSymbol	] };
-    key <AD09> { [ Arabic_heh,		Arabic_hamzaonyeh,	VoidSymbol	] };
-    key <AD10> { [ Arabic_peh,		VoidSymbol,		VoidSymbol	] };
-    key <AD11> { [ Arabic_qaf,		U0670,			VoidSymbol	] };
-    key <AD12> { [ Arabic_thal,		U0656,			VoidSymbol	] };
+    key <AD01>	{[ Arabic_feh,		Arabic_fathatan,	none	]};
+    key <AD02>	{[ Arabic_gaf,		none,			none	]};
+    key <AD03>	{[ Arabic_ghain,	Arabic_fatha,		none	]};
+    key <AD04>	{[ Arabic_ain,		none,			none	]};
+    key <AD05>	{[ Arabic_tah,		none,			none	]};
+    key <AD06>	{[ Arabic_dal,		Arabic_dammatan,	none	]};
+    key <AD07>	{[ Arabic_ra,		none,			none	]};
+    key <AD08>	{[ Arabic_noon,		U06AD,			none	]};
+    key <AD09>	{[ Arabic_heh,		Arabic_hamzaonyeh,	none	]};
+    key <AD10>	{[ Arabic_peh,		none,			none	]};
+    key <AD11>	{[ Arabic_qaf,		U0670,			none	]};
+    key <AD12>	{[ Arabic_thal,		U0656,			none	]};
 
-    key <AC01> { [ Arabic_sad,		Arabic_damma,		VoidSymbol	] };
-    key <AC02> { [ Arabic_dad,		Arabic_kasra,		VoidSymbol	] };
-    key <AC03> { [ Arabic_heh,		Arabic_fatha,		VoidSymbol	] };
-    key <AC04> { [ Arabic_alef,		VoidSymbol,		VoidSymbol	] };
-    key <AC05> { [ Arabic_hah,		VoidSymbol,		VoidSymbol	] };
-    key <AC06> { [ Arabic_teh,		Arabic_tehmarbuta,	VoidSymbol	] };
-    key <AC07> { [ Arabic_keheh,	Arabic_kasratan,	VoidSymbol	] };
-    key <AC08> { [ Arabic_meem,		U0653,			VoidSymbol	] };
-    key <AC09> { [ Arabic_lam,		VoidSymbol,		VoidSymbol	] };
-    key <AC10> { [ U06cc,		Arabic_yeh,		VoidSymbol	] };
-    key <AC11> { [ Arabic_sheen,	Arabic_shadda,		VoidSymbol	] };
-    key <AC12> { [ Arabic_khah,		Arabic_hamza,		VoidSymbol	] };
+    key <AC01>	{[ Arabic_sad,		Arabic_damma,		none	]};
+    key <AC02>	{[ Arabic_dad,		Arabic_kasra,		none	]};
+    key <AC03>	{[ Arabic_heh,		Arabic_fatha,		none	]};
+    key <AC04>	{[ Arabic_alef,		none,			none	]};
+    key <AC05>	{[ Arabic_hah,		none,			none	]};
+    key <AC06>	{[ Arabic_teh,		Arabic_tehmarbuta,	none	]};
+    key <AC07>	{[ Arabic_keheh,	Arabic_kasratan,	none	]};
+    key <AC08>	{[ Arabic_meem,		U0653,			none	]};
+    key <AC09>	{[ Arabic_lam,		none,			none	]};
+    key <AC10>	{[ U06cc,		Arabic_yeh,		none	]};
+    key <AC11>	{[ Arabic_sheen,	Arabic_shadda,		none	]};
+    key <AC12>	{[ Arabic_khah,		Arabic_hamza,		none	]};
 
-    key <AB01> { [ Arabic_jeh,		VoidSymbol,		VoidSymbol	] };
-    key <AB02> { [ Arabic_theh,		Arabic_maddaonalef,	VoidSymbol	] };
-    key <AB03> { [ Arabic_waw,		Arabic_hamzaonwaw,	VoidSymbol	] };
-    key <AB04> { [ Arabic_jeem,		Arabic_hamzaonalef,	VoidSymbol	] };
-    key <AB05> { [ Arabic_tcheh,	VoidSymbol,		VoidSymbol	] };
-    key <AB06> { [ Arabic_zain,		Arabic_zah,		VoidSymbol	] };
-    key <AB07> { [ Arabic_seen,		Arabic_sukun,		VoidSymbol	] };
-    key <AB08> { [ Arabic_beh,		Arabic_hamzaunderalef,	VoidSymbol	] };
-    key <AB09> { [ period,		colon,			VoidSymbol	] };
-    key <AB10> { [ U2018,		Arabic_semicolon,	VoidSymbol	] };
+    key <AB01>	{[ Arabic_jeh,		none,			none	]};
+    key <AB02>	{[ Arabic_theh,		Arabic_maddaonalef,	none	]};
+    key <AB03>	{[ Arabic_waw,		Arabic_hamzaonwaw,	none	]};
+    key <AB04>	{[ Arabic_jeem,		Arabic_hamzaonalef,	none	]};
+    key <AB05>	{[ Arabic_tcheh,	none,			none	]};
+    key <AB06>	{[ Arabic_zain,		Arabic_zah,		none	]};
+    key <AB07>	{[ Arabic_seen,		Arabic_sukun,		none	]};
+    key <AB08>	{[ Arabic_beh,		Arabic_hamzaunderalef,	none	]};
+    key <AB09>	{[ period,		colon,			none	]};
+    key <AB10>	{[ U2018,		Arabic_semicolon,	none	]};
 };
-
