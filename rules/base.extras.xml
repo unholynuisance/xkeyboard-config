@@ -1535,6 +1535,30 @@
             <description>Turkish (Turkey, Latin Q, Swap i and ı)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem popularity="exotic">
+            <name>otk</name>
+            <description>Old Turkic</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem popularity="exotic">
+            <name>otkf</name>
+            <description>Old Turkic (F)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem popularity="exotic">
+            <name>ot</name>
+            <description>Ottoman (Q)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem popularity="exotic">
+            <name>otf</name>
+            <description>Ottoman (F)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
