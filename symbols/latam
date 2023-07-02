@@ -162,7 +162,7 @@ xkb_symbols "colemak" {
     key <BKSL> {[ braceright, bracketright,      dead_grave, braceright ]};
 
     key <LSGT> {[       less,      greater,             bar,     U00A6 ]};
-    key <AB01> {[          z,            Z,          U0292,     U01B7 ]};
+    key <AB01> {[          z,            Z,             ezh,       EZH ]};
     key <AB02> {[          x,            X,          U2020,     U2021 ]};
     key <AB03> {[          c,            C,            cent,  copyright ]};
     key <AB04> {[          v,            V,        division,     U03B3 ]};
