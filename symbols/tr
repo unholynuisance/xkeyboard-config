@@ -362,6 +362,7 @@ xkb_symbols "olpc" {
     key <I219> { [       less,     greater,           VoidSymbol,     VoidSymbol ] };
 };
 
+
 // EXTRAS:
 
 partial alphanumeric_keys
@@ -369,8 +370,8 @@ partial alphanumeric_keys
 	include "sun_vndr/tr(sun_type6)"
 };
 
-// Old Turkic Experimental Keyboard Layout
-// Created by Emir SARI <bitigchi@me.com>
+// Layout for Old Turkic (Orkhon script).
+// Originally by Emir SARI <bitigchi@me.com>
 partial alphanumeric_keys
 xkb_symbols "otk" {
 
@@ -432,25 +433,12 @@ xkb_symbols "otk" {
     include "level3(ralt_switch)"
 };
 
-// Old Turkic Experimental Keyboard Layout F layout
 partial alphanumeric_keys
 xkb_symbols "otkf" {
 
-    name[Group1]="Old Turkic (F)";
+    include "tr(otk)"
 
-    key <TLDE> { [ quotedbl, guillemotleft, guillemotright, NoSymbol       ] };
-    key <AE01> { [    U10C48,  NoSymbol,     1,      exclam ] };
-    key <AE02> { [    U10C05,  NoSymbol,     2,    quotedbl ] };
-    key <AE03> { [    U10C02,  NoSymbol,     3, asciicircum ] };
-    key <AE04> { [    U10C47,  NoSymbol,     4,      dollar ] };
-    key <AE05> { [    U10C21,  NoSymbol,     5,     percent ] };
-    key <AE06> { [    U10C26,    U10C27,     6,   ampersand ] };
-    key <AE07> { [    U10C36,    U10C37,     7,  apostrophe ] };
-    key <AE08> { [    U10C38,    U10C39,     8,   parenleft ] };
-    key <AE09> { [    U10C1C,    U10C1D,     9,  parenright ] };
-    key <AE10> { [    U10C31,     U2E2E,     0,       equal ] };
-    key <AE11> { [ backslash,     colon, slash,    question ] };
-    key <AE12> { [     comma, semicolon, minus,  underscore ] };
+    name[Group1]="Old Turkic (F)";
 
     key <AD01> { [ U10C03,   U10C04, dead_breve, NoSymbol ] };
     key <AD02> { [ U10C24,   U10C25, dead_acute, NoSymbol ] };
@@ -478,7 +466,6 @@ xkb_symbols "otkf" {
     key <AC11> { [ U10C16,   U10C17,          yen, NoSymbol ] };
     key <BKSL> { [ U10C2D,   U10C2E,       U10C2C, NoSymbol ] };
 
-    key <LSGT> { [     less,       greater,           plus, NoSymbol       ] };
     key <AB01> { [   U10C34,        U10C35,       NoSymbol, less           ] };
     key <AB02> { [   U10C20,      NoSymbol,       multiply, greater        ] };
     key <AB03> { [   U10C09,        U10C0A,     registered, guillemotleft  ] };
@@ -489,40 +476,35 @@ xkb_symbols "otkf" {
     key <AB08> { [   U10C0B,        U10C0C,       NoSymbol, NoSymbol       ] };
     key <AB09> { [    U2E31,        period,          minus, NoSymbol       ] };
     key <AB10> { [   U10C3F,        U10C40,         emdash, NoSymbol       ] };
-
-    include "kpdl(comma)"
-    include "level3(ralt_switch)"
 };
 
-// Ottoman turkish layout
+
+// Layout for Ottoman Turkish (Arabic script).
 partial alphanumeric_keys
 xkb_symbols "ot" {
+
     name[Group1]= "Ottoman (Q)";
 
+    key <TLDE> { [ quotedbl,	division,	VoidSymbol		] };
+    key <AE01> { [ U06f1,	exclam,		grave			] };
+    key <AE02> { [ U06f2,	U066c,		at			] };
+    key <AE03> { [ U06f3,	U066b,		numbersign		] };
+    key <AE04> { [ U06f4,	Ufdfc,		dollar			] };
+    key <AE05> { [ U06f5,	U066a,		percent			] };
+    key <AE06> { [ U06f6,	multiply,	asciicircum		] };
+    key <AE07> { [ U06f7,	Arabic_comma,	ampersand		] };
+    key <AE08> { [ U06f8,	asterisk,	enfilledcircbullet	] };
+    key <AE09> { [ U06f9,	parenright,	U200e			] }; // LRM
+    key <AE10> { [ U06f0,	parenleft,	U200f			] }; // RLM
+    key <AE11> { [ minus,	Arabic_tatweel,	VoidSymbol		] };
+    key <AE12> { [ equal,	plus,		VoidSymbol		] };
 
-    key <AE01> { [ 0x10006f1,	exclam,		grave			] };
-    key <AE02> { [ 0x10006f2,	0x100066c,	at			] };
-    key <AE03> { [ 0x10006f3,	0x100066b,	numbersign		] };
-    key <AE04> { [ 0x10006f4,	0x100fdfc,	dollar			] };
-    key <AE05> { [ 0x10006f5,	0x100066a,	percent			] };
-    key <AE06> { [ 0x10006f6,	multiply,	asciicircum		] };
-    key <AE07> { [ 0x10006f7,	Arabic_comma,	ampersand		] };
-    key <AE08> { [ 0x10006f8,	asterisk,	enfilledcircbullet	] };
-    key <AE09> { [ 0x10006f9,	parenright,	0x100200e		] };
-    key <AE10> { [ 0x10006f0,	parenleft,	0x100200f		] };
-
-
-    key <TLDE> { [ quotedbl,    	division,         	VoidSymbol      ] };
-    key <AE11> { [ minus,		Arabic_tatweel,		VoidSymbol	] };
-    key <AE12> { [ equal,		plus,			VoidSymbol	] };
-    key <SPCE> { [ space,		0x100200c,		VoidSymbol	] };
-
-    key <AD01> { [ Arabic_qaf,		0x1000670,		VoidSymbol	] };
-    key <AD02> { [ Arabic_thal,		0x1000656,		VoidSymbol	] };
+    key <AD01> { [ Arabic_qaf,		U0670,			VoidSymbol	] };
+    key <AD02> { [ Arabic_thal,		U0656,			VoidSymbol	] };
     key <AD03> { [ Arabic_heh,		Arabic_fatha,		VoidSymbol	] };
     key <AD04> { [ Arabic_ra,		VoidSymbol,		VoidSymbol	] };
     key <AD05> { [ Arabic_teh,		Arabic_tehmarbuta,	VoidSymbol	] };
-    key <AD06> { [ 0x10006cc,		Arabic_yeh,		VoidSymbol 	] };
+    key <AD06> { [ U06CC,		Arabic_yeh,		VoidSymbol	] };
     key <AD07> { [ Arabic_sad,		Arabic_damma,		VoidSymbol	] };
     key <AD08> { [ Arabic_ain,		VoidSymbol,		VoidSymbol	] };
     key <AD09> { [ Arabic_tah,		VoidSymbol,		VoidSymbol	] };
@@ -549,36 +531,22 @@ xkb_symbols "ot" {
     key <AB04> { [ Arabic_waw,		Arabic_hamzaonwaw,	VoidSymbol	] };
     key <AB05> { [ Arabic_beh,		Arabic_hamzaunderalef,	VoidSymbol	] };
     key <AB06> { [ Arabic_noon,		U06AD,			VoidSymbol	] };
-    key <AB07> { [ Arabic_meem,		0x1000653,		VoidSymbol	] };
+    key <AB07> { [ Arabic_meem,		U0653,			VoidSymbol	] };
     key <AB08> { [ Arabic_theh,		Arabic_maddaonalef,	VoidSymbol	] };
     key <AB09> { [ Arabic_tcheh,	VoidSymbol,		VoidSymbol	] };
-    key <AB10> { [ period,		colon,  		VoidSymbol	] };
+    key <AB10> { [ period,		colon,			VoidSymbol	] };
+
+    key <SPCE> { [ space,		U200C,			VoidSymbol	] }; // ZWNJ
 
     include "level3(ralt_switch)"
 };
 
-// Ottoman turkish F layout
 partial alphanumeric_keys
 xkb_symbols "otf" {
+
+    include "tr(ot)"
+
     name[Group1]= "Ottoman (F)";
-
-
-    key <AE01> { [ 0x10006f1,	exclam,		grave			] };
-    key <AE02> { [ 0x10006f2,	0x100066c,	at			] };
-    key <AE03> { [ 0x10006f3,	0x100066b,	numbersign		] };
-    key <AE04> { [ 0x10006f4,	0x100fdfc,	dollar			] };
-    key <AE05> { [ 0x10006f5,	0x100066a,	percent			] };
-    key <AE06> { [ 0x10006f6,	multiply,	asciicircum		] };
-    key <AE07> { [ 0x10006f7,	Arabic_comma,	ampersand		] };
-    key <AE08> { [ 0x10006f8,	asterisk,	enfilledcircbullet	] };
-    key <AE09> { [ 0x10006f9,	parenright,	0x100200e		] };
-    key <AE10> { [ 0x10006f0,	parenleft,	0x100200f		] };
-
-
-    key <TLDE> { [ quotedbl,    	division,         	VoidSymbol      ] };
-    key <AE11> { [ minus,		Arabic_tatweel,		VoidSymbol	] };
-    key <AE12> { [ equal,		plus,			VoidSymbol	] };
-    key <SPCE> { [ space,		0x100200c,		VoidSymbol	] };
 
     key <AD01> { [ Arabic_feh,		Arabic_fathatan,	VoidSymbol	] };
     key <AD02> { [ Arabic_gaf,		VoidSymbol,		VoidSymbol	] };
@@ -590,8 +558,8 @@ xkb_symbols "otf" {
     key <AD08> { [ Arabic_noon,		U06AD,			VoidSymbol	] };
     key <AD09> { [ Arabic_heh,		Arabic_hamzaonyeh,	VoidSymbol	] };
     key <AD10> { [ Arabic_peh,		VoidSymbol,		VoidSymbol	] };
-    key <AD11> { [ Arabic_qaf,		0x1000670,		VoidSymbol	] };
-    key <AD12> { [ Arabic_thal,		0x1000656,		VoidSymbol	] };
+    key <AD11> { [ Arabic_qaf,		U0670,			VoidSymbol	] };
+    key <AD12> { [ Arabic_thal,		U0656,			VoidSymbol	] };
 
     key <AC01> { [ Arabic_sad,		Arabic_damma,		VoidSymbol	] };
     key <AC02> { [ Arabic_dad,		Arabic_kasra,		VoidSymbol	] };
@@ -600,9 +568,9 @@ xkb_symbols "otf" {
     key <AC05> { [ Arabic_hah,		VoidSymbol,		VoidSymbol	] };
     key <AC06> { [ Arabic_teh,		Arabic_tehmarbuta,	VoidSymbol	] };
     key <AC07> { [ Arabic_keheh,	Arabic_kasratan,	VoidSymbol	] };
-    key <AC08> { [ Arabic_meem,		0x1000653,		VoidSymbol	] };
+    key <AC08> { [ Arabic_meem,		U0653,			VoidSymbol	] };
     key <AC09> { [ Arabic_lam,		VoidSymbol,		VoidSymbol	] };
-    key <AC10> { [ 0x10006cc,		Arabic_yeh,		VoidSymbol 	] };
+    key <AC10> { [ U06cc,		Arabic_yeh,		VoidSymbol	] };
     key <AC11> { [ Arabic_sheen,	Arabic_shadda,		VoidSymbol	] };
     key <AC12> { [ Arabic_khah,		Arabic_hamza,		VoidSymbol	] };
 
@@ -614,9 +582,7 @@ xkb_symbols "otf" {
     key <AB06> { [ Arabic_zain,		Arabic_zah,		VoidSymbol	] };
     key <AB07> { [ Arabic_seen,		Arabic_sukun,		VoidSymbol	] };
     key <AB08> { [ Arabic_beh,		Arabic_hamzaunderalef,	VoidSymbol	] };
-    key <AB09> { [ period,		colon,  		VoidSymbol	] };
+    key <AB09> { [ period,		colon,			VoidSymbol	] };
     key <AB10> { [ U2018,		Arabic_semicolon,	VoidSymbol	] };
-
-    include "level3(ralt_switch)"
 };
 
