@@ -2391,7 +2391,7 @@ xkb_symbols "iipa" {
 
     key <AC01>	{ [	o,		U0254]	}; // [o], [ɔ] found in Bangla
     key <AC02>	{ [	e,		U025B]	}; // [e], [ɛ]
-    key <AC03>	{ [	U0259,	U0361]	}; // [ə], [   ͡  ]
+    key <AC03>	{ [	schwa,		U0361]	}; // [ə], [ ͡  ]
     key <AC04>	{ [	i,		U026A]	}; // [i], [ɪ]
     key <AC05>	{ [	u,		U026F]	}; // [u], [ɯ]
     key <AC06>	{ [	p,		f]	}; // [p], [f]

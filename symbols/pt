@@ -126,7 +126,7 @@ xkb_symbols "nativo" {
     key <AB03> { [            j,               J,           0x01000292,       0x010001B7 ] };
     key <AB04> { [            b,               B,           apostrophe,         quotedbl ] };
     key <AB05> { [            k,               K,             currency,        brokenbar ] };
-    key <AB06> { [            q,               Q,           0x01000259,       0x0100018F ] };
+    key <AB06> { [            q,               Q,                schwa,            SCHWA ] };
     key <AB07> { [            v,               V,   doublelowquotemark,   singlelowquotemark ] };
     key <AB08> { [            g,               G,  leftdoublequotemark,  leftsinglequotemark ] };
     key <AB09> { [            f,               F, rightdoublequotemark, rightsinglequotemark ] };
