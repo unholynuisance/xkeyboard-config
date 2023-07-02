@@ -276,18 +276,18 @@ xkb_symbols "intl" {
 
     name[Group1]="Turkish (intl., with dead keys)";
 
-    key <TLDE>  { type[group1] = "FOUR_LEVEL", [  quotedbl,     eacute,       plusminus,        degree ] };
-    key <AE01>  { type[group1] = "FOUR_LEVEL", [         1,    exclam,      onesuperior,    exclamdown ] };
-    key <AE02>  { type[group1] = "FOUR_LEVEL", [         2, apostrophe,        sterling,   twosuperior ] };
-    key <AE03>  { type[group1] = "FOUR_LEVEL", [         3, dead_circumflex, numbersign, threesuperior ] };
-    key <AE04>  { type[group1] = "FOUR_LEVEL", [         4,       plus,          dollar,    onequarter ] };
-    key <AE06>  { type[group1] = "FOUR_LEVEL", [         6,  ampersand,   threequarters,    VoidSymbol ] };
-    key <AE07>  { type[group1] = "FOUR_LEVEL", [         7,      slash,       braceleft,    VoidSymbol ] };
-    key <AE08>  { type[group1] = "FOUR_LEVEL", [         8,  parenleft,     bracketleft,    VoidSymbol ] };
-    key <AE09>  { type[group1] = "FOUR_LEVEL", [         9, parenright,    bracketright,     plusminus ] };
-    key <AE10>  { type[group1] = "FOUR_LEVEL", [         0,      equal,      braceright,        degree ] };
-    key <AE11>  { type[group1] = "FOUR_LEVEL", [  asterisk,   question,       backslash,  questiondown ] };
-    key <AE12>  { type[group1] = "FOUR_LEVEL", [     minus, underscore,        division,    VoidSymbol ] };
+    key <TLDE>  { [  quotedbl,     eacute,       plusminus,        degree ] };
+    key <AE01>  { [         1,     exclam,     onesuperior,    exclamdown ] };
+    key <AE02>  { [         2, apostrophe,        sterling,   twosuperior ] };
+    key <AE03>  { [         3, dead_circumflex, numbersign, threesuperior ] };
+    key <AE04>  { [         4,       plus,          dollar,    onequarter ] };
+    key <AE06>  { [         6,  ampersand,   threequarters,    VoidSymbol ] };
+    key <AE07>  { [         7,      slash,       braceleft,    VoidSymbol ] };
+    key <AE08>  { [         8,  parenleft,     bracketleft,    VoidSymbol ] };
+    key <AE09>  { [         9, parenright,    bracketright,     plusminus ] };
+    key <AE10>  { [         0,      equal,      braceright,        degree ] };
+    key <AE11>  { [  asterisk,   question,       backslash,  questiondown ] };
+    key <AE12>  { [     minus, underscore,        division,    VoidSymbol ] };
 
     key <AD02>  { [         w,          W,     VoidSymbol,    VoidSymbol ] };
     key <AD03>  { [         e,          E,       EuroSign,          cent ] };
@@ -309,12 +309,12 @@ xkb_symbols "intl" {
     key <AC09>  { [         l,          L,     VoidSymbol,    VoidSymbol ] };
     key <AC10>  { [  scedilla,   Scedilla,     dead_acute,    dead_acute ] };
     key <AC11>  { [         i,  Iabovedot,     apostrophe,    dead_caron ] };
-    key <BKSL>  { type[group1] = "FOUR_LEVEL", [     comma,  semicolon,      dead_grave,    dead_grave ] };
+    key <BKSL>  { [     comma,  semicolon,     dead_grave,    dead_grave ] };
 
-    key <LSGT>  { type[group1] = "FOUR_LEVEL", [      less,    greater,             bar,     brokenbar ] };
+    key <LSGT>  { [      less,    greater,            bar,     brokenbar ] };
     key <AB08>  { [odiaeresis, Odiaeresis,       multiply,    VoidSymbol ] };
     key <AB09>  { [  ccedilla,   Ccedilla, periodcentered,      division ] };
-    key <AB10>  { type[group1] = "FOUR_LEVEL", [    period,      colon,   dead_abovedot, dead_abovedot ] };
+    key <AB10>  { [    period,      colon,  dead_abovedot, dead_abovedot ] };
 
     include "nbsp(level3)"
     include "level3(ralt_switch)"
@@ -332,8 +332,7 @@ xkb_symbols "olpc" {
 
     key <AE01>  { [         1,      exclam,           VoidSymbol,     VoidSymbol ] };
     key <AE06>  { [         6,   ampersand,           VoidSymbol,     VoidSymbol ] };
-    key <AE12>  { type[group1] = "FOUR_LEVEL",
-                  [     minus,  underscore,                  bar,     VoidSymbol ] };
+    key <AE12>  { [     minus,  underscore,                  bar,     VoidSymbol ] };
 
     key <AB03>  { [         c,           C,  leftdoublequotemark,     VoidSymbol ] };
     key <AB04>  { [         v,           V, rightdoublequotemark,     VoidSymbol ] };
