@@ -294,6 +294,13 @@
             <description>Old Hungarian (for ligatures)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem popularity="exotic">
+            <name>us</name>
+            <shortDescription>us</shortDescription>
+            <description>Hungarian (US)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
