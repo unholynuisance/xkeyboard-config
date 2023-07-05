@@ -110,11 +110,9 @@ xkb_symbols "std" {
     key <AB10> {[      eogonek,     Eogonek,           backslash ]};
 };
 
-// Lithuanian keymap LST 1205-92 (also know as IBM layout).
-// This standard was made deprecated by LST 1582:2000 above.
-//
-// Made by Piter PUNK <piterpk@terra.com.br>
-// Minor modifications and cleanup by Rimas Kudelis, 2010
+// A weird compromise layout between the old LST 1205-92 standard
+// (also known as IBM layout) and the new LST 1582:2000 standard.
+// Originally by Piter PUNK <piterpk@terra.com.br>, 2006.
 partial alphanumeric_keys modifier_keys
 xkb_symbols "ibm" {
 
@@ -122,7 +120,7 @@ xkb_symbols "ibm" {
     include "nbsp(level3)"
     include "level3(ralt_switch)"
 
-    name[Group1]="Lithuanian (IBM LST 1205-92)";
+    name[Group1]="Lithuanian (`IBM`)";
 
     key <TLDE> {[              grave,          asciitilde,          acute               ]};
     key <AE01> {[             exclam,                   1                               ]};
@@ -133,8 +131,8 @@ xkb_symbols "ibm" {
     key <AE06> {[              comma,                   6,    asciicircum               ]};
     key <AE07> {[             period,                   7,      ampersand               ]};
     key <AE08> {[           question,                   8,       asterisk               ]};
-    key <AE09> {[          parenleft,                   9                               ]};
-    key <AE10> {[         parenright,                   0                               ]};
+    key <AE09> {[          parenleft,                   9,      braceleft               ]};
+    key <AE10> {[         parenright,                   0,     braceright               ]};
     key <AE11> {[         underscore,               minus,         endash               ]};
     key <AE12> {[               plus,               equal                               ]};
 
@@ -148,6 +146,7 @@ xkb_symbols "ibm" {
     key <AC11> {[          eabovedot,           Eabovedot,     apostrophe,     quotedbl ]};
 
     key <LSGT> {[               less,             greater,         endash               ]};
+    key <AB01> {[                  z,                   Z, guillemotleft, guillemotright]};
     key <AB02> {[            umacron,             Umacron,              x,            X ]};
     key <AB08> {[             ccaron,              Ccaron,          comma,         less ]};
     key <AB09> {[             scaron,              Scaron,         period,      greater ]};
