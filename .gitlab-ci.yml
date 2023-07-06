@@ -115,6 +115,20 @@ check-commit:
     reports:
       junit: results.xml
 
+#
+# Format Python code with python-black
+#
+python-black:
+  extends:
+    - .fdo.ci-fairy
+  stage: sanity
+  before_script:
+    - python3 -m venv venv
+    - source venv/bin/activate
+    - pip3 install black
+  script:
+    - black --check --diff .
+
 meson_install:
   extends: .meson_build
   stage: build
