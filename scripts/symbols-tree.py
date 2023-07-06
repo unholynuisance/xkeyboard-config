@@ -6,6 +6,7 @@
 
 import argparse
 import pathlib
+import dataclasses
 from pyparsing import (
     Word,
     Literal,
@@ -25,12 +26,15 @@ from pyparsing import (
 xkb_basedir = None
 
 
+@dataclasses.dataclass
 class XkbSymbols:
-    def __init__(self, file, name):
-        self.file = file  # Path to the file this section came from
-        self.layout = file.name  # XKb - filename is the layout name
-        self.name = name
-        self.includes = []
+    file: pathlib.Path  # Path to the file this section came from
+    name: str
+    includes: list[str] = dataclasses.field(default_factory=list)
+
+    @property
+    def layout(self) -> str:
+        return self.file.name  # XKb - filename is the layout name
 
     def __str__(self):
         return f"{self.layout}({self.name}): {self.includes}"
