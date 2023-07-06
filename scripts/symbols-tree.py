@@ -186,9 +186,12 @@ if __name__ == "__main__":
 
     XkbLoader.create(xkb_basedir)
 
-    for file in files:
-        try:
-            sections = XkbLoader.load_symbols(file.resolve())
-            list_sections(sections, filter_section=ns.section)
-        except XkbLoader.XkbParserException:
-            pass
+    try:
+        for file in files:
+            try:
+                sections = XkbLoader.load_symbols(file.resolve())
+                list_sections(sections, filter_section=ns.section)
+            except XkbLoader.XkbParserException:
+                pass
+    except KeyboardInterrupt:
+        pass
