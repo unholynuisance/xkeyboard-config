@@ -166,7 +166,7 @@ xkbcommon build:
   stage: build
   script:
     # Ensure there are no leftovers
-    - rm -rf xorgproto libxkbcommon 
+    - rm -rf xorgproto libxkbcommon
     # Get latest xorgproto so we definitely have all keysyms
     - git clone --depth=1 https://gitlab.freedesktop.org/xorg/proto/xorgproto
     - export X11_HEADERS_PREFIX="$PWD/xorgproto/"

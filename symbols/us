@@ -190,7 +190,7 @@ xkb_symbols "alt-intl" {
 
   key <AC10> { [  semicolon, colon,	     dead_ogonek,   dead_diaeresis  ] };
   key <AC11> { [ dead_acute, dead_diaeresis, apostrophe,    quotedbl	    ] };
-  
+
   key <AB02> { [	  x, X,              periodcentered, dead_stroke    ] };
   key <AB08> { [      comma, less,	     dead_cedilla,  dead_caron	    ] };
   key <AB09> { [     period, greater,	     dead_abovedot, dead_circumflex ] };
@@ -2209,7 +2209,7 @@ xkb_symbols "3l-cros" {
     };
 };
 
-// A 3l variant for emacs users, which maps control to caps lock and (re)maps 
+// A 3l variant for emacs users, which maps control to caps lock and (re)maps
 // tab back to tab.
 partial modifier_keys
 xkb_symbols "3l-emacs" {
