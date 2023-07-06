@@ -163,7 +163,16 @@ def list_sections(sections, filter_section=None, indent=0):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="XKB symbol tree viewer")
+    parser = argparse.ArgumentParser(
+        description="""
+            XKB symbol tree viewer.
+
+            This tool takes a symbols file and optionally a section in that
+            file and recursively walks the include directives in that section.
+            The resulting tree may be useful for checking which files
+            are affected when a single section is modified.
+            """
+    )
     parser.add_argument(
         "file",
         metavar="file-or-directory",
