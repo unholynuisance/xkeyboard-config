@@ -3,7 +3,6 @@
 import argparse
 import re
 import sys
-from pathlib import Path
 
 
 class Layout(object):
