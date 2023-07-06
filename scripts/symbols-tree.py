@@ -65,7 +65,7 @@ class XkbLoader:
     def load_symbols(cls, file):
         return cls.instance().load_symbols_file(file)
 
-    def load_symbols_file(self, file):
+    def load_symbols_file(self, file) -> list[XkbSymbols]:
         file = self.xkb_basedir / file
         try:
             return self.loaded[file]
@@ -132,7 +132,7 @@ def lit(string):
     return Literal(string).suppress()
 
 
-def print_section(s, filter_section=None, indent=0):
+def print_section(s: XkbSymbols, filter_section: str | None = None, indent=0):
     if filter_section and s.name != filter_section:
         return
 
@@ -157,7 +157,7 @@ def print_section(s, filter_section=None, indent=0):
             print_section(include_section, filter_section=variant, indent=indent + 4)
 
 
-def list_sections(sections, filter_section=None, indent=0):
+def list_sections(sections: list[XkbSymbols], filter_section: str | None = None):
     for section in sections:
         print_section(section, filter_section)
 
