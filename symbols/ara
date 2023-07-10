@@ -36,7 +36,7 @@ xkb_symbols "basic" {
     key <AC02> {[     Arabic_seen,      Arabic_kasratan,                      any,     any ]};  // ‎س‎ ‎◌ٍ‎
     key <AC03> {[      Arabic_yeh,         bracketright,                      any,     any ]};  // ‎ي‎ ]
     key <AC04> {[      Arabic_beh,          bracketleft,               Arabic_peh,     any ]};  // ‎ب‎ [     ‎پ‎
-    key <AC05> {[      Arabic_lam,               U0FEF7,                      any,     any ]};  // ‎ل‎ ‎ﻷ‎
+    key <AC05> {[      Arabic_lam,                UFEF7,                      any,     any ]};  // ‎ل‎ ‎ﻷ‎
     key <AC06> {[     Arabic_alef,   Arabic_hamzaonalef,                    U0671,     any ]};  // ‎ا‎ ‎أ     ‎ٱ‎
     key <AC07> {[      Arabic_teh,       Arabic_tatweel,                      any,     any ]};  // ‎ت‎ ‎ـ‎
     key <AC08> {[     Arabic_noon,         Arabic_comma,                    U066B,     any ]};  // ‎ن‎ ‎،‎     ‎٫‎
@@ -458,7 +458,7 @@ xkb_symbols "basic_ext" {
     key <AC02> {[     Arabic_seen,      Arabic_kasratan,                     U067C,               U0680 ]};  // ‎س‎ ‎◌ٍ‎     ‎ټ‎ ‎ڀ‎
     key <AC03> {[      Arabic_yeh,         bracketright,                     U06D0,               U06CD ]};  // ‎ي‎ ]     ‎ې‎ ‎ۍ‎
     key <AC04> {[      Arabic_beh,          bracketleft,                Arabic_peh,               U067B ]};  // ‎ب‎ [     ‎پ‎ ‎ٻ‎
-    key <AC05> {[      Arabic_lam,               U0FEF7,                     U076A,               U0658 ]};  // ‎ل‎ ‎ﻷ‎     ‎ݪ‎  ٘‎◌‎
+    key <AC05> {[      Arabic_lam,                UFEF7,                     U076A,               U0658 ]};  // ‎ل‎ ‎ﻷ‎     ‎ݪ‎  ٘‎◌‎
     key <AC06> {[     Arabic_alef,   Arabic_hamzaonalef,                     U0671,  Arabic_noon_ghunna ]};  // ‎ا‎ ‎أ     ‎ٱ‎ ‎ں‎
     key <AC07> {[      Arabic_teh,       Arabic_tatweel,                     U067D,               U067A ]};  // ‎ت‎ ‎ـ‎     ‎ٽ‎ ٺ‎
     key <AC08> {[     Arabic_noon,         Arabic_comma,                     U066B,               U06BB ]};  // ‎ن‎ ‎،‎     ‎٫‎ ڻ‎
