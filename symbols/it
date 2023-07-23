@@ -307,8 +307,10 @@ partial alphanumeric_keys
 
 partial alphanumeric_keys
 xkb_symbols "lld" {
+
     include "it(basic)"
-    name[Group1] = "Italian (Ladin)";
+
+    name[Group1] = "Ladin (Italian keyboard)";
 
     key <AD08> {[ i, I, idiaeresis, Idiaeresis ]};
     key <AD10> {[ p, P, ediaeresis, Ediaeresis ]};
@@ -317,6 +319,16 @@ xkb_symbols "lld" {
     key <AC02> {[ s, S, sacute, Sacute ]};
 
     key <AB03> {[ c, C, cacute, Cacute ]};
+};
+
+partial alphanumeric_keys
+xkb_symbols "lldde" {
+
+    include "de(basic)"
+
+    name[Group1] = "Ladin (German keyboard)";
+
+    key <AD10> {[ p, P, ediaeresis, Ediaeresis ]};
 };
 
 partial alphanumeric_keys
