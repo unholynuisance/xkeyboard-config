@@ -122,7 +122,7 @@ xkb_symbols "ibm" {
 
     include "latin"
 
-    name[Group1]="Lithuanian (`IBM`)";
+    name[Group1]="Lithuanian (IBM)";
 
     key <TLDE> {[              grave,          asciitilde,          acute               ]};
     key <AE01> {[             exclam,                   1                               ]};
