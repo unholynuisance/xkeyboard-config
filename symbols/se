@@ -170,6 +170,7 @@ xkb_symbols "mac" {
     key <AE11>	{[       plus,    question ]};
     key <AE12>	{[      acute,       grave ]};
 
+    key <AD03>	{[          e,           E,       EuroSign,       cent ]};
     key <AD11>	{[      aring,       Aring ]};
     key <AD12>	{[  diaeresis, asciicircum,     asciitilde             ]};
 
