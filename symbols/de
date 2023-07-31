@@ -797,10 +797,7 @@ xkb_symbols "pl" {
     // keyboard. Based on German (no dead keys) and Polish (basic). Polish diacritics
     // on AltGr+"acelnosxz". EuroSign moved to AE04 (AltGr+dollar key) to avoid conflict
     // with Polish eogonek.
-    //
-    // https://github.com/kontextify/xkeyboard-config
 
-    include "latin(type4)"
     include "de(nodeadkeys)"
 
     name[Group1]= "Polish (Germany, no dead keys)";
