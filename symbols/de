@@ -585,7 +585,7 @@ xkb_symbols "dsb"
 
 	key <AD03> { [    e,    E,    ecaron,    Ecaron ] };
 	key <AD04> { [    r,    R,    racute,    Racute ] };
-	key <AD05> { [    t,    T,     U20B5,  EuroSign ] };
+	key <AD05> { [    t,    T,      cent,  EuroSign ] };
 	key <AD09> { [    o,    O,    oacute,    Oacute ] };
 
 	key <AC02> { [    s,    S,    sacute,    Sacute ] };
@@ -609,7 +609,7 @@ xkb_symbols "dsb_qwertz"
 
 	key <AD03> { [    e,    E,    ecaron,    Ecaron ] };
 	key <AD04> { [    r,    R,    racute,    Racute ] };
-	key <AD05> { [    t,    T,     U20B5,  EuroSign ] };
+	key <AD05> { [    t,    T,      cent,  EuroSign ] };
 	key <AD06> { [    z,    Z,    zcaron,    Zcaron ] };
 	key <AD07> { [    u,    U,    zacute,    Zacute ] };
 	key <AD09> { [    o,    O,    oacute,    Oacute ] };
