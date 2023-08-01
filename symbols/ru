@@ -548,6 +548,7 @@ xkb_symbols "chm" {
 partial alphanumeric_keys
 xkb_symbols "phonetic_azerty" {
 
+    include "fr"
     include "level3(ralt_switch)"
 
     name[Group1]= "Russian (phonetic, AZERTY)";
@@ -666,15 +667,6 @@ xkb_symbols "phonetic_dvorak" {
     key <AB08> { [ Cyrillic_ve, Cyrillic_VE ] };
     key <AB09> { [ Cyrillic_zhe, Cyrillic_ZHE ] };
     key <AB10> { [ Cyrillic_ze, Cyrillic_ZE ] };
-};
-
-partial alphanumeric_keys
-xkb_symbols "phonetic_fr" {
-
-    include "fr"
-    include "ru(phonetic_azerty)"
-
-    name[Group1]= "Russian (phonetic, French)";
 };
 
 // Keyboard layout for Abkhazian.
