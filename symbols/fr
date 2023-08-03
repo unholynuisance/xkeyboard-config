@@ -755,10 +755,8 @@ xkb_symbols "bre" {
     key <AE12> { [           equal,           plus,      braceright,        notsign ] };
 
     // Second row
-    // Handling the C'H key correctly requires an inputmethod (XIM)
-    // See https://bugs.freedesktop.org/show_bug.cgi?id=19506
- // key <AD01> { [    trigraph_c_h,   trigraph_C_h,    trigraph_C_H,    Greek_alpha ] };
-    key <AD01> { [           UF8FD,          UF8FE,           UF8FF,    Greek_alpha ] };
+    // Handling the C'H key correctly requires the XIM input method.
+    key <AD01> { [             c_h,            C_h,             C_H,    Greek_alpha ] };
     key <AD02> { [               w,              W,     Greek_omega,    Greek_omega ] };
     key <AD03> { [               e,              E,        EuroSign,  Greek_epsilon ] };
     key <AD04> { [               r,              R,       Greek_rho,      Greek_rho ] };
@@ -793,10 +791,8 @@ xkb_symbols "bre" {
     key <AB04> { [               v,              V                                  ] };
     key <AB05> { [               b,              B,      Greek_beta,     Greek_beta ] };
     key <AB06> { [               n,              N,        Greek_nu,       Greek_nu ] };
-    // Handling the CH key correctly requires an inputmethod (XIM)
-    // See https://bugs.freedesktop.org/show_bug.cgi?id=19506
- // key <AB07> { [      digraph_ch,     digraph_Ch,      digraph_CH,  Greek_omicron ] };
-    key <AB07> { [           UF8FA,          UF8FB,           UF8FC,  Greek_omicron ] };
+    // Handling the CH key correctly requires the XIM input method.
+    key <AB07> { [              ch,             Ch,              CH,  Greek_omicron ] };
     key <AB08> { [          ntilde,         Ntilde                                  ] };
     key <AB09> { [          period,          colon,         section,      copyright ] };
     key <AB10> { [           comma,      semicolon,         percent                 ] };
