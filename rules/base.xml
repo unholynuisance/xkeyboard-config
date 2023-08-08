@@ -2286,10 +2286,10 @@
         </variant>
         <variant>
            <configItem>
-            <name>olck</name>
+            <name>sat</name>
             <!-- Keyboard indicator for Santali layouts -->
             <shortDescription>sat</shortDescription>
-            <description>Ol Chiki</description>
+            <description>Santali (Ol Chiki)</description>
             <languageList>
               <!-- sat-Olck: http://www.ethnologue.com/language/sat -->
               <iso639Id>sat</iso639Id>
