@@ -92,37 +92,32 @@ xkb_symbols "lyx" {
     key <AE11>	{[ minus,		U05BE		]}; // maqaf
     key <AE12>	{[ equal,		plus		]};
 
-    // On some key (e.g. AD01, right below) there is not yet mapping for the
-    // second shift level. Since I could not figure a simple way to map this
-    // to "emit nothing", it is currently mapped to the same letter of the
-    // first shift level (avoiding mapping may risk it be used by a character
-    // from a different group).
-    key <AD01>	{[ slash,		slash		]};
-    key <AD02>	{[ apostrophe,		apostrophe	]};
+    key <AD01>	{[ slash,		none		]};
+    key <AD02>	{[ apostrophe,		none		]};
     key <AD03>	{[ hebrew_qoph,		U05B8		]}; // qamats
     key <AD04>	{[ hebrew_resh,		U05BC		]}; // dagesh/shuruq
     key <AD05>	{[ hebrew_aleph,	U200E		]}; // LRM
     key <AD06>	{[ hebrew_tet,		U200F		]}; // RLM
     key <AD07>	{[ hebrew_waw,		U05B9		]}; // holam
-    key <AD08>	{[ hebrew_finalnun,	hebrew_finalnun	]};
-    key <AD09>	{[ hebrew_finalmem,	hebrew_finalmem	]};
+    key <AD08>	{[ hebrew_finalnun,	none		]};
+    key <AD09>	{[ hebrew_finalmem,	none		]};
     key <AD10>	{[ hebrew_pe,		U05B7		]}; // patah
     key <AD11>	{[ bracketright,	braceright	]};
     key <AD12>	{[ bracketleft,		braceleft	]};
 
     key <AC01>	{[ hebrew_shin,		U05B0		]}; // sheva
     key <AC02>	{[ hebrew_dalet,	U05BC		]}; // dagesh/shuruq
-    key <AC03>	{[ hebrew_gimel,	hebrew_gimel	]};
-    key <AC04>	{[ hebrew_kaph,		hebrew_kaph	]};
+    key <AC03>	{[ hebrew_gimel,	none		]};
+    key <AC04>	{[ hebrew_kaph,		none		]};
     key <AC05>	{[ hebrew_ayin,		U05C2		]}; // sin dot
     key <AC06>	{[ hebrew_yod,		U05C1		]}; // shin dot
     key <AC07>	{[ hebrew_chet,		U05B4		]}; // hiriq
     key <AC08>	{[ hebrew_lamed,	U20AA		]}; // ₪ (NIS)
-    key <AC09>	{[ hebrew_finalkaph,	hebrew_finalkaph]};
+    key <AC09>	{[ hebrew_finalkaph,	none		]};
     key <AC10>	{[ hebrew_finalpe,	colon		]};
     key <AC11>	{[ comma,		quotedbl	]};
 
-    key <AB01>	{[ hebrew_zain,		hebrew_zain	]};
+    key <AB01>	{[ hebrew_zain,		none		]};
     key <AB02>	{[ hebrew_samech,	U05B6		]}; // segol
     key <AB03>	{[ hebrew_bet,		U05BB		]}; // qubuts
     key <AB04>	{[ hebrew_he,		U05B1		]}; // hataf segol
