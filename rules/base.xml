@@ -4319,6 +4319,12 @@
       <variantList>
         <variant>
           <configItem>
+            <name>two</name>
+            <description>Hebrew (SI-1452-2)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>lyx</name>
             <description>Hebrew (lyx)</description>
           </configItem>
