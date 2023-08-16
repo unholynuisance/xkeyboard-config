@@ -46,69 +46,6 @@
     </model>
     <model>
       <configItem>
-        <name>dell101</name>
-        <description>Dell 101-key PC</description>
-        <vendor>Dell</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>latitude</name>
-        <description>Dell Latitude laptop</description>
-        <vendor>Dell</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>dellm65</name>
-        <description>Dell Precision M65 laptop</description>
-        <vendor>Dell</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>everex</name>
-        <description>Everex STEPnote</description>
-        <vendor>Everex</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>flexpro</name>
-        <description>Keytronic FlexPro</description>
-        <vendor>Keytronic</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>microsoft</name>
-        <description>Microsoft Natural</description>
-        <vendor>Microsoft</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>omnikey101</name>
-        <description>Northgate OmniKey 101</description>
-        <vendor>Northgate</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>winbook</name>
-        <description>Winbook Model XP5</description>
-        <vendor>Generic</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>pc98</name>
-        <description>PC-98</description>
-        <vendor>Generic</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
         <name>a4techKB21</name>
         <description>A4Tech KB-21</description>
         <vendor>A4Tech</vendor>
@@ -137,9 +74,23 @@
     </model>
     <model>
       <configItem>
-        <name>azonaRF2300</name>
-        <description>Azona RF2300 Wireless Internet</description>
-        <vendor>Azona</vendor>
+        <name>acer_c300</name>
+        <description>Acer C300</description>
+        <vendor>Acer</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>acer_ferrari4k</name>
+        <description>Acer Ferrari 4000</description>
+        <vendor>Acer</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>acer_laptop</name>
+        <description>Acer laptop</description>
+        <vendor>Acer</vendor>
       </configItem>
     </model>
     <model>
@@ -151,9 +102,86 @@
     </model>
     <model>
       <configItem>
+        <name>apple</name>
+        <description>Apple</description>
+        <vendor>Apple</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>applealu_ansi</name>
+        <description>Apple Aluminium (ANSI)</description>
+        <vendor>Apple</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>applealu_iso</name>
+        <description>Apple Aluminium (ISO)</description>
+        <vendor>Apple</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>applealu_jis</name>
+        <description>Apple Aluminium (JIS)</description>
+        <vendor>Apple</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>apple_laptop</name>
+        <description>Apple laptop</description>
+        <vendor>Apple</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>asus_laptop</name>
+        <description>Asus laptop</description>
+        <vendor>Asus</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>azonaRF2300</name>
+        <description>Azona RF2300 Wireless Internet</description>
+        <vendor>Azona</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>benqx</name>
+        <description>BenQ X-Touch</description>
+        <vendor>BenQ</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>benqx730</name>
+        <description>BenQ X-Touch 730</description>
+        <vendor>BenQ</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>benqx800</name>
+        <description>BenQ X-Touch 800</description>
+        <vendor>BenQ</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
         <name>brother</name>
         <description>Brother Internet</description>
         <vendor>Brother</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>btc5090</name>
+        <description>BTC 5090</description>
+        <vendor>BTC</vendor>
       </configItem>
     </model>
     <model>
@@ -200,13 +228,6 @@
     </model>
     <model>
       <configItem>
-        <name>btc5090</name>
-        <description>BTC 5090</description>
-        <vendor>BTC</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
         <name>btc9019u</name>
         <description>BTC 9019U</description>
         <vendor>BTC</vendor>
@@ -228,15 +249,15 @@
     </model>
     <model>
       <configItem>
-        <name>cherryblueb</name>
-        <description>Cherry CyMotion Master XPress</description>
+        <name>cherrybluea</name>
+        <description>Cherry Blue Line CyBo@rd (alt.)</description>
         <vendor>Cherry</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-        <name>cherrybluea</name>
-        <description>Cherry Blue Line CyBo@rd (alt.)</description>
+        <name>cherrybunlim</name>
+        <description>Cherry B.UNLIMITED</description>
         <vendor>Cherry</vendor>
       </configItem>
     </model>
@@ -256,8 +277,15 @@
     </model>
     <model>
       <configItem>
-        <name>cherrybunlim</name>
-        <description>Cherry B.UNLIMITED</description>
+        <name>cymotionlinux</name>
+        <description>Cherry CyMotion Master Linux</description>
+        <vendor>Cherry</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>cherryblueb</name>
+        <description>Cherry CyMotion Master XPress</description>
         <vendor>Cherry</vendor>
       </configItem>
     </model>
@@ -265,6 +293,13 @@
       <configItem>
         <name>chicony</name>
         <description>Chicony Internet</description>
+        <vendor>Chicony</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>chicony9885</name>
+        <description>Chicony KB-9885</description>
         <vendor>Chicony</vendor>
       </configItem>
     </model>
@@ -284,9 +319,30 @@
     </model>
     <model>
       <configItem>
-        <name>chicony9885</name>
-        <description>Chicony KB-9885</description>
-        <vendor>Chicony</vendor>
+        <name>chromebook</name>
+        <description>Chromebook</description>
+        <vendor>Google</vendor>
+     </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>classmate</name>
+        <description>Classmate PC</description>
+        <vendor>Intel</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>compalfl90</name>
+        <description>Compal FL90</description>
+        <vendor>Compal Electronics</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>armada</name>
+        <description>Compaq Armada laptop</description>
+        <vendor>Compaq</vendor>
       </configItem>
     </model>
     <model>
@@ -319,15 +375,8 @@
     </model>
     <model>
       <configItem>
-        <name>cymotionlinux</name>
-        <description>Cherry CyMotion Master Linux</description>
-        <vendor>Cherry</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>armada</name>
-        <description>Compaq Armada laptop</description>
+        <name>ipaq</name>
+        <description>Compaq iPaq</description>
         <vendor>Compaq</vendor>
       </configItem>
     </model>
@@ -340,15 +389,50 @@
     </model>
     <model>
       <configItem>
-        <name>ipaq</name>
-        <description>Compaq iPaq</description>
-        <vendor>Compaq</vendor>
+        <name>creativedw7000</name>
+        <description>Creative Desktop Wireless 7000</description>
+        <vendor>Creative</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>dell</name>
         <description>Dell</description>
+        <vendor>Dell</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>dell101</name>
+        <description>Dell 101-key PC</description>
+        <vendor>Dell</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>latitude</name>
+        <description>Dell Latitude laptop</description>
+        <vendor>Dell</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>inspiron</name>
+        <description>Dell Inspiron 6000/8000 laptop</description>
+        <vendor>Dell</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>precision_m</name>
+        <description>Dell Precision M laptop</description>
+        <vendor>Dell</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>dellm65</name>
+        <description>Dell Precision M65 laptop</description>
         <vendor>Dell</vendor>
       </configItem>
     </model>
@@ -375,20 +459,6 @@
     </model>
     <model>
       <configItem>
-        <name>inspiron</name>
-        <description>Dell Inspiron 6000/8000 laptop</description>
-        <vendor>Dell</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>precision_m</name>
-        <description>Dell Precision M laptop</description>
-        <vendor>Dell</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
         <name>dexxa</name>
         <description>Dexxa Wireless Desktop</description>
         <vendor>Dexxa</vendor>
@@ -410,9 +480,23 @@
     </model>
     <model>
       <configItem>
+        <name>emachines</name>
+        <description>eMachines m6800 laptop</description>
+        <vendor>eMachines</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
         <name>ennyah_dkb1008</name>
         <description>Ennyah DKB-1008</description>
         <vendor>Ennyah</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>everex</name>
+        <description>Everex STEPnote</description>
+        <vendor>Everex</vendor>
       </configItem>
     </model>
     <model>
@@ -466,23 +550,16 @@
     </model>
     <model>
       <configItem>
-        <name>kinesis</name>
-        <description>Kinesis</description>
-        <vendor>Kinesis</vendor>
+        <name>hhk</name>
+        <description>Happy Hacking</description>
+        <vendor>Fujitsu</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-        <name>logitech_base</name>
-        <description>Logitech</description>
-        <vendor>Logitech</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>logitech_g15</name>
-        <description>Logitech G15 extra keys via G15daemon</description>
-        <vendor>Logitech</vendor>
+        <name>macintosh_hhk</name>
+        <description>Happy Hacking for Mac</description>
+        <vendor>Fujitsu</vendor>
       </configItem>
     </model>
     <model>
@@ -494,8 +571,36 @@
     </model>
     <model>
       <configItem>
-        <name>hp250x</name>
-        <description>Hewlett-Packard NEC SK-2500 Multimedia</description>
+        <name>hpmini110</name>
+        <description>Hewlett-Packard Mini 110 laptop</description>
+        <vendor>Hewlett-Packard</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>hpnx9020</name>
+        <description>Hewlett-Packard nx9020</description>
+        <vendor>Hewlett-Packard</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>hp5xx</name>
+        <description>Hewlett-Packard Omnibook 500</description>
+        <vendor>Hewlett-Packard</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>hp500fa</name>
+        <description>Hewlett-Packard Omnibook 500 FA</description>
+        <vendor>Hewlett-Packard</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>hp6000</name>
+        <description>Hewlett-Packard Omnibook 6000/6100</description>
         <vendor>Hewlett-Packard</vendor>
       </configItem>
     </model>
@@ -536,29 +641,8 @@
     </model>
     <model>
       <configItem>
-        <name>hp500fa</name>
-        <description>Hewlett-Packard Omnibook 500 FA</description>
-        <vendor>Hewlett-Packard</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>hp5xx</name>
-        <description>Hewlett-Packard Omnibook 500</description>
-        <vendor>Hewlett-Packard</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>hpnx9020</name>
-        <description>Hewlett-Packard nx9020</description>
-        <vendor>Hewlett-Packard</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>hp6000</name>
-        <description>Hewlett-Packard Omnibook 6000/6100</description>
+        <name>hp250x</name>
+        <description>Hewlett-Packard SK-2501 Multimedia</description>
         <vendor>Hewlett-Packard</vendor>
       </configItem>
     </model>
@@ -566,13 +650,6 @@
       <configItem>
         <name>honeywell_euroboard</name>
         <description>Honeywell Euroboard</description>
-        <vendor>Hewlett-Packard</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>hpmini110</name>
-        <description>Hewlett-Packard Mini 110 laptop</description>
         <vendor>Hewlett-Packard</vendor>
       </configItem>
     </model>
@@ -587,6 +664,13 @@
       <configItem>
         <name>rapidaccess2</name>
         <description>IBM Rapid Access II</description>
+        <vendor>Lenovo (previously IBM)</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>ibm_spacesaver</name>
+        <description>IBM Space Saver</description>
         <vendor>Lenovo (previously IBM)</vendor>
       </configItem>
     </model>
@@ -613,37 +697,29 @@
     </model>
     <model>
       <configItem>
-        <name>ibm_spacesaver</name>
-        <description>IBM Space Saver</description>
-        <vendor>Lenovo (previously IBM)</vendor>
+        <name>flexpro</name>
+        <description>Keytronic FlexPro</description>
+        <vendor>Keytronic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>kinesis</name>
+        <description>Kinesis</description>
+        <vendor>Kinesis</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>logitech_base</name>
+        <description>Logitech</description>
+        <vendor>Logitech</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>logiaccess</name>
         <description>Logitech Access</description>
-        <vendor>Logitech</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>logiclx300</name>
-        <description>Logitech Cordless Desktop LX-300</description>
-        <vendor>Logitech</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>logii350</name>
-        <description>Logitech Internet 350</description>
-        <vendor>Logitech</vendor>
-        <hwList> <hwId>046d:c313</hwId></hwList>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>logimel</name>
-        <description>Logitech Internet 350</description>
         <vendor>Logitech</vendor>
       </configItem>
     </model>
@@ -656,8 +732,36 @@
     </model>
     <model>
       <configItem>
+        <name>logicda</name>
+        <description>Logitech Cordless Desktop (alt.)</description>
+        <vendor>Logitech</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>logiex110</name>
+        <description>Logitech Cordless Desktop EX110</description>
+        <vendor>Logitech</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
         <name>logicd_it</name>
         <description>Logitech Cordless Desktop iTouch</description>
+        <vendor>Logitech</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>logiclx300</name>
+        <description>Logitech Cordless Desktop LX-300</description>
+        <vendor>Logitech</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>logicdn</name>
+        <description>Logitech Cordless Desktop Navigator</description>
         <vendor>Logitech</vendor>
       </configItem>
     </model>
@@ -677,13 +781,6 @@
     </model>
     <model>
       <configItem>
-        <name>logicda</name>
-        <description>Logitech Cordless Desktop (alt.)</description>
-        <vendor>Logitech</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
         <name>logicdpa2</name>
         <description>Logitech Cordless Desktop Pro (2nd alt.)</description>
         <vendor>Logitech</vendor>
@@ -698,15 +795,22 @@
     </model>
     <model>
       <configItem>
-        <name>logicdn</name>
-        <description>Logitech Cordless Desktop Navigator</description>
+        <name>logidinovo</name>
+        <description>Logitech diNovo</description>
         <vendor>Logitech</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-        <name>logiitc</name>
-        <description>Logitech iTouch Cordless Y-RB6</description>
+        <name>logidinovoedge</name>
+        <description>Logitech diNovo Edge</description>
+        <vendor>Logitech</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>logitech_g15</name>
+        <description>Logitech G15 extra keys via G15daemon</description>
         <vendor>Logitech</vendor>
       </configItem>
     </model>
@@ -719,8 +823,16 @@
     </model>
     <model>
       <configItem>
-        <name>itouch</name>
-        <description>Logitech iTouch</description>
+        <name>logii350</name>
+        <description>Logitech Internet 350</description>
+        <vendor>Logitech</vendor>
+        <hwList> <hwId>046d:c313</hwId> </hwList>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>logimel</name>
+        <description>Logitech Internet 350</description>
         <vendor>Logitech</vendor>
       </configItem>
     </model>
@@ -733,8 +845,15 @@
     </model>
     <model>
       <configItem>
-        <name>logiex110</name>
-        <description>Logitech Cordless Desktop EX110</description>
+        <name>itouch</name>
+        <description>Logitech iTouch</description>
+        <vendor>Logitech</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>logiitc</name>
+        <description>Logitech iTouch Cordless Y-RB6</description>
         <vendor>Logitech</vendor>
       </configItem>
     </model>
@@ -768,16 +887,30 @@
     </model>
     <model>
       <configItem>
-        <name>logidinovo</name>
-        <description>Logitech diNovo</description>
-        <vendor>Logitech</vendor>
+        <name>macbook78</name>
+        <description>MacBook/MacBook Pro</description>
+        <vendor>Apple</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-        <name>logidinovoedge</name>
-        <description>Logitech diNovo Edge</description>
-        <vendor>Logitech</vendor>
+        <name>macbook79</name>
+        <description>MacBook/MacBook Pro (intl.)</description>
+        <vendor>Apple</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>macintosh</name>
+        <description>Macintosh</description>
+        <vendor>Apple</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>macintosh_old</name>
+        <description>Macintosh Old</description>
+        <vendor>Apple</vendor>
       </configItem>
     </model>
     <model>
@@ -803,6 +936,41 @@
     </model>
     <model>
       <configItem>
+        <name>microsoftccurve2k</name>
+        <description>Microsoft Comfort Curve 2000</description>
+        <vendor>Microsoft</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>microsoftinet</name>
+        <description>Microsoft Internet</description>
+        <vendor>Microsoft</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>microsoftprose</name>
+        <description>Microsoft Internet Pro (Swedish)</description>
+        <vendor>Microsoft</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>microsoft</name>
+        <description>Microsoft Natural</description>
+        <vendor>Microsoft</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>microsoftelite</name>
+        <description>Microsoft Natural Elite</description>
+        <vendor>Microsoft</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
         <name>microsoft4000</name>
         <description>Microsoft Natural Ergonomic 4000</description>
         <vendor>Microsoft</vendor>
@@ -812,13 +980,6 @@
       <configItem>
         <name>microsoft7000</name>
         <description>Microsoft Natural Wireless Ergonomic 7000</description>
-        <vendor>Microsoft</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>microsoftinet</name>
-        <description>Microsoft Internet</description>
         <vendor>Microsoft</vendor>
       </configItem>
     </model>
@@ -845,29 +1006,8 @@
     </model>
     <model>
       <configItem>
-        <name>vsonku306</name>
-        <description>ViewSonic KU-306 Internet</description>
-        <vendor>ViewSonic</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>microsoftprose</name>
-        <description>Microsoft Internet Pro (Swedish)</description>
-        <vendor>Microsoft</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
         <name>microsoftoffice</name>
         <description>Microsoft Office Keyboard</description>
-        <vendor>Microsoft</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>microsoftmult</name>
-        <description>Microsoft Wireless Multimedia 1.0A</description>
         <vendor>Microsoft</vendor>
       </configItem>
     </model>
@@ -880,16 +1020,51 @@
     </model>
     <model>
       <configItem>
-        <name>microsoftelite</name>
-        <description>Microsoft Natural Elite</description>
+        <name>microsoftmult</name>
+        <description>Microsoft Wireless Multimedia 1.0A</description>
         <vendor>Microsoft</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-        <name>microsoftccurve2k</name>
-        <description>Microsoft Comfort Curve 2000</description>
-        <vendor>Microsoft</vendor>
+        <name>sk1300</name>
+        <description>NEC SK-1300</description>
+        <vendor>NEC</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>sk2500</name>
+        <description>NEC SK-2500</description>
+        <vendor>NEC</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>sk6200</name>
+        <description>NEC SK-6200</description>
+        <vendor>NEC</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>sk7100</name>
+        <description>NEC SK-7100</description>
+        <vendor>NEC</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>omnikey101</name>
+        <description>Northgate OmniKey 101</description>
+        <vendor>Northgate</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>olpc</name>
+        <description>OLPC</description>
+        <vendor>OLPC</vendor>
       </configItem>
     </model>
     <model>
@@ -898,6 +1073,20 @@
         <description>Ortek Multimedia/Internet MCK-800</description>
         <vendor>Ortek</vendor>
       </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>pc98</name>
+        <description>PC-98</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>ppkb</name>
+        <description>PinePhone Keyboard</description>
+        <vendor>Pine64</vendor>
+     </configItem>
     </model>
     <model>
       <configItem>
@@ -936,30 +1125,79 @@
     </model>
     <model>
       <configItem>
-        <name>sk1300</name>
-        <description>NEC SK-1300</description>
-        <vendor>NEC</vendor>
+        <name>silvercrest</name>
+        <description>Silvercrest Multimedia Wireless</description>
+        <vendor>Silvercrest</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-        <name>sk2500</name>
-        <description>NEC SK-2500</description>
-        <vendor>NEC</vendor>
+        <name>apex300</name>
+        <description>SteelSeries Apex 300 (Apex RAW)</description>
+        <vendor>SteelSeries</vendor>
+     </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>sun_type6_jp</name>
+        <description>Sun Type 6 (Japanese)</description>
+        <vendor>Sun Microsystems</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-        <name>sk6200</name>
-        <description>NEC SK-6200</description>
-        <vendor>NEC</vendor>
+        <name>sun_type6_jp_usb</name>
+        <description>Sun Type 6 USB (Japanese)</description>
+        <vendor>Sun Microsystems</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-        <name>sk7100</name>
-        <description>NEC SK-7100</description>
-        <vendor>NEC</vendor>
+        <name>sun_type6_unix_usb</name>
+        <description>Sun Type 6 USB (Unix)</description>
+        <vendor>Sun Microsystems</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>sun_type6_usb</name>
+        <description>Sun Type 6/7 USB</description>
+        <vendor>Sun Microsystems</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>sun_type6_euro_usb</name>
+        <description>Sun Type 6/7 USB (European)</description>
+        <vendor>Sun Microsystems</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>sun_type7_usb</name>
+        <description>Sun Type 7 USB</description>
+        <vendor>Sun Microsystems</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>sun_type7_euro_usb</name>
+        <description>Sun Type 7 USB (European)</description>
+        <vendor>Sun Microsystems</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>sun_type7_jp_usb</name>
+        <description>Sun Type 7 USB (Japanese)/Japanese 106-key</description>
+        <vendor>Sun Microsystems</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>sun_type7_unix_usb</name>
+        <description>Sun Type 7 USB (Unix)</description>
+        <vendor>Sun Microsystems</vendor>
       </configItem>
     </model>
     <model>
@@ -992,6 +1230,13 @@
     </model>
     <model>
       <configItem>
+        <name>targa_v811</name>
+        <description>Targa Visionary 811</description>
+        <vendor>Targa</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
         <name>toshiba_s3000</name>
         <description>Toshiba Satellite S3000</description>
         <vendor>Toshiba</vendor>
@@ -999,10 +1244,17 @@
     </model>
     <model>
       <configItem>
-        <name>trust</name>
-        <description>Trust Wireless Classic</description>
-        <vendor>Trust</vendor>
-      </configItem>
+        <name>teck227</name>
+        <description>Truly Ergonomic 227</description>
+        <vendor>Truly Ergonomic</vendor>
+     </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>teck229</name>
+        <description>Truly Ergonomic 229</description>
+        <vendor>Truly Ergonomic</vendor>
+     </configItem>
     </model>
     <model>
       <configItem>
@@ -1015,6 +1267,13 @@
       <configItem>
         <name>trust_slimline</name>
         <description>Trust Slimline</description>
+        <vendor>Trust</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>trust</name>
+        <description>Trust Wireless Classic</description>
         <vendor>Trust</vendor>
       </configItem>
     </model>
@@ -1055,237 +1314,6 @@
     </model>
     <model>
       <configItem>
-        <name>yahoo</name>
-        <description>Yahoo! Internet</description>
-        <vendor>Yahoo!</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>macbook78</name>
-        <description>MacBook/MacBook Pro</description>
-        <vendor>Apple</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>macbook79</name>
-        <description>MacBook/MacBook Pro (intl.)</description>
-        <vendor>Apple</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>macintosh</name>
-        <description>Macintosh</description>
-        <vendor>Apple</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>macintosh_old</name>
-        <description>Macintosh Old</description>
-        <vendor>Apple</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>macintosh_hhk</name>
-        <description>Happy Hacking for Mac</description>
-        <vendor>Fujitsu</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>acer_c300</name>
-        <description>Acer C300</description>
-        <vendor>Acer</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>acer_ferrari4k</name>
-        <description>Acer Ferrari 4000</description>
-        <vendor>Acer</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>acer_laptop</name>
-        <description>Acer laptop</description>
-        <vendor>Acer</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>asus_laptop</name>
-        <description>Asus laptop</description>
-        <vendor>Asus</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>apple</name>
-        <description>Apple</description>
-        <vendor>Apple</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>apple_laptop</name>
-        <description>Apple laptop</description>
-        <vendor>Apple</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>applealu_ansi</name>
-        <description>Apple Aluminium (ANSI)</description>
-        <vendor>Apple</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>applealu_iso</name>
-        <description>Apple Aluminium (ISO)</description>
-        <vendor>Apple</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>applealu_jis</name>
-        <description>Apple Aluminium (JIS)</description>
-        <vendor>Apple</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>silvercrest</name>
-        <description>Silvercrest Multimedia Wireless</description>
-        <vendor>Silvercrest</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>emachines</name>
-        <description>eMachines m6800 laptop</description>
-        <vendor>eMachines</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>benqx</name>
-        <description>BenQ X-Touch</description>
-        <vendor>BenQ</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>benqx730</name>
-        <description>BenQ X-Touch 730</description>
-        <vendor>BenQ</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>benqx800</name>
-        <description>BenQ X-Touch 800</description>
-        <vendor>BenQ</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>hhk</name>
-        <description>Happy Hacking</description>
-        <vendor>Fujitsu</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>classmate</name>
-        <description>Classmate PC</description>
-        <vendor>Intel</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>olpc</name>
-        <description>OLPC</description>
-        <vendor>OLPC</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>sun_type7_usb</name>
-        <description>Sun Type 7 USB</description>
-        <vendor>Sun Microsystems</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>sun_type7_euro_usb</name>
-        <description>Sun Type 7 USB (European)</description>
-        <vendor>Sun Microsystems</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>sun_type7_unix_usb</name>
-        <description>Sun Type 7 USB (Unix)</description>
-        <vendor>Sun Microsystems</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>sun_type7_jp_usb</name>
-        <description>Sun Type 7 USB (Japanese)/Japanese 106-key</description>
-        <vendor>Sun Microsystems</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>sun_type6_usb</name>
-        <description>Sun Type 6/7 USB</description>
-        <vendor>Sun Microsystems</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>sun_type6_euro_usb</name>
-        <description>Sun Type 6/7 USB (European)</description>
-        <vendor>Sun Microsystems</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>sun_type6_unix_usb</name>
-        <description>Sun Type 6 USB (Unix)</description>
-        <vendor>Sun Microsystems</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>sun_type6_jp_usb</name>
-        <description>Sun Type 6 USB (Japanese)</description>
-        <vendor>Sun Microsystems</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>sun_type6_jp</name>
-        <description>Sun Type 6 (Japanese)</description>
-        <vendor>Sun Microsystems</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>targa_v811</name>
-        <description>Targa Visionary 811</description>
-        <vendor>Targa</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
         <name>unitekkb1925</name>
         <description>Unitek KB-1925</description>
         <vendor>Unitek Group</vendor>
@@ -1293,52 +1321,24 @@
     </model>
     <model>
       <configItem>
-        <name>compalfl90</name>
-        <description>FL90</description>
-        <vendor>Compal Electronics</vendor>
+        <name>vsonku306</name>
+        <description>ViewSonic KU-306 Internet</description>
+        <vendor>ViewSonic</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-        <name>creativedw7000</name>
-        <description>Creative Desktop Wireless 7000</description>
-        <vendor>Creative</vendor>
+        <name>winbook</name>
+        <description>Winbook Model XP5</description>
+        <vendor>Generic</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-        <name>teck227</name>
-        <description>Truly Ergonomic 227</description>
-        <vendor>Truly Ergonomic</vendor>
-     </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>teck229</name>
-        <description>Truly Ergonomic 229</description>
-        <vendor>Truly Ergonomic</vendor>
-     </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>apex300</name>
-        <description>SteelSeries Apex 300 (Apex RAW)</description>
-        <vendor>SteelSeries</vendor>
-     </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>chromebook</name>
-        <description>Chromebook</description>
-        <vendor>Google</vendor>
-     </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>ppkb</name>
-        <description>PinePhone Keyboard</description>
-        <vendor>Pine64</vendor>
-     </configItem>
+        <name>yahoo</name>
+        <description>Yahoo! Internet</description>
+        <vendor>Yahoo!</vendor>
+      </configItem>
     </model>
   </modelList>
   <layoutList>
