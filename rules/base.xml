@@ -1457,18 +1457,6 @@
         </variant>
         <variant>
           <configItem>
-            <name>qwerty</name>
-            <description>Arabic (QWERTY)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>qwerty_digits</name>
-            <description>Arabic (QWERTY, Eastern Arabic numerals)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>buckwalter</name>
             <description>Arabic (Buckwalter)</description>
           </configItem>
