@@ -1498,6 +1498,66 @@
     </layout>
     <layout>
       <configItem>
+        <name>iq</name>
+        <!-- Keyboard indicator for Arabic layouts -->
+        <shortDescription>ar</shortDescription>
+        <description>Arabic (Iraq)</description>
+        <countryList>
+          <iso3166Id>IQ</iso3166Id>
+        </countryList>
+        <languageList>
+          <iso639Id>ara</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>ku</name>
+            <!-- Keyboard indicator for Kurdish layouts -->
+            <shortDescription>ku</shortDescription>
+            <description>Kurdish (Iraq, Latin Q)</description>
+            <languageList>
+              <iso639Id>kur</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ku_alt</name>
+            <!-- Keyboard indicator for Kurdish layouts -->
+            <shortDescription>ku</shortDescription>
+            <description>Kurdish (Iraq, Latin Alt-Q)</description>
+            <languageList>
+              <iso639Id>kur</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ku_f</name>
+            <!-- Keyboard indicator for Kurdish layouts -->
+            <shortDescription>ku</shortDescription>
+            <description>Kurdish (Iraq, F)</description>
+            <languageList>
+              <iso639Id>kur</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ku_ara</name>
+            <!-- Keyboard indicator for Kurdish layouts -->
+            <shortDescription>ku</shortDescription>
+            <description>Kurdish (Iraq, Arabic-Latin)</description>
+            <languageList>
+              <iso639Id>kur</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem>
         <name>ma</name>
         <!-- Keyboard indicator for Arabic layouts -->
         <shortDescription>ar</shortDescription>
@@ -2518,217 +2578,6 @@
     </layout>
     <layout>
       <configItem>
-        <name>us</name>
-        <!-- Keyboard indicator for English layouts -->
-        <shortDescription>en</shortDescription>
-        <description>English (US)</description>
-        <countryList>
-          <iso3166Id>US</iso3166Id>
-        </countryList>
-        <languageList>
-          <iso639Id>eng</iso639Id>
-        </languageList>
-      </configItem>
-      <variantList>
-        <variant>
-          <configItem>
-            <name>euro</name>
-            <description>English (US, euro on 5)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>intl</name>
-            <description>English (US, intl., with dead keys)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>alt-intl</name>
-            <description>English (US, alt. intl.)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>altgr-intl</name>
-            <description>English (intl., with AltGr dead keys)</description>
-            <languageList>
-              <iso639Id>eng</iso639Id>
-              <iso639Id>fra</iso639Id>
-              <iso639Id>deu</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>mac</name>
-            <description>English (Macintosh)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>colemak</name>
-            <description>English (Colemak)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>colemak_dh</name>
-            <description>English (Colemak-DH)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>colemak_dh_wide</name>
-            <description>English (Colemak-DH Wide)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>colemak_dh_ortho</name>
-            <description>English (Colemak-DH Ortholinear)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>colemak_dh_iso</name>
-            <description>English (Colemak-DH ISO)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>colemak_dh_wide_iso</name>
-            <description>English (Colemak-DH Wide ISO)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>dvorak</name>
-            <description>English (Dvorak)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>dvorak-intl</name>
-            <description>English (Dvorak, intl., with dead keys)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>dvorak-alt-intl</name>
-            <description>English (Dvorak, alt. intl.)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>dvorak-l</name>
-            <description>English (Dvorak, left-handed)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>dvorak-r</name>
-            <description>English (Dvorak, right-handed)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>dvorak-classic</name>
-            <description>English (classic Dvorak)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>dvp</name>
-            <description>English (programmer Dvorak)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>dvorak-mac</name>
-            <description>English (Dvorak, Macintosh)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>norman</name>
-            <description>English (Norman)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>symbolic</name>
-            <description>English (US, Symbolic)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>workman</name>
-            <description>English (Workman)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>workman-intl</name>
-            <description>English (Workman, intl., with dead keys)</description>
-           </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>olpc2</name>
-            <description>English (the divide/multiply toggle the layout)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>chr</name>
-            <!-- Keyboard indicator for Cherokee layouts -->
-            <shortDescription>chr</shortDescription>
-            <description>Cherokee</description>
-            <languageList>
-              <iso639Id>chr</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>haw</name>
-            <!-- Keyboard indicator for Hawaian layouts -->
-            <shortDescription>haw</shortDescription>
-            <description>Hawaiian</description>
-            <languageList>
-              <iso639Id>haw</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>rus</name>
-            <!-- Keyboard indicator for Russian layouts -->
-            <shortDescription>ru</shortDescription>
-            <description>Russian (US, phonetic)</description>
-            <languageList>
-              <iso639Id>rus</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>hbs</name>
-            <description>Serbo-Croatian (US)</description>
-            <languageList>
-              <iso639Id>eng</iso639Id>
-              <iso639Id>bos</iso639Id>
-              <iso639Id>hbs</iso639Id>
-              <iso639Id>hrv</iso639Id>
-              <iso639Id>srp</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-      </variantList>
-    </layout>
-    <layout>
-      <configItem>
         <name>au</name>
         <!-- Keyboard indicator for English layouts -->
         <shortDescription>en</shortDescription>
@@ -2950,6 +2799,33 @@
     </layout>
     <layout>
       <configItem>
+        <name>nz</name>
+        <!-- Keyboard indicator for English layouts -->
+        <shortDescription>en</shortDescription>
+        <description>English (New Zealand)</description>
+        <countryList>
+          <iso3166Id>NZ</iso3166Id>
+        </countryList>
+        <languageList>
+          <iso639Id>eng</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>mao</name>
+            <!-- Keyboard indicator for Maori layouts -->
+            <shortDescription>mi</shortDescription>
+            <description>Maori</description>
+            <languageList>
+              <iso639Id>mri</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem>
         <name>ng</name>
         <!-- Keyboard indicator for English layouts -->
         <shortDescription>en</shortDescription>
@@ -3096,6 +2972,217 @@
             <description>Polish (British keyboard)</description>
             <languageList>
               <iso639Id>pol</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem>
+        <name>us</name>
+        <!-- Keyboard indicator for English layouts -->
+        <shortDescription>en</shortDescription>
+        <description>English (US)</description>
+        <countryList>
+          <iso3166Id>US</iso3166Id>
+        </countryList>
+        <languageList>
+          <iso639Id>eng</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>euro</name>
+            <description>English (US, euro on 5)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>intl</name>
+            <description>English (US, intl., with dead keys)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>alt-intl</name>
+            <description>English (US, alt. intl.)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>altgr-intl</name>
+            <description>English (intl., with AltGr dead keys)</description>
+            <languageList>
+              <iso639Id>eng</iso639Id>
+              <iso639Id>fra</iso639Id>
+              <iso639Id>deu</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>mac</name>
+            <description>English (Macintosh)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak</name>
+            <description>English (Colemak)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_dh</name>
+            <description>English (Colemak-DH)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_dh_wide</name>
+            <description>English (Colemak-DH Wide)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_dh_ortho</name>
+            <description>English (Colemak-DH Ortholinear)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_dh_iso</name>
+            <description>English (Colemak-DH ISO)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_dh_wide_iso</name>
+            <description>English (Colemak-DH Wide ISO)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dvorak</name>
+            <description>English (Dvorak)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dvorak-intl</name>
+            <description>English (Dvorak, intl., with dead keys)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dvorak-alt-intl</name>
+            <description>English (Dvorak, alt. intl.)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dvorak-l</name>
+            <description>English (Dvorak, left-handed)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dvorak-r</name>
+            <description>English (Dvorak, right-handed)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dvorak-classic</name>
+            <description>English (classic Dvorak)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dvp</name>
+            <description>English (programmer Dvorak)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dvorak-mac</name>
+            <description>English (Dvorak, Macintosh)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>norman</name>
+            <description>English (Norman)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>symbolic</name>
+            <description>English (US, Symbolic)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>workman</name>
+            <description>English (Workman)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>workman-intl</name>
+            <description>English (Workman, intl., with dead keys)</description>
+           </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>olpc2</name>
+            <description>English (the divide/multiply toggle the layout)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>chr</name>
+            <!-- Keyboard indicator for Cherokee layouts -->
+            <shortDescription>chr</shortDescription>
+            <description>Cherokee</description>
+            <languageList>
+              <iso639Id>chr</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>haw</name>
+            <!-- Keyboard indicator for Hawaian layouts -->
+            <shortDescription>haw</shortDescription>
+            <description>Hawaiian</description>
+            <languageList>
+              <iso639Id>haw</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>rus</name>
+            <!-- Keyboard indicator for Russian layouts -->
+            <shortDescription>ru</shortDescription>
+            <description>Russian (US, phonetic)</description>
+            <languageList>
+              <iso639Id>rus</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>hbs</name>
+            <description>Serbo-Croatian (US)</description>
+            <languageList>
+              <iso639Id>eng</iso639Id>
+              <iso639Id>bos</iso639Id>
+              <iso639Id>hbs</iso639Id>
+              <iso639Id>hrv</iso639Id>
+              <iso639Id>srp</iso639Id>
             </languageList>
           </configItem>
         </variant>
@@ -4745,66 +4832,6 @@
     </layout>
     <layout>
       <configItem>
-        <name>iq</name>
-        <!-- Keyboard indicator for Arabic layouts -->
-        <shortDescription>ar</shortDescription>
-        <description>Arabic (Iraq)</description>
-        <countryList>
-          <iso3166Id>IQ</iso3166Id>
-        </countryList>
-        <languageList>
-          <iso639Id>ara</iso639Id>
-        </languageList>
-      </configItem>
-      <variantList>
-        <variant>
-          <configItem>
-            <name>ku</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
-            <shortDescription>ku</shortDescription>
-            <description>Kurdish (Iraq, Latin Q)</description>
-            <languageList>
-              <iso639Id>kur</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>ku_alt</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
-            <shortDescription>ku</shortDescription>
-            <description>Kurdish (Iraq, Latin Alt-Q)</description>
-            <languageList>
-              <iso639Id>kur</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>ku_f</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
-            <shortDescription>ku</shortDescription>
-            <description>Kurdish (Iraq, F)</description>
-            <languageList>
-              <iso639Id>kur</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>ku_ara</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
-            <shortDescription>ku</shortDescription>
-            <description>Kurdish (Iraq, Arabic-Latin)</description>
-            <languageList>
-              <iso639Id>kur</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-      </variantList>
-    </layout>
-    <layout>
-      <configItem>
         <name>ie</name>
         <!-- Keyboard indicator for Irish layouts -->
         <shortDescription>ie</shortDescription>
@@ -5327,33 +5354,6 @@
           <configItem>
             <name>alt-gb</name>
             <description>Maltese (UK, with AltGr overrides)</description>
-          </configItem>
-        </variant>
-      </variantList>
-    </layout>
-    <layout>
-      <configItem>
-        <name>nz</name>
-        <!-- Keyboard indicator for English layouts -->
-        <shortDescription>en</shortDescription>
-        <description>English (New Zealand)</description>
-        <countryList>
-          <iso3166Id>NZ</iso3166Id>
-        </countryList>
-        <languageList>
-          <iso639Id>eng</iso639Id>
-        </languageList>
-      </configItem>
-      <variantList>
-        <variant>
-          <configItem>
-            <name>mao</name>
-            <!-- Keyboard indicator for Maori layouts -->
-            <shortDescription>mi</shortDescription>
-            <description>Maori</description>
-            <languageList>
-              <iso639Id>mri</iso639Id>
-            </languageList>
           </configItem>
         </variant>
       </variantList>
