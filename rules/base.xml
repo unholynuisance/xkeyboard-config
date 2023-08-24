@@ -1483,6 +1483,21 @@
     </layout>
     <layout>
       <configItem>
+        <name>eg</name>
+        <!-- Keyboard indicator for Arabic layouts -->
+        <shortDescription>ar</shortDescription>
+        <description>Arabic (Egypt)</description>
+        <countryList>
+          <iso3166Id>EG</iso3166Id>
+        </countryList>
+        <languageList>
+          <iso639Id>ara</iso639Id>
+          <iso639Id>arz</iso639Id>
+        </languageList>
+      </configItem>
+    </layout>
+    <layout>
+      <configItem>
         <name>ma</name>
         <!-- Keyboard indicator for Arabic layouts -->
         <shortDescription>ar</shortDescription>
