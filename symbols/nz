@@ -1,5 +1,5 @@
 default partial alphanumeric_keys
-xkb_symbols "basic" {
+xkb_symbols "mao" {
 
     // Adds the macrons needed for the Maori language to
     // a simple US keyboard layout.
