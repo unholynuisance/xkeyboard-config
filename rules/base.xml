@@ -316,7 +316,7 @@
         <name>chromebook</name>
         <description>Chromebook</description>
         <vendor>Google</vendor>
-     </configItem>
+      </configItem>
     </model>
     <model>
       <configItem>
@@ -1059,7 +1059,7 @@
         <name>ppkb</name>
         <description>PinePhone Keyboard</description>
         <vendor>Pine64</vendor>
-     </configItem>
+      </configItem>
     </model>
     <model>
       <configItem>
@@ -1108,7 +1108,7 @@
         <name>apex300</name>
         <description>SteelSeries Apex 300 (Apex RAW)</description>
         <vendor>SteelSeries</vendor>
-     </configItem>
+      </configItem>
     </model>
     <model>
       <configItem>
@@ -1220,14 +1220,14 @@
         <name>teck227</name>
         <description>Truly Ergonomic 227</description>
         <vendor>Truly Ergonomic</vendor>
-     </configItem>
+      </configItem>
     </model>
     <model>
       <configItem>
         <name>teck229</name>
         <description>Truly Ergonomic 229</description>
         <vendor>Truly Ergonomic</vendor>
-     </configItem>
+      </configItem>
     </model>
     <model>
       <configItem>
@@ -3132,7 +3132,7 @@
           <configItem>
             <name>workman-intl</name>
             <description>English (Workman, intl., with dead keys)</description>
-           </configItem>
+          </configItem>
         </variant>
         <variant>
           <configItem>
@@ -4560,7 +4560,7 @@
           </configItem>
         </variant>
         <variant>
-           <configItem>
+          <configItem>
             <name>ori-bolnagri</name>
             <!-- Keyboard indicator for Oriya layouts -->
             <shortDescription>or</shortDescription>
@@ -4619,7 +4619,7 @@
           </configItem>
         </variant>
         <variant>
-           <configItem>
+          <configItem>
             <name>sat</name>
             <!-- Keyboard indicator for Santali layouts -->
             <shortDescription>sat</shortDescription>
@@ -4804,30 +4804,30 @@
         </languageList>
       </configItem>
       <variantList>
-       <variant>
-         <configItem>
-          <name>melayu-phonetic</name>
+        <variant>
+          <configItem>
+            <name>melayu-phonetic</name>
             <description>Indonesian (Arab Melayu, phonetic)</description>
-         </configItem>
-       </variant>
-       <variant>
-         <configItem>
-          <name>melayu-phoneticx</name>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>melayu-phoneticx</name>
             <description>Indonesian (Arab Melayu, extended phonetic)</description>
-         </configItem>
-       </variant>
-       <variant>
-         <configItem>
-          <name>pegon-phonetic</name>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>pegon-phonetic</name>
             <description>Indonesian (Arab Pegon, phonetic)</description>
-         </configItem>
-       </variant>
-       <variant>
-         <configItem>
-          <name>javanese</name>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>javanese</name>
             <description>Javanese</description>
-         </configItem>
-       </variant>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
@@ -5316,12 +5316,12 @@
         </languageList>
       </configItem>
       <variantList>
-       <variant>
-         <configItem>
-          <name>phonetic</name>
+        <variant>
+          <configItem>
+            <name>phonetic</name>
             <description>Malay (Jawi, phonetic)</description>
-         </configItem>
-       </variant>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
@@ -7440,49 +7440,49 @@
         <configItem>
           <name>keypad:legacy</name>
           <description>Legacy</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>keypad:oss</name>
           <description>Unicode arrows and math operators</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>keypad:future</name>
           <description>Unicode arrows and math operators on default level</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>keypad:legacy_wang</name>
           <description>Legacy Wang 724</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>keypad:oss_wang</name>
           <description>Wang 724 keypad with Unicode arrows and math operators</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>keypad:future_wang</name>
           <description>Wang 724 keypad with Unicode arrows and math operators on default level</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>keypad:hex</name>
           <description>Hexadecimal</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>keypad:atm</name>
           <description>Phone and ATM style</description>
-       </configItem>
+        </configItem>
       </option>
     </group>
     <!-- This option should override the KPDL key defined in keypad; I hope it's declared in the right place -->
@@ -7497,38 +7497,38 @@
           <!-- Actually, with KP_DECIMAL, as the old keypad(dot) -->
           <name>kpdl:dot</name>
           <description>Legacy key with dot</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>kpdl:comma</name>
           <!-- Actually, with KP_SEPARATOR, as the old keypad(comma) -->
           <description>Legacy key with comma</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>kpdl:dotoss</name>
           <description>Four-level key with dot</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>kpdl:dotoss_latin9</name>
           <description>Four-level key with dot, Latin-9 only</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>kpdl:commaoss</name>
           <description>Four-level key with comma</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>kpdl:momayyezoss</name>
           <description>Four-level key with momayyez</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
@@ -7536,13 +7536,13 @@
           <!-- This assumes the KP_ abstract symbols are actually useful for some apps
                The description needs to be rewritten -->
           <description>Four-level key with abstract separators</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>kpdl:semi</name>
           <description>Semicolon on third level</description>
-       </configItem>
+        </configItem>
       </option>
     </group>
     <group allowMultipleSelection="false">
@@ -8205,19 +8205,19 @@
         <configItem>
           <name>japan:kana_lock</name>
           <description>Kana Lock key is locking</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>japan:nicola_f_bs</name>
           <description>NICOLA-F style Backspace</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>japan:hztg_escape</name>
           <description>Make Zenkaku Hankaku an additional Esc</description>
-       </configItem>
+        </configItem>
       </option>
     </group>
     <group allowMultipleSelection="true">
@@ -8259,19 +8259,19 @@
         <configItem>
           <name>esperanto:qwerty</name>
           <description>At the corresponding key in a QWERTY layout</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>esperanto:dvorak</name>
           <description>At the corresponding key in a Dvorak layout</description>
-       </configItem>
+        </configItem>
       </option>
       <option>
         <configItem>
           <name>esperanto:colemak</name>
           <description>At the corresponding key in a Colemak layout</description>
-       </configItem>
+        </configItem>
       </option>
     </group>
     <group allowMultipleSelection="true">
@@ -8307,7 +8307,7 @@
         <configItem>
           <name>custom:types</name>
           <description>Use user-defined custom XKB types</description>
-       </configItem>
+        </configItem>
       </option>
     </group>
   </optionList>
