@@ -125,60 +125,10 @@ xkb_symbols "simple" {
     include "kpdl(comma)"
 };
 
-
-// Greek - Extended
-// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━━┓
-// │ ~   │ !   │ @   │ #   │ $   │ %   │ ^   │ &   │ *   │ (   │ )   │ _   │ +   ┃Backspace  ┃
-// │ `   │ 1   │ 2 ² │ 3 ³ │ 4 £ │ 5 € │ 6   │ 7   │ 8   │ 9   │ 0 ° │ - ± │ =   ┃           ┃
-// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━━━┫
-// ┃       ┃ :   │ Σ   │ Ε   │ Ρ   │ Τ   │ Υ   │ Θ   │ Ι   │ Ο   │ Π   │ {   │ }   ┃Enter    ┃
-// ┃Tab    ┃ ; · │ ς   │ ε € │ ρ ® │ τ   │ υ ¥ │ θ   │ ι   │ ο   │ π   │ [   │ ]   ┃         ┃
-// ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓        ┃
-// ┃Caps    ┃ Α   │ Σ   │ Δ   │ Φ   │ Γ   │ Η   │ Ξ   │ Κ   │ Λ   │ ¨   │ "   │ |   ┃        ┃
-// ┃Lock    ┃ α   │ σ   │ δ   │ φ   │ γ   │ η   │ ξ   │ κ   │ λ   │ ´   │ '   │ \   ┃        ┃
-// ┣━━━━━━━┳┹────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┲┷━━━━━┻━━━━━━━━┫
-// ┃       ┃ »   │ Ζ   │ Χ   │ Ψ   │ Ω   │ Β   │ Ν   │ Μ   │ <   │ >   │ ?   ┃               ┃
-// ┃Shift  ┃ «   │ ζ § │ χ   │ ψ © │ ω   │ β   │ ν   │ μ   │ , « │ . » │ /   ┃Shift          ┃
-// ┣━━━━━━━╋━━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴──┲━━┷━━━━┳┷━━━━━┻┳━━━━━━━┳━━━━━━┫
-// ┃       ┃       ┃       ┃                                  ┃       ┃       ┃       ┃      ┃
-// ┃Ctrl   ┃Meta   ┃Alt    ┃              Space               ┃AltGr  ┃Meta   ┃Menu   ┃Ctrl  ┃
-// ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹──────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━┛
-
-partial alphanumeric_keys
-xkb_symbols "extended" {
-
-    include "gr(simple)"
-
-    name[Group1] = "Greek (extended)";
-
-    key.type[Group1] = "THREE_LEVEL";
-
-    key <TLDE>	{[  any,  any,          U2015 ]}; // ―
-    key <AE02>	{[  any,  any,    twosuperior ]}; // ²
-    key <AE03>	{[  any,  any,  threesuperior ]}; // ³
-    key <AE04>	{[  any,  any,       sterling ]}; // £
-    key <AE10>	{[  any,  any,         degree ]}; // °
-    key <AE11>	{[  any,  any,      plusminus ]}; // ±
-
-    key <AD01>	{[  any,  any, periodcentered ]}; // ·
-    key <AD04>	{[  any,  any,     registered ]}; // ®
-    key <AD06>	{[  any,  any,            yen ]}; // ¥
-
-    key <AB01>	{[  any,  any,        section ]}; // §
-    key <AB03>	{[  any,  any,      copyright ]}; // ©
-    key <AB08>	{[  any,  any,  guillemotleft ]}; // «
-    key <AB09>	{[  any,  any, guillemotright ]}; // »
-
-    include "eurosign(5)"
-    include "eurosign(e)"
-
-    include "level3(ralt_switch)"
-};
-
 partial alphanumeric_keys
 xkb_symbols "polytonic" {
 
-    include "gr(extended)"
+    include "gr(basic)"
 
     name[Group1] = "Greek (polytonic)";
 
