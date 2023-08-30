@@ -7,10 +7,12 @@
 
 default  partial alphanumeric_keys
 xkb_symbols "basic" {
+
 	include "gr(simple)"
 
 	name[Group1] = "Greek";
 
+	key <TLDE> {[  any,  any,          U2015                 ]}; // ―
 	key <AE01> {[  any,  any,            any,    onesuperior ]};
 	key <AE02> {[  any,  any,        onehalf,    twosuperior ]};
 	key <AE03> {[  any,  any,       sterling,  threesuperior ]};
@@ -31,6 +33,7 @@ xkb_symbols "basic" {
 	key <AD11> {[  any,  any,     dead_tilde,    dead_macron ]};
 	key <AD12> {[  any,  any,      dead_iota,     dead_breve ]};
 
+	key <AC02> {[  any,  any,        section                 ]};
 	key <AC03> {[  any,  any,      downarrow,        uparrow ]};
 	key <AC04> {[  any,  any,          U03D5,      Greek_PHI ]}; // ϕ Φ
 	key <AC05> {[  any,  any,          U03DD,          U03DC ]}; // ϝ Ϝ
