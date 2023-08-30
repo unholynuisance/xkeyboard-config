@@ -13,10 +13,11 @@ xkb_symbols "basic" {
 	name[Group1] = "Greek";
 
 	key <TLDE> {[  any,  any,          U2015                 ]}; // ―
-	key <AE01> {[  any,  any,            any,    onesuperior ]};
+	key <AE01> {[  any,  any,          U2022,    onesuperior ]}; // •
 	key <AE02> {[  any,  any,        onehalf,    twosuperior ]};
 	key <AE03> {[  any,  any,       sterling,  threesuperior ]};
 	key <AE04> {[  any,  any,     onequarter,  threequarters ]};
+	key <AE05> {[  any,  any,       EuroSign,       permille ]};
 	key <AE06> {[  any,  any,          U03F0                 ]}; // ϰ
 	key <AE07> {[  any,  any,          U03D7,          U03CF ]}; // ϗ Ϗ
 	key <AE08> {[  any,  any,          U20AF                 ]}; // ₯
@@ -50,10 +51,9 @@ xkb_symbols "basic" {
 	key <AB05> {[  any,  any,          U03D0                 ]}; // ϐ
 	key <AB06> {[  any,  any,          U0374,          U0375 ]}; // ʹ ͵
 	key <AB07> {[  any,  any,          U03FB,          U03FA ]}; // ϻ Ϻ
-	key <AB08> {[  any,  any,  guillemotleft                 ]};
+	key <AB08> {[  any,  any,  guillemotleft,       ellipsis ]};
 	key <AB09> {[  any,  any, guillemotright, periodcentered ]};
 
-	include "eurosign(5)"
 	include "eurosign(e)"
 
 	include "level3(ralt_switch)"
