@@ -30,6 +30,7 @@ xkb_symbols "basic" {
 	key <AD06> {[  any,  any,          U03D2,          U03D2 ]}; // ϒ ϒ
 	key <AD07> {[  any,  any,          U03D1,          U03F4 ]}; // ϑ ϴ
 	key <AD08> {[  any,  any,          U037B,          U03FD ]}; // ͻ Ͻ
+	key <AD09> {[  any,  any,          U03D9,          U03D8 ]}; // ϙ Ϙ
 	key <AD10> {[  any,  any,          U03E1,          U03E0 ]}; // ϡ Ϡ
 	key <AD11> {[  any,  any,     dead_tilde,    dead_macron ]};
 	key <AD12> {[  any,  any,      dead_iota,     dead_breve ]};
@@ -38,6 +39,7 @@ xkb_symbols "basic" {
 	key <AC03> {[  any,  any,      downarrow,        uparrow ]};
 	key <AC04> {[  any,  any,          U03D5,      Greek_PHI ]}; // ϕ Φ
 	key <AC05> {[  any,  any,          U03DD,          U03DC ]}; // ϝ Ϝ
+	key <AC06> {[  any,  any,          U03F3,          U037F ]}; // ϳ Ϳ
 	key <AC07> {[  any,  any,          U037C,          U03FE ]}; // ͼ Ͼ
 	key <AC08> {[  any,  any,          U03DF,          U03DE ]}; // ϟ Ϟ
 	key <AC09> {[  any,  any,          U03F2,          U03F9 ]}; // ϲ Ϲ
@@ -193,7 +195,7 @@ xkb_symbols "polytonic" {
     key <AC02>	{[ Greek_sigma,  Greek_SIGMA,      U03DB,  U03DA ]}; // ϛ Ϛ (stigmata)
     key <AC04>	{[ Greek_phi,    Greek_PHI,        U03DD,  U03DC ]}; // ϝ Ϝ
     key <AC07>	{[ Greek_xi,     Greek_XI,         U03F3,  U037F ]}; // ϳ Ϳ
-    key <AC08>	{[ Greek_kappa,  Greek_KAPPA,      U03D7,  U03CF ]}; // κ Κ (kai symbol)
+    key <AC08>	{[ Greek_kappa,  Greek_KAPPA,      U03D7,  U03CF ]}; // ϗ Ϗ (kai symbols)
 
     key.type[Group1] = "THREE_LEVEL";
     key <AC10>	{[ dead_acute,   dead_psili                      ]};
