@@ -6762,6 +6762,30 @@
         </variant>
         <variant>
           <configItem>
+            <name>qwertyvka</name>
+            <description>Ukrainian (qwertyvka)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemakivka</name>
+            <description>Ukrainian (colemakivka)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>workmanivka</name>
+            <description>Ukrainian (workmanivka)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dvorakivka</name>
+            <description>Ukrainian (dvorakivka)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>crh</name>
             <!-- Keyboard indicator for Crimean Tatar layouts -->
             <shortDescription>crh</shortDescription>

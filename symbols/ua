@@ -316,6 +316,253 @@ xkb_symbols "homophonic" {
     key <AB10>	{[ slash,             question          ]};
 };
 
+// Modern Ukrainian phonetic layouts, aiming to mirror popular US layouts,
+// while retaining the simplicity of access to common punctuation and
+// special symbol mapping. Proper Ukrainian special symbols added.
+//
+// QWERTY  -> qwertyvka
+// Colemak -> colemakivka
+// Workman -> workmanivka
+// Dvorak  -> dvorakivka
+//
+// Vasyl Zubko <vazub(at)zubko.cc>, 2022
+
+partial alphanumeric_keys
+xkb_symbols "qwertyvka" {
+
+    name[Group1]= "Ukrainian (qwertyvka)";
+
+    key <TLDE> {[ U0060, U007E               ]}; // grave, asciitilde
+    key <AE01> {[ U0031, U0021               ]}; // 1,     exclam
+    key <AE02> {[ U0032, U0040               ]}; // 2,     at
+    key <AE03> {[ U0033, U0023, U2116        ]}; // 3,     numbersign, numbersign_ukr
+    key <AE04> {[ U0034, U0024, U20B4, U20AC ]}; // 4,     dollar, hryvnia, EuroSign
+    key <AE05> {[ U0035, U0025               ]}; // 5,     percent
+    key <AE06> {[ U0036, U005E               ]}; // 6,     asciicircum
+    key <AE07> {[ U0037, U0026               ]}; // 7,     ampersand
+    key <AE08> {[ U0038, U002A               ]}; // 8,     asterisk
+    key <AE09> {[ U0039, U0028               ]}; // 9,     parenleft
+    key <AE10> {[ U0030, U0029               ]}; // 0,     parenright
+    key <AE11> {[ U002D, U005F, U2014        ]}; // minus, underscore, emdash
+    key <AE12> {[ U003D, U002B               ]}; // equal, plus
+
+    key <AD01> {[ U044C, U042C               ]}; // Cyrillic_softsign/SOFTSIGN
+    key <AD02> {[ U0449, U0429               ]}; // Cyrillic_shcha/SHCHA
+    key <AD03> {[ U0435, U0415, U0454, U0404 ]}; // Cyrillic_ie/IE, Ukrainian_ie/IE
+    key <AD04> {[ U0440, U0420               ]}; // Cyrillic_er/ER
+    key <AD05> {[ U0442, U0422               ]}; // Cyrillic_te/TE
+    key <AD06> {[ U0438, U0418               ]}; // Cyrillic_i/I
+    key <AD07> {[ U0443, U0423, U044E, U042E ]}; // Cyrillic_u/U/yu/YU
+    key <AD08> {[ U0456, U0406, U0457, U0407 ]}; // Ukrainian_i/I/yi/YI
+    key <AD09> {[ U043E, U041E               ]}; // Cyrillic_o/O
+    key <AD10> {[ U043F, U041F               ]}; // Cyrillic_pe/PE
+    key <AD11> {[ U005B, U007B               ]}; // bracketleft, braceleft
+    key <AD12> {[ U005D, U007D               ]}; // bracketright, braceright
+    key <BKSL> {[ U005C, U007C               ]}; // backslash, bar
+
+    key <AC01> {[ U0430, U0410, U044F, U042F ]}; // Cyrillic_a/A/ya/YA
+    key <AC02> {[ U0441, U0421, U0448, U0428 ]}; // Cyrillic_es/ES/sha/SHA
+    key <AC03> {[ U0434, U0414               ]}; // Cyrillic_de/DE
+    key <AC04> {[ U0444, U0424               ]}; // Cyrillic_ef/EF
+    key <AC05> {[ U0436, U0416               ]}; // Cyrillic_zhe/ZHE
+    key <AC06> {[ U0433, U0413, U0491, U0490 ]}; // Cyrillic_ghe/GHE, Ukrainian_ghe_with_upturn/GHE_WITH_UPTURN
+    key <AC07> {[ U0439, U0419               ]}; // Cyrillic_shorti/SHORTI
+    key <AC08> {[ U043A, U041A               ]}; // Cyrillic_ka/KA
+    key <AC09> {[ U043B, U041B               ]}; // Cyrillic_el/EL
+    key <AC10> {[ U003B, U003A               ]}; // semicolon, colon
+    key <AC11> {[ U0027, U0022, U02BC        ]}; // apostrophe, quotedbl, modifier letter apostrophe
+
+    key <AB01> {[ U0437, U0417               ]}; // Cyrillic_ze/ZE
+    key <AB02> {[ U0445, U0425               ]}; // Cyrillic_ha/HA
+    key <AB03> {[ U0446, U0426, U0447, U0427 ]}; // Cyrillic_tse/TSE/che/CHE
+    key <AB04> {[ U0432, U0412               ]}; // Cyrillic_ve/VE
+    key <AB05> {[ U0431, U0411               ]}; // Cyrillic_be/BE
+    key <AB06> {[ U043D, U041D               ]}; // Cyrillic_en/EN
+    key <AB07> {[ U043C, U041C               ]}; // Cyrillic_em/EM
+    key <AB08> {[ U002C, U003C               ]}; // comma, less
+    key <AB09> {[ U002E, U003E               ]}; // period, greater
+    key <AB10> {[ U002F, U003F               ]}; // slash, question
+
+    include "level3(ralt_switch)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "colemakivka" {
+
+    name[Group1]= "Ukrainian (colemakivka)";
+
+    key <TLDE> {[ U0060, U007E               ]}; // grave, asciitilde
+    key <AE01> {[ U0031, U0021               ]}; // 1,     exclam
+    key <AE02> {[ U0032, U0040               ]}; // 2,     at
+    key <AE03> {[ U0033, U0023, U2116        ]}; // 3,     numbersign, numbersign_ukr
+    key <AE04> {[ U0034, U0024, U20B4, U20AC ]}; // 4,     dollar, hryvnia, EuroSign
+    key <AE05> {[ U0035, U0025               ]}; // 5,     percent
+    key <AE06> {[ U0036, U005E               ]}; // 6,     asciicircum
+    key <AE07> {[ U0037, U0026               ]}; // 7,     ampersand
+    key <AE08> {[ U0038, U002A               ]}; // 8,     asterisk
+    key <AE09> {[ U0039, U0028               ]}; // 9,     parenleft
+    key <AE10> {[ U0030, U0029               ]}; // 0,     parenright
+    key <AE11> {[ U002D, U005F, U2014        ]}; // minus, underscore, emdash
+    key <AE12> {[ U003D, U002B               ]}; // equal, plus
+
+    key <AD01> {[ U044C, U042C               ]}; // Cyrillic_softsign/SOFTSIGN
+    key <AD02> {[ U0449, U0429               ]}; // Cyrillic_shcha/SHCHA
+    key <AD03> {[ U0444, U0424               ]}; // Cyrillic_ef/EF
+    key <AD04> {[ U043F, U041F               ]}; // Cyrillic_pe/PE
+    key <AD05> {[ U0436, U0416               ]}; // Cyrillic_zhe/ZHE
+    key <AD06> {[ U0439, U0419               ]}; // Cyrillic_shorti/SHORTI
+    key <AD07> {[ U043B, U041B               ]}; // Cyrillic_el/EL
+    key <AD08> {[ U0443, U0423, U044E, U042E ]}; // Cyrillic_u/U/yu/YU
+    key <AD09> {[ U0438, U0418               ]}; // Cyrillic_i/I
+    key <AD10> {[ U003B, U003A               ]}; // semicolon, colon
+    key <AD11> {[ U005B, U007B               ]}; // bracketleft, braceleft
+    key <AD12> {[ U005D, U007D               ]}; // bracketright, braceright
+    key <BKSL> {[ U005C, U007C               ]}; // backslash, bar
+
+    key <AC01> {[ U0430, U0410, U044F, U042F ]}; // Cyrillic_a/A/ya/YA
+    key <AC02> {[ U0440, U0420               ]}; // Cyrillic_er/ER
+    key <AC03> {[ U0441, U0421, U0448, U0428 ]}; // Cyrillic_es/ES/sha/SHA
+    key <AC04> {[ U0442, U0422               ]}; // Cyrillic_te/TE
+    key <AC05> {[ U0434, U0414               ]}; // Cyrillic_de/DE
+    key <AC06> {[ U0433, U0413, U0491, U0490 ]}; // Cyrillic_ghe/GHE, Ukrainian_ghe_with_upturn/GHE_WITH_UPTURN
+    key <AC07> {[ U043D, U041D               ]}; // Cyrillic_en/EN
+    key <AC08> {[ U0435, U0415, U0454, U0404 ]}; // Cyrillic_ie/IE, Ukrainian_ie/IE
+    key <AC09> {[ U0456, U0406, U0457, U0407 ]}; // Ukrainian_i/I/yi/YI
+    key <AC10> {[ U043E, U041E               ]}; // Cyrillic_o/O
+    key <AC11> {[ U0027, U0022, U02BC        ]}; // apostrophe, quotedbl, modifier letter apostrophe
+
+    key <AB01> {[ U0437, U0417               ]}; // Cyrillic_ze/ZE
+    key <AB02> {[ U0445, U0425               ]}; // Cyrillic_ha/HA
+    key <AB03> {[ U0446, U0426, U0447, U0427 ]}; // Cyrillic_tse/TSE/che/CHE
+    key <AB04> {[ U0432, U0412               ]}; // Cyrillic_ve/VE
+    key <AB05> {[ U0431, U0411               ]}; // Cyrillic_be/BE
+    key <AB06> {[ U043A, U041A               ]}; // Cyrillic_ka/KA
+    key <AB07> {[ U043C, U041C               ]}; // Cyrillic_em/EM
+    key <AB08> {[ U002C, U003C               ]}; // comma, less
+    key <AB09> {[ U002E, U003E               ]}; // period, greater
+    key <AB10> {[ U002F, U003F               ]}; // slash, question
+
+    include "level3(ralt_switch)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "workmanivka" {
+
+    name[Group1]= "Ukrainian (workmanivka)";
+
+    key <TLDE> {[ U0060, U007E               ]}; // grave, asciitilde
+    key <AE01> {[ U0031, U0021               ]}; // 1,     exclam
+    key <AE02> {[ U0032, U0040               ]}; // 2,     at
+    key <AE03> {[ U0033, U0023, U2116        ]}; // 3,     numbersign, numbersign_ukr
+    key <AE04> {[ U0034, U0024, U20B4, U20AC ]}; // 4,     dollar, hryvnia, EuroSign
+    key <AE05> {[ U0035, U0025               ]}; // 5,     percent
+    key <AE06> {[ U0036, U005E               ]}; // 6,     asciicircum
+    key <AE07> {[ U0037, U0026               ]}; // 7,     ampersand
+    key <AE08> {[ U0038, U002A               ]}; // 8,     asterisk
+    key <AE09> {[ U0039, U0028               ]}; // 9,     parenleft
+    key <AE10> {[ U0030, U0029               ]}; // 0,     parenright
+    key <AE11> {[ U002D, U005F, U2014        ]}; // minus, underscore, emdash
+    key <AE12> {[ U003D, U002B               ]}; // equal, plus
+
+    key <AD01> {[ U044C, U042C               ]}; // Cyrillic_softsign/SOFTSIGN
+    key <AD02> {[ U0434, U0414               ]}; // Cyrillic_de/DE
+    key <AD03> {[ U0440, U0420               ]}; // Cyrillic_er/ER
+    key <AD04> {[ U0449, U0429               ]}; // Cyrillic_shcha/SHCHA
+    key <AD05> {[ U0431, U0411               ]}; // Cyrillic_be/BE
+    key <AD06> {[ U0439, U0419               ]}; // Cyrillic_shorti/SHORTI
+    key <AD07> {[ U0444, U0424               ]}; // Cyrillic_ef/EF
+    key <AD08> {[ U0443, U0423, U044E, U042E ]}; // Cyrillic_u/U/yu/YU
+    key <AD09> {[ U043F, U041F               ]}; // Cyrillic_pe/PE
+    key <AD10> {[ U003B, U003A               ]}; // semicolon, colon
+    key <AD11> {[ U005B, U007B               ]}; // bracketleft, braceleft
+    key <AD12> {[ U005D, U007D               ]}; // bracketright, braceright
+    key <BKSL> {[ U005C, U007C               ]}; // backslash, bar
+
+    key <AC01> {[ U0430, U0410, U044F, U042F ]}; // Cyrillic_a/A/ya/YA
+    key <AC02> {[ U0441, U0421, U0448, U0428 ]}; // Cyrillic_es/ES/sha/SHA
+    key <AC03> {[ U0433, U0413, U0491, U0490 ]}; // Cyrillic_ghe/GHE, Ukrainian_ghe_with_upturn/GHE_WITH_UPTURN
+    key <AC04> {[ U0442, U0422               ]}; // Cyrillic_te/TE
+    key <AC05> {[ U0436, U0416               ]}; // Cyrillic_zhe/ZHE
+    key <AC06> {[ U0438, U0418               ]}; // Cyrillic_i/I
+    key <AC07> {[ U043D, U041D               ]}; // Cyrillic_en/EN
+    key <AC08> {[ U0435, U0415, U0454, U0404 ]}; // Cyrillic_ie/IE, Ukrainian_ie/IE
+    key <AC09> {[ U043E, U041E               ]}; // Cyrillic_o/O
+    key <AC10> {[ U0456, U0406, U0457, U0407 ]}; // Ukrainian_i/I/yi/YI
+    key <AC11> {[ U0027, U0022, U02BC        ]}; // apostrophe, quotedbl, modifier letter apostrophe
+
+    key <AB01> {[ U0437, U0417               ]}; // Cyrillic_ze/ZE
+    key <AB02> {[ U0445, U0425               ]}; // Cyrillic_ha/HA
+    key <AB03> {[ U043C, U041C               ]}; // Cyrillic_em/EM
+    key <AB04> {[ U0446, U0426, U0447, U0427 ]}; // Cyrillic_tse/TSE/che/CHE
+    key <AB05> {[ U0432, U0412               ]}; // Cyrillic_ve/VE
+    key <AB06> {[ U043A, U041A               ]}; // Cyrillic_ka/KA
+    key <AB07> {[ U043B, U041B               ]}; // Cyrillic_el/EL
+    key <AB08> {[ U002C, U003C               ]}; // comma, less
+    key <AB09> {[ U002E, U003E               ]}; // period, greater
+    key <AB10> {[ U002F, U003F               ]}; // slash, question
+
+    include "level3(ralt_switch)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "dvorakivka" {
+
+    name[Group1]= "Ukrainian (dvorakivka)";
+
+    key <TLDE> {[ U0060, U007E               ]}; // grave, asciitilde
+    key <AE01> {[ U0031, U0021               ]}; // 1,     exclam
+    key <AE02> {[ U0032, U0040               ]}; // 2,     at
+    key <AE03> {[ U0033, U0023, U2116        ]}; // 3,     numbersign, numbersign_ukr
+    key <AE04> {[ U0034, U0024, U20B4, U20AC ]}; // 4,     dollar, hryvnia, EuroSign
+    key <AE05> {[ U0035, U0025               ]}; // 5,     percent
+    key <AE06> {[ U0036, U005E               ]}; // 6,     asciicircum
+    key <AE07> {[ U0037, U0026               ]}; // 7,     ampersand
+    key <AE08> {[ U0038, U002A               ]}; // 8,     asterisk
+    key <AE09> {[ U0039, U0028               ]}; // 9,     parenleft
+    key <AE10> {[ U0030, U0029               ]}; // 0,     parenright
+    key <AE11> {[ U005B, U007B               ]}; // bracketleft, braceleft
+    key <AE12> {[ U005D, U007D               ]}; // bracketright, braceright
+
+    key <AD01> {[ U0027, U0022, U02BC        ]}; // apostrophe, quotedbl, modifier letter apostrophe
+    key <AD02> {[ U002C, U003C               ]}; // comma, less
+    key <AD03> {[ U002E, U003E               ]}; // period, greater
+    key <AD04> {[ U043F, U041F               ]}; // Cyrillic_pe/PE
+    key <AD05> {[ U0438, U0418               ]}; // Cyrillic_i/I
+    key <AD06> {[ U0444, U0424               ]}; // Cyrillic_ef/EF
+    key <AD07> {[ U0436, U0416               ]}; // Cyrillic_zhe/ZHE
+    key <AD08> {[ U0446, U0426, U0447, U0427 ]}; // Cyrillic_tse/TSE/che/CHE
+    key <AD09> {[ U0440, U0420               ]}; // Cyrillic_er/ER
+    key <AD10> {[ U043B, U041B               ]}; // Cyrillic_el/EL
+    key <AD11> {[ U002F, U003F               ]}; // slash, question
+    key <AD12> {[ U003D, U002B               ]}; // equal, plus
+    key <BKSL> {[ U005C, U007C               ]}; // backslash, bar
+
+    key <AC01> {[ U0430, U0410, U044F, U042F ]}; // Cyrillic_a/A/ya/YA
+    key <AC02> {[ U043E, U041E               ]}; // Cyrillic_o/O
+    key <AC03> {[ U0435, U0415, U0454, U0404 ]}; // Cyrillic_ie/IE, Ukrainian_ie/IE
+    key <AC04> {[ U0443, U0423, U044E, U042E ]}; // Cyrillic_u/U/yu/YU
+    key <AC05> {[ U0456, U0406, U0457, U0407 ]}; // Ukrainian_i/I/yi/YI
+    key <AC06> {[ U0434, U0414               ]}; // Cyrillic_de/DE
+    key <AC07> {[ U0433, U0413, U0491, U0490 ]}; // Cyrillic_ghe/GHE, Ukrainian_ghe_with_upturn/GHE_WITH_UPTURN
+    key <AC08> {[ U0442, U0422               ]}; // Cyrillic_te/TE
+    key <AC09> {[ U043D, U041D               ]}; // Cyrillic_en/EN
+    key <AC10> {[ U0441, U0421, U0448, U0428 ]}; // Cyrillic_es/ES/sha/SHA
+    key <AC11> {[ U002D, U005F, U2014        ]}; // minus, underscore, emdash
+
+    key <AB01> {[ U003B, U003A               ]}; // semicolon, colon
+    key <AB02> {[ U044C, U042C               ]}; // Cyrillic_softsign/SOFTSIGN
+    key <AB03> {[ U0439, U0419               ]}; // Cyrillic_shorti/SHORTI
+    key <AB04> {[ U043A, U041A               ]}; // Cyrillic_ka/KA
+    key <AB05> {[ U0445, U0425               ]}; // Cyrillic_ha/HA
+    key <AB06> {[ U0431, U0411               ]}; // Cyrillic_be/BE
+    key <AB07> {[ U043C, U041C               ]}; // Cyrillic_em/EM
+    key <AB08> {[ U0449, U0429               ]}; // Cyrillic_shcha/SHCHA
+    key <AB09> {[ U0432, U0412               ]}; // Cyrillic_ve/VE
+    key <AB10> {[ U0437, U0417               ]}; // Cyrillic_ze/ZE
+
+    include "level3(ralt_switch)"
+};
+
 // Crimean Tatar (Crimean Turkish) layouts.
 // First released (by Ubuntu): 2009-02-24.
 // These layouts are not yet standard.  In particular, the mapping of
