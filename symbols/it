@@ -339,8 +339,6 @@ xkb_symbols "scn" {
 
     name[Group1] = "Sicilian";
 
-    key <AE12> {[ iacute, asciicircum,  asciitilde, dead_circumflex ]};
-
     key <AD03> {[      e,           E,    EuroSign,     ecircumflex ]};
     key <AD04> {[      r,           R,  ediaeresis,      Ediaeresis ]};
     key <AD07> {[      u,           U, ucircumflex,     Ucircumflex ]};
@@ -352,10 +350,6 @@ xkb_symbols "scn" {
     key <AC03> {[      d,           D,       U1E0D,           U1E0C ]}; // ḍ Ḍ
     key <AC04> {[      f,           F,     dstroke,         Dstroke ]};
     key <AC11> {[ agrave,      degree,  numbersign,           U1D58 ]}; // # ᵘ
-
-    // Pushed ugrave to the third level (replacing the dead_grave),
-    // since it's common to write mixed Sicilian / Italian.
-    key <BKSL> {[ uacute,     section,      ugrave,      dead_breve ]};
 
     key <AB02> {[      x,           X,   Greek_chi,       Greek_CHI ]};
     // The uppercase Ccedilla (Ç) can be reached by using CapsLock.
