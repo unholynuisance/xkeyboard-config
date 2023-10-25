@@ -331,7 +331,7 @@ xkb_symbols "lldde" {
     key <AD10> {[ p, P, ediaeresis, Ediaeresis ]};
 };
 
-// Layout for Sicilian, by Cadèmia Siciliana <l10n@cademiasiciliana.org>, 2017.
+// Layout for Sicilian, by Cademia Siciliana <l10n@cademiasiciliana.org>, 2023.
 partial alphanumeric_keys
 xkb_symbols "scn" {
 
@@ -339,6 +339,7 @@ xkb_symbols "scn" {
 
     name[Group1] = "Sicilian";
 
+    key <AD02> {[      w,           W,       schwa,           SCHWA ]}; // ə Ə
     key <AD03> {[      e,           E,    EuroSign,     ecircumflex ]};
     key <AD04> {[      r,           R,  ediaeresis,      Ediaeresis ]};
     key <AD07> {[      u,           U, ucircumflex,     Ucircumflex ]};
