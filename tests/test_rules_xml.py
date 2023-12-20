@@ -266,9 +266,16 @@ def test_iso639(layout):
     expected_without_language = ["brai", "custom", "trans"]
 
     for code in layout.iso639:
-        assert (
-            code in language_codes
-        ), f'{layout.rulesfile}: unknown language code "{code}" in {layout.name}'
+        try:
+            assert (
+                code in language_codes
+            ), f'{layout.rulesfile}: unknown language code "{code}" in {layout.name}'
+        except AssertionError as e:
+            # needs pycountry 23.12.7, this code can be removed when our CI has pycountry new enough
+            if code in ["pzh", "szy", "uon"]:
+                pytest.skip("pycountry too old, skipping")
+            else:
+                raise e
 
     assert (
         layout.iso639 or layout.layout.name in expected_without_language
