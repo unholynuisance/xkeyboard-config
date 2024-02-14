@@ -7616,7 +7616,7 @@
       <option>
         <configItem>
           <name>caps:ctrl_modifier</name>
-          <description>Make Caps Lock an additional Ctrl</description>
+          <description>Make Caps Lock act as an additional Ctrl modifier, but keep identifying as Caps Lock</description>
         </configItem>
       </option>
       <option>

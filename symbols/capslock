@@ -67,7 +67,9 @@ xkb_symbols "numlock" {
 };
 
 // This changes the <CAPS> key to become a Control modifier,
-// but it will still produce the Caps_Lock keysym.
+// but it will still produce the Caps_Lock keysym; this is
+// useful for apps that need to distinguish it from usual
+// Control_L and Control_R.
 hidden partial modifier_keys
 xkb_symbols "ctrl_modifier" {
     replace key <CAPS> {
