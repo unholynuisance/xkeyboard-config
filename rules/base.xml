@@ -7955,7 +7955,13 @@
       <option>
         <configItem>
           <name>eurosign:e</name>
-          <description>Euro on E</description>
+          <description>Euro on E, third level</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
+          <name>eurosign:E</name>
+          <description>Euro on E, fourth level</description>
         </configItem>
       </option>
       <option>
