@@ -2,6 +2,9 @@
 install_data('README', 'xkb.dtd', 'xfree98',
              install_dir: dir_xkb_rules)
 
+base_xml = files('base.xml')
+base_extras_xml = files('base.extras.xml')
+
 # the actual rules files are generated from a list of parts in a very
 # specific order
 parts = [
@@ -30,13 +33,33 @@ parts = [
     '0038-layout2option_symbols.part',
     '0039-layout3option_symbols.part',
     '0040-layout4option_symbols.part',
-    '0042-option_symbols.part',
-    '0043-option_compat.part',
-    '0044-option_types.part',
+     # 0042-option_symbols.part is generated from base{.extras}.xml
+     # 0043-option_compat.part is generated from base{.extras}.xml
+     # 0044-option_types.part is generated from base{.extras}.xml
 ]
 
-# generated compat parts
-rules_compat_generated = []
+rules_parts_generated = []
+
+generate_rules_options_symbols = find_program('generate-options-symbols.py')
+generated = [
+    ['0042-option_symbols.part', 'xkb_symbols'],
+    ['0043-option_compat.part', 'xkb_compatibility'],
+    ['0044-option_types.part', 'xkb_types'],
+]
+foreach g: generated
+    filename = g[0]
+    section = g[1]
+    part = custom_target(filename,
+                         build_by_default: true,
+                         command: [generate_rules_options_symbols,
+                                   '--rules-section=@0@'.format(section),
+                                   '--xkb-config-root', meson.project_source_root(),
+                                   base_xml, base_extras_xml],
+                         output: filename,
+                         capture: true,
+                         install: false)
+    rules_parts_generated += [part]
+endforeach
 
 if get_option('compat-rules')
   # non-generated compat parts
@@ -85,7 +108,7 @@ if get_option('compat-rules')
                            ],
                            output: ml_s_file,
                            install: false)
-      rules_compat_generated += [ml_s]
+      rules_parts_generated += [ml_s]
 
       mlv_s_file = lvl_mlv_s['@0@'.format(lvl)]
       mlv_s = custom_target(mlv_s_file,
@@ -99,7 +122,7 @@ if get_option('compat-rules')
                            ],
                            output: mlv_s_file,
                            install: false)
-      rules_compat_generated += [mlv_s]
+      rules_parts_generated += [mlv_s]
   endforeach
 endif # compat-rules
 
@@ -127,9 +150,9 @@ foreach ruleset: ['base', 'evdev']
                   build_by_default: true,
                   command: [
                       merge_py,
-                      rules_parts + rules_compat_generated,
+                      rules_parts + rules_parts_generated,
                   ],
-                  depends: rules_compat_generated,
+                  depends: rules_parts_generated,
                   output: ruleset,
                   capture: true,
                   install: true,
@@ -137,7 +160,7 @@ foreach ruleset: ['base', 'evdev']
 
     # Third: the xml files, simply copied from the base*.xml files
     ruleset_xml = configure_file(output: '@0@.xml'.format(ruleset),
-                       input: 'base.xml',
+                       input: base_xml,
                        copy: true,
                        install: true,
                        install_dir: dir_xkb_rules)
@@ -148,7 +171,7 @@ foreach ruleset: ['base', 'evdev']
     endif
 
     configure_file(output: '@0@.extras.xml'.format(ruleset),
-                   input: 'base.extras.xml',
+                   input: base_extras_xml,
                    copy: true,
                    install: true,
                    install_dir: dir_xkb_rules)
