@@ -25,19 +25,27 @@ pkgconfig.generate(
     dataonly: true,
 )
 
-# KcGST only need to be installed as-is
-foreach dir: ['compat', 'geometry', 'keycodes', 'symbols', 'types']
-    if meson.version().version_compare('>=1.3.0')
-        install_subdir(dir,
-                       exclude_files: ['custom'],
-                       follow_symlinks: false,
-                       install_dir: dir_xkb_base)
-    else
-        install_subdir(dir,
-                       exclude_files: ['custom'],
-                       install_dir: dir_xkb_base)
-    endif
+# KcG.T only need to be installed as-is
+foreach dir: ['compat', 'geometry', 'keycodes', 'types']
+    install_subdir(dir,
+                   exclude_files: ['custom'],
+                   install_dir: dir_xkb_base)
 endforeach
+
+# symbols have a few symlinks that we need to skip
+symlinks = [
+    'caps',
+    'esperanto',
+    'grp',
+    'japan',
+    'korean',
+    'lv2',
+    'lv3',
+    'lv5',
+]
+install_subdir('symbols',
+               exclude_files: symlinks,
+               install_dir: dir_xkb_base)
 
 # Rules are a bit more complicated
 subdir('rules')

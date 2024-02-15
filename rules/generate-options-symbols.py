@@ -162,12 +162,20 @@ def resolve_option(option: Option) -> DirectiveSet:
             else:
                 continue
 
+        if (subdir / filename).is_symlink():
+            resolved_filename = (subdir / filename).resolve().name
+            assert (subdir / filename).exists()
+        else:
+            resolved_filename = filename
+
         # Now check if the target file actually has that section
-        f = subdir / filename
+        f = subdir / resolved_filename
         with open(f) as fd:
             found = any(f'{section_header} "{section}"' in line for line in fd)
             if found:
-                directives[section_header] = Directive(option, filename, section)
+                directives[section_header] = Directive(
+                    option, resolved_filename, section
+                )
 
     return DirectiveSet(
         option=option,
