@@ -8048,44 +8048,6 @@
           <description>Right Win chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser</description>
         </configItem>
       </option>
-<!--
-      <option>
-        <configItem>
-          <name>lv5:lsgt_switch_lock_cancel</name>
-          <description>The "&lt; &gt;" key chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser</description>
-        </configItem>
-      </option>
-      <option>
-        <configItem>
-          <name>lv5:ralt_switch_lock_cancel</name>
-          <description>Right Alt chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser</description>
-        </configItem>
-      </option>
-      <option>
-        <configItem>
-          <name>lv5:lwin_switch_lock_cancel</name>
-          <description>Left Win chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser</description>
-        </configItem>
-      </option>
-      <option>
-        <configItem>
-          <name>lv5:rwin_switch_lock_cancel</name>
-          <description>Right Win chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser</description>
-        </configItem>
-      </option>
-      <option>
-        <configItem>
-          <name>lv5:lsgt_switch_lock_cancel</name>
-          <description>The "&lt; &gt;" key chooses 5th level; acts as onetime lock lock when pressed together with another 5th level chooser</description>
-        </configItem>
-      </option>
-      <option>
-        <configItem>
-          <name>lv5:ralt_switch_lock_cancel</name>
-          <description>Right Alt chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser</description>
-        </configItem>
-      </option>
--->
     </group>
     <group allowMultipleSelection="false">
       <!-- Let space output NBSP, NNBSP, ZWNJ, and ZWJ for the desired level -->
