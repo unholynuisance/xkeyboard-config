@@ -7060,8 +7060,32 @@
       </option>
       <option>
         <configItem>
+          <name>grp:ctrl_shift_toggle_bidir</name>
+          <description>Left Ctrl+Left Shift chooses previous layout, Right Ctrl + Right Shift chooses next layout</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>grp:ctrl_alt_toggle</name>
           <description>Alt+Ctrl</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
+          <name>grp:lctrl_lalt_toggle</name>
+          <description>Left Alt+Left Ctrl</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
+          <name>grp:rctrl_ralt_toggle</name>
+          <description>Right Alt+Right Ctrl</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
+          <name>grp:ctrl_alt_toggle_bidir</name>
+          <description>Left Ctrl+Left Alt chooses previous layout, Right Ctrl + Right Alt chooses next layout</description>
         </configItem>
       </option>
       <option>
@@ -7080,6 +7104,12 @@
         <configItem>
           <name>grp:ralt_rshift_toggle</name>
           <description>Right Alt+Right Shift</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
+          <name>grp:alt_shift_toggle_bidir</name>
+          <description>Left Alt+Left Shift chooses previous layout, Right Alt + Right Shift chooses next layout</description>
         </configItem>
       </option>
       <option>
@@ -7310,6 +7340,12 @@
       </option>
       <option>
         <configItem>
+          <name>ctrl:grouptoggle_capscontrol</name>
+          <description>Caps Lock as Ctrl,  Left Control switches to another layout</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>ctrl:hyper_capscontrol</name>
           <description>Caps Lock as Ctrl, Ctrl as Hyper</description>
         </configItem>
@@ -7330,6 +7366,12 @@
         <configItem>
           <name>ctrl:rctrl_ralt</name>
           <description>Right Ctrl as Right Alt</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
+          <name>ctrl:ralt_rctrl</name>
+          <description>Right Alt as Right Control</description>
         </configItem>
       </option>
       <option>
