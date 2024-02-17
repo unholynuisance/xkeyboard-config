@@ -7663,6 +7663,12 @@
       </option>
       <option>
         <configItem>
+          <name>caps:digits_row</name>
+          <description>Caps Lock gives digits on the digits row (Azerty layouts)</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>caps:none</name>
           <description>Caps Lock is disabled</description>
         </configItem>
