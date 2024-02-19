@@ -20,7 +20,6 @@
 // Country files that provide specializations for the OLPC:
 ! $olpclayouts = af am ara br ca es et fr in it kh kz mn ng np pk ru th tr us
 
-! $macbooks = macbook78 macbook79
 ! $maclaptop = ibook powerbook macbook78 macbook79
 ! $applealu = applealu_ansi applealu_iso applealu_jis
 ! $macs = macintosh macintosh_old ibook powerbook macbook78 macbook79

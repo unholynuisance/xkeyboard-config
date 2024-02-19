@@ -853,20 +853,6 @@
     </model>
     <model>
       <configItem>
-        <name>macbook78</name>
-        <description>MacBook/MacBook Pro</description>
-        <vendor>Apple</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>macbook79</name>
-        <description>MacBook/MacBook Pro (intl.)</description>
-        <vendor>Apple</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
         <name>macintosh</name>
         <description>Macintosh</description>
         <vendor>Apple</vendor>
