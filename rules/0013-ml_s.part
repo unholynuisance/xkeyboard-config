@@ -3,7 +3,6 @@
   ataritt	*			=	xfree68_vndr/ataritt(us)+%l%(v)
   amiga		$nonlatin		=	xfree68_vndr/amiga(usa1)+%l%(v):2
   amiga		*			=	xfree68_vndr/amiga(usa1)+%l%(v)
-  classmate	us			=	pc+%l(classmate)
   empty		*			=	empty(basic)
   *		empty			=	empty(basic)
   jollasbj	$nonlatin		=	jolla_vndr/sbj(common)+us+%l%(v):2

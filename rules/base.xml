@@ -320,13 +320,6 @@
     </model>
     <model>
       <configItem>
-        <name>classmate</name>
-        <description>Classmate PC</description>
-        <vendor>Intel</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
         <name>compalfl90</name>
         <description>Compal FL90</description>
         <vendor>Compal Electronics</vendor>
