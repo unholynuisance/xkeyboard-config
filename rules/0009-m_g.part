@@ -20,7 +20,6 @@
   winbook	=	winbook(XP5)
   pc98		=	nec(pc98)
  $applealu	=	macintosh(%m)
- $macs		=	macintosh(macintosh)
   hhk		=	hhk(basic)
   kinesis	=	kinesis(model100)
   sun_type6_jp          =   sun(type6jp)

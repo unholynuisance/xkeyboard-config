@@ -544,13 +544,6 @@
     </model>
     <model>
       <configItem>
-        <name>macintosh_hhk</name>
-        <description>Happy Hacking for Mac</description>
-        <vendor>Fujitsu</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
         <name>hpi6</name>
         <description>Hewlett-Packard Internet</description>
         <vendor>Hewlett-Packard</vendor>
@@ -849,20 +842,6 @@
         <name>logiultraxc</name>
         <description>Logitech Ultra-X Cordless Media Desktop</description>
         <vendor>Logitech</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>macintosh</name>
-        <description>Macintosh</description>
-        <vendor>Apple</vendor>
-      </configItem>
-    </model>
-    <model>
-      <configItem>
-        <name>macintosh_old</name>
-        <description>Macintosh Old</description>
-        <vendor>Apple</vendor>
       </configItem>
     </model>
     <model>
