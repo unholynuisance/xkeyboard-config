@@ -7655,6 +7655,12 @@
       </option>
       <option>
         <configItem>
+          <name>caps:ctrl_shifted_capslock</name>
+          <description>Make Caps Lock an additional Ctrl and Shift + Caps Lock the regular Caps Lock</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>caps:ctrl_modifier</name>
           <description>Make Caps Lock act as an additional Ctrl modifier, but keep identifying as Caps Lock</description>
         </configItem>
