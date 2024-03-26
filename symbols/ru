@@ -920,6 +920,7 @@ xkb_symbols "ruu" {
     key <BKSL> { [             slash,               bar,     backslash,            brokenbar  ] };
 
     key <AB03> { [       Cyrillic_es,       Cyrillic_ES,      copyright                       ] };
+    key <AB05> { [        Cyrillic_i,        Cyrillic_I,    Ukrainian_i,         Ukrainian_I  ] };
     key <AB06> { [       Cyrillic_te,       Cyrillic_TE,      trademark                       ] };
     key <AB07> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN,             mu                       ] };
     key <AB08> { [       Cyrillic_be,       Cyrillic_BE,  guillemotleft,  doublelowquotemark  ] };
