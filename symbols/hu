@@ -467,7 +467,7 @@ xkb_symbols "oldhunlig" {
 
 
 // Old Hungarian layouts for Carpathian Highlands' users
-partial
+partial alphanumeric_keys
 xkb_symbols "oldhun_sk_sh" {
     name[Group1] = "Old Hungarian (Carpathian Highlands, S as Sh)";
     include "hu(ohu_sk_fullcaps)"
@@ -482,7 +482,7 @@ xkb_symbols "oldhun_sk_sh" {
 
 };
 
-partial
+partial alphanumeric_keys
 xkb_symbols "oldhun_sk_sz" {
     name[Group1] = "Old Hungarian (Carpathian Highlands, S as Sz)";
     include "hu(ohu_sk_fullcaps)"
