@@ -5,32 +5,15 @@
 # This file parses the base.xml and base.extras.xml file and prints out the option->symbols
 # mapping compatible with the rules format. See the meson.build file for how this is used.
 
+from __future__ import annotations
 import argparse
+from enum import Enum, unique
 import sys
 import xml.etree.ElementTree as ET
 
-from typing import Iterable
+from typing import Generator, Iterable
 from dataclasses import dataclass
 from pathlib import Path
-
-XKB_CONFIG_ROOT: "XkbConfigRoot"
-
-skip = (
-    # Special type that exists but doesn't really exist
-    "custom:types",
-    # These are all defined in 0036-layoutoption_symbols.part
-    "misc:apl",
-    "misc:typo",
-    "lv3:ralt_alt",
-    "grp:toggle",
-    "grp:alts_toggle",
-    "grp:alt_altgr_toggle",
-    "grp:alt_space_toggle",
-    "grp:win_space_toggle",
-    "grp:ctrl_space_toggle",
-    "grp:rctrl_rshift_toggle",
-    "grp:shifts_toggle",
-)
 
 
 def error(msg):
@@ -39,9 +22,30 @@ def error(msg):
     sys.exit(1)
 
 
+@unique
+class Section(Enum):
+    """
+    XKB sections.
+    Name correspond to the header (`xkb_XXX`), value to the subdir/rules header.
+    """
+
+    keycodes = "keycodes"
+    compatibility = "compat"
+    geometry = "geometry"
+    symbols = "symbols"
+    types = "types"
+
+    @classmethod
+    def parse(cls, raw: str) -> Section:
+        try:
+            return cls[raw]
+        except KeyError:
+            raise ValueError(raw)
+
+
 @dataclass
 class Directive:
-    option: "Option"
+    option: Option
     filename: str
     section: str
 
@@ -57,7 +61,7 @@ class Directive:
 class DirectiveSet:
     option: "Option"
     keycodes: Directive | None
-    compat: Directive | None
+    compatibility: Directive | None
     geometry: Directive | None
     symbols: Directive | None
     types: Directive | None
@@ -68,58 +72,11 @@ class DirectiveSet:
             x is None
             for x in (
                 self.keycodes,
-                self.compat,
+                self.compatibility,
                 self.geometry,
                 self.symbols,
                 self.types,
             )
-        )
-
-    def for_section(self, section: str) -> Directive | None:
-        return {
-            "xkb_keycodes": self.keycodes,
-            "xkb_compatibility": self.compat,
-            "xkb_geometry": self.geometry,
-            "xkb_symbols": self.symbols,
-            "xkb_types": self.types,
-        }[section]
-
-
-@dataclass
-class XkbConfigRoot:
-    keycodes: Path
-    compat: Path
-    geometry: Path
-    symbols: Path
-    types: Path
-
-    @property
-    def directories(self) -> Iterable[Path]:
-        yield self.keycodes
-        yield self.compat
-        yield self.geometry
-        yield self.symbols
-        yield self.types
-
-    @property
-    def section_headers(self) -> Iterable[str]:
-        for h in [
-            "xkb_keycodes",
-            "xkb_compatibility",
-            "xkb_geometry",
-            "xkb_symbols",
-            "xkb_types",
-        ]:
-            yield h
-
-    @classmethod
-    def for_basedir(cls, basedir: Path) -> "XkbConfigRoot":
-        return cls(
-            keycodes=basedir / "keycodes",
-            compat=basedir / "compat",
-            geometry=basedir / "geometry",
-            symbols=basedir / "symbols",
-            types=basedir / "types",
         )
 
 
@@ -143,15 +100,12 @@ class Option:
         return Directive(self, f, s)
 
 
-def resolve_option(option: Option) -> DirectiveSet:
-    directives: dict[str, Directive | None] = {
-        s: None for s in XKB_CONFIG_ROOT.section_headers
-    }
+def resolve_option(xkb_root: Path, option: Option) -> DirectiveSet:
+    directives: dict[Section, Directive | None] = {s: None for s in Section}
     directive = option.directive
-    filename, section = directive.filename, directive.section
-    for subdir, section_header in zip(
-        XKB_CONFIG_ROOT.directories, XKB_CONFIG_ROOT.section_headers
-    ):
+    filename, section_name = directive.filename, directive.section
+    for section in Section:
+        subdir = xkb_root / section.value
         if not (subdir / filename).exists():
             # Some of our foo:bar entries map to a baz_vndr/foo file
             for vndr in subdir.glob("*_vndr"):
@@ -170,20 +124,18 @@ def resolve_option(option: Option) -> DirectiveSet:
 
         # Now check if the target file actually has that section
         f = subdir / resolved_filename
-        with open(f) as fd:
-            found = any(f'{section_header} "{section}"' in line for line in fd)
+        with f.open("rt", encoding="utf-8") as fd:
+            found = any(f'xkb_{section.name} "{section_name}"' in line for line in fd)
             if found:
-                directives[section_header] = Directive(
-                    option, resolved_filename, section
-                )
+                directives[section] = Directive(option, resolved_filename, section_name)
 
     return DirectiveSet(
         option=option,
-        keycodes=directives["xkb_keycodes"],
-        compat=directives["xkb_compatibility"],
-        geometry=directives["xkb_geometry"],
-        symbols=directives["xkb_symbols"],
-        types=directives["xkb_types"],
+        keycodes=directives[Section.keycodes],
+        compatibility=directives[Section.compatibility],
+        geometry=directives[Section.geometry],
+        symbols=directives[Section.symbols],
+        types=directives[Section.types],
     )
 
 
@@ -227,9 +179,38 @@ def options(rules_xml) -> Iterable[Option]:
         yield Option(fetch_name(option))
 
 
-def main():
-    global XKB_CONFIG_ROOT
+def find_options_to_skip(xkb_root: Path) -> Generator[str, None, None]:
+    """
+    Find options to skip
 
+    Theses are the “option” rules defined explicitly in partial rules files *.part
+    """
+    rules_dir = xkb_root / "rules"
+    for f in rules_dir.glob("*.part"):
+        filename = f.stem
+        if "option" not in filename:
+            # Skip files that do not match an option
+            continue
+        option_index = None
+        # Parse rule file to get options to skip
+        with f.open("rt", encoding="utf-8") as fp:
+            for line in fp:
+                if line.startswith("//") or "=" not in line:
+                    continue
+                elif line.startswith("!"):
+                    # Header
+                    if option_index is not None or "$" in line:
+                        # Index already defined or definition of an alias
+                        continue
+                    else:
+                        option_index = line.split()[1:].index("option")
+                    continue
+                else:
+                    assert option_index is not None
+                    yield line.split()[option_index]
+
+
+def main():
     parser = argparse.ArgumentParser(description="Generate the evdev keycode lists.")
     parser.add_argument(
         "--xkb-config-root",
@@ -239,51 +220,46 @@ def main():
     )
     parser.add_argument(
         "--rules-section",
-        choices=["xkb_symbols", "xkb_compatibility", "xkb_types"],
+        type=Section.parse,
+        choices=(Section.symbols, Section.compatibility, Section.types),
         help="The rules section to generate",
-        default="xkb_symbols",
+        default=Section.symbols,
     )
     parser.add_argument(
         "files", nargs="+", help="The base.xml and base.extras.xml files"
     )
     ns = parser.parse_args()
 
-    XKB_CONFIG_ROOT = XkbConfigRoot.for_basedir(ns.xkb_config_root)
+    all_options = (opt for f in ns.files for opt in options(f))
 
-    all_options = []
-    for f in ns.files:
-        os = list(options(f))
-        all_options.extend(os)
+    skip = frozenset(find_options_to_skip(ns.xkb_config_root))
 
-    directives = (resolve_option(o) for o in sorted(all_options) if o.name not in skip)
+    directives = (
+        resolve_option(ns.xkb_config_root, o)
+        for o in sorted(all_options)
+        if o.name not in skip and not o.name.startswith("custom:")
+    )
 
-    def check_and_map(directive):
+    def check_and_map(directive: DirectiveSet):
         assert (
             not directive.is_empty
         ), f"Option {directive.option} does not resolve to any section"
 
-        return directive.for_section(ns.rules_section)
+        return getattr(directive, ns.rules_section.name)
 
-    filtered = (
-        x
-        for x in filter(
-            lambda y: y is not None,
-            map(check_and_map, directives),
-        )
+    filtered = filter(
+        lambda y: y is not None,
+        map(check_and_map, directives),
     )
 
-    header = {
-        "xkb_symbols": "symbols",
-        "xkb_compatibility": "compat",
-        "xkb_types": "types",
-    }[ns.rules_section]
+    header = ns.rules_section.value
 
     print(f"! option                         = {header}")
     for d in filtered:
         assert d is not None
         print(f"  {d.name:30s} = +{d}")
 
-    if ns.rules_section == "xkb_types":
+    if ns.rules_section is Section.types:
         print(f"  {'custom:types':30s} = +custom")
 
 

@@ -42,9 +42,9 @@ rules_parts_generated = []
 
 generate_rules_options_symbols = find_program('generate-options-symbols.py')
 generated = [
-    ['0042-option_symbols.part', 'xkb_symbols'],
-    ['0043-option_compat.part', 'xkb_compatibility'],
-    ['0044-option_types.part', 'xkb_types'],
+    ['0042-option_symbols.part', 'symbols'],
+    ['0043-option_compat.part', 'compatibility'],
+    ['0044-option_types.part', 'types'],
 ]
 foreach g: generated
     filename = g[0]
