@@ -7,7 +7,7 @@
 
 from __future__ import annotations
 import argparse
-from enum import Enum, unique
+from enum import StrEnum, unique
 import sys
 import xml.etree.ElementTree as ET
 
@@ -23,7 +23,7 @@ def error(msg):
 
 
 @unique
-class Section(Enum):
+class Section(StrEnum):
     """
     XKB sections.
     Name correspond to the header (`xkb_XXX`), value to the subdir/rules header.
@@ -37,6 +37,9 @@ class Section(Enum):
 
     @classmethod
     def parse(cls, raw: str) -> Section:
+        # Note: in order to display a nice message, argparse requires the error
+        # to be one of: ArgumentTypeError, TypeError, or ValueError
+        # See: https://docs.python.org/3/library/argparse.html#type
         try:
             return cls[raw]
         except KeyError:
@@ -59,7 +62,7 @@ class Directive:
 
 @dataclass
 class DirectiveSet:
-    option: "Option"
+    option: Option
     keycodes: Directive | None
     compatibility: Directive | None
     geometry: Directive | None
@@ -105,7 +108,7 @@ def resolve_option(xkb_root: Path, option: Option) -> DirectiveSet:
     directive = option.directive
     filename, section_name = directive.filename, directive.section
     for section in Section:
-        subdir = xkb_root / section.value
+        subdir = xkb_root / section
         if not (subdir / filename).exists():
             # Some of our foo:bar entries map to a baz_vndr/foo file
             for vndr in subdir.glob("*_vndr"):
@@ -125,8 +128,8 @@ def resolve_option(xkb_root: Path, option: Option) -> DirectiveSet:
         # Now check if the target file actually has that section
         f = subdir / resolved_filename
         with f.open("rt", encoding="utf-8") as fd:
-            found = any(f'xkb_{section.name} "{section_name}"' in line for line in fd)
-            if found:
+            section_header = f'xkb_{section.name} "{section_name}"'
+            if any(section_header in line for line in fd):
                 directives[section] = Directive(option, resolved_filename, section_name)
 
     return DirectiveSet(
@@ -139,7 +142,7 @@ def resolve_option(xkb_root: Path, option: Option) -> DirectiveSet:
     )
 
 
-def options(rules_xml) -> Iterable[Option]:
+def options(rules_xml: Path) -> Iterable[Option]:
     """
     Yields all Options from the given XML file
     """
@@ -226,9 +229,10 @@ def main():
         default=Section.symbols,
     )
     parser.add_argument(
-        "files", nargs="+", help="The base.xml and base.extras.xml files"
+        "files", nargs="+", help="The base.xml and base.extras.xml files", type=Path
     )
     ns = parser.parse_args()
+    rules_section: Section = ns.rules_section
 
     all_options = (opt for f in ns.files for opt in options(f))
 
@@ -240,26 +244,24 @@ def main():
         if o.name not in skip and not o.name.startswith("custom:")
     )
 
-    def check_and_map(directive: DirectiveSet):
+    def check_and_map(directive: DirectiveSet) -> Directive:
         assert (
             not directive.is_empty
         ), f"Option {directive.option} does not resolve to any section"
 
-        return getattr(directive, ns.rules_section.name)
+        return getattr(directive, rules_section.name)
 
     filtered = filter(
         lambda y: y is not None,
         map(check_and_map, directives),
     )
 
-    header = ns.rules_section.value
-
-    print(f"! option                         = {header}")
+    print(f"! option                         = {rules_section}")
     for d in filtered:
         assert d is not None
         print(f"  {d.name:30s} = +{d}")
 
-    if ns.rules_section is Section.types:
+    if rules_section is Section.types:
         print(f"  {'custom:types':30s} = +custom")
 
 
