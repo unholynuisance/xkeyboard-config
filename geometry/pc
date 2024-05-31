@@ -1165,10 +1165,11 @@ xkb_geometry "kr106" {
 
     shape.cornerRadius= 1;
     shape "NORM" { { [ 18,18] }, { [2,1], [ 16,16] } };
-    shape "BKSP" { { [ 38,18] }, { [2,1], [ 36,16] } };
     shape "TABK" { { [ 28,18] }, { [2,1], [ 26,16] } };
-    shape "BKSL" { { [ 28,18] }, { [2,1], [ 26,16] } };
-    shape "RTRN" { { [ 42,18] }, { [2,1], [ 40,16] } };
+    shape "RTRN" {
+	{ [0,0], [28,0], [28,37], [-14,37], [-14,19], [0,19] } ,
+        { [2,1], [26,1], [26,35], [-12,35], [-12,20], [2,20] } ,
+        approx = { [0,0], [28,37] } };
     shape "CAPS" { { [ 33,18] }, { [2,1], [ 31,16] } };
     shape "LFSH" { { [ 42,18] }, { [2,1], [ 40,16] } };
     shape "RTSH" { { [ 52,18] }, { [2,1], [ 50,16] } };
@@ -1223,8 +1224,8 @@ xkb_geometry "kr106" {
 	    top= 1;
 	    keys { <TLDE>, <AE01>, <AE02>, <AE03>, <AE04>,
 		   <AE05>, <AE06>, <AE07>, <AE08>, <AE09>,
-		   <AE10>, <AE11>, <AE12>,
-		   { <BKSP>, "BKSP", color="grey20" }
+		   <AE10>, <AE11>, <AE12>, <BKSL>,
+		   { <BKSP>, color="grey20" }
 	    };
 	};
 	row {
@@ -1232,7 +1233,8 @@ xkb_geometry "kr106" {
 	    keys { { <TAB>, "TABK", color="grey20" },
 		   <AD01>, <AD02>, <AD03>, <AD04>, <AD05>,
 		   <AD06>, <AD07>, <AD08>, <AD09>, <AD10>,
-		   <AD11>, <AD12>, { <BKSL>, "BKSL" }
+		   <AD11>, <AD12>,
+		   { <RTRN>, "RTRN", color="grey20" }
 	    };
 	};
 	row {
@@ -1240,7 +1242,7 @@ xkb_geometry "kr106" {
 	    keys { { <CAPS>, "CAPS", color="grey20" },
 		   <AC01>, <AC02>, <AC03>, <AC04>, <AC05>,
 		   <AC06>, <AC07>, <AC08>, <AC09>, <AC10>,
-		   <AC11>, { <RTRN>, "RTRN", color="grey20" }
+		   <AC11>
 	    };
 	};
 	row {
@@ -1256,9 +1258,9 @@ xkb_geometry "kr106" {
 	    key.shape= "SMOD";
 	    key.color= "grey20";
 	    keys { { <LCTL>, "MODK" }, <LWIN>, <LALT>,
-		   { <K71>, "NORM", color="white" },
+		   { <HNGL>, "NORM", color="white" },
 		   { <SPCE>, "SPCE", color="white" },
-		   { <K72>, "NORM", color="white" },
+		   { <HJCV>, "NORM", color="white" },
 		   <RALT>, <RWIN>, <MENU>, <RCTL>
 	    };
 	};
