@@ -765,9 +765,9 @@ xkb_geometry "jp106" {
 	    top= 77;
 	    key.shape= "MODK";
 	    key.color= "grey20";
-	    keys { <LCTL>, { <LALT>, 20 },<NFER>,
+	    keys { <LCTL>, { <LALT>, 20 },<MUHE>,
 		   { <SPCE>, "SPCE", color="white" },
-		   <XFER>,<HKTG>,<RALT>, { <RCTL>, 17 }
+		   <HENK>,<HKTG>,<RALT>, { <RCTL>, 17 }
 	    };
 	};
     }; // End of "Alpha" section
