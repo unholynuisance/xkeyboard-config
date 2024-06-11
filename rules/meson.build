@@ -126,6 +126,15 @@ if get_option('compat-rules')
   endforeach
 endif # compat-rules
 
+MINIMUM_PYTHON_VERSION = '3.11'
+pymod = import('python')
+python = pymod.find_installation('python3')
+if python.language_version().version_compare('<@0@'.format(MINIMUM_PYTHON_VERSION))
+    error('Minimum required Python version: @0@, but got: @1@'.format(
+        MINIMUM_PYTHON_VERSION,
+        python.language_version()
+    ))
+endif
 merge_py = find_program('merge.py')
 xml2lst = find_program('xml2lst.pl')
 foreach ruleset: ['base', 'evdev']
