@@ -127,13 +127,18 @@ if get_option('compat-rules')
 endif # compat-rules
 
 MINIMUM_PYTHON_VERSION = '3.11'
+MINIMUM_PYTHON_VERSION_WITH_MODULE_FALLBACK = '3.9'
 pymod = import('python')
 python = pymod.find_installation('python3')
 if python.language_version().version_compare('<@0@'.format(MINIMUM_PYTHON_VERSION))
-    error('Minimum required Python version: @0@, but got: @1@'.format(
-        MINIMUM_PYTHON_VERSION,
-        python.language_version()
-    ))
+    # Now require strenum module as fallback
+    python = pymod.find_installation('python3', modules: ['strenum'])
+    if python.language_version().version_compare('<@0@'.format(MINIMUM_PYTHON_VERSION_WITH_MODULE_FALLBACK))
+        error('Minimum required Python version: @0@, but got: @1@'.format(
+            MINIMUM_PYTHON_VERSION_WITH_MODULE_FALLBACK,
+            python.language_version()
+        ))
+    endif
 endif
 merge_py = find_program('merge.py')
 xml2lst = find_program('xml2lst.pl')
