@@ -7277,6 +7277,12 @@
       </option>
       <option>
         <configItem>
+          <name>lv3:caps_switch_capslock_with_ctrl</name>
+          <description>Caps Lock; Ctrl+Caps Lock for original Caps Lock action</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>lv3:bksl_switch</name>
           <description>Backslash</description>
         </configItem>
