@@ -32,23 +32,9 @@ foreach dir: ['compat', 'geometry', 'keycodes', 'types']
                    install_dir: dir_xkb_base)
 endforeach
 
-# symbols have a few symlinks that we need to skip
-symlinks = [
-    'caps',
-    'esperanto',
-    'grp',
-    'japan',
-    'korean',
-    'lv2',
-    'lv3',
-    'lv5',
-]
-install_subdir('symbols',
-               exclude_files: symlinks,
-               install_dir: dir_xkb_base)
-
-# Rules are a bit more complicated
+# Rules and symbols are a bit more complicated
 subdir('rules')
+subdir('symbols')
 
 # man page
 xsltproc = find_program('xsltproc', required: false)
@@ -100,7 +86,12 @@ if enable_pytest
     # copy our data files over to the build directory so we can use the
     # builddir as XKB_CONFIG_ROOT
     foreach dir: ['compat', 'geometry', 'keycodes', 'symbols', 'types']
-        run_command('tests/copydir.sh', dir, check: true)
+        run_command(
+            'tests/copydir.py',
+            dir,
+            dir == 'symbols' ? compat_symbols : [],
+            check: true
+        )
     endforeach
 
     test('pytest', pytest,
