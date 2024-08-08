@@ -84,6 +84,13 @@ pytest = find_program('pytest-3', 'pytest', required: false)
 enable_pytest = python.found() and pytest.found()
 if enable_pytest
     pytest_args = ['--verbose', '--log-level=DEBUG']
+    if get_option('compat-rules')
+        pytest_args += [
+            'tests',
+            '--layout-compat-config', layout_mappings,
+            '--layout-compat-config', variant_mappings,
+        ]
+    endif
     # use pytest xdist if available, it really speeds up the tests cases
     optional_python_modules = ['xdist']
     if pymod.find_installation('python3', modules: optional_python_modules, required: false).found()
