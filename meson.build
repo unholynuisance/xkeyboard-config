@@ -96,7 +96,7 @@ if enable_pytest
 
     test('pytest', pytest,
          args: pytest_args,
-         env: ['XKB_CONFIG_ROOT=@0@'.format(meson.build_root())],
+         env: ['XKB_CONFIG_ROOT=@0@'.format(meson.project_build_root())],
          workdir: meson.project_source_root(),
          timeout: 60)
 endif
