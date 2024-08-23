@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import dataclasses
 import sys
 from collections import defaultdict
 from contextlib import AbstractContextManager, nullcontext
@@ -25,6 +26,13 @@ class Header:
     def parse(cls, raw: str) -> Header:
         return Header(raw, tuple(raw.split()))
 
+    def set_merge_mode(self, merge_mode: bool) -> Header:
+        if merge_mode:
+            key = self.key + ("+",)
+            return dataclasses.replace(self, key=key)
+        else:
+            return self
+
 
 def handle_file(path: Path) -> tuple[Header, Path]:
     """
@@ -32,9 +40,28 @@ def handle_file(path: Path) -> tuple[Header, Path]:
     If the file does not have a header, the header is the empty string.
     """
     with open(path) as fd:
-        header = fd.readline()
-        if header.startswith("! "):
-            return Header.parse(header), path
+        file_header = fd.readline().split("//")[0]
+        if file_header.startswith("! "):
+            header = Header.parse(file_header)
+            if "$" in file_header or "include" in file_header:
+                # Do not process group definition further
+                return header, path
+            # Get merge mode: we do not want to mix rules sets with
+            # explicit and implicit merge modes.
+            has_explicit_merge_mode: bool | None = None
+            for line in fd:
+                if line.startswith("! "):
+                    break
+                entry = line.split("//")[0].split()
+                if not entry:
+                    continue
+                section = entry[-1]
+                if section.startswith("+") or section.startswith("|"):
+                    has_explicit_merge_mode = True
+                # Ensure any explicit merge mode takes precedence
+                elif has_explicit_merge_mode is None:
+                    has_explicit_merge_mode = False
+            return header.set_merge_mode(bool(has_explicit_merge_mode)), path
         else:
             return Header.empty(), path
 
