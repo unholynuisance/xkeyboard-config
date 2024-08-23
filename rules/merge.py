@@ -58,14 +58,17 @@ def merge(dest: TextIO, files):
     # sort the file list by basename
     files.sort(key=sort_basename)
 
-    # pre-populate with the empty header so it's the first one to be written
+    # Group files by their header
+    # Pre-populate with the empty header so it's the first one to be written
     # out. We use section_names to keep the same order as we get the files
     # passed in (superfluous with python 3.6+ since the dict keeps the
-    # insertion order anyway).
-    sections: dict[tuple[str, ...], list[Path]] = defaultdict(list)
+    # insertion order anyway) and the original header text.
     section_names = [Header.empty()]
+    sections: dict[tuple[str, ...], list[Path]] = defaultdict(
+        list, ((h.key, []) for h in section_names)
+    )
     for path in files:
-        # files may exist in srcdir or builddir, depending whether they're
+        # Files may exist in srcdir or builddir, depending whether they're
         # generated
         header, path = handle_file(path)
         if header.key not in sections:
