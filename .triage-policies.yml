@@ -19,14 +19,14 @@
       interval: 12
     state: opened
     forbidden_labels:
-    - "stale"
+    - "bugbot::stale"
   limits:
     oldest: 100
   actions:
-    labels: "stale"
+    labels: "bugbot::stale"
     comment: |
       Hi {{author}}! Can you confirm if this issue is still relevant?
-      If so, please remove the ~"stale" label and comment on this issue.
+      If so, please remove the ~"bugbot::stale" label and comment on this issue.
 
       Without an update, this issue will be closed in 1 month.
 
@@ -40,14 +40,14 @@
       interval: 1
     state: opened
     labels:
-    - "stale"
+    - "bugbot::stale"
   limits:
     oldest: 100
   actions:
     comment: |
       Hi {{author}}! Since this stale issue has not been updated, it’s being closed.
 
-      If this issue is still relevant, please reopen, remove the ~"stale" label and add a comment.
+      If this issue is still relevant, please reopen, remove the ~"bugbot::stale" label and add a comment.
     status: "close"
 
 ################################################################################
@@ -64,14 +64,14 @@
       interval: 3
     state: opened
     forbidden_labels:
-    - "stale"
+    - "bugbot::stale"
   limits:
     oldest: 100
   actions:
-    labels: "stale"
+    labels: "bugbot::stale"
     comment: |
       Hi {{author}}! Can you confirm if you’re still working on this merge request?
-      If so, please remove the ~"stale" label and comment on this issue.
+      If so, please remove the ~"bugbot::stale" label and comment on this issue.
 
       Without an update, this merge request will be closed in 1 month.
 
@@ -85,14 +85,14 @@
       interval: 1
     state: opened
     labels:
-    - "stale"
+    - "bugbot::stale"
   limits:
     oldest: 100
   actions:
     comment: |
       Hi {{author}}! Since this stale merge request has not been updated, it’s being closed.
 
-      If this merge request is still relevant, please reopen, remove the ~"stale" label and add a comment.
+      If this merge request is still relevant, please reopen, remove the ~"bugbot::stale" label and add a comment.
     status: "close"
 
 ################################################################################
