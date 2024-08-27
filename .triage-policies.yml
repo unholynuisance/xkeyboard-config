@@ -19,11 +19,10 @@
       interval: 12
     state: opened
     forbidden_labels:
-    - "bugbot::stale"
-  limits:
-    oldest: 100
+      - "bugbot::stale"
   actions:
-    labels: "bugbot::stale"
+    labels:
+      - "bugbot::stale"
     comment: |
       Hi {{author}}! Can you confirm if this issue is still relevant?
       If so, please remove the ~"bugbot::stale" label and comment on this issue.
@@ -40,9 +39,7 @@
       interval: 1
     state: opened
     labels:
-    - "bugbot::stale"
-  limits:
-    oldest: 100
+      - "bugbot::stale"
   actions:
     comment: |
       Hi {{author}}! Since this stale issue has not been updated, it’s being closed.
@@ -64,11 +61,10 @@
       interval: 3
     state: opened
     forbidden_labels:
-    - "bugbot::stale"
-  limits:
-    oldest: 100
+      - "bugbot::stale"
   actions:
-    labels: "bugbot::stale"
+    labels:
+      - "bugbot::stale"
     comment: |
       Hi {{author}}! Can you confirm if you’re still working on this merge request?
       If so, please remove the ~"bugbot::stale" label and comment on this issue.
@@ -85,9 +81,7 @@
       interval: 1
     state: opened
     labels:
-    - "bugbot::stale"
-  limits:
-    oldest: 100
+      - "bugbot::stale"
   actions:
     comment: |
       Hi {{author}}! Since this stale merge request has not been updated, it’s being closed.
