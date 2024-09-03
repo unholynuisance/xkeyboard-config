@@ -102,7 +102,7 @@ container-prep:
         tar xf "$BUILDDIR/$TARBALL" -C tarball/ --strip-components=1;
         pushd tarball > /dev/null;
       fi
-    - meson setup "$BUILDDIR" -Dprefix="$INSTDIR"
+    - meson setup "$BUILDDIR" -Dprefix="$INSTDIR" -Dnon-latin-layouts-list=true
     - meson configure "$BUILDDIR"
     - ninja -C "$BUILDDIR"
     - if test x"$NINJA_EXTRA_COMMAND" != "x"; then ninja -C "$BUILDDIR" $NINJA_EXTRA_COMMAND; fi
