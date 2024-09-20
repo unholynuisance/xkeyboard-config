@@ -876,6 +876,8 @@ xkb_symbols "colemak_dh" {
     key <AB03> { [            d,            D,  dead_diaeresis,       asciitilde ] };
     key <AB05> { [            z,            Z,              ae,               AE ] }; //Z appears here too because <LSGT> key is not present on ANSI keyboards
     key <AB07> { [            h,            H,      dead_caron,       asciitilde ] };
+
+    key <CAPS> { [    Caps_Lock,    Caps_Lock,       Caps_Lock,        Caps_Lock ] };
 };
 
 // Colemak-DH (Wide) symbols for xkb on X.Org Server 7.x
