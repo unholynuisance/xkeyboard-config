@@ -17,7 +17,6 @@ parts = [
     '0007-options_keycodes.part',
     '0008-modellayout_geometry.part',
     '0009-model_geometry.part',
-    '0011-modellayoutvariant_symbols.part',
     '0013-modellayout_symbols.part',
     '0016-modellayout1_symbols.part',
     '0018-modellayout2_symbols.part',
@@ -74,6 +73,7 @@ if get_option('compat-rules')
 
   layout_mappings = files('compat/layoutsMapping.lst')
   variant_mappings = files('compat/variantsMapping.lst')
+  vendors_variant_mappings = files('compat/variantsMapping-vendors.lst')
   map_variants_py = find_program('compat/map-variants.py')
 
   # two sets of files are generated: ml_s.part and mlv_s.part
@@ -92,6 +92,14 @@ if get_option('compat-rules')
     '2': '0023-ml2v2_s.part',
     '3': '0024-ml3v3_s.part',
     '4': '0025-ml4v4_s.part',
+  }
+
+  lvl_mlv_s_vendors = {
+    '0': '0011-mlv_s.part',
+    '1': '0014-ml1v1_s_vendors.part',
+    '2': '0023-ml2v2_s_vendors.part',
+    '3': '0024-ml3v3_s_vendors.part',
+    '4': '0025-ml4v4_s_vendors.part',
   }
 
   foreach lvl: [0, 1, 2, 3, 4]
@@ -117,6 +125,21 @@ if get_option('compat-rules')
                                '--number=@0@'.format(lvl),
                                '@OUTPUT@',
                                variant_mappings,
+                           ],
+                           output: mlv_s_file,
+                           install: false)
+      rules_parts_generated += [mlv_s]
+
+      mlv_s_file = lvl_mlv_s_vendors['@0@'.format(lvl)]
+      mlv_s = custom_target(mlv_s_file,
+                           build_by_default: true,
+                           command: [
+                               map_variants_py,
+                               '--has-variant',
+                               '--number=@0@'.format(lvl),
+                               '--vendor',
+                               '@OUTPUT@',
+                               vendors_variant_mappings,
                            ],
                            output: mlv_s_file,
                            install: false)
