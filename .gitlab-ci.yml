@@ -334,12 +334,31 @@ layout_tests:
     # For debugging: check if executable is working and output its XKB_CONFIG_ROOT
     - xkbcli-compile-keymap --layout pc --verbose > /dev/null
     - >
-      xkeyboard-config-test --verbose \
+      xkeyboard-config-test --verbose --short \
           "$INSTDIR/share/X11/xkb/rules/evdev.xml" \
           >  $INSTDIR/keymaps-success.yaml \
           2> $INSTDIR/keymaps-failed.yaml
     - >
-      xkeyboard-config-test --verbose \
+      xkeyboard-config-test --verbose --short \
+          "$INSTDIR/share/X11/xkb/rules/evdev.extras.xml" \
+          >>  $INSTDIR/keymaps-success.yaml \
+          2>> $INSTDIR/keymaps-failed.yaml
+    # Test a few models with vendor-specific layouts
+    - >
+      xkeyboard-config-test --model=applealu_iso --layout=gb --option="" --verbose --short \
+          "$INSTDIR/share/X11/xkb/rules/evdev.xml" \
+          "$INSTDIR/share/X11/xkb/rules/evdev.extras.xml" \
+          >>  $INSTDIR/keymaps-success.yaml \
+          2>> $INSTDIR/keymaps-failed.yaml
+    - >
+      xkeyboard-config-test --model=applealu_jis --layout=jp --option="" --verbose --short \
+          "$INSTDIR/share/X11/xkb/rules/evdev.xml" \
+          "$INSTDIR/share/X11/xkb/rules/evdev.extras.xml" \
+          >>  $INSTDIR/keymaps-success.yaml \
+          2>> $INSTDIR/keymaps-failed.yaml
+    - >
+      xkeyboard-config-test --model=olpc --layout=gb --option="" --verbose --short \
+          "$INSTDIR/share/X11/xkb/rules/evdev.xml" \
           "$INSTDIR/share/X11/xkb/rules/evdev.extras.xml" \
           >>  $INSTDIR/keymaps-success.yaml \
           2>> $INSTDIR/keymaps-failed.yaml
