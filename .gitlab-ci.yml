@@ -213,7 +213,8 @@ xkbcommon build:
         -Dxkb-config-root="$INSTDIR/share/X11/xkb" \
         -Dxkb-config-extra-path="$INSTDIR/share/X11/xkb" \
         -Dprefix="$XKBCOMMON_INST_DIR" \
-        -Dlibdir="lib"
+        -Dlibdir="lib" \
+        --buildtype=release
     - meson compile -C "$BUILDDIR"
     - meson install -C "$BUILDDIR"
     # We want also the test script. It requires "xkbcli-compile-keymap".
