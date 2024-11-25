@@ -42,7 +42,7 @@ Guidelines for the fragment files:
 
 - Use the [Markdown] markup.
 - Use past tense, e.g. “Fixed a segfault”.
-- Look at the previous releases [NEWS](../NEWS.md) file for further examples.
+- Look at the previous releases [ChangeLog](../ChangeLog.md) file for further examples.
 
 [Markdown]: https://daringfireball.net/projects/markdown/
 
