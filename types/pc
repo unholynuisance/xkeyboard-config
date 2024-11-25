@@ -15,9 +15,9 @@ default partial xkb_types "default" {
     };
 
     type "PC_SUPER_LEVEL2" {
-	modifiers = Mod4;
+	modifiers = Super;
 	map[None] = Level1;
-	map[Mod4] = Level2;
+	map[Super] = Level2;
 	level_name[Level1] = "Base";
 	level_name[Level2] = "Super";
     };
