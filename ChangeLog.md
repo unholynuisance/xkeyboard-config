@@ -149,6 +149,5 @@ xkeyboard-config [2.42](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboar
 Older versions
 ==============
 
-Unfortunately there is no detailed changelog for recent versions. Please see
-[`ChangeLog.old`](ChangeLog.old) for versions up to `1.8` (2010) or use the
+Unfortunately there is no detailed changelog for older versions. Please use the
 [git log](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/commits/master).
