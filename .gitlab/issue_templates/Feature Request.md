@@ -1,11 +1,7 @@
 <!--
 Thank you for your interest!
 
-# Limitation of the project resources
-
-This project does not have the resources to implement every layout or feature,
-so please consider creating a merge request instead. If you do not, keep in mind
-that we cannot promise your request will be accepted nor commit to any deadline.
+Please consider creating a merge request.
 -->
 
 # Description
@@ -27,3 +23,8 @@ English.
 -->
 
 (please fill in)
+
+# Checklist
+
+- [ ] I understand that this project does not have the resources to implement every layout or feature, thus my request may not be accepted or there will be no deadline.
+- [ ] I justified the inclusion of this layout by providing *evidences* that it is popular enough. Please note that it is in your interest to provide neutral and accessible sources, if possible in English.

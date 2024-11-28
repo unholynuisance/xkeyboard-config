@@ -11,7 +11,7 @@ Please consider using one of our MR templates for a better experience
 
 <!--
 For any feature, please provide evidences that it is popular enough to make sense
-to include by default in every system that use xkeyboard-config. Please note that
+to include by default in every system that uses xkeyboard-config. Please note that
 it is in your interest to provide neutral and accessible sources, if possible in
 English.
 -->

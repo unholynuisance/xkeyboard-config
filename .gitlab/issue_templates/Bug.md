@@ -5,7 +5,7 @@ Please fill the following template with care.
 
 # Your setup
 
-- OS (with version):
+- OS (with version): <!-- e.g. content of /etc/os-release -->
 - Desktop environment:
 - `xkeyboard-config` (or `xkb-data`) package version:
 - Keyboard setup:
