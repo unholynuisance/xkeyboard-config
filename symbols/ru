@@ -942,7 +942,7 @@ xkb_symbols "mac" {
     include "ru(common)"
     name[Group1]= "Russian (Macintosh)";
 
-    key <TLDE> { [       greater,         less  ] };
+    key <TLDE> { [          less,      greater  ] };
     key <AE02> { [             2,     quotedbl  ] };
     key <AE03> { [             3,   numerosign  ] };
     key <AE04> { [             4,      percent  ] };
