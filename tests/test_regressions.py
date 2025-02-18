@@ -12,7 +12,17 @@ from typing import Optional
 
 import pytest
 import xkbcommon
-from xkbcommon import Control, Mod1, Mod3, Mod4, Mod5, ModifierMask, NoModifier, Shift
+from xkbcommon import (
+    Control,
+    Lock,
+    Mod1,
+    Mod3,
+    Mod4,
+    Mod5,
+    ModifierMask,
+    NoModifier,
+    Shift,
+)
 
 ###############################################################################
 # pytest configuration
@@ -519,3 +529,53 @@ class TestIssue500:
                 Hyper = keymap.Hyper if keymap.has_vmod_queries else NoModifier
                 assert r.active_mods == Mod4 | Super | Hyper
                 assert r.consumed_mods == 0
+
+
+# https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/issues/512
+@pytest.mark.parametrize("model", ["jp106", "applealu_jis"])
+@pytest.mark.parametrize(
+    "layout,variant",
+    [
+        ("jp", ""),
+        ("jp", "OADG109A"),
+        ("jp", "kana"),
+        ("jp,jp", ",OADG109A"),
+        ("jp,jp", "OADG109A,"),
+        ("jp,jp", "OADG109A,kana"),
+        ("jp,us", ","),
+        ("us,jp", ","),
+        ("jp,jp,jp", ",OADG109A,kana"),
+        ("jp,us,gb", "kana,,"),
+        ("us,jp,gb", ",kana,"),
+        ("us,gb,jp", ",,kana"),
+        ("us,jp,jp,jp", ",,kana,OADG109A"),
+        ("jp,es,de,us", "mac,,,"),
+        ("us,jp,es,de", ",mac,,"),
+        ("us,es,jp,de", ",,mac,"),
+        ("us,es,de,jp", ",,,mac"),
+    ],
+)
+@pytest.mark.parametrize("options", ["grp:menu_toggle"])
+class TestIssue512:
+    def test_eisu(self, keymap: Keymap, layout: str):
+        """Eisu_toggle does not toggle CapsLock on Japanese layouts"""
+        layouts = layout.split(",")
+        for layout_index, layout_ in enumerate(layouts, start=1):
+            self.tap_and_check(keymap, "CAPS", layout_index if layout_ == "jp" else 1)
+            keymap.tap_and_check("MENU", "ISO_Next_Group", group=1, level=1)
+
+    @staticmethod
+    def tap_and_check(keymap: Keymap, key: str, layout: int):
+        r = keymap.tap(key)
+        if r.keysym == "Caps_Lock":
+            # Cancel CapsLock
+            r = keymap.tap(key)
+            assert r.active_mods is Lock
+            r = keymap.tap("AB01")
+            assert r.active_mods is NoModifier
+        else:
+            # Check Eisu does not trigger CapsLock
+            assert r.keysym == "Eisu_toggle"
+            assert r.layout == layout
+            assert r.level == 1
+            assert r.active_mods is NoModifier
