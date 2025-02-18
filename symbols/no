@@ -227,7 +227,7 @@ xkb_symbols "colemak" {
     name[Group1]= "Norwegian (Colemak)";
 
     // See https://colemak.com/.
-    // Q W F P G   J L U Y Ø Å ¨
+    // Q W F P G   J L U Y Ø Å ◌̈
     // A R S T D   H N E I O Æ '
     // < Z X C V   B K M , . -
 
