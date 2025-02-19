@@ -1,6 +1,7 @@
 # SPDX-License-Identifier: MIT
 
 import os
+from collections.abc import Iterable
 from ctypes import (
     CFUNCTYPE,
     POINTER,
@@ -23,7 +24,6 @@ from enum import Enum, IntFlag
 from functools import partial, reduce
 from pathlib import Path
 from typing import TYPE_CHECKING, NamedTuple, Optional, TypeAlias
-from collections.abc import Iterable
 
 ###############################################################################
 # Types

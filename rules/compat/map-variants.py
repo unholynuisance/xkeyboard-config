@@ -9,11 +9,11 @@ import itertools
 import re
 import sys
 from collections import defaultdict
+from collections.abc import Generator
 from dataclasses import dataclass
 from pathlib import Path
 from string import Template
 from typing import ClassVar
-from collections.abc import Generator
 
 ROOT = Path(__file__).parent.parent.parent
 RULES = ROOT / "rules"

@@ -6,10 +6,10 @@ import functools
 import itertools
 import os
 import re
+from collections.abc import Generator
 from dataclasses import dataclass
 from pathlib import Path
-from typing import ClassVar, Optional, Union, TYPE_CHECKING
-from collections.abc import Generator
+from typing import TYPE_CHECKING, ClassVar, Optional, Union
 
 if TYPE_CHECKING:
     import builtins

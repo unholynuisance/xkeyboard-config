@@ -3,10 +3,11 @@
 # Call with pytest. Requires XKB_CONFIG_ROOT to be set
 
 import os
-import pytest
 import subprocess
 import sys
 from pathlib import Path
+
+import pytest
 
 
 def _xkb_config_root():

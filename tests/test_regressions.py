@@ -4,11 +4,11 @@ from __future__ import annotations
 
 import os
 import re
+from collections.abc import Iterable
 from dataclasses import dataclass
 from functools import reduce
 from pathlib import Path
 from typing import Optional
-from collections.abc import Iterable
 
 import pytest
 import xkbcommon
