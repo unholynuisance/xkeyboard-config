@@ -48,17 +48,14 @@ def pytest_generate_tests(metafunc):
 
 def test_xkbcomp(xkb_config_root, xkb_symbols):
     layout, variant = xkb_symbols
-    keymap = """
-xkb_keymap {
-        xkb_keycodes  { include "evdev+aliases(qwerty)" };
-        xkb_types     { include "complete"      };
-        xkb_compat    { include "complete"      };
-        xkb_symbols   { include "pc+%s(%s)"     };
-};
-""" % (
-        layout,
-        variant,
-    )
+    keymap = f"""
+xkb_keymap {{
+        xkb_keycodes  {{ include "evdev+aliases(qwerty)" }};
+        xkb_types     {{ include "complete"      }};
+        xkb_compat    {{ include "complete"      }};
+        xkb_symbols   {{ include "pc+{layout}({variant})"     }};
+}};
+"""
     print(keymap)
 
     args = [

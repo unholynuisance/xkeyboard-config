@@ -22,7 +22,8 @@ from dataclasses import dataclass
 from enum import Enum, IntFlag
 from functools import partial, reduce
 from pathlib import Path
-from typing import TYPE_CHECKING, Iterable, NamedTuple, Optional, TypeAlias
+from typing import TYPE_CHECKING, NamedTuple, Optional, TypeAlias
+from collections.abc import Iterable
 
 ###############################################################################
 # Types

@@ -10,7 +10,7 @@ import argparse
 from enum import unique
 import sys
 import xml.etree.ElementTree as ET
-from typing import Generator, Iterable
+from collections.abc import Generator, Iterable
 from dataclasses import dataclass
 from pathlib import Path
 
