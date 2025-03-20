@@ -1280,6 +1280,8 @@ xkb_symbols "typo" {
     key <AD11> { [ NoSymbol, NoSymbol,        bracketleft,           braceleft ] };
     key <AD12> { [ NoSymbol, NoSymbol,       bracketright,          braceright ] };
 
+    key <BKSL> { [ NoSymbol, NoSymbol,                bar                      ] };
+
     key <AB08> { [ NoSymbol, NoSymbol,      guillemotleft,  doublelowquotemark ] };
     key <AB09> { [ NoSymbol, NoSymbol,     guillemotright, leftdoublequotemark ] };
     key <AB10> { [ NoSymbol, NoSymbol,           ellipsis,               U2019 ] }; // Right Single Quotation Mark
