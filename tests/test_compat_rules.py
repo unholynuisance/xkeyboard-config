@@ -131,6 +131,20 @@ def compile_keymap(
     return alias_layout, alias_variant, km.as_string()
 
 
+COMPONENT_NAME_PATTERN = re.compile(
+    r"""
+    (?P<component>xkb_(?:keycodes|types|compatibility|symbols))
+    \s+
+    "[^"]*"
+    """,
+    re.VERBOSE,
+)
+
+
+def drop_component_name(match: re.Match[str]) -> str:
+    return match.group("component")
+
+
 @pytest.mark.parametrize("rules", ("base", "evdev"))
 def test_compat_layout(xkb_base: Path, rules: str, mapping: tuple[Layout, Layout]):
     alias = mapping[0]
@@ -158,7 +172,7 @@ def test_compat_layout(xkb_base: Path, rules: str, mapping: tuple[Layout, Layout
         )
         assert target_string != "", (rules, target_layout, target_variant)
 
-        # [HACK]: fix keycodes aliases
+        # [HACK] Fix keycodes aliases
         if alias.layout == "de" and target.layout != "de":
             alias_string = alias_string.replace(
                 "<LatZ>         = <AD06>", "<LatY>         = <AD06>"
@@ -167,7 +181,11 @@ def test_compat_layout(xkb_base: Path, rules: str, mapping: tuple[Layout, Layout
                 "<LatY>         = <AB01>", "<LatZ>         = <AB01>"
             )
 
-        # Keymap obtain using alias should be the same as if using its target directly
+        # [HACK] Discard components names
+        alias_string = COMPONENT_NAME_PATTERN.sub(drop_component_name, alias_string)
+        target_string = COMPONENT_NAME_PATTERN.sub(drop_component_name, target_string)
+
+        # Keymap obtained using alias should be the same as if using its target directly
         assert alias_string == target_string, (
             rules,
             alias_layout,
