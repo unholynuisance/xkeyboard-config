@@ -3,11 +3,13 @@ partial modifier_keys
 xkb_symbols "breaks_caps" {
     key <LFSH> {
 	type[group1] = "ALPHABETIC",
+	symbols[group1] = [ Shift_L, Shift_L ],
 	actions[group1] = [ SetMods(modifiers=Shift),
 			    SetMods(modifiers=Shift+Lock,clearLocks) ]
     };
     key <RTSH> {
 	type[group1] = "ALPHABETIC",
+	symbols[group1] = [ Shift_R, Shift_R ],
 	actions[group1] = [ SetMods(modifiers=Shift),
 			    SetMods(modifiers=Shift+Lock,clearLocks) ]
     };
