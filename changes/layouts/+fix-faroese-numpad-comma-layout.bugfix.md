@@ -1,1 +1,1 @@
-fix(symbols/fo): use keypad delete key comma.
+Faroese `fo`: use comma as the decimal separator for the numpad.
