@@ -1,3 +1,117 @@
+xkeyboard-config [2.45] - 2025-06-08
+====================================
+
+[2.45]: https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/tree/xkeyboard-config-2.45
+
+## Models
+
+### Fixes
+
+- Norwegian Macintosh layout: Fixed the `apostrophe` key to actually output
+  `apostrophe` instead of `bar`.
+
+  Contributed by Håvard Bærug
+  ([!801](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/merge_requests/801))
+
+
+## Layouts
+
+### Breaking changes
+
+- Deleted obsolete `jp(kana86)` layout.
+  ([#502](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/issues/502))
+
+### New
+
+- Added Colemak variant for Swedish: `se(colemak)`.
+
+  Contributed by satricus
+  ([!761](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/merge_requests/761))
+- French (AZERTY, AFNOR): Implemented the “European character” dead key on `AltGr+H`,
+  as documented at the [offical web page](https://norme-azerty.fr/img/EU_level.png).
+  Also fixed the missing upper Theta Θ on `Q`.
+- `ru(typo)`: Added bar symbol on the `<BKSL>` key.
+
+  Contributed by Boolat Kamalov
+  ([!814](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/merge_requests/814))
+
+### Fixes
+
+- `us(colemak_dh)`: Fix the CapsLock remapping being difficult to override.
+  ([#490](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/issues/490))
+- Japanese layouts: Fix Eisu toggle triggering CapsLock when the layout is not in
+  the first position. ([#512](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/issues/512))
+- Apple: fix ISO keyboards International English layout (`<TLDE>`, `<LSGT>` keys permutation).
+
+  Contributed by Andrey Butirsky
+  ([!793](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/merge_requests/793))
+- Faroese `fo`: use comma as the decimal separator for the numpad.
+
+  Contributed by Ragnar Kruse
+  ([!815](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/merge_requests/815))
+
+
+## Options
+
+### New
+
+- Added two compatibility options related to `Hyper`:
+  - `hyper:mod3`: maps the virtual modifier `Hyper` to `Mod3`; *conflicts with `LevelFive`*.
+    Loaded by default when using any option with `Hyper`.
+  - `hyper:mod4`: maps the virtual modifier `Hyper` to `Mod3`; *conflicts with `Super`*.
+    Use this option if using both `Hyper` *and* `LevelFive`, e.g. for layouts with 5+ levels.
+
+### Fixes
+
+- `shift:breaks_caps`: Fix missing `Shift_{L,R}` keysyms that prevented
+  keyboard shortcuts to work correctly in some setups.
+
+
+## Miscellaneous
+
+### Breaking changes
+
+- Added `KEY_ZENKAKUHANKAKU` mapping for touchpad toggle.
+
+  Pressing the touchpad toggle key on some notebooks produces the key sequence
+  `Super + Control + KEY_ZENKAKUHANKAKU`. Actual Japanese Hankaku/Zenkaku keys
+  however do not use this keycode, but the <TLDE> one instead.
+
+  Contributed by Werner Sembach
+  ([!810](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/merge_requests/810))
+- The default mapping of the virtual modifier `Hyper` to `Mod3` is now deactivated
+  by default, because it conflicts with `LevelFive`, which is used in various layouts
+  with 5+ levels.
+
+  It is now enabled only when using any option binding `Hyper` keysyms or when
+  using the new option `hyper:mod3`. However, if one one want to use `LevelFive`
+  and `Hyper` simultaneously (e.g. for layouts with 5+ levels), then the new
+  alternative option `hyper:mod4` should be used instead.
+
+
+## Build system
+
+### Breaking changes
+
+- Switched to versioned install directories and files, to enable installing
+  multiple versions of xkeyboard-config to be installed in parallel.
+
+  - Moved the keyboard keymap data to a namespace dedicated to xkeyboard-config:
+    `<prefix>/<datadir>/xkeyboard-config-2`.
+  - Created symbolic link to maintain backward-compatibility with the X11 namespace:
+    `<prefix>/<datadir>/X11/xkb` → `<prefix>/<datadir>/xkeyboard-config-2`.
+  - Renamed `pkg-config`, translation and manual files to include a version:
+    - `<prefix>/<datadir>/pkgconfig/xkeyboard-config-2.pc`
+    - `<prefix>/<mandir>/man7/xkeyboard-config-2.7`
+    - `<prefix>/<localedir>/**/xkeyboard-config-2.mo`
+  - Created unversioned symbolic links to the previous files for backward-compatibility:
+    - `<prefix>/<datadir>/pkgconfig/`: `xkeyboard-config.pc` → `xkeyboard-config-2.pc`
+    - `<prefix>/<mandir>/man7/`: `xkeyboard-config.7` → `xkeyboard-config-2.7`
+    - `<prefix>/<localedir>/**/`: `xkeyboard-config.mo` → `xkeyboard-config-2.mo`
+
+  See [our versioning documentation](VERSIONING.md) for further information.
+
+
 xkeyboard-config [2.44] - 2025-02-05
 ====================================
 
