@@ -52,6 +52,9 @@ variables:
   BUILDDIR: '_build'
   # installation directory must be inside $CI_PROJECT_DIR to allow for artifact caching
   INSTDIR: '$CI_PROJECT_DIR/_inst'
+  # Installed XKB root directory
+  XKEYBOARD_CONFIG_MAJOR_VERSION: 2
+  XKB_CONFIG_ROOT: '$INSTDIR/share/xkeyboard-config-$XKEYBOARD_CONFIG_MAJOR_VERSION'
   # Override these in the jobs to pass commands to configure/make
   CONFIGURE_ARGS: ''
   MAKE_EXTRA_ARG: ''
@@ -211,8 +214,8 @@ xkbcommon build:
         -Denable-wayland=false \
         -Denable-x11=false \
         -Denable-docs=false \
-        -Dxkb-config-root="$INSTDIR/share/X11/xkb" \
-        -Dxkb-config-extra-path="$INSTDIR/share/X11/xkb" \
+        -Dxkb-config-root="$XKB_CONFIG_ROOT" \
+        -Dxkb-config-extra-path="$XKB_CONFIG_ROOT" \
         -Dprefix="$XKBCOMMON_INST_DIR" \
         -Dlibdir="lib" \
         --buildtype=release
@@ -277,7 +280,7 @@ xmllint:
   needs: ['meson_install']
   stage: test
   script:
-    - xmllint --dtdvalid "$INSTDIR/share/X11/xkb/rules/xkb.dtd" $INSTDIR/share/X11/xkb/rules/*.xml > /dev/null
+    - xmllint --dtdvalid "$XKB_CONFIG_ROOT/rules/xkb.dtd" $XKB_CONFIG_ROOT/rules/*.xml > /dev/null
 
 
 match group names to registry:
@@ -298,7 +301,7 @@ xkbcli list check:
   needs: ['meson_install']
   stage: test
   script:
-    - xkbcli list --skip-default-paths --load-exotic "$INSTDIR/share/X11/xkb" > rmlvo.yaml
+    - xkbcli list --skip-default-paths --load-exotic "$XKB_CONFIG_ROOT" > rmlvo.yaml
     - head -n20 rmlvo.yaml
     - yq . rmlvo.yaml > /dev/null
   artifacts:
@@ -323,9 +326,9 @@ layout_tests:
       artifacts: true
   script:
     # make sure the custom layout resolves to something
-    - ln -s "$INSTDIR/share/X11/xkb/symbols/us" "$INSTDIR/share/X11/xkb/symbols/custom"
+    - ln -s "$XKB_CONFIG_ROOT/symbols/us" "$XKB_CONFIG_ROOT/symbols/custom"
     # make sure the custom types resolves to something
-    - ln -s "$INSTDIR/share/X11/xkb/types/basic" "$INSTDIR/share/X11/xkb/types/custom"
+    - ln -s "$XKB_CONFIG_ROOT/types/basic" "$XKB_CONFIG_ROOT/types/custom"
     # run xkbcommon test
     - echo Running test script - this will take several minutes
     # Ensure we use our local version of xkbcommon
@@ -336,31 +339,31 @@ layout_tests:
     - xkbcli-compile-keymap --layout pc --verbose > /dev/null
     - >
       xkeyboard-config-test --verbose --short \
-          "$INSTDIR/share/X11/xkb/rules/evdev.xml" \
+          "$XKB_CONFIG_ROOT/rules/evdev.xml" \
           >  $INSTDIR/keymaps-success.yaml \
           2> $INSTDIR/keymaps-failed.yaml
     - >
       xkeyboard-config-test --verbose --short \
-          "$INSTDIR/share/X11/xkb/rules/evdev.extras.xml" \
+          "$XKB_CONFIG_ROOT/rules/evdev.extras.xml" \
           >>  $INSTDIR/keymaps-success.yaml \
           2>> $INSTDIR/keymaps-failed.yaml
     # Test a few models with vendor-specific layouts
     - >
       xkeyboard-config-test --model=applealu_iso --layout=gb --option="" --verbose --short \
-          "$INSTDIR/share/X11/xkb/rules/evdev.xml" \
-          "$INSTDIR/share/X11/xkb/rules/evdev.extras.xml" \
+          "$XKB_CONFIG_ROOT/rules/evdev.xml" \
+          "$XKB_CONFIG_ROOT/rules/evdev.extras.xml" \
           >>  $INSTDIR/keymaps-success.yaml \
           2>> $INSTDIR/keymaps-failed.yaml
     - >
       xkeyboard-config-test --model=applealu_jis --layout=jp --option="" --verbose --short \
-          "$INSTDIR/share/X11/xkb/rules/evdev.xml" \
-          "$INSTDIR/share/X11/xkb/rules/evdev.extras.xml" \
+          "$XKB_CONFIG_ROOT/rules/evdev.xml" \
+          "$XKB_CONFIG_ROOT/rules/evdev.extras.xml" \
           >>  $INSTDIR/keymaps-success.yaml \
           2>> $INSTDIR/keymaps-failed.yaml
     - >
       xkeyboard-config-test --model=olpc --layout=gb --option="" --verbose --short \
-          "$INSTDIR/share/X11/xkb/rules/evdev.xml" \
-          "$INSTDIR/share/X11/xkb/rules/evdev.extras.xml" \
+          "$XKB_CONFIG_ROOT/rules/evdev.xml" \
+          "$XKB_CONFIG_ROOT/rules/evdev.extras.xml" \
           >>  $INSTDIR/keymaps-success.yaml \
           2>> $INSTDIR/keymaps-failed.yaml
   after_script:
@@ -397,7 +400,6 @@ keymap_tests:
       artifacts: true
   script:
     # Configure the environment for our local xkbcommon build & Python bindings.
-    - export XKB_CONFIG_ROOT="$INSTDIR/share/X11/xkb"
     - export XKBCOMMON_LIB_PATH="$XKBCOMMON_INST_DIR/lib/libxkbcommon.so"
     - export PYTHONPATH="$PWD/tests:$PYTHONPATH"
     # Run the tests

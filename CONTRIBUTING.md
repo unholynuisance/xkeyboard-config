@@ -97,12 +97,12 @@ running the tests!
 
   ```bash
   # Compile keymap to a file
-  setxkbmap -print -rules "$PWD/inst/share/X11/xkb/rules/evdev" -layout … \
-  	| xkbcomp -I -I"$PWD/inst/share/X11/xkb" \
+  setxkbmap -print -rules "$PWD/inst/share/xkeyboard-config-2/rules/evdev" -layout … \
+  	| xkbcomp -I -I"$PWD/inst/share/xkeyboard-config-2" \
   		-xkb - /tmp/keymap.xkb
   # Activate keymap
-  setxkbmap -print -rules "$PWD/inst/share/X11/xkb/rules/evdev" -layout … \
-  	| xkbcomp -I -I"$PWD/inst/share/X11/xkb" - "$DISPLAY"
+  setxkbmap -print -rules "$PWD/inst/share/xkeyboard-config-2/rules/evdev" -layout … \
+  	| xkbcomp -I -I"$PWD/inst/share/xkeyboard-config-2" - "$DISPLAY"
   # Interactive debugging
   xev -event keyboard
   ```
@@ -111,10 +111,10 @@ running the tests!
 
   ```bash
   # Compile keymap to a file
-  xkbcli compile-keymap --include "$PWD/inst/share/X11/xkb" \
+  xkbcli compile-keymap --include "$PWD/inst/share/xkeyboard-config-2" \
   			--layout … > /tmp/keymap.xkb
   # Interactive debugging; require having your user in group “input”
-  xkbcli interactive-evdev --include "$PWD/inst/share/X11/xkb" \
+  xkbcli interactive-evdev --include "$PWD/inst/share/xkeyboard-config-2" \
   			--layout …
   ```
 

@@ -1,7 +1,7 @@
 option('xkb-base',
        type: 'string',
        value: '',
-       description: 'XKB base path [default=$datadir/X11/xkb]')
+       description: 'XKB base path [default=$datadir/xkeyboard-config-2]')
 option('compat-rules',
        type: 'boolean',
        value: true,
