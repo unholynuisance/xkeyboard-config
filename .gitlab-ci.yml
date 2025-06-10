@@ -1,7 +1,8 @@
 # vim: set expandtab shiftwidth=2 tabstop=8 textwidth=0:
 
-# see https://docs.gitlab.com/ee/ci/yaml/#includefile
-.templates_sha: &template_sha e195d80f35b45cc73668be3767b923fd76c70ed5
+# CI templates: https://gitlab.freedesktop.org/freedesktop/ci-templates
+# See: https://docs.gitlab.com/ee/ci/yaml/#includefile
+.templates_sha: &template_sha 32afe5644697e503af18a736587c8619fa036a72
 
 
 include:
@@ -47,7 +48,7 @@ variables:
   FDO_UPSTREAM_REPO: 'xkeyboard-config/xkeyboard-config'
   # Changing the tag will rebuild the container images. The value is just a
   # string, but we use the date for human benefits.
-  FDO_DISTRIBUTION_TAG: '2025-02-18.1'
+  FDO_DISTRIBUTION_TAG: '2025-06-10.1'
 
   BUILDDIR: '_build'
   # installation directory must be inside $CI_PROJECT_DIR to allow for artifact caching
