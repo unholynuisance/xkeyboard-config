@@ -616,7 +616,7 @@ xkb_symbols "dvp" {
 // Based on the Dvorak keyboard layout found in MacOS
 partial alphanumeric_keys
 xkb_symbols "dvorak-mac" {
-    name[Group1]= "English (Dvorak, Macintosh)";
+    name[Group1]= "English (Macintosh, Dvorak, ANSI)";
 
     key <TLDE> { [ grave, asciitilde, dead_grave, grave ] };
 
@@ -658,7 +658,6 @@ xkb_symbols "dvorak-mac" {
     key <AC10> { [     s,          S,            ssharp,      Iacute ] };
     key <AC11> { [ minus, underscore,            endash,      emdash ] };
 
-    key <LSGT> { [ section, plusminus ] };
     key <AB01> { [ semicolon, colon,       ellipsis,             Uacute ] };
     key <AB02> { [         q,     Q,             oe,                 OE ] };
     key <AB03> { [         j,     J,          U2206,        Ocircumflex ] };
@@ -673,6 +672,20 @@ xkb_symbols "dvorak-mac" {
     key <BKSL> { [ backslash, bar, guillemotleft, guillemotright ] };
 
     include "level3(ralt_switch)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "appleiso-keys" {
+    key <LSGT> { [ grave, asciitilde, dead_grave, dead_horn ] };
+    key <TLDE> { [ section, plusminus, section, plusminus ] };
+};
+
+partial alphanumeric_keys
+xkb_symbols "dvorak-mac-iso" {
+    include "us(dvorak-mac)"
+    include "us(appleiso-keys)"
+
+    name[Group1] = "English (Macintosh, Dvorak, ISO)";
 };
 
 // A phonetic layout for typing Russian on a US keyboard.
@@ -729,12 +742,11 @@ xkb_symbols "rus" {
 partial alphanumeric_keys
 xkb_symbols "mac" {
 
-    name[Group1]= "English (Macintosh)";
+    name[Group1]= "English (Macintosh, ABC, ANSI)";
 
     key.type[group1]="FOUR_LEVEL";
 
-    // Slightly improvised from http://homepage.mac.com/thgewecke/kblayout.jpg
-    key <LSGT> { [   section,  plusminus,       section,        plusminus ] };
+    // Slightly improvised from https://web.archive.org/web/20120530171635/http://homepage.mac.com/thgewecke/kblayout.jpg
     key <TLDE> { [     grave, asciitilde,    dead_grave,        dead_horn ] };
     key <AE01> { [	   1,     exclam,    exclamdown,            U2044 ] };
     key <AE02> { [	   2,         at,     trademark,         EuroSign ] };
@@ -788,6 +800,14 @@ xkb_symbols "mac" {
     key <AB10> { [     slash,   question,      division,     questiondown ] };
 
     include "level3(ralt_switch)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "mac-iso" {
+    include "us(mac)"
+    include "us(appleiso-keys)"
+
+    name[Group1] = "English (Macintosh, ABC, ISO)";
 };
 
 // Colemak symbols for xkb on X.Org Server 7.x
