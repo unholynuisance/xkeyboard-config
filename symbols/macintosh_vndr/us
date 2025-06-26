@@ -9,8 +9,8 @@ xkb_symbols "applealu_iso" {
 
     include "macintosh_vndr/us(extended)"
 
-    name[Group1]="English (Macintosh, intl.)";
+    name[Group1]="English (US, Macintosh, ISO)";
 
-    key <TLDE> {       [         section,       plusminus      ]       };
-    key <LSGT> {       [           grave,      asciitilde      ]       };
+    key <TLDE> { [	section, 	plusminus	] };
+    key <LSGT> { [	  grave,	asciitilde	] };
 };
