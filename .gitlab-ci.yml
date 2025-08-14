@@ -337,7 +337,7 @@ layout_tests:
     # Ensure xkeyboard-config-test and xkbcli-compile-keymap are in the PATH
     - export PATH="$XKBCOMMON_INST_DIR/bin:$XKBCOMMON_INST_DIR/libexec/xkbcommon:$PATH"
     # For debugging: check if executable is working and output its XKB_CONFIG_ROOT
-    - xkbcli-compile-keymap --layout pc --verbose > /dev/null
+    - xkbcli-compile-keymap --layout empty --verbose --test
     - >
       xkeyboard-config-test --verbose --short \
           "$XKB_CONFIG_ROOT/rules/evdev.xml" \
@@ -369,7 +369,9 @@ layout_tests:
           2>> $INSTDIR/keymaps-failed.yaml
   after_script:
     - echo "Failed keymap compilations:"
-    - yq -c ".[] | select(.status != 0) | .cmd, .error" $INSTDIR/keymaps-failed.yaml
+    - >
+      yq -c ".[] | select(.status != 0) | .rules, .model, .layout, .variant, .option, .error" \
+        $INSTDIR/keymaps-failed.yaml
     - successful_tests=$(yq ". | length" "$INSTDIR/keymaps-success.yaml")
     - >
       .gitlab-ci/yaml-to-junit-xml.py \
