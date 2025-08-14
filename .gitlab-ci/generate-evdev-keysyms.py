@@ -131,18 +131,18 @@ def main():
         "--template",
         type=argparse.FileType("r"),
         default=".gitlab-ci/inet.in",
-        help="The template file, usually .gitlab-ci/inet.in",
+        help="The template file (default: %(default)s)",
     )
     parser.add_argument(
         "--header",
         type=argparse.FileType("r"),
-        help="Path to the XF86keysym.h header file",
+        help="Path to the XF86keysym.h header file (default: %(default)s)",
         default="/usr/include/X11/XF86keysym.h",
     )
     parser.add_argument(
         "--output",
         type=str,
-        help="The file to be written to, usually symbols/inet",
+        help="The file to be written to (default: %(default)s)",
         default="symbols/inet",
     )
     ns = parser.parse_args()
